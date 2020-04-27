@@ -50,8 +50,8 @@
     <repository>
       <uniqueVersion>false</uniqueVersion>
       <id>cards</id>
-      <name>Cards</name>
-      <url>https://maven.pkg.github.com/MatagTheGame</url>
+      <name>Cards Maven Packages</name>
+      <url>https://maven.pkg.github.com/MatagTheGame/cards</url>
       <layout>default</layout>
     </repository>
   </distributionManagement>
