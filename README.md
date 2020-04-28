@@ -9,6 +9,11 @@ This module contains all the cards available in this game.
  - https://github.com/MatagTheGame/cards/actions
 
 
+## Developing
+
+Read [Requisites](https://github.com/MatagTheGame/game/wiki/Requisites)
+
+
 ## Scripting
 
 If you are brave enough and want to add a missing card, here's some tips.
