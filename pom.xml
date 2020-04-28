@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>cards</artifactId>
-  <groupId>matag</groupId>
+  <groupId>com.matag</groupId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
