@@ -1,26 +1,26 @@
 package com.matag.cards.sets;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.matag.cards.CardsConfiguration;
-import org.springframework.stereotype.Component;
-
-import java.io.File;
+import com.matag.cards.ResourceLoader;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Objects;
+import org.springframework.stereotype.Component;
 
 @Component
 public class MtgSets {
-  private static final String SETS_PATH = CardsConfiguration.getResourcesPath() + "/sets";
-
   private Map<String, MtgSet> SETS = new LinkedHashMap<>();
 
-  public MtgSets(ObjectMapper objectMapper) throws Exception {
-    String[] sets = new File(SETS_PATH).list();
-    Objects.requireNonNull(sets);
+  public MtgSets(ObjectMapper objectMapper, ResourceLoader resourceLoader) {
+    String[] sets = resourceLoader.getSetsFileNames();
     for (String set : sets) {
-      MtgSet mtgSet = objectMapper.readValue(new File(SETS_PATH + "/" + set), MtgSet.class);
-      SETS.put(mtgSet.getCode(), mtgSet);
+      try {
+        String setJson = resourceLoader.getSetJson(set);
+        MtgSet mtgSet = objectMapper.readValue(setJson, MtgSet.class);
+        SETS.put(mtgSet.getCode(), mtgSet);
+
+      } catch (Exception e) {
+        throw new RuntimeException("Failed to load set: " + set, e);
+      }
     }
   }
 
@@ -32,7 +32,7 @@ public class MtgSets {
     return SETS.get(code);
   }
 
-  public int countCards() {
+  public int countSets() {
     return SETS.values().stream()
       .map(set -> set.getCards().size())
       .reduce(Integer::sum)

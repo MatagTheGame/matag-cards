@@ -49,7 +49,7 @@
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
-      <id>github-cards</id>
+      <id>github-matag-cards</id>
       <name>Github Cards Maven Packages</name>
       <url>https://maven.pkg.github.com/MatagTheGame/cards</url>
     </repository>
