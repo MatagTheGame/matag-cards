@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matag.cards.ResourceLoader;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,15 +12,14 @@ public class MtgSets {
   private Map<String, MtgSet> SETS = new LinkedHashMap<>();
 
   public MtgSets(ObjectMapper objectMapper, ResourceLoader resourceLoader) {
-    String[] sets = resourceLoader.getSetsFileNames();
-    for (String set : sets) {
+    Resource[] setResources = resourceLoader.getSetsFileNames();
+    for (Resource setResource : setResources) {
       try {
-        String setJson = resourceLoader.getSetJson(set);
-        MtgSet mtgSet = objectMapper.readValue(setJson, MtgSet.class);
+        MtgSet mtgSet = objectMapper.readValue(setResource.getInputStream(), MtgSet.class);
         SETS.put(mtgSet.getCode(), mtgSet);
 
       } catch (Exception e) {
-        throw new RuntimeException("Failed to load set: " + set, e);
+        throw new RuntimeException("Failed to load set: " + setResource.getDescription(), e);
       }
     }
   }

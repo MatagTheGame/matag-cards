@@ -1,39 +1,22 @@
 package com.matag.cards;
 
-import java.io.InputStream;
-import java.util.Scanner;
+import lombok.SneakyThrows;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
 
 @Component
 public class ResourceLoader {
 
-  public String[] getCardsFileNames() {
-    return asString(getResourceAsStream("cards")).split("\n");
+  @SneakyThrows
+  public Resource[] getCardsFileNames() {
+    return new PathMatchingResourcePatternResolver(this.getClass().getClassLoader())
+        .getResources("/cards/*");
   }
 
-  public String[] getSetsFileNames() {
-    return asString(getResourceAsStream("sets")).split("\n");
-  }
-
-  public String getCardJson(String cardName) {
-    return asString(getResourceAsStream("cards/" + cardName));
-  }
-
-  public String getSetJson(String setName) {
-    return asString(getResourceAsStream("sets/" + setName));
-  }
-
-  private InputStream getResourceAsStream(String resource) {
-    InputStream in = getContextClassLoader().getResourceAsStream(resource);
-    return in == null ? getClass().getResourceAsStream(resource) : in;
-  }
-
-  private String asString(InputStream inputStream) {
-    Scanner s = new Scanner(inputStream).useDelimiter("\\A");
-    return s.hasNext() ? s.next() : "";
-  }
-
-  private ClassLoader getContextClassLoader() {
-    return Thread.currentThread().getContextClassLoader();
+  @SneakyThrows
+  public Resource[] getSetsFileNames() {
+    return new PathMatchingResourcePatternResolver(this.getClass().getClassLoader())
+        .getResources("/sets/*");
   }
 }

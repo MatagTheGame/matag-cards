@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,15 +13,14 @@ public class Cards {
   private Map<String, Card> CARDS = new LinkedHashMap<>();
 
   public Cards(ObjectMapper objectMapper, ResourceLoader resourceLoader) {
-    String[] cardResources = resourceLoader.getCardsFileNames();
-    for (String cardResource : cardResources) {
+    Resource[] cardResources = resourceLoader.getCardsFileNames();
+    for (Resource cardResource : cardResources) {
       try {
-        String cardJson = resourceLoader.getCardJson(cardResource);
-        Card card = objectMapper.readValue(cardJson, Card.class);
+        Card card = objectMapper.readValue(cardResource.getInputStream(), Card.class);
         CARDS.put(card.getName(), card);
 
       } catch (Exception e) {
-        throw new RuntimeException("Failed to load card: " + cardResource, e);
+        throw new RuntimeException("Failed to load card: " + cardResource.getDescription(), e);
       }
     }
   }
