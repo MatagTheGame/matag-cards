@@ -6,7 +6,7 @@
 
   <groupId>com.matag</groupId>
   <artifactId>cards</artifactId>
-  <version>1.1.0-SNAPSHOT</version>
+  <version>1.1.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>
@@ -51,7 +51,7 @@
       <uniqueVersion>false</uniqueVersion>
       <id>github-matag-cards</id>
       <name>Github Cards Maven Packages</name>
-      <url>https://maven.pkg.github.com/MatagTheGame/cards</url>
+      <url>https://maven.pkg.github.com/MatagTheGame/matag-cards</url>
     </repository>
   </distributionManagement>
 </project>
