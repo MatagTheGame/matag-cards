@@ -2,8 +2,10 @@
 
 This module contains all the cards available in this game.
 
+See [Matag: The Game](https://github.com/MatagTheGame/matag-the-game/wiki) wiki
 
-## Build
+
+## Automated Build
 
 ![Java CI with Maven](https://github.com/MatagTheGame/matag-cards/workflows/Java%20CI%20with%20Maven/badge.svg)
  - https://github.com/MatagTheGame/matag-cards/actions
