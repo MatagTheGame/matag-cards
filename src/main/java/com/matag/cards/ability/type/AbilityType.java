@@ -23,7 +23,8 @@ public enum AbilityType {
   THAT_TARGET_CONTROLLER_GETS("That target controller gets %s."),
   THAT_TARGETS_GET("That targets get %s."),
   TRAMPLE("Trample."),
-  VIGILANCE("Vigilance.");
+  VIGILANCE("Vigilance."),
+  MENACE("Menace.");
 
   private String text;
 

@@ -1,0 +1,14 @@
+{
+  "name" : "Boggart Brute",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "GOBLIN", "WARRIOR" ],
+  "ruleText" : "Menace (This creature can't be blocked except by two or more creatures.)",
+  "rarity" : "COMMON",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "MENACE"
+  } ]
+}
