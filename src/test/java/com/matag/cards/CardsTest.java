@@ -101,8 +101,8 @@ public class CardsTest {
       CardScryFallLinker cardScryFallLinker = new CardScryFallLinker(card);
       Card cardWithImage = card.toBuilder()
           .imageUrl(cardScryFallLinker.getImage())
-//          .types(cardScryFallLinker.getTypes())
-//          .subtypes(cardScryFallLinker.getSubtypes())
+          .types(cardScryFallLinker.getTypes())
+          .subtypes(cardScryFallLinker.getSubtypes())
           .build();
       String cardJson = objectMapper.writeValueAsString(cardWithImage);
       Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson.getBytes());

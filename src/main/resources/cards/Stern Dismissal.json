@@ -3,7 +3,7 @@
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0aec4d0f-ba1e-45f8-9764-9bcc3fa50e51.jpg?1581479548",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE" ],
-  "types" : [ "SORCERY" ],
+  "types" : [ "INSTANT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Return target creature or enchantment an opponent controls to its owner's hand.",
   "abilities" : [ {

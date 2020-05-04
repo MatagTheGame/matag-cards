@@ -4,6 +4,7 @@
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],
+  "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",
   "ruleText" : "Enchant creature you control. When Setessan Training enters the battlefield, draw a card. Enchanted creature gets +1/+0 and has trample.",
   "abilities" : [ {

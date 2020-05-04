@@ -2,6 +2,7 @@
   "name" : "Forest",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/4/c4be31c4-9cb3-4a07-865b-5621127df660.jpg?1581482262",
   "types" : [ "BASIC", "LAND" ],
+  "subtypes" : [ "FOREST" ],
   "rarity" : "COMMON",
   "abilities" : [ {
     "abilityType" : "TAP_ADD_MANA",

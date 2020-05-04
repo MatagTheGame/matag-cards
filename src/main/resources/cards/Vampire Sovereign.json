@@ -4,7 +4,7 @@
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
-  "subtypes" : [ "VAMPIRE" ],
+  "subtypes" : [ "NOBLE", "VAMPIRE" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Flying. When Vampire Sovereign enters the battlefield, target opponent loses 3 life and you gain 3 life.",
   "power" : 3,

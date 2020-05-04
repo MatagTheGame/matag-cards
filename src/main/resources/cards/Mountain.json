@@ -2,6 +2,7 @@
   "name" : "Mountain",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/c/dc3f4154-9347-4ceb-8744-9f1ace90d33f.jpg?1581482260",
   "types" : [ "BASIC", "LAND" ],
+  "subtypes" : [ "MOUNTAIN" ],
   "rarity" : "COMMON",
   "abilities" : [ {
     "abilityType" : "TAP_ADD_MANA",

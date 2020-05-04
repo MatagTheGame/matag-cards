@@ -4,6 +4,7 @@
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],
+  "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",
   "ruleText" : "Draw two cards.",
   "abilities" : [ {

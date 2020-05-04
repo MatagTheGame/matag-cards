@@ -4,7 +4,7 @@
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],
-  "subtypes" : [ "CAT" ],
+  "subtypes" : [ "ELF", "SCOUT" ],
   "rarity" : "COMMON",
   "ruleText" : "Vigilance.",
   "power" : 1,
