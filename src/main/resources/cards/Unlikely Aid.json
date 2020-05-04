@@ -11,10 +11,12 @@
   "ruleText" : "Target creature gets +2/+0 and gains indestructible until end of turn.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
-    "cardInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ]
-    },
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
     "parameters" : [ "+2/+0", "INDESTRUCTIBLE" ],
     "trigger" : {
       "type" : "CAST"

@@ -11,12 +11,7 @@ import java.io.File;
 @ComponentScan(basePackageClasses = {CardsConfiguration.class})
 public class CardsConfiguration {
   public static String getResourcesPath() {
-    String cd = new File("").getAbsolutePath();
-    int endPathIndex = cd.lastIndexOf("matag");
-    if (endPathIndex > 0) {
-      cd = cd.substring(0, endPathIndex + 5);
-    }
-    return cd + "/src/main/resources";
+    return new File("src/main/resources").getAbsolutePath();
   }
 
   @Bean

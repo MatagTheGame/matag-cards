@@ -8,7 +8,6 @@ import com.matag.cards.ability.selector.CardInstanceSelector;
 import com.matag.cards.ability.selector.SelectorType;
 import com.matag.cards.ability.target.Target;
 import com.matag.cards.ability.trigger.Trigger;
-import com.matag.cards.ability.type.AbilityType;
 import com.matag.cards.properties.*;
 import com.matag.downloader.CardImageLinker;
 import org.assertj.core.api.Assertions;
@@ -23,6 +22,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
 import static java.util.stream.Collectors.toList;
@@ -73,7 +73,7 @@ public class CardsTest {
     assertThat(card.getAbilities()).hasSize(1);
     assertThat(card.getAbilities().get(0)).isEqualTo(
       Ability.builder()
-        .abilityType(AbilityType.THAT_TARGETS_GET)
+        .abilityType(THAT_TARGETS_GET)
         .targets(singletonList(Target.builder()
           .cardInstanceSelector(CardInstanceSelector.builder()
             .selectorType(SelectorType.PERMANENT)
@@ -119,6 +119,14 @@ public class CardsTest {
     if (card.getRarity() == null) {
       throw new RuntimeException("Card '" + name + "' does not have rarity");
     }
+
+    card.getAbilities().stream()
+        .filter(ability -> ability.getAbilityType().equals(THAT_TARGETS_GET))
+        .forEach(ability -> {
+          if (ability.getTargets().isEmpty()) {
+            throw new RuntimeException("Card '" + name + "' is missing targets");
+          }
+        });
   }
 
   public ObjectMapper createCardsObjectMapper() {
