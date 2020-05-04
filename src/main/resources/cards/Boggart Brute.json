@@ -1,15 +1,12 @@
 {
   "name" : "Boggart Brute",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/0/4/042f10fb-5c19-4890-80ba-ea2c28805f0b.jpg?1573511184",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/0/4/042f10fb-5c19-4890-80ba-ea2c28805f0b.png?1573511184"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/4/042f10fb-5c19-4890-80ba-ea2c28805f0b.jpg?1573511184",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GOBLIN", "WARRIOR" ],
   "rarity" : "COMMON",
-  "ruleText" : "Menace (This creature can't be blocked except by two or more creatures.)",
+  "ruleText" : "Menace",
   "power" : 3,
   "toughness" : 2,
   "abilities" : [ {

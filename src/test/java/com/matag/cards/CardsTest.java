@@ -13,6 +13,7 @@ import com.matag.downloader.CardScryFallLinker;
 import org.assertj.core.api.Assertions;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.platform.commons.util.StringUtils;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
@@ -25,6 +26,7 @@ import java.util.List;
 import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
+import static java.util.stream.Collectors.toList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
@@ -90,11 +92,11 @@ public class CardsTest {
   public void cardScryFallLinker() throws Exception {
     ObjectMapper objectMapper = createCardsObjectMapper();
 
-//    List<Card> cardsToLink = cards.getAll().stream()
-//      .filter(card -> card.getImageUrls() == null)
-//      .collect(toList());
+    List<Card> cardsToLink = cards.getAll().stream()
+      .filter(card -> StringUtils.isBlank(card.getImageUrl()))
+      .collect(toList());
 
-    List<Card> cardsToLink = cards.getAll();
+//    List<Card> cardsToLink = cards.getAll();
 
     for (int i = 0; i < cardsToLink.size(); i++) {
       Card card = cardsToLink.get(i);
