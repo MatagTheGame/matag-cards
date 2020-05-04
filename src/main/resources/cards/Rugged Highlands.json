@@ -1,9 +1,6 @@
 {
   "name" : "Rugged Highlands",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/9/2/92e5c392-9b17-4554-ac53-d255112636ee.jpg?1568005365",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/9/2/92e5c392-9b17-4554-ac53-d255112636ee.png?1568005365"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/2/92e5c392-9b17-4554-ac53-d255112636ee.jpg?1568005365",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Rugged Highlands enters the battlefield tapped. When Rugged Highlands enters the battlefield, you gain 1 life. TAP: Add RED or GREEN to your mana pool.",

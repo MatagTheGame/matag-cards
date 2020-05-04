@@ -1,9 +1,6 @@
 {
   "name" : "Blazing Volley",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/b/a/ba450179-4591-4e8a-b6ca-66cbef1817f2.jpg?1543675486",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/b/a/ba450179-4591-4e8a-b6ca-66cbef1817f2.png?1543675486"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/f/1fa2a1c1-9a89-4fd5-b546-8fa14b953b5a.jpg?1573511122",
   "colors" : [ "RED" ],
   "cost" : [ "RED" ],
   "types" : [ "SORCERY" ],

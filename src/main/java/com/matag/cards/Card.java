@@ -21,7 +21,7 @@ import java.util.TreeSet;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Card {
   private final String name;
-  private final CardImageUrls imageUrls;
+  private final String imageUrl;
   private final TreeSet<Color> colors;
   private final List<Cost> cost;
   private final TreeSet<Type> types;
@@ -33,14 +33,14 @@ public class Card {
   private final List<Ability> abilities;
 
   @JsonCreator
-  public Card(@JsonProperty("name") String name, @JsonProperty("imageUrls") CardImageUrls imageUrls,
+  public Card(@JsonProperty("name") String name, @JsonProperty("imageUrl") String imageUrl,
       @JsonProperty("colors") TreeSet<Color> colors, @JsonProperty("cost") List<Cost> cost,
       @JsonProperty("types") TreeSet<Type> types, @JsonProperty("subtypes") TreeSet<Subtype> subtypes,
       @JsonProperty("rarity") Rarity rarity, @JsonProperty("ruleText") String ruleText,
       @JsonProperty("power") int power, @JsonProperty("toughness") int toughness,
       @JsonProperty("abilities") List<Ability> abilities) {
     this.name = name;
-    this.imageUrls = imageUrls;
+    this.imageUrl = imageUrl;
     this.colors = colors != null ? colors : new TreeSet<>();
     this.cost = cost != null ? cost : new ArrayList<>();
     this.types = types != null ? types : new TreeSet<>();

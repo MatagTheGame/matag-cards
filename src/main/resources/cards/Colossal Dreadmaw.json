@@ -1,9 +1,6 @@
 {
   "name" : "Colossal Dreadmaw",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/8/0/80d4ce4f-8255-419b-9e7f-544d9798e5c8.jpg?1562302903",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/8/0/80d4ce4f-8255-419b-9e7f-544d9798e5c8.png?1562302903"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/8/e8c2b329-4a5b-4435-9a58-f5e1262fd4c4.jpg?1573513343",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

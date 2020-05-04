@@ -1,9 +1,6 @@
 {
   "name" : "Tibalt's Rager",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/2/9/2985520d-dfce-414e-a4ac-61695be67406.jpg?1557576829",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/2/9/2985520d-dfce-414e-a4ac-61695be67406.png?1557576829"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/7/7770a116-db93-4b2b-b3d8-0dbb0bebaaab.jpg?1573512763",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS" ],
   "types" : [ "CREATURE" ],

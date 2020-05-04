@@ -1,9 +1,6 @@
 {
   "name" : "Generous Stray",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg?1572893345",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/2/3289db66-231f-4370-aca6-644d75bee293.png?1572893345"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg?1572893345",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

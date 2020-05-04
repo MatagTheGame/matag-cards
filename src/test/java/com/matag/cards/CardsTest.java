@@ -9,7 +9,7 @@ import com.matag.cards.ability.selector.SelectorType;
 import com.matag.cards.ability.target.Target;
 import com.matag.cards.ability.trigger.Trigger;
 import com.matag.cards.properties.*;
-import com.matag.downloader.CardImageLinker;
+import com.matag.downloader.CardScryFallLinker;
 import org.assertj.core.api.Assertions;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -25,7 +25,6 @@ import java.util.List;
 import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
-import static java.util.stream.Collectors.toList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
@@ -91,24 +90,29 @@ public class CardsTest {
   public void cardImageLinker() throws Exception {
     ObjectMapper objectMapper = createCardsObjectMapper();
 
-    List<Card> cardsWithoutImage = cards.getAll().stream()
-      .filter(card -> card.getImageUrls() == null)
-      .collect(toList());
+//    List<Card> cardsToLink = cards.getAll().stream()
+//      .filter(card -> card.getImageUrls() == null)
+//      .collect(toList());
 
-    for (int i = 0; i < cardsWithoutImage.size(); i++) {
-      Card card = cardsWithoutImage.get(i);
-      CardImageLinker cardImageLinker = new CardImageLinker(card);
-      CardImageUrls imageUrls = new CardImageUrls(cardImageLinker.getLowResolution(), cardImageLinker.getHighResolution());
-      Card cardWithImage = card.toBuilder().imageUrls(imageUrls).build();
+    List<Card> cardsToLink = cards.getAll();
+
+    for (int i = 0; i < cardsToLink.size(); i++) {
+      Card card = cardsToLink.get(i);
+      CardScryFallLinker cardScryFallLinker = new CardScryFallLinker(card);
+      Card cardWithImage = card.toBuilder()
+          .imageUrl(cardScryFallLinker.getImage())
+//          .types(cardScryFallLinker.getTypes())
+//          .subtypes(cardScryFallLinker.getSubtypes())
+          .build();
       String cardJson = objectMapper.writeValueAsString(cardWithImage);
       Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson.getBytes());
-      System.out.println("Downloaded " + (i + 1) + " of " + cardsWithoutImage.size());
+      System.out.println("Downloaded " + (i + 1) + " of " + cardsToLink.size());
     }
   }
 
   private void validateCard(Card card) {
     String name = card.getName();
-    if (card.getImageUrls() == null) {
+    if (card.getImageUrl() == null) {
       throw new RuntimeException("Card '" + name + "' does not have an imageUrl. Run cardImageLinker");
     }
 

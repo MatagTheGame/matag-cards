@@ -30,7 +30,7 @@ After adding the card do not forget to add it as well on the related sets.
 
 
 When a card is added the `imageUrls` can be removed from the json and automatically fetched from the server by running
-`CardsTests.cardImageLinker()` test.
+`CardsTests.cardScryFallLinker()` test.
 
 
 

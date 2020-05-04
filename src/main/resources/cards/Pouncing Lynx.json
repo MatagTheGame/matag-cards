@@ -1,9 +1,6 @@
 {
   "name" : "Pouncing Lynx",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/9/3/9383956f-90bc-40e4-ae5c-503e98e21832.jpg?1557576029",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/9/3/9383956f-90bc-40e4-ae5c-503e98e21832.png?1557576029"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/3/9383956f-90bc-40e4-ae5c-503e98e21832.jpg?1557576029",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

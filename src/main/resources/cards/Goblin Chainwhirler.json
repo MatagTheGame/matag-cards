@@ -1,9 +1,6 @@
 {
   "name" : "Goblin Chainwhirler",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/8/b/8bdb2883-3cfd-4fb0-9f99-6a57277f7fe4.jpg?1562739277",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/8/b/8bdb2883-3cfd-4fb0-9f99-6a57277f7fe4.png?1562739277"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8bdb2883-3cfd-4fb0-9f99-6a57277f7fe4.jpg?1562739277",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "RED" ],
   "types" : [ "CREATURE" ],

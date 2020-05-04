@@ -1,9 +1,6 @@
 {
   "name" : "Plummet",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/a/8/a8b2f186-4e04-49cb-a206-257cfb7e9361.jpg?1581480847",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/a/8/a8b2f186-4e04-49cb-a206-257cfb7e9361.png?1581480847"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/8/a8b2f186-4e04-49cb-a206-257cfb7e9361.jpg?1581480847",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS" ],
   "types" : [ "INSTANT" ],

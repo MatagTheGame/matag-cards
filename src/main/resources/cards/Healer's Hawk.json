@@ -1,9 +1,6 @@
 {
   "name" : "Healer's Hawk",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/3/3313bd5c-b657-47a3-822a-dd0d9165492a.jpg?1572892563",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/3/3313bd5c-b657-47a3-822a-dd0d9165492a.png?1572892563"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/7/671dd4af-c16e-4dae-ab7d-bcb1f72a1b55.jpg?1573577901",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE" ],
   "types" : [ "CREATURE" ],

@@ -1,9 +1,6 @@
 {
   "name" : "Scoured Barrens",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/b/3b9edd33-a64e-4526-a89f-edd31ac4b175.jpg?1563899941",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/b/3b9edd33-a64e-4526-a89f-edd31ac4b175.png?1563899941"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/f/6fad82a9-82c5-41d9-9eba-c0003370eb27.jpg?1573517855",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Scoured Barrens enters the battlefield tapped. When Scoured Barrens enters the battlefield, you gain 1 life. TAP: Add WHITE or BLACK to your mana pool.",

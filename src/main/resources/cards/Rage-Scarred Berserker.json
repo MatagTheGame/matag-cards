@@ -1,9 +1,6 @@
 {
   "name" : "Rage-Scarred Berserker",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/1/f/1f76d7c4-a5d6-4144-b5f3-e43b96b695b7.jpg?1581479940",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/1/f/1f76d7c4-a5d6-4144-b5f3-e43b96b695b7.png?1581479940"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/f/1f76d7c4-a5d6-4144-b5f3-e43b96b695b7.jpg?1581479940",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

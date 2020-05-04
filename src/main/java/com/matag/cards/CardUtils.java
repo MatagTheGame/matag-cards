@@ -1,6 +1,5 @@
 package com.matag.cards;
 
-import com.matag.cards.properties.CardImageUrls;
 import com.matag.cards.properties.Color;
 import com.matag.cards.properties.Rarity;
 import com.matag.cards.properties.Type;
@@ -16,8 +15,7 @@ import static java.util.Collections.emptyList;
 
 public class CardUtils {
   public static Card hiddenCard() {
-    CardImageUrls backImageUrls = new CardImageUrls("/img/card-back.jpg", "/img/card-back.jpg");
-    return new Card("card", backImageUrls, new TreeSet<>(), emptyList(), new TreeSet<>(), new TreeSet<>(), Rarity.COMMON, "", 0, 0, emptyList());
+    return new Card("card", "/img/card-back.jpg", new TreeSet<>(), emptyList(), new TreeSet<>(), new TreeSet<>(), Rarity.COMMON, "", 0, 0, emptyList());
   }
 
   public static List<Color> colorsOfManaThatCanGenerate(Card card) {

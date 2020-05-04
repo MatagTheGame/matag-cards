@@ -1,9 +1,6 @@
 {
   "name" : "Unlikely Aid",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/9/c/9c260c5c-e796-4f81-9e15-0c5be75106b9.jpg?1557576580",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/9/c/9c260c5c-e796-4f81-9e15-0c5be75106b9.png?1557576580"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/c/9c260c5c-e796-4f81-9e15-0c5be75106b9.jpg?1557576580",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "INSTANT" ],

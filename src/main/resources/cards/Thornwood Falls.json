@@ -1,9 +1,6 @@
 {
   "name" : "Thornwood Falls",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/f/5/f5159db6-a87f-40eb-8c5c-821dfb67ff6d.jpg?1572482756",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/f/5/f5159db6-a87f-40eb-8c5c-821dfb67ff6d.png?1572482756"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/c/8c1d8784-d129-4df7-838e-36b4260e6e6c.jpg?1573517897",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Thornwood Falls enters the battlefield tapped. When Thornwood Falls enters the battlefield, you gain 1 life. TAP: Add GREEN or BLUE to your mana pool.",

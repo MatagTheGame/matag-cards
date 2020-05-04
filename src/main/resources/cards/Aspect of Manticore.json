@@ -1,9 +1,6 @@
 {
   "name" : "Aspect of Manticore",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/f/6/f67d0091-1925-44a5-89f3-21c2afd5665c.jpg?1581480076",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/f/6/f67d0091-1925-44a5-89f3-21c2afd5665c.png?1581480076"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/6/f67d0091-1925-44a5-89f3-21c2afd5665c.jpg?1581480076",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

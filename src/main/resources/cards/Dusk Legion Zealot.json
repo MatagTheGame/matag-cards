@@ -1,9 +1,6 @@
 {
   "name" : "Dusk Legion Zealot",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/9/8/98a9ef61-1c6d-49d1-b185-2b022482b442.jpg?1562438935",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/9/8/98a9ef61-1c6d-49d1-b185-2b022482b442.png?1562438935"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/9/1908d03c-e8ed-43c7-bcae-194d826a152b.jpg?1573509528",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "CREATURE" ],

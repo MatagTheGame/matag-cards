@@ -1,9 +1,6 @@
 {
   "name" : "Ancient Brontodon",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/9/39421ce8-86d5-4739-b6fd-78d63c0bb258.jpg?1562553559",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/9/39421ce8-86d5-4739-b6fd-78d63c0bb258.png?1562553559"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0a571223-1f43-4a47-a09c-a7ccb9edd298.jpg?1573513022",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

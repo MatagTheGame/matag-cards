@@ -1,9 +1,6 @@
 {
   "name" : "Sylvan Brushstrider",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/8/b/8bc288a3-ea56-450a-96fd-c2123121f663.jpg?1572893566",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/8/b/8bc288a3-ea56-450a-96fd-c2123121f663.png?1572893566"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8bc288a3-ea56-450a-96fd-c2123121f663.jpg?1584831296",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

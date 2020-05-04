@@ -1,9 +1,6 @@
 {
   "name" : "Snapping Drake",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/e/f/ef46580c-a204-4b0b-8526-2310b1ca32b4.jpg?1563900350",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/e/f/ef46580c-a204-4b0b-8526-2310b1ca32b4.png?1563900350"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/5/05b05c26-4179-4faf-9de5-a83b4614f6bd.jpg?1573508440",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

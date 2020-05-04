@@ -1,9 +1,6 @@
 {
   "name" : "Ravenous Chupacabra",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/f/4/f4846664-4463-4521-bb3f-3a4d00fa418d.jpg?1562443062",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/f/4/f4846664-4463-4521-bb3f-3a4d00fa418d.png?1562443062"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/6/06c5f722-949d-41c9-9444-c9c9f1d3baf5.jpg?1573510295",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

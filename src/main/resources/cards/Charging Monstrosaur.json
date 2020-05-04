@@ -1,9 +1,6 @@
 {
   "name" : "Charging Monstrosaur",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/d/5/d5222448-95d1-4b63-ab76-d5060febcf38.jpg?1562564658",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/d/5/d5222448-95d1-4b63-ab76-d5060febcf38.png?1562564658"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/8/98a55e1c-ec67-4300-9820-e5812438ad18.jpg?1573511338",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

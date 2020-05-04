@@ -1,9 +1,6 @@
 {
   "name" : "Mighty Leap",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/d/c/dc45dcdd-ed92-43f6-b6d2-670b3252ed27.jpg?1562304785",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/d/c/dc45dcdd-ed92-43f6-b6d2-670b3252ed27.png?1562304785"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/c/dc45dcdd-ed92-43f6-b6d2-670b3252ed27.jpg?1562304785",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "INSTANT" ],

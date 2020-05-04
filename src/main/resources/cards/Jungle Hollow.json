@@ -1,9 +1,6 @@
 {
   "name" : "Jungle Hollow",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/7/f/7fc11a2d-7592-46ca-9e9c-fa14c21dc38c.jpg?1568005201",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/7/f/7fc11a2d-7592-46ca-9e9c-fa14c21dc38c.png?1568005201"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7c3df5f-baa6-4cbd-8ecf-cdf590475172.jpg?1573517786",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Jungle Hollow enters the battlefield tapped. When Jungle Hollow enters the battlefield, you gain 1 life. TAP: Add BLACK or GREEN to your mana pool.",

@@ -1,9 +1,6 @@
 {
   "name" : "Angelic Gift",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/5/35100197-7914-450e-9205-57cb4fc345d6.jpg?1563898198",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/5/35100197-7914-450e-9205-57cb4fc345d6.png?1563898198"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7391a75-bc22-47dc-a818-7a5d3ea076c8.jpg?1573504745",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

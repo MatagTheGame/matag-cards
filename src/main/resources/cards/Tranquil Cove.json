@@ -1,9 +1,6 @@
 {
   "name" : "Tranquil Cove",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/6/36c70a1d-c129-4c97-a190-6b3eaa83d48c.jpg?1568005455",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/6/36c70a1d-c129-4c97-a190-6b3eaa83d48c.png?1568005455"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/6/36c70a1d-c129-4c97-a190-6b3eaa83d48c.jpg?1568005455",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Tranquil Cove enters the battlefield tapped. When Tranquil Cove enters the battlefield, you gain 1 life. TAP: Add WHITE or BLUE to your mana pool.",

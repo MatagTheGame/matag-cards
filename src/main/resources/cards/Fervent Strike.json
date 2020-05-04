@@ -1,9 +1,6 @@
 {
   "name" : "Fervent Strike",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/e/4/e4f76e51-a726-4a5f-ae2b-2e826e89f5f7.jpg?1562744490",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/e/4/e4f76e51-a726-4a5f-ae2b-2e826e89f5f7.png?1562744490"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/1/2137f1f1-17ec-4357-a264-66cb422d3978.jpg?1573511594",
   "colors" : [ "RED" ],
   "cost" : [ "RED" ],
   "types" : [ "INSTANT" ],

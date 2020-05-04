@@ -1,9 +1,6 @@
 {
   "name" : "Checkpoint Officer",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.jpg?1586456597",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.png?1586456597"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.jpg?1586456597",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

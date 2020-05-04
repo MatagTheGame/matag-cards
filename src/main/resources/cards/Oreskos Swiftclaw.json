@@ -1,9 +1,6 @@
 {
   "name" : "Oreskos Swiftclaw",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/0/e/0ea1dfb4-1983-41f7-956c-f2a1d1489b54.jpg?1562300343",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/0/e/0ea1dfb4-1983-41f7-956c-f2a1d1489b54.png?1562300343"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/e/1ee9cc04-a9b8-4dca-a4d6-324deb6a1b17.jpg?1573506097",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

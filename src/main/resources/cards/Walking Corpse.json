@@ -1,9 +1,6 @@
 {
   "name" : "Walking Corpse",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/f/4/f44e94f0-5f64-4991-aa45-c2b05879be40.jpg?1563900409",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/f/4/f44e94f0-5f64-4991-aa45-c2b05879be40.png?1563900409"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2f2613c5-7ff0-46bf-ad1e-2cbf7895dc0f.jpg?1573510849",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "CREATURE" ],

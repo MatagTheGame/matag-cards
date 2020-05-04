@@ -1,9 +1,6 @@
 {
   "name" : "Child of Night",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/a/f/afebf1a5-eb9a-48c6-a26a-55b75408992b.jpg?1572892915",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/a/f/afebf1a5-eb9a-48c6-a26a-55b75408992b.png?1572892915"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/7/1796088b-83b5-4151-8dcb-90df21e9a283.jpg?1573509182",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "CREATURE" ],

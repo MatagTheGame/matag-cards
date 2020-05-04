@@ -1,9 +1,6 @@
 {
   "name" : "Daggerback Basilisk",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/7/b/7bc8325b-c7a8-49a5-8a54-a419800ffb93.jpg?1562302881",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/7/b/7bc8325b-c7a8-49a5-8a54-a419800ffb93.png?1562302881"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/e/3e6e079c-9a68-4069-94cb-990b1f72f0bd.jpg?1573513435",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

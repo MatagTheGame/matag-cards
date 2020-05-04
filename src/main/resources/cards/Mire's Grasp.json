@@ -1,9 +1,6 @@
 {
   "name" : "Mire's Grasp",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/0/a/0ae0c536-612d-4916-a8da-5aaaf14218b1.jpg?1581479882",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/0/a/0ae0c536-612d-4916-a8da-5aaaf14218b1.png?1581479882"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0ae0c536-612d-4916-a8da-5aaaf14218b1.jpg?1581479882",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

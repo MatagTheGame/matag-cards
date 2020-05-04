@@ -1,9 +1,6 @@
 {
   "name" : "Thirsting Shade",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/a/9/a920c2e6-4a1f-487c-ad3f-b772443f0633.jpg?1572893131",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/a/9/a920c2e6-4a1f-487c-ad3f-b772443f0633.png?1572893131"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a920c2e6-4a1f-487c-ad3f-b772443f0633.jpg?1584830729",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK" ],
   "types" : [ "CREATURE" ],

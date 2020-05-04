@@ -1,9 +1,6 @@
 {
   "name" : "Inspired Charge",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/4/3/43479f67-57b2-4a99-8928-10fc9dde33b9.jpg?1563898352",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/4/3/43479f67-57b2-4a99-8928-10fc9dde33b9.png?1563898352"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/8/a8224bc7-f96a-41e1-9a9e-0d9cbe9f2933.jpg?1573505717",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

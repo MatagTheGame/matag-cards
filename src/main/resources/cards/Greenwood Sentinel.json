@@ -1,9 +1,6 @@
 {
   "name" : "Greenwood Sentinel",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/e/9/e9a1a70d-c146-453e-84c4-71cae4e0afaa.jpg?1563899414",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/e/9/e9a1a70d-c146-453e-84c4-71cae4e0afaa.png?1563899414"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/f/ffa93223-5a6d-4999-b64f-d81edfe317ea.jpg?1573513805",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

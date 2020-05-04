@@ -1,9 +1,6 @@
 {
   "name" : "Terror of Mount Velus",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/3/3/332dc6c3-7802-4bde-aa4e-0feab70c216f.jpg?1580182434",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/3/3/332dc6c3-7802-4bde-aa4e-0feab70c216f.png?1580182434"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/3/332dc6c3-7802-4bde-aa4e-0feab70c216f.jpg?1580182434",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

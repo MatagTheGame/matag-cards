@@ -1,9 +1,6 @@
 {
   "name" : "Uncaged Fury",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/8/3/837557f2-6151-489c-a997-00862173cd15.jpg?1563899347",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/8/3/837557f2-6151-489c-a997-00862173cd15.png?1563899347"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/1/b18646ff-c8ff-4541-b22c-f12122d74754.jpg?1573512783",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

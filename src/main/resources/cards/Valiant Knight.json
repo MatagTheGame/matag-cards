@@ -1,9 +1,6 @@
 {
   "name" : "Valiant Knight",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.jpg?1562302667",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.png?1562302667"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.jpg?1562302667",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

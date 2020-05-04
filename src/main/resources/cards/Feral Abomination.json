@@ -1,9 +1,6 @@
 {
   "name" : "Feral Abomination",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/b/2/b2890cb5-7899-42f4-9686-a8b5ac796c23.jpg?1563898923",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/b/2/b2890cb5-7899-42f4-9686-a8b5ac796c23.png?1563898923"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/2/221d7697-2a3b-4844-b31c-0ca16cce8100.jpg?1573509623",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

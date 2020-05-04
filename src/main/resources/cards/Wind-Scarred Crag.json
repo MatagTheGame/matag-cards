@@ -1,9 +1,6 @@
 {
   "name" : "Wind-Scarred Crag",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/7/5/75f5875e-487f-4586-95f3-3627050a6744.jpg?1572482730",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/7/5/75f5875e-487f-4586-95f3-3627050a6744.png?1572482730"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/75f5875e-487f-4586-95f3-3627050a6744.jpg?1572482730",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Wind-Scarred Crag enters the battlefield tapped. When Wind-Scarred Crag enters the battlefield, you gain 1 life. TAP: Add RED or WHITE to your mana pool.",

@@ -1,9 +1,6 @@
 {
   "name" : "Indomitable Will",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/4/7/47772a34-c72f-44e8-b272-4ef2d2af5c82.jpg?1581479150",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/4/7/47772a34-c72f-44e8-b272-4ef2d2af5c82.png?1581479150"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/7/47772a34-c72f-44e8-b272-4ef2d2af5c82.jpg?1581479150",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

@@ -1,9 +1,6 @@
 {
   "name" : "Fire Elemental",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/4/d/4df16df8-3270-4a09-8167-5b6a2068edb9.jpg?1563899167",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/4/d/4df16df8-3270-4a09-8167-5b6a2068edb9.png?1563899167"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/e/3e83e706-067f-41a9-8ffb-e3cd308282c0.jpg?1573511646",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,9 +1,6 @@
 {
   "name" : "Blossoming Sands",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/0/1/01a33a23-994f-44f4-89c0-3f40ba1fbad3.jpg?1568005036",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/0/1/01a33a23-994f-44f4-89c0-3f40ba1fbad3.png?1568005036"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/e/1e10cef4-355c-4c92-af8d-fcc9a1fa5065.jpg?1573517668",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Blossoming Sands enters the battlefield tapped. When Blossoming Sands enters the battlefield, you gain 1 life. TAP: Add GREEN or WHITE to your mana pool.",

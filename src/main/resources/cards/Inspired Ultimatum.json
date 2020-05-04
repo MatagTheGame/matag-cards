@@ -1,9 +1,6 @@
 {
   "name" : "Inspired Ultimatum",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/d/d/dd64f064-8f05-41ef-b95b-1b723137f846.jpg?1586524450",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/d/d/dd64f064-8f05-41ef-b95b-1b723137f846.png?1586524450"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/d/dd64f064-8f05-41ef-b95b-1b723137f846.jpg?1587945027",
   "colors" : [ "BLUE", "RED", "GREEN" ],
   "cost" : [ "BLUE", "BLUE", "RED", "RED", "RED", "GREEN", "GREEN" ],
   "types" : [ "SORCERY" ],

@@ -1,9 +1,6 @@
 {
   "name" : "Savai Sabertooth",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/d/4/d46702b0-7e10-462a-9aac-7564efe91804.jpg?1585921270",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/d/4/d46702b0-7e10-462a-9aac-7564efe91804.png?1585921270"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/4/d46702b0-7e10-462a-9aac-7564efe91804.jpg?1585921270",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

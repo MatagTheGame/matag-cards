@@ -1,9 +1,6 @@
 {
   "name" : "Ardenvale Paladin",
-  "imageUrls" : {
-    "lowResolution" : "https://img.scryfall.com/cards/normal/front/a/3/a32fa360-6c41-4146-931b-c19e9a766803.jpg?1572489621",
-    "highResolution" : "https://img.scryfall.com/cards/png/front/a/3/a32fa360-6c41-4146-931b-c19e9a766803.png?1572489621"
-  },
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a32fa360-6c41-4146-931b-c19e9a766803.jpg?1572489621",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
