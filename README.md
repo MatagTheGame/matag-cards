@@ -22,16 +22,13 @@ If you are brave enough and want to add a missing card, here's some tips.
 
 Cards are in [cards/src/main/resources](src/main/resources/cards).
 
-Cards in json format and it's a bit of a guessing game figuring out what abilities have already been implemented.
+They are in json format and it's a bit of a guessing game figuring out what abilities have already been implemented.
 The best thing is to perform a text search on this folder for a similar card.
 
-After adding the card do not forget to add it as well on the related sets.
-
-
-
-When a card is added the `imageUrls` can be removed from the json and automatically fetched from the server by running
-`CardsTests.cardScryFallLinker()` test.
-
+Few steps to follow:
+ 1. Create a new JsonFile with the exact name of the card.
+ 2. Fill just the name.
+ 3. Run `CardsTest.cardScryFallLinker()`. This will populate basic card details. 
 
 
 After a card is coded is a very good idea to test it by importing the `cards` artifact into `game` starting the app in test mode:

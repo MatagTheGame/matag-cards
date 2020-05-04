@@ -87,7 +87,7 @@ public class CardsTest {
 
   @Test
   @Ignore
-  public void cardImageLinker() throws Exception {
+  public void cardScryFallLinker() throws Exception {
     ObjectMapper objectMapper = createCardsObjectMapper();
 
 //    List<Card> cardsToLink = cards.getAll().stream()
