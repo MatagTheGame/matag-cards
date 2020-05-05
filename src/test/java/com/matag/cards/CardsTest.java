@@ -109,6 +109,7 @@ public class CardsTest {
           .toughness(cardScryFallLinker.getToughness())
           .rarity(cardScryFallLinker.getRarity())
           .ruleText(cardScryFallLinker.getOracleText())
+          .colors(cardScryFallLinker.getColors())
           .build();
       String cardJson = objectMapper.writeValueAsString(cardWithImage);
       Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson.getBytes());

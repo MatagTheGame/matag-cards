@@ -3,6 +3,7 @@ package com.matag.downloader;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matag.cards.Card;
+import com.matag.cards.properties.Color;
 import com.matag.cards.properties.Rarity;
 import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
@@ -28,6 +29,7 @@ public class CardScryFallLinker {
   private final Integer toughness;
   private final Rarity rarity;
   private final String oracleText;
+  private final TreeSet<Color> colors;
 
   @SneakyThrows
   public CardScryFallLinker(Card card) {
@@ -42,6 +44,7 @@ public class CardScryFallLinker {
       toughness = intOrZero(jsonNode, "toughness");
       rarity = Rarity.valueOf(jsonNode.path("rarity").asText().toUpperCase());
       oracleText = convertOracleText(jsonNode.path("oracle_text").asText());
+      colors = convertColors(jsonNode.path("colors"));
 
     } catch (Exception e) {
       System.err.println("Error loading card: " + card.getName());
@@ -84,5 +87,31 @@ public class CardScryFallLinker {
     oracleText = oracleText.replaceAll(" [.]+", ".");
     oracleText = oracleText.replaceAll("\\.[.]+", ".");
     return oracleText.trim();
+  }
+
+  private TreeSet<Color> convertColors(JsonNode jsonColors) {
+    TreeSet<Color> colors = new TreeSet<>();
+    for (JsonNode color : jsonColors) {
+      switch (color.asText()) {
+        case "W":
+          colors.add(Color.WHITE);
+          break;
+        case "U":
+          colors.add(Color.BLUE);
+          break;
+        case "B":
+          colors.add(Color.BLACK);
+          break;
+        case "R":
+          colors.add(Color.RED);
+          break;
+        case "G":
+          colors.add(Color.GREEN);
+          break;
+        default:
+          throw new RuntimeException("Color " + color.asText() + " not recognised");
+      }
+    }
+    return colors;
   }
 }
