@@ -2,7 +2,7 @@
   "name" : "Murder",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/2/320e195e-65c7-4220-bdc7-fe1e02a4adfc.jpg?1573510084",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "COLORLESS" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature.",

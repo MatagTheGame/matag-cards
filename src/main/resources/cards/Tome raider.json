@@ -2,7 +2,7 @@
   "name" : "Tome raider",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/0/e04ad850-5801-4654-a388-f86be20a43bf.jpg?1572490015",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "FAERIE" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Ruinous Ultimatum",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/0/50c1d6ca-7789-46b5-bc89-85cc3915cb85.jpg?1586457817",
   "colors" : [ "WHITE", "BLACK", "RED" ],
-  "cost" : [ "RED", "RED", "WHITE", "WHITE", "WHITE", "BLACK", "BLACK" ],
+  "cost" : [ "WHITE", "WHITE", "WHITE", "BLACK", "BLACK", "RED", "RED" ],
   "types" : [ "SORCERY" ],
   "rarity" : "RARE",
   "ruleText" : "Destroy all nonland permanents your opponents control.",

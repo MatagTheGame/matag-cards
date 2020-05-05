@@ -2,7 +2,7 @@
   "name" : "Inspired Ultimatum",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/d/dd64f064-8f05-41ef-b95b-1b723137f846.jpg?1587945027",
   "colors" : [ "WHITE", "BLUE", "RED" ],
-  "cost" : [ "BLUE", "BLUE", "RED", "RED", "RED", "GREEN", "GREEN" ],
+  "cost" : [ "WHITE", "WHITE", "BLUE", "BLUE", "RED", "RED", "RED" ],
   "types" : [ "SORCERY" ],
   "rarity" : "RARE",
   "ruleText" : "Target player gains 5 life, Inspired Ultimatum deals 5 damage to any target, then you draw five cards.",

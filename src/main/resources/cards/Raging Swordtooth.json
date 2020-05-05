@@ -2,7 +2,7 @@
   "name" : "Raging Swordtooth",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/a/2a658710-bb9a-4f58-8e42-7bb686923329.jpg?1573515569",
   "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "COLORLESS" ],
+  "cost" : [ "RED", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "UNCOMMON",

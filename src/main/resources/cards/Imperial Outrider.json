@@ -2,7 +2,7 @@
   "name" : "Imperial Outrider",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/d/0dd3aca5-516f-4500-9d7f-95630401d3ae.jpg?1564023031",
   "colors" : [ "WHITE" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",

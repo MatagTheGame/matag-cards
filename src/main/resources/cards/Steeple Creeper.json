@@ -2,7 +2,7 @@
   "name" : "Steeple Creeper",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/4/f4afafb4-3fc0-4ccf-a942-e4bd2f146d89.jpg?1584831281",
   "colors" : [ "GREEN" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "FROG", "SNAKE" ],
   "rarity" : "COMMON",
