@@ -4,7 +4,7 @@
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
+  "rarity" : "COMMON",
   "ruleText" : "Target creature gets +1/+1 and gains double strike until end of turn.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",

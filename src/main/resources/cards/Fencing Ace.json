@@ -4,7 +4,7 @@
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "UNCOMMON",
+  "rarity" : "COMMON",
   "ruleText" : "Double strike",
   "power" : 1,
   "toughness" : 1,

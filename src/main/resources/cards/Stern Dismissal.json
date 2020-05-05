@@ -4,7 +4,7 @@
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE" ],
   "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
+  "rarity" : "COMMON",
   "ruleText" : "Return target creature or enchantment an opponent controls to its owner's hand.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",

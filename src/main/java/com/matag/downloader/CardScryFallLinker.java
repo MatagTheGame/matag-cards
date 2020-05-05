@@ -3,6 +3,7 @@ package com.matag.downloader;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.matag.cards.Card;
+import com.matag.cards.properties.Rarity;
 import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
 import lombok.Getter;
@@ -25,6 +26,7 @@ public class CardScryFallLinker {
   private final TreeSet<Subtype> subtypes;
   private final Integer power;
   private final Integer toughness;
+  private final Rarity rarity;
 
   @SneakyThrows
   public CardScryFallLinker(Card card) {
@@ -37,6 +39,7 @@ public class CardScryFallLinker {
       subtypes = convertSubtype(scryFallTypesSplit);
       power = intOrZero(jsonNode, "power");
       toughness = intOrZero(jsonNode, "toughness");
+      rarity = Rarity.valueOf(jsonNode.path("rarity").asText().toUpperCase());
 
     } catch (Exception e) {
       System.err.println("Error loading card: " + card.getName());

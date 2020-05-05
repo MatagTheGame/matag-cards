@@ -4,7 +4,7 @@
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE" ],
   "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
+  "rarity" : "UNCOMMON",
   "ruleText" : "Target blocking creature gets +7/+7 until end of turn.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",

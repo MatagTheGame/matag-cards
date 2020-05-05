@@ -4,7 +4,7 @@
   "colors" : [ "RED" ],
   "cost" : [ "RED" ],
   "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
+  "rarity" : "COMMON",
   "ruleText" : "Target creature gets +1/+0 and gains first strike and haste until end of turn.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
