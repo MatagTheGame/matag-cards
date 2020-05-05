@@ -5,7 +5,7 @@
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
-  "ruleText" : "Draw 2 cards.",
+  "ruleText" : "Draw two cards.",
   "abilities" : [ {
     "abilityType" : "DRAW_X_CARDS",
     "parameters" : [ "2" ],

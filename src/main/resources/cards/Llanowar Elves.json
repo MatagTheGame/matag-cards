@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "ELF" ],
   "rarity" : "COMMON",
-  "ruleText" : "Tap: Add GREEN to your mana pool.",
+  "ruleText" : "{T}: Add {G}.",
   "power" : 1,
   "toughness" : 1,
   "abilities" : [ {

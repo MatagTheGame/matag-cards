@@ -6,7 +6,6 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CLERIC", "HUMAN" ],
   "rarity" : "COMMON",
-  "ruleText" : ".",
   "power" : 2,
   "toughness" : 2
 }

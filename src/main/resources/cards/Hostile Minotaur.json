@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MINOTAUR" ],
   "rarity" : "COMMON",
-  "ruleText" : "Haste.",
+  "ruleText" : "Haste",
   "power" : 3,
   "toughness" : 3,
   "abilities" : [ {

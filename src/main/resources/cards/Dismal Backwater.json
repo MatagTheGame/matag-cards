@@ -3,7 +3,7 @@
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/0/a01d98d3-a999-414b-8f29-636cacd8019b.jpg?1573517696",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
-  "ruleText" : "Dismal Backwater enters the battlefield tapped. When Dismal Backwater enters the battlefield, you gain 1 life. TAP: Add BLUE or BLACK to your mana pool.",
+  "ruleText" : "Dismal Backwater enters the battlefield tapped. When Dismal Backwater enters the battlefield, you gain 1 life. {T}: Add {U} or {B}.",
   "abilities" : [ {
     "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
     "parameters" : [ ":TAPPED" ]

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SPIDER" ],
   "rarity" : "COMMON",
-  "ruleText" : "Reach.",
+  "ruleText" : "Reach",
   "power" : 1,
   "toughness" : 4,
   "abilities" : [ {

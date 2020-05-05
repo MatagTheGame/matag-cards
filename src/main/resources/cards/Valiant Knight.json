@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "RARE",
-  "ruleText" : "Other Knights you control get +1/+1. PAY 3, 2 WHITE: Knights you control gain double strike until end of turn.",
+  "ruleText" : "Other Knights you control get +1/+1. {3}{W}{W}: Knights you control gain double strike until end of turn.",
   "power" : 3,
   "toughness" : 4,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "COMMON",
-  "ruleText" : "After what he viewed as Lukka's shocking betrayal, General Kudro enacted stringent security measures at every entry point into Drannith.",
+  "ruleText" : "{1}{W}, {T}: Tap target creature.",
   "power" : 1,
   "toughness" : 2,
   "abilities" : [ {

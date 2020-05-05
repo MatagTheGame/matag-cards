@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DEVIL" ],
   "rarity" : "UNCOMMON",
-  "ruleText" : "When Tibalt's Rager dies, it deals 1 damage to any target. PAY 1 1 RED: Tibalt's Rager gets +2/+0 until end of turn.",
+  "ruleText" : "When Tibalt's Rager dies, it deals 1 damage to any target. {1}{R}: Tibalt's Rager gets +2/+0 until end of turn.",
   "power" : 1,
   "toughness" : 2,
   "abilities" : [ {

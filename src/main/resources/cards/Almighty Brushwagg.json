@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BRUSHWAGG" ],
   "rarity" : "COMMON",
-  "ruleText" : "Trample. PAY 3, 1 GREEN: Almighty Brushwagg gets +3/+3 until end of turn.",
+  "ruleText" : "Trample. {3}{G}: Almighty Brushwagg gets +3/+3 until end of turn.",
   "power" : 1,
   "toughness" : 1,
   "abilities" : [ {

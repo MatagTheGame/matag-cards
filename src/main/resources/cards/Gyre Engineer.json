@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "VEDALKEN", "WIZARD" ],
   "rarity" : "UNCOMMON",
-  "ruleText" : "TAP: Add GREEN and BLUE.",
+  "ruleText" : "{T}: Add {G}{U}.",
   "power" : 1,
   "toughness" : 1,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WIZARD", "ZOMBIE" ],
   "rarity" : "RARE",
-  "ruleText" : "Skeleton creatures you control and other Zombie creatures you control get +1/+1 and have deathtouch.",
+  "ruleText" : "Skeletons you control and other Zombies you control get +1/+1 and have deathtouch.",
   "power" : 2,
   "toughness" : 2,
   "abilities" : [ {

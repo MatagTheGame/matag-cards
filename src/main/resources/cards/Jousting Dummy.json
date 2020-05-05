@@ -5,7 +5,7 @@
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "KNIGHT", "SCARECROW" ],
   "rarity" : "COMMON",
-  "ruleText" : "PAY 3: Jousting Dummy gets +1/+0 until end of turn.",
+  "ruleText" : "{3}: Jousting Dummy gets +1/+0 until end of turn.",
   "power" : 2,
   "toughness" : 1,
   "abilities" : [ {

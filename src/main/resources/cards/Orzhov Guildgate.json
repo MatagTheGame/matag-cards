@@ -4,7 +4,7 @@
   "types" : [ "LAND" ],
   "subtypes" : [ "GATE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Orzhov Guildgate enters the battlefield tapped. TAP: Add WHITE or BLACK to your mana pool.",
+  "ruleText" : "Orzhov Guildgate enters the battlefield tapped. {T}: Add {W} or {B}.",
   "abilities" : [ {
     "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
     "parameters" : [ ":TAPPED" ]

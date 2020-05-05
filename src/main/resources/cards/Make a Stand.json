@@ -5,7 +5,7 @@
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],
   "rarity" : "UNCOMMON",
-  "ruleText" : "Creatures you control get +1/+0 and gain indestructible until end of turn. (Damage and effects that say \"destroy\" don't destroy them.)",
+  "ruleText" : "Creatures you control get +1/+0 and gain indestructible until end of turn.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
     "cardInstanceSelector" : {

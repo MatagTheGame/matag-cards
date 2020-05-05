@@ -5,7 +5,7 @@
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "GARGOYLE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Pay 4: Locthwain Gargoyle gets +2/+0 and gains flying until end of turn.",
+  "ruleText" : "{4}: Locthwain Gargoyle gets +2/+0 and gains flying until end of turn.",
   "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",

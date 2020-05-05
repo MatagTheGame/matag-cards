@@ -4,7 +4,7 @@
   "types" : [ "LAND" ],
   "subtypes" : [ "GATE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Rakdos Guildgate enters the battlefield tapped. TAP: Add BLACK or RED to your mana pool.",
+  "ruleText" : "Rakdos Guildgate enters the battlefield tapped. {T}: Add {B} or {R}.",
   "abilities" : [ {
     "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
     "parameters" : [ ":TAPPED" ]

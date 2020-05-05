@@ -4,7 +4,7 @@
   "types" : [ "LAND" ],
   "subtypes" : [ "GATE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Izzet Guildgate enters the battlefield tapped. TAP: Add BLUE or RED to your mana pool.",
+  "ruleText" : "Izzet Guildgate enters the battlefield tapped. {T}: Add {U} or {R}.",
   "abilities" : [ {
     "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
     "parameters" : [ ":TAPPED" ]

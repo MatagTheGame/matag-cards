@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "ELF" ],
   "rarity" : "COMMON",
-  "ruleText" : "TAP: add GREEN.",
+  "ruleText" : "{T}: Add {G}.",
   "power" : 1,
   "toughness" : 3,
   "abilities" : [ {

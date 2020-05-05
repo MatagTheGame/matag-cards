@@ -5,7 +5,7 @@
   "cost" : [ "BLUE", "BLUE", "RED", "RED", "RED", "GREEN", "GREEN" ],
   "types" : [ "SORCERY" ],
   "rarity" : "RARE",
-  "ruleText" : "Target player gains 5 life. Inspired Ultimatum deals 5 damage to any target. You draw five cards.",
+  "ruleText" : "Target player gains 5 life, Inspired Ultimatum deals 5 damage to any target, then you draw five cards.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

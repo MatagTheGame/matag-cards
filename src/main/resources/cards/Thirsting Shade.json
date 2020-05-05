@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SHADE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Lifelink. PAY 2 1 BLACK: Thirsting Shade gets +1/+1 until end of turn.",
+  "ruleText" : "Lifelink. {2}{B}: Thirsting Shade gets +1/+1 until end of turn.",
   "power" : 1,
   "toughness" : 1,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",
-  "ruleText" : "Flying, haste.",
+  "ruleText" : "Flying, haste",
   "power" : 2,
   "toughness" : 2,
   "abilities" : [ {

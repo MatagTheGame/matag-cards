@@ -6,7 +6,7 @@
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "BIRD" ],
   "rarity" : "COMMON",
-  "ruleText" : "Flying, First strike",
+  "ruleText" : "Flying. First strike",
   "power" : 2,
   "toughness" : 1,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",
-  "ruleText" : "Enchant Creature. Enchanted creature gets +3/+2 and has vigilance.",
+  "ruleText" : "Enchant creature. Enchanted creature gets +3/+2 and has vigilance.",
   "abilities" : [ {
     "abilityType" : "ENCHANTED_CREATURE_GETS",
     "targets" : [ {

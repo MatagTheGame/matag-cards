@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CRAB" ],
   "rarity" : "COMMON",
-  "ruleText" : "Flash.",
+  "ruleText" : "Flash",
   "power" : 1,
   "toughness" : 6,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELEMENTAL" ],
   "rarity" : "UNCOMMON",
-  "ruleText" : "PAY 1 2 RED: Pyroclastic Elemental deals 1 damage to target player.",
+  "ruleText" : "{1}{R}{R}: Pyroclastic Elemental deals 1 damage to target player.",
   "power" : 5,
   "toughness" : 4,
   "abilities" : [ {

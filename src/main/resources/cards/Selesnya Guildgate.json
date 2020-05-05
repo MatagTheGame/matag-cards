@@ -4,7 +4,7 @@
   "types" : [ "LAND" ],
   "subtypes" : [ "GATE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Selesnya Guildgate enters the battlefield tapped. TAP: Add GREEN or WHITE to your mana pool.",
+  "ruleText" : "Selesnya Guildgate enters the battlefield tapped. {T}: Add {G} or {W}.",
   "abilities" : [ {
     "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
     "parameters" : [ ":TAPPED" ]

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ANGEL" ],
   "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. Pay 3 1 WHITE: Put a +1/+1 counter on another target creature with flying.",
+  "ruleText" : "Flying. {3}{W}: Put a +1/+1 counter on another target creature with flying.",
   "power" : 4,
   "toughness" : 4,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "COMMON",
-  "ruleText" : "PAY 2, 1 WHITE: Moorland Inquisitor gains first strike until end of turn.",
+  "ruleText" : "{2}{W}: Moorland Inquisitor gains first strike until end of turn.",
   "power" : 2,
   "toughness" : 2,
   "abilities" : [ {

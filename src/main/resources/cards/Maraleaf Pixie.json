@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "FAERIE" ],
   "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. TAP: Add GREEN or BLUE.",
+  "ruleText" : "Flying. {T}: Add {G} or {U}.",
   "power" : 2,
   "toughness" : 2,
   "abilities" : [ {

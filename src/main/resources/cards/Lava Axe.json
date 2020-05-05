@@ -5,7 +5,7 @@
   "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
-  "ruleText" : "Lava Axe deals 5 damage to target player.",
+  "ruleText" : "Lava Axe deals 5 damage to target player or planeswalker.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

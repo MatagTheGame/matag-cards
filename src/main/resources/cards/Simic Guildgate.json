@@ -4,7 +4,7 @@
   "types" : [ "LAND" ],
   "subtypes" : [ "GATE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Simic Guildgate enters the battlefield tapped. TAP: Add GREEN or BLUE to your mana pool.",
+  "ruleText" : "Simic Guildgate enters the battlefield tapped. {T}: Add {G} or {U}.",
   "abilities" : [ {
     "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
     "parameters" : [ ":TAPPED" ]

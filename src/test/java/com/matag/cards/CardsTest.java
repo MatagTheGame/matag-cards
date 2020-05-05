@@ -88,15 +88,15 @@ public class CardsTest {
   }
 
   @Test
-//  @Ignore
+  @Ignore
   public void cardScryFallLinker() throws Exception {
     ObjectMapper objectMapper = createCardsObjectMapper();
 
-//    List<Card> cardsToLink = cards.getAll().stream()
-//      .filter(card -> StringUtils.isBlank(card.getImageUrl()))
-//      .collect(toList());
+    List<Card> cardsToLink = cards.getAll().stream()
+      .filter(card -> StringUtils.isBlank(card.getImageUrl()))
+      .collect(toList());
 
-    List<Card> cardsToLink = cards.getAll();
+//    List<Card> cardsToLink = cards.getAll();
 
     for (int i = 0; i < cardsToLink.size(); i++) {
       Card card = cardsToLink.get(i);
@@ -108,6 +108,7 @@ public class CardsTest {
           .power(cardScryFallLinker.getPower())
           .toughness(cardScryFallLinker.getToughness())
           .rarity(cardScryFallLinker.getRarity())
+          .ruleText(cardScryFallLinker.getOracleText())
           .build();
       String cardJson = objectMapper.writeValueAsString(cardWithImage);
       Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson.getBytes());

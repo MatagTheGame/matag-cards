@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "PIRATE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Pay 1 1 RED: Fathom Fleet Firebrand gets +1/+0 until end of turn.",
+  "ruleText" : "{1}{R}: Fathom Fleet Firebrand gets +1/+0 until end of turn.",
   "power" : 2,
   "toughness" : 2,
   "abilities" : [ {

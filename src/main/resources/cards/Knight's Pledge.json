@@ -6,7 +6,7 @@
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",
-  "ruleText" : "Draw two cards.",
+  "ruleText" : "Enchant creature. Enchanted creature gets +2/+2.",
   "abilities" : [ {
     "abilityType" : "DRAW_X_CARDS",
     "parameters" : [ "2" ],

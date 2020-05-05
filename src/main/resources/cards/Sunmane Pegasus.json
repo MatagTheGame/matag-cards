@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "PEGASUS" ],
   "rarity" : "COMMON",
-  "ruleText" : "Flying. PAY 1, 1 WHITE: Sunmane Pegasus gains vigilance and lifelink until end of turn.",
+  "ruleText" : "Flying. {1}{W}: Sunmane Pegasus gains vigilance and lifelink until end of turn.",
   "power" : 2,
   "toughness" : 3,
   "abilities" : [ {

@@ -6,7 +6,7 @@
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GOBLIN", "KNIGHT" ],
   "rarity" : "COMMON",
-  "ruleText" : "PAY 1 1 RED: Weaselback Redcap gets +2/+0 until end of turn.",
+  "ruleText" : "{1}{R}: Weaselback Redcap gets +2/+0 until end of turn.",
   "power" : 1,
   "toughness" : 1,
   "abilities" : [ {

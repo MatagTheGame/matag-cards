@@ -27,6 +27,7 @@ public class CardScryFallLinker {
   private final Integer power;
   private final Integer toughness;
   private final Rarity rarity;
+  private final String oracleText;
 
   @SneakyThrows
   public CardScryFallLinker(Card card) {
@@ -40,6 +41,7 @@ public class CardScryFallLinker {
       power = intOrZero(jsonNode, "power");
       toughness = intOrZero(jsonNode, "toughness");
       rarity = Rarity.valueOf(jsonNode.path("rarity").asText().toUpperCase());
+      oracleText = convertOracleText(jsonNode.path("oracle_text").asText());
 
     } catch (Exception e) {
       System.err.println("Error loading card: " + card.getName());
@@ -73,5 +75,14 @@ public class CardScryFallLinker {
 
   private int intOrZero(JsonNode jsonNode, String power) {
     return jsonNode.has(power) ? Integer.parseInt(jsonNode.path(power).asText()) : 0;
+  }
+
+  private String convertOracleText(String oracleText) {
+    oracleText = oracleText.replaceAll("\n", ". ");
+    oracleText = oracleText.replaceAll("\\([^(]+\\)", "");
+    oracleText = oracleText.replaceAll(" [ ]+", " ");
+    oracleText = oracleText.replaceAll(" [.]+", ".");
+    oracleText = oracleText.replaceAll("\\.[.]+", ".");
+    return oracleText.trim();
   }
 }

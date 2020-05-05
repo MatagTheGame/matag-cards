@@ -6,7 +6,7 @@
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],
   "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +1/+0 and has haste. Equip 1",
+  "ruleText" : "Equipped creature gets +1/+0 and has haste. Equip {1}",
   "abilities" : [ {
     "abilityType" : "EQUIPPED_CREATURE_GETS",
     "targets" : [ {
