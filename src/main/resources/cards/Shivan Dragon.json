@@ -7,8 +7,8 @@
   "subtypes" : [ "DRAGON" ],
   "rarity" : "RARE",
   "ruleText" : "Flying. PAY RED: Shivan Dragon gets +1/+0 until end of turn.",
-  "power" : 1,
-  "toughness" : 1,
+  "power" : 5,
+  "toughness" : 5,
   "abilities" : [ {
     "abilityType" : "FLYING"
   }, {

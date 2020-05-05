@@ -7,7 +7,7 @@
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",
   "ruleText" : "First strike",
-  "power" : 1,
+  "power" : 2,
   "toughness" : 1,
   "abilities" : [ {
     "abilityType" : "FIRST_STRIKE"

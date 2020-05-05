@@ -7,8 +7,8 @@
   "subtypes" : [ "ELF", "SCOUT" ],
   "rarity" : "COMMON",
   "ruleText" : "Vigilance.",
-  "power" : 1,
-  "toughness" : 4,
+  "power" : 2,
+  "toughness" : 2,
   "abilities" : [ {
     "abilityType" : "VIGILANCE"
   } ]

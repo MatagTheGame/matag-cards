@@ -8,7 +8,7 @@
   "rarity" : "UNCOMMON",
   "ruleText" : "Flying. When Patagia Tiger enters the battlefield, target Human you control gets +2/+2 until end of turn.",
   "power" : 3,
-  "toughness" : 3,
+  "toughness" : 4,
   "abilities" : [ {
     "abilityType" : "FLYING"
   }, {

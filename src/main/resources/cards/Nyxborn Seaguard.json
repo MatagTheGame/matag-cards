@@ -6,6 +6,6 @@
   "types" : [ "CREATURE", "ENCHANTMENT" ],
   "subtypes" : [ "MERFOLK", "SOLDIER" ],
   "rarity" : "COMMON",
-  "power" : 4,
-  "toughness" : 3
+  "power" : 2,
+  "toughness" : 5
 }

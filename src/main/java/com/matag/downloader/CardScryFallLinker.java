@@ -23,6 +23,8 @@ public class CardScryFallLinker {
   private final String image;
   private final TreeSet<Type> types;
   private final TreeSet<Subtype> subtypes;
+  private final Integer power;
+  private final Integer toughness;
 
   @SneakyThrows
   public CardScryFallLinker(Card card) {
@@ -33,6 +35,8 @@ public class CardScryFallLinker {
       String[] scryFallTypesSplit = jsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
       types = convertType(scryFallTypesSplit);
       subtypes = convertSubtype(scryFallTypesSplit);
+      power = intOrZero(jsonNode, "power");
+      toughness = intOrZero(jsonNode, "toughness");
 
     } catch (Exception e) {
       System.err.println("Error loading card: " + card.getName());
@@ -62,5 +66,9 @@ public class CardScryFallLinker {
         .map(String::toUpperCase)
         .map(Subtype::valueOf)
         .collect(Collectors.toCollection(TreeSet::new));
+  }
+
+  private int intOrZero(JsonNode jsonNode, String power) {
+    return jsonNode.has(power) ? Integer.parseInt(jsonNode.path(power).asText()) : 0;
   }
 }

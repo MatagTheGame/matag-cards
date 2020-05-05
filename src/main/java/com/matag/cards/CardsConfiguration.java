@@ -11,7 +11,7 @@ import java.io.File;
 @ComponentScan(basePackageClasses = {CardsConfiguration.class})
 public class CardsConfiguration {
   public static String getResourcesPath() {
-    return new File("").getAbsolutePath() + "/src/main/resources";
+    return new File("src/main/resources").getAbsolutePath();
   }
 
   @Bean
