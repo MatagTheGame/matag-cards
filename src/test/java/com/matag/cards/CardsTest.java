@@ -47,12 +47,12 @@ public class CardsTest {
 
   @Test
   public void shouldLoadACardWithoutAbilities() {
-    Card card = cards.get("Bishop's Soldier");
-    assertThat(card.getName()).isEqualTo("Bishop's Soldier");
-    Assertions.assertThat(card.getColors()).containsExactly(Color.WHITE);
-    assertThat(card.getCost()).containsExactly(Cost.WHITE, Cost.COLORLESS);
+    Card card = cards.get("Feral Maaka");
+    assertThat(card.getName()).isEqualTo("Feral Maaka");
+    Assertions.assertThat(card.getColors()).containsExactly(Color.RED);
+    assertThat(card.getCost()).containsExactly(Cost.RED, Cost.COLORLESS);
     assertThat(card.getTypes()).containsExactly(Type.CREATURE);
-    Assertions.assertThat(card.getSubtypes()).containsExactlyInAnyOrder(Subtype.SOLDIER, Subtype.VAMPIRE);
+    Assertions.assertThat(card.getSubtypes()).containsExactlyInAnyOrder(Subtype.CAT);
     Assertions.assertThat(card.getRarity()).isEqualTo(Rarity.COMMON);
     assertThat(card.getRuleText()).isNullOrEmpty();
     assertThat(card.getPower()).isEqualTo(2);
