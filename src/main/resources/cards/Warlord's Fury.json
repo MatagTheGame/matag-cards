@@ -8,13 +8,11 @@
   "ruleText" : "Creatures you control gain first strike until end of turn. Draw a card.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "targets" : [ {
-      "cardInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER"
+    },
     "parameters" : [ "FIRST_STRIKE" ],
     "trigger" : {
       "type" : "CAST"

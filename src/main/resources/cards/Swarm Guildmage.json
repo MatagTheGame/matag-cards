@@ -11,12 +11,10 @@
   "toughness" : 2,
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "targets" : [ {
-      "cardInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      }
-    } ],
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ]
+    },
     "parameters" : [ "+1/+0", "MENACE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",

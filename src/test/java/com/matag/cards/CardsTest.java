@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import static com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET;
 import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
@@ -95,6 +96,14 @@ public class CardsTest {
         .forEach(ability -> {
           if (ability.getTargets().isEmpty()) {
             throw new RuntimeException("Card '" + name + "' is missing targets");
+          }
+        });
+
+    card.getAbilities().stream()
+        .filter(ability -> ability.getAbilityType().equals(SELECTED_PERMANENTS_GET))
+        .forEach(ability -> {
+          if (ability.getCardInstanceSelector() == null) {
+            throw new RuntimeException("Card '" + name + "' is missing cardInstanceSelector");
           }
         });
   }
