@@ -13,7 +13,8 @@
     "abilityType" : "SELECTED_PERMANENTS_GET",
     "cardInstanceSelector" : {
       "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ]
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER"
     },
     "parameters" : [ "+1/+0", "MENACE" ],
     "trigger" : {
