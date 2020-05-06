@@ -1,7 +1,7 @@
 {
-  "code": "DOM",
-  "name": "Ixalan",
-  "cards": [
+  "code" : "DOM",
+  "name" : "Ixalan",
+  "cards" : [
     "Arcane Flight",
     "Aven Sentry",
     "Befuddle",
@@ -14,7 +14,9 @@
     "Feral Abomination",
     "Fervent Strike",
     "Fire Elemental",
+    "Frenzied Rage",
     "Gideon's Reproach",
+    "Goblin Chainwhirler",
     "Invoke the Divine",
     "Knight of New Benalia",
     "Kwende, Pride of Femeref",
@@ -22,13 +24,13 @@
     "Lyra Dawnbringer",
     "Mammoth Spider",
     "Mesa Unicorn",
-    "Primordial Wurm",
     "Pardic Wanderer",
+    "Primordial Wurm",
     "Pyromantic Pilgrim",
     "Serra Angel",
     "Short Sword",
     "Sparring Construct",
-    "Tolarian Scolar",
+    "Tolarian Scholar",
     "Warlord's Fury",
     "Yargle, Glutton of Urborg"
   ]

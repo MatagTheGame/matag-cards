@@ -43,26 +43,31 @@ public class CardScryFallLinker {
   private final String oracleText;
   private final Integer power;
   private final Integer toughness;
+  private final List<String> sets;
 
   @SneakyThrows
   public CardScryFallLinker(Card card) {
     try {
-      String file = readHttpResource("https://api.scryfall.com/cards/named?fuzzy=" + URLEncoder.encode(card.getName(), "UTF-8"));
+      String file = readHttpResource("https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode("!\"" + card.getName() + "\"", "UTF-8") + "&unique=prints");
       JsonNode jsonNode = new ObjectMapper().readTree(file);
-      image = jsonNode.path("image_uris").path("large").asText();
-      colors = convertColors(jsonNode.path("colors"));
-      manaCost = convertCost(jsonNode.path("mana_cost").asText());
-      String[] scryFallTypesSplit = jsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
+      checkSearchWorked(jsonNode);
+
+      sets = convertSets(jsonNode);
+
+      JsonNode cardJsonNode = jsonNode.path("data").get(0);
+      image = cardJsonNode.path("image_uris").path("large").asText();
+      colors = convertColors(cardJsonNode.path("colors"));
+      manaCost = convertCost(cardJsonNode.path("mana_cost").asText());
+      String[] scryFallTypesSplit = cardJsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
       types = convertType(scryFallTypesSplit);
       subtypes = convertSubtype(scryFallTypesSplit);
-      rarity = Rarity.valueOf(jsonNode.path("rarity").asText().toUpperCase());
-      oracleText = convertOracleText(jsonNode.path("oracle_text").asText());
-      power = intOrZero(jsonNode, "power");
-      toughness = intOrZero(jsonNode, "toughness");
+      rarity = Rarity.valueOf(cardJsonNode.path("rarity").asText().toUpperCase());
+      oracleText = convertOracleText(cardJsonNode.path("oracle_text").asText());
+      power = intOrZero(cardJsonNode, "power");
+      toughness = intOrZero(cardJsonNode, "toughness");
 
     } catch (Exception e) {
-      System.err.println("Error loading card: " + card.getName());
-      throw e;
+      throw new Exception("Error loading card: " + card.getName(), e);
     }
   }
 
@@ -70,6 +75,22 @@ public class CardScryFallLinker {
   private String readHttpResource(String url) {
     return new BufferedReader(new InputStreamReader(new URL(url).openStream()))
       .lines().collect(Collectors.joining("\n"));
+  }
+
+  private void checkSearchWorked(JsonNode jsonNode) throws Exception {
+    if (intOrZero(jsonNode, "total_cards") == 0) {
+      throw new Exception("Card not found");
+    }
+  }
+
+  private List<String> convertSets(JsonNode jsonNode) {
+    List<String> sets = new ArrayList<>();
+
+    for (int i = 0; i < jsonNode.path("data").size(); i++) {
+      sets.add(jsonNode.path("data").get(i).path("set").asText().toUpperCase());
+    }
+    
+    return sets;
   }
 
   private TreeSet<Color> convertColors(JsonNode jsonColors) {
@@ -131,7 +152,7 @@ public class CardScryFallLinker {
     return oracleText.trim();
   }
 
-  private int intOrZero(JsonNode jsonNode, String power) {
-    return jsonNode.has(power) ? Integer.parseInt(jsonNode.path(power).asText()) : 0;
+  private int intOrZero(JsonNode jsonNode, String field) {
+    return jsonNode.has(field) ? Integer.parseInt(jsonNode.path(field).asText()) : 0;
   }
 }

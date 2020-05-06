@@ -1,32 +1,21 @@
 package com.matag.cards;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.matag.cards.ability.Ability;
 import com.matag.cards.ability.selector.CardInstanceSelector;
 import com.matag.cards.ability.selector.SelectorType;
 import com.matag.cards.ability.target.Target;
 import com.matag.cards.ability.trigger.Trigger;
 import com.matag.cards.properties.*;
-import com.matag.downloader.CardScryFallLinker;
 import org.assertj.core.api.Assertions;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.platform.commons.util.StringUtils;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.List;
-
 import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
-import static java.util.stream.Collectors.toList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
@@ -87,37 +76,6 @@ public class CardsTest {
     );
   }
 
-  @Test
-  @Ignore
-  public void cardScryFallLinker() throws Exception {
-    ObjectMapper objectMapper = createCardsObjectMapper();
-
-    List<Card> cardsToLink = cards.getAll().stream()
-      .filter(card -> StringUtils.isBlank(card.getImageUrl()))
-      .collect(toList());
-
-//    List<Card> cardsToLink = cards.getAll();
-
-    for (int i = 0; i < cardsToLink.size(); i++) {
-      Card card = cardsToLink.get(i);
-      CardScryFallLinker cardScryFallLinker = new CardScryFallLinker(card);
-      Card cardWithImage = card.toBuilder()
-          .imageUrl(cardScryFallLinker.getImage())
-          .types(cardScryFallLinker.getTypes())
-          .subtypes(cardScryFallLinker.getSubtypes())
-          .power(cardScryFallLinker.getPower())
-          .toughness(cardScryFallLinker.getToughness())
-          .rarity(cardScryFallLinker.getRarity())
-          .ruleText(cardScryFallLinker.getOracleText())
-          .colors(cardScryFallLinker.getColors())
-          .cost(cardScryFallLinker.getManaCost())
-          .build();
-      String cardJson = objectMapper.writeValueAsString(cardWithImage);
-      Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson.getBytes());
-      System.out.println("Downloaded " + (i + 1) + " of " + cardsToLink.size());
-    }
-  }
-
   private void validateCard(Card card) {
     String name = card.getName();
     if (card.getImageUrl() == null) {
@@ -139,12 +97,5 @@ public class CardsTest {
             throw new RuntimeException("Card '" + name + "' is missing targets");
           }
         });
-  }
-
-  public ObjectMapper createCardsObjectMapper() {
-    ObjectMapper objectMapper = new ObjectMapper();
-    objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-    objectMapper.setDefaultPropertyInclusion(JsonInclude.Include.NON_DEFAULT);
-    return objectMapper;
   }
 }

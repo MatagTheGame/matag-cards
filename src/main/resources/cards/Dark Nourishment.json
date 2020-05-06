@@ -10,8 +10,7 @@
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
       "cardInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+        "selectorType" : "ANY"
       }
     } ],
     "parameters" : [ "DAMAGE:3" ],

@@ -1,7 +1,7 @@
 {
-  "code": "GRN",
-  "name": "Guild of Ravnica",
-  "cards": [
+  "code" : "GRN",
+  "name" : "Guild of Ravnica",
+  "cards" : [
     "Bartizan Bats",
     "Boros Guildgate",
     "Candlelight Vigil",
@@ -9,6 +9,7 @@
     "Child of Night",
     "Collar the Culprit",
     "Command the Storm",
+    "Dead Weight",
     "Devkarin Dissident",
     "Dimir Guildgate",
     "Douser of Lights",
@@ -21,6 +22,7 @@
     "Hitchclaw Recluse",
     "Izzet Guildgate",
     "Muse Drake",
+    "Precision Bolt",
     "Rubblebelt Boar",
     "Selesnya Guildgate",
     "Skyknight Legionnaire",

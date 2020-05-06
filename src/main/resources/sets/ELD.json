@@ -1,15 +1,15 @@
 {
-  "code": "ELD",
-  "name": "Throne of Eldraine",
-  "cards": [
+  "code" : "ELD",
+  "name" : "Throne of Eldraine",
+  "cards" : [
     "Ardenvale Paladin",
     "Blacklance Paragon",
     "Clockwork Servant",
     "Crystal Slipper",
     "Embereth Paladin",
     "Henge Walker",
-    "Jousting Dummy",
     "Inspiring Veteran",
+    "Jousting Dummy",
     "Knight of the Keep",
     "Lash of Thorns",
     "Locthwain Gargoyle",
@@ -20,10 +20,12 @@
     "Reave Soul",
     "Righteousness",
     "Sporecap Spider",
+    "Thornwood Falls",
     "Tome raider",
     "Vantress Paladin",
     "Venerable Knight",
     "Weaselback Redcap",
+    "Wind-Scarred Crag",
     "Youthful Knight"
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "code": "RNA",
-  "name": "Ravnica Allegiance",
-  "cards": [
+  "code" : "RNA",
+  "name" : "Ravnica Allegiance",
+  "cards" : [
     "Act of Treason",
     "Axebane Beast",
     "Azorius Guildgate",
@@ -22,7 +22,7 @@
     "Gruul Guildgate",
     "Gyre Engineer",
     "Haazda Officer",
-    "Impassionate Orator",
+    "Impassioned Orator",
     "Judith, the Scourge Diva",
     "Mammoth Spider",
     "Mortify",

@@ -1,7 +1,7 @@
 {
-  "code": "WAR",
-  "name": "War of the Spark",
-  "cards": [
+  "code" : "WAR",
+  "name" : "War of the Spark",
+  "cards" : [
     "Azorius Guildgate",
     "Banehound",
     "Battlefield Promotion",
@@ -22,15 +22,16 @@
     "Leyline Prowler",
     "Loxodon Sergeant",
     "Naga Eternal",
+    "Orzhov Guildgate",
     "Pouncing Lynx",
+    "Primordial Wurm",
     "Rising Populace",
     "Shriekdiver",
-    "Sunblade Angel",
-    "Orzhov Guildgate",
-    "Primordial Wurm",
     "Simic Guildgate",
+    "Sunblade Angel",
     "Thundering Ceratok",
     "Tibalt's Rager",
-    "Tithebearer Giant"
+    "Tithebearer Giant",
+    "Unlikely Aid"
   ]
 }

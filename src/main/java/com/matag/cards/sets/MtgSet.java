@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import lombok.Builder;
 import lombok.Value;
 
-import java.util.List;
+import java.util.TreeSet;
 
 @Value
 @JsonDeserialize(builder = MtgSet.MtgSetBuilder.class)
@@ -13,7 +13,7 @@ import java.util.List;
 public class MtgSet {
   private final String code;
   private final String name;
-  private final List<String> cards;
+  private final TreeSet<String> cards;
 
   @JsonPOJOBuilder(withPrefix = "")
   public static class MtgSetBuilder {
