@@ -8,6 +8,10 @@
   "ruleText" : "Whenever a creature enters the battlefield under your control, you gain 1 life.",
   "abilities" : [ {
     "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
     "parameters" : [ "1" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",

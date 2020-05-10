@@ -23,6 +23,10 @@
     }
   }, {
     "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
     "parameters" : [ "2" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",

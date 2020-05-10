@@ -10,7 +10,10 @@
   "power" : 3,
   "toughness" : 3,
   "abilities" : [ {
-    "abilityType" : "EACH_PLAYERS_ADD_X_LIFE",
+    "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER"
+    },
     "parameters" : [ "4" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",

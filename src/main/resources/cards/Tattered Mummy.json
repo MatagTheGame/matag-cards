@@ -10,7 +10,11 @@
   "power" : 1,
   "toughness" : 2,
   "abilities" : [ {
-    "abilityType" : "EACH_PLAYERS_ADD_X_LIFE",
+    "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
     "parameters" : [ "-2" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",

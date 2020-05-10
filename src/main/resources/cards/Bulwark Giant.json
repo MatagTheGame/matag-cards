@@ -11,6 +11,10 @@
   "toughness" : 6,
   "abilities" : [ {
     "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
     "parameters" : [ "5" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",

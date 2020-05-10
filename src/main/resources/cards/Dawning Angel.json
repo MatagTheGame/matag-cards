@@ -13,6 +13,10 @@
     "abilityType" : "FLYING"
   }, {
     "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
     "parameters" : [ "4" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",

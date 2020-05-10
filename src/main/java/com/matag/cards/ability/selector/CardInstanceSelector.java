@@ -71,6 +71,18 @@ public class CardInstanceSelector {
 
         stringBuilder.append("get");
       }
+
+    } else if (selectorType == SelectorType.PLAYER) {
+      if (itself) {
+        return "You";
+
+      } else {
+        if (controllerType == null || controllerType == PlayerType.PLAYER) {
+          return "Each player";
+        } else {
+          return "Each opponent";
+        }
+      }
     }
 
     String str = stringBuilder.toString();
