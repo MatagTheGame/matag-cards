@@ -26,6 +26,8 @@ public class CardInstanceSelector {
   List<Subtype> ofSubtype;
   AbilityType withAbilityType;
   List<Color> ofColors;
+  boolean colorless;
+  boolean multicolor;
   PowerToughnessConstraint powerToughnessConstraint;
   PlayerType controllerType;
   List<StatusType> statusTypes;
