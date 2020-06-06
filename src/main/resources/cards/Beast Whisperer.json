@@ -1,0 +1,25 @@
+{
+  "name" : "Beast Whisperer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0aa99539-0002-4661-85b2-a3d770ff004c.jpg?1591320775",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DRUID", "ELF" ],
+  "rarity" : "RARE",
+  "ruleText" : "Whenever you cast a creature spell, draw a card.",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "DRAW_X_CARDS",
+    "parameters" : [ "1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

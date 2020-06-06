@@ -1,0 +1,25 @@
+{
+  "name" : "Satyr Enchanter",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4f910c5b-3de9-40e8-a1d5-dfe6b3725404.jpg?1573515624",
+  "colors" : [ "WHITE", "GREEN" ],
+  "cost" : [ "WHITE", "GREEN", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DRUID", "SATYR" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Whenever you cast an enchantment spell, draw a card.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "DRAW_X_CARDS",
+    "parameters" : [ "1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "ENCHANTMENT" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

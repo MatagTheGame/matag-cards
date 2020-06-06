@@ -1,0 +1,29 @@
+{
+  "name" : "Guttersnipe",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/d/6d5a14b4-e67c-4129-91dc-9e2fefbe27d2.jpg?1573511940",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "GOBLIN", "SHAMAN" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Whenever you cast an instant or sorcery spell, Guttersnipe deals 2 damage to each opponent.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "-2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "notOfType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

@@ -1,0 +1,29 @@
+{
+  "name" : "Spellgorger Weird",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/1/91551f85-4630-43a0-af72-8332d2ff0752.jpg?1557576817",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "WEIRD" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever you cast a noncreature spell, put a +1/+1 counter on Spellgorger Weird.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "notOfType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

@@ -1,0 +1,31 @@
+{
+  "name" : "Sky Theater Strix",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/8/98902dd9-f21c-4419-8205-4b9d6592bf28.jpg?1557576311",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "BIRD" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. Whenever you cast a noncreature spell, Sky Theater Strix gets +1/+0 until end of turn.",
+  "power" : 1,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "notOfType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

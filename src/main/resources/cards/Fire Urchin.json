@@ -1,0 +1,31 @@
+{
+  "name" : "Fire Urchin",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg?1572893161",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ELEMENTAL" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Trample. Whenever you cast an instant or sorcery spell, Fire Urchin gets +1/+0 until end of turn.",
+  "power" : 1,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "TRAMPLE"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "INSTANT", "SORCERY" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

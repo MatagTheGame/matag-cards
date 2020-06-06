@@ -1,0 +1,31 @@
+{
+  "name" : "Brineborn Cutthroat",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/8/0857765f-afd7-418a-a93b-c0bd1b1f037e.jpg?1563898536",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "MERFOLK", "PIRATE" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flash. Whenever you cast a spell during an opponent's turn, put a +1/+1 counter on Brineborn Cutthroat.",
+  "power" : 2,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "controllerType" : "PLAYER",
+        "turnStatusType" : "OPPONENT_TURN"
+      }
+    }
+  } ]
+}
