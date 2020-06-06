@@ -40,17 +40,17 @@ public class CardSearch {
     return new CardSearch(cards);
   }
 
-  public CardSearch colorless() {
-    List<Card> cards = this.cards.stream()
-      .filter(CardUtils::isColorless)
-      .collect(toList());
-    return new CardSearch(cards);
-  }
-
   public CardSearch ofOnlyAnyOfTheColors(Set<Color> colors) {
     List<Card> cards = this.cards.stream()
       .filter(card -> CardUtils.isOfOnlyAnyOfTheColors(card, colors))
       .collect(toList());
+    return new CardSearch(cards);
+  }
+
+  public CardSearch colorless() {
+    List<Card> cards = this.cards.stream()
+        .filter(CardUtils::isColorless)
+        .collect(toList());
     return new CardSearch(cards);
   }
 

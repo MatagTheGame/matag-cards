@@ -5,19 +5,9 @@ import com.matag.cards.properties.Type;
 
 import java.util.Set;
 
-import static com.matag.cards.properties.Cost.COLORLESS;
-
 public class CardUtils {
   public static boolean isColorless(Card card) {
-    return card.getCost().stream().noneMatch(cost -> cost != COLORLESS);
-  }
-
-  public static boolean isOfType(Card card, Type type) {
-    return card.getTypes().contains(type);
-  }
-
-  public static boolean isNotOfType(Card card, Type type) {
-    return !isOfType(card, type);
+    return card.getColors().isEmpty();
   }
 
   public static boolean isOfColor(Card card, Color color) {
@@ -35,5 +25,13 @@ public class CardUtils {
       }
     }
     return true;
+  }
+
+  public static boolean isNotOfType(Card card, Type type) {
+    return !isOfType(card, type);
+  }
+
+  public static boolean isOfType(Card card, Type type) {
+    return card.getTypes().contains(type);
   }
 }
