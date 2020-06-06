@@ -36,6 +36,7 @@ public class CardInstanceSelector {
   boolean nonToken;
   boolean currentEnchanted;
   TurnStatusType turnStatusType;
+  boolean historic;
 
   @JsonPOJOBuilder(withPrefix = "")
   public static class CardInstanceSelectorBuilder {
