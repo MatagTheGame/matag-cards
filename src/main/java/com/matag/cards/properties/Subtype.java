@@ -70,6 +70,7 @@ public enum Subtype {
   PLAINS,
   RHINO,
   ROGUE,
+  SAGA,
   SATYR,
   SCARECROW,
   SCORPION,
