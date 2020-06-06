@@ -10,6 +10,10 @@ public class CardUtils {
     return card.getColors().isEmpty();
   }
 
+  public static boolean isMulticolor(Card card) {
+    return card.getColors().size() > 1;
+  }
+
   public static boolean isOfColor(Card card, Color color) {
     return card.getColors().contains(color);
   }

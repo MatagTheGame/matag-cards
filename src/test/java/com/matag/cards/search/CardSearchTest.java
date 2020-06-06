@@ -102,8 +102,9 @@ public class CardSearchTest {
   public void colorless() {
     // Given
     CardSearch cardSearch = new CardSearch(List.of(
-        cards.get("Empyrean Eagle"),
-        cards.get("Jousting Dummy")
+        cards.get("Empyrean Eagle"), // white blue
+        cards.get("Angel of the Dawn"), // white
+        cards.get("Jousting Dummy") // colorless
     ));
 
     // When
@@ -111,5 +112,21 @@ public class CardSearchTest {
 
     // Then
     assertThat(result).contains(cards.get("Jousting Dummy"));
+  }
+
+  @Test
+  public void multicolor() {
+    // Given
+    CardSearch cardSearch = new CardSearch(List.of(
+        cards.get("Empyrean Eagle"), // white blue
+        cards.get("Angel of the Dawn"), // white
+        cards.get("Jousting Dummy") // colorless
+    ));
+
+    // When
+    List<Card> result = cardSearch.multicolor().getCards();
+
+    // Then
+    assertThat(result).contains(cards.get("Empyrean Eagle"));
   }
 }

@@ -54,6 +54,13 @@ public class CardSearch {
     return new CardSearch(cards);
   }
 
+  public CardSearch multicolor() {
+    List<Card> cards = this.cards.stream()
+        .filter(CardUtils::isMulticolor)
+        .collect(toList());
+    return new CardSearch(cards);
+  }
+
   public CardSearch concat(List<Card> moreCards) {
     List<Card> cards = Stream.concat(this.cards.stream(), moreCards.stream()).collect(toList());
     return new CardSearch(cards);
