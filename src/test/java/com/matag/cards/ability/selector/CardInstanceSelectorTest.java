@@ -2,7 +2,10 @@ package com.matag.cards.ability.selector;
 
 import org.junit.Test;
 
+import java.util.List;
+
 import static com.matag.cards.ability.selector.SelectorType.PERMANENT;
+import static com.matag.cards.properties.Subtype.ZOMBIE;
 import static com.matag.cards.properties.Type.CREATURE;
 import static com.matag.player.PlayerType.OPPONENT;
 import static com.matag.player.PlayerType.PLAYER;
@@ -13,6 +16,11 @@ public class CardInstanceSelectorTest {
   @Test
   public void creaturesYouControlGetText() {
     assertThat(CardInstanceSelector.builder().selectorType(PERMANENT).ofType(singletonList(CREATURE)).controllerType(PLAYER).build().getText()).isEqualTo("Creatures you control get");
+  }
+
+  @Test
+  public void zombiesYouControlGetText() {
+    assertThat(CardInstanceSelector.builder().selectorType(PERMANENT).ofType(singletonList(CREATURE)).ofSubtype(List.of(ZOMBIE)).controllerType(PLAYER).build().getText()).isEqualTo("Zombies you control get");
   }
 
   @Test

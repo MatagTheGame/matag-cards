@@ -7,6 +7,7 @@ import com.matag.cards.ability.type.AbilityType;
 import com.matag.cards.properties.Color;
 import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
+import com.matag.language.Plural;
 import com.matag.player.PlayerType;
 import lombok.Builder;
 import lombok.Value;
@@ -19,20 +20,20 @@ import java.util.stream.Collectors;
 @JsonDeserialize(builder = CardInstanceSelector.CardInstanceSelectorBuilder.class)
 @Builder(toBuilder = true)
 public class CardInstanceSelector {
-  private final SelectorType selectorType;
-  private final List<Type> ofType;
-  private final List<Type> notOfType;
-  private final List<Subtype> ofSubtype;
-  private final AbilityType withAbilityType;
-  private final List<Color> ofColors;
-  private final PowerToughnessConstraint powerToughnessConstraint;
-  private final PlayerType controllerType;
-  private final List<StatusType> statusTypes;
-  private final boolean others;
-  private final boolean itself;
-  private final boolean nonToken;
-  private final boolean currentEnchanted;
-  private final TurnStatusType turnStatusType;
+  SelectorType selectorType;
+  List<Type> ofType;
+  List<Type> notOfType;
+  List<Subtype> ofSubtype;
+  AbilityType withAbilityType;
+  List<Color> ofColors;
+  PowerToughnessConstraint powerToughnessConstraint;
+  PlayerType controllerType;
+  List<StatusType> statusTypes;
+  boolean others;
+  boolean itself;
+  boolean nonToken;
+  boolean currentEnchanted;
+  TurnStatusType turnStatusType;
 
   @JsonPOJOBuilder(withPrefix = "")
   public static class CardInstanceSelectorBuilder {
@@ -57,8 +58,19 @@ public class CardInstanceSelector {
           stringBuilder.append("enchanted ");
         }
 
-        if (ofType != null) {
-          stringBuilder.append(ofType.stream().map(Objects::toString).collect(Collectors.joining(", "))).append("s ");
+        if (ofSubtype != null) {
+          stringBuilder.append(ofSubtype.stream()
+              .map(Objects::toString)
+              .map(Plural::plural)
+              .map(this::spaced)
+              .collect(Collectors.joining(", ")));
+
+        } else if (ofType != null) {
+          stringBuilder.append(ofType.stream()
+              .map(Objects::toString)
+              .map(Plural::plural)
+              .map(this::spaced)
+              .collect(Collectors.joining(", ")));
         }
 
         if (controllerType != null) {
@@ -90,5 +102,9 @@ public class CardInstanceSelector {
     str = str.isEmpty() ? str : str.substring(0, 1).toUpperCase() + str.substring(1);
 
     return str.trim();
+  }
+
+  private String spaced(String word) {
+    return word + " ";
   }
 }
