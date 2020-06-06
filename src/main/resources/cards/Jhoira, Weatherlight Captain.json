@@ -1,0 +1,25 @@
+{
+  "name" : "Jhoira, Weatherlight Captain",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/3/73cf8c6b-1322-4bc5-a604-6e372607fae4.jpg?1588760041",
+  "colors" : [ "BLUE", "RED" ],
+  "cost" : [ "BLUE", "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE", "LEGENDARY" ],
+  "subtypes" : [ "ARTIFICER", "HUMAN" ],
+  "rarity" : "MYTHIC",
+  "ruleText" : "Whenever you cast a historic spell, draw a card.",
+  "power" : 3,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "DRAW_X_CARDS",
+    "parameters" : [ "1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "controllerType" : "PLAYER",
+        "historic" : true
+      }
+    }
+  } ]
+}

@@ -5,6 +5,7 @@ public enum Subtype {
   ANTELOPE,
   APE,
   ARCHER,
+  ARTIFICER,
   ASSASSIN,
   AURA,
   BASILISK,

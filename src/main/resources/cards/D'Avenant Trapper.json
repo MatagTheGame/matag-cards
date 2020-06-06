@@ -1,0 +1,32 @@
+{
+  "name" : "D'Avenant Trapper",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a5881ab3-566b-4999-997e-cd5ecb84282b.jpg?1562740739",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ARCHER", "HUMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever you cast a historic spell, tap target creature an opponent controls.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "OPPONENT"
+      }
+    } ],
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "controllerType" : "PLAYER",
+        "historic" : true
+      }
+    }
+  } ]
+}

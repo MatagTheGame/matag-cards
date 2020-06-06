@@ -25,7 +25,7 @@
       "selectorType" : "PERMANENT",
       "itself" : true
     },
-    "parameters" : [ "UNTAPPED" ],
+    "parameters" : [ ":UNTAPPED" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
