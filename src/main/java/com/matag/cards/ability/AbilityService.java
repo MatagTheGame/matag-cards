@@ -1,5 +1,6 @@
 package com.matag.cards.ability;
 
+import com.matag.cards.ability.type.AbilityType;
 import com.matag.cards.properties.PowerToughness;
 import org.springframework.stereotype.Component;
 
@@ -82,6 +83,13 @@ public class AbilityService {
     return 0;
   }
 
+  public AbilityType keywordCounterFromParameter(String parameter) {
+    if (parameter.startsWith("KEYWORD_COUNTER:")) {
+      return AbilityType.valueOf(parameter.replace("KEYWORD_COUNTER:", ""));
+    }
+    return null;
+  }
+
   public static String parametersAsString(List<String> parameters) {
     String text = parameters.stream().map(AbilityService::parameterAsString).collect(Collectors.joining(", "));
     return replaceLast(text, ",", " and");
@@ -90,20 +98,25 @@ public class AbilityService {
   private static String parameterAsString(String parameter) {
     if (parameter == null) {
       return null;
+
     } else if (parameter.startsWith("DAMAGE:")) {
       return parameter.replace("DAMAGE:", "") + " damage";
-    }
-    if (parameter.startsWith("CONTROLLER_DAMAGE:")) {
+
+    } else if (parameter.startsWith("CONTROLLER_DAMAGE:")) {
       return "to its controller " + parameter.replace("CONTROLLER_DAMAGE:", "") + " damage";
-    }
-    if (parameter.equals(":TAPPED_DOES_NOT_UNTAP_NEXT_TURN")) {
+
+    } else if (parameter.equals(":TAPPED_DOES_NOT_UNTAP_NEXT_TURN")) {
       return "tapped doesn't untap next turn";
-    }
-    if (parameter.equals(":RETURN_TO_OWNER_HAND")) {
+
+    } else if (parameter.equals(":RETURN_TO_OWNER_HAND")) {
       return "returned to its owner's hand";
-    }
-    if (parameter.startsWith("PLUS_1_COUNTERS:")) {
+
+    } else if (parameter.startsWith("PLUS_1_COUNTERS:")) {
       return parameter.replace("PLUS_1_COUNTERS:", "") + " +1/+1 counters";
+
+    } else if (parameter.startsWith("KEYWORD_COUNTER:")) {
+      return "a " + parameter.replace("KEYWORD_COUNTER:", "").toLowerCase().replace("_", " ") + " counter";
+
     } else {
       return parameter.replace(":", "").toLowerCase();
     }

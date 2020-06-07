@@ -10,6 +10,17 @@
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
       "cardInstanceSelector" : {
+        "selectorType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "LIFE:5" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
         "selectorType" : "ANY"
       }
     } ],
@@ -18,35 +29,8 @@
       "type" : "CAST"
     }
   }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "cardInstanceSelector" : {
-        "selectorType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "LIFE:5" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "cardInstanceSelector" : {
-        "selectorType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "LIFE:5" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "cardInstanceSelector" : {
-        "selectorType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "DRAW:5" ],
+    "abilityType" : "DRAW_X_CARDS",
+    "parameters" : [ "5" ],
     "trigger" : {
       "type" : "CAST"
     }

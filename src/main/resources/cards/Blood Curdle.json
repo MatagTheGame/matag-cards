@@ -1,0 +1,35 @@
+{
+  "name" : "Blood Curdle",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/1/4184c851-1419-476c-ba9c-9f0cb1137114.jpg?1591226609",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Destroy target creature. Put a menace counter on a creature you control.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":DESTROYED" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "KEYWORD_COUNTER:MENACE" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

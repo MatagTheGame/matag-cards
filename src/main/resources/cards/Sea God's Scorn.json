@@ -13,14 +13,13 @@
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE", "ENCHANTMENT" ]
       }
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
+    }, {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE", "ENCHANTMENT" ]
+      },
+      "optional" : true
+    }, {
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE", "ENCHANTMENT" ]
@@ -31,18 +30,5 @@
     "trigger" : {
       "type" : "CAST"
     }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "cardInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE", "ENCHANTMENT" ]
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  } ]
+  }]
 }
