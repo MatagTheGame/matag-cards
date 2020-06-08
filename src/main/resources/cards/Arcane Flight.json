@@ -8,7 +8,7 @@
   "rarity" : "COMMON",
   "ruleText" : "Enchant creature. Enchanted creature gets +1/+1 and has flying.",
   "abilities" : [ {
-    "abilityType" : "ENCHANTED_CREATURE_GETS",
+    "abilityType" : "ENCHANT",
     "targets" : [ {
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",

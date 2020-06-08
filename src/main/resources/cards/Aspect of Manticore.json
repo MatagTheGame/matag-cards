@@ -10,7 +10,7 @@
   "abilities" : [ {
     "abilityType" : "FLASH"
   }, {
-    "abilityType" : "ENCHANTED_CREATURE_GETS",
+    "abilityType" : "ENCHANT",
     "targets" : [ {
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",

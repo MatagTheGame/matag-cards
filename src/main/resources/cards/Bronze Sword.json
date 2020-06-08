@@ -7,7 +7,7 @@
   "rarity" : "COMMON",
   "ruleText" : "Equipped creature gets +2/+0. Equip {3}",
   "abilities" : [ {
-    "abilityType" : "EQUIPPED_CREATURE_GETS",
+    "abilityType" : "EQUIP",
     "targets" : [ {
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",

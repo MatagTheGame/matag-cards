@@ -8,7 +8,7 @@
   "rarity" : "RARE",
   "ruleText" : "Enchant creature. Enchanted creature gets +7/+7 and has trample.",
   "abilities" : [ {
-    "abilityType" : "ENCHANTED_CREATURE_GETS",
+    "abilityType" : "ENCHANT",
     "targets" : [ {
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",
