@@ -4,6 +4,7 @@ import com.matag.cards.Card;
 import com.matag.cards.Cards;
 import com.matag.cards.CardsConfiguration;
 import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -63,6 +64,30 @@ public class CardSearchTest {
 
     // Then
     assertThat(result).contains(cards.get("Bedevil"));
+  }
+
+  @Test
+  public void ofSubtype() {
+    // Given
+    CardSearch cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
+
+    // When
+    List<Card> result = cardSearch.ofSubtype(Subtype.SOLDIER).getCards();
+
+    // Then
+    assertThat(result).contains(cards.get("Dusk Legion Zealot"));
+  }
+
+  @Test
+  public void notOfSubtype() {
+    // Given
+    CardSearch cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
+
+    // When
+    List<Card> result = cardSearch.notOfSubtype(Subtype.SOLDIER).getCards();
+
+    // Then
+    assertThat(result).contains(cards.get("Plains"));
   }
 
   @Test

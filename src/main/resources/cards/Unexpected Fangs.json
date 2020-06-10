@@ -1,0 +1,16 @@
+{
+  "name" : "Sudden Spinnerets",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "PLUS_1_COUNTERS:1", "KEYWORD_COUNTER:LIFELINK" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

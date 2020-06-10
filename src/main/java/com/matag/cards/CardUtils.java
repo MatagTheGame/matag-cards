@@ -1,11 +1,28 @@
 package com.matag.cards;
 
 import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
 
 import java.util.Set;
 
 public class CardUtils {
+  public static boolean isOfType(Card card, Type type) {
+    return card.getTypes().contains(type);
+  }
+
+  public static boolean isNotOfType(Card card, Type type) {
+    return !isOfType(card, type);
+  }
+
+  public static boolean isOfSubtype(Card card, Subtype subtype) {
+    return card.getSubtypes().contains(subtype);
+  }
+
+  public static boolean isNotOfSubtype(Card card, Subtype subtype) {
+    return !isOfSubtype(card, subtype);
+  }
+
   public static boolean isColorless(Card card) {
     return card.getColors().isEmpty();
   }
@@ -29,13 +46,5 @@ public class CardUtils {
       }
     }
     return true;
-  }
-
-  public static boolean isNotOfType(Card card, Type type) {
-    return !isOfType(card, type);
-  }
-
-  public static boolean isOfType(Card card, Type type) {
-    return card.getTypes().contains(type);
   }
 }

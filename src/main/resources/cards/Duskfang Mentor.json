@@ -1,0 +1,45 @@
+{
+  "name" : "Duskfang Mentor",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fc38fe5d-6c35-4fff-8f1b-726a0685c6f8.jpg?1591226756",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CLERIC", "HUMAN" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "When Duskfang Mentor enters the battlefield, put a lifelink counter on target non-Human creature you control. {1}{B}, {T}: Put a +1/+1 counter on each creature you control with lifelink.",
+  "power" : 1,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "notOfSubtype" : [ "HUMAN" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "KEYWORD_COUNTER:LIFELINK" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER",
+      "withAbilityType" : "LIFELINK"
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "BLACK", "COLORLESS", "TAP" ]
+    }
+  } ]
+}

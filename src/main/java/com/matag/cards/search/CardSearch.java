@@ -3,6 +3,7 @@ package com.matag.cards.search;
 import com.matag.cards.Card;
 import com.matag.cards.CardUtils;
 import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
 
 import java.util.List;
@@ -29,6 +30,20 @@ public class CardSearch {
   public CardSearch notOfType(Type type) {
     List<Card> cards = this.cards.stream()
       .filter(card -> CardUtils.isNotOfType(card, type))
+      .collect(toList());
+    return new CardSearch(cards);
+  }
+
+  public CardSearch ofSubtype(Subtype subtype) {
+    List<Card> cards = this.cards.stream()
+      .filter(card -> CardUtils.isOfSubtype(card, subtype))
+      .collect(toList());
+    return new CardSearch(cards);
+  }
+
+  public CardSearch notOfSubtype(Subtype subtype) {
+    List<Card> cards = this.cards.stream()
+      .filter(card -> CardUtils.isNotOfSubtype(card, subtype))
       .collect(toList());
     return new CardSearch(cards);
   }

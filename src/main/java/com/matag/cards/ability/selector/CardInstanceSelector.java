@@ -24,6 +24,7 @@ public class CardInstanceSelector {
   List<Type> ofType;
   List<Type> notOfType;
   List<Subtype> ofSubtype;
+  List<Subtype> notOfSubtype;
   AbilityType withAbilityType;
   List<Color> ofColors;
   boolean colorless;

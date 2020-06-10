@@ -1,0 +1,45 @@
+{
+  "name" : "Keensight Mentor",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/0/a0583065-9a6c-4ea4-b6dd-2edfbaed1181.jpg?1591230288",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CLERIC", "HUMAN" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "When Keensight Mentor enters the battlefield, put a vigilance counter on target non-Human creature you control. {1}{W}, {T}: Put a +1/+1 counter on each creature you control with vigilance.",
+  "power" : 1,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "notOfSubtype" : [ "HUMAN" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "KEYWORD_COUNTER:VIGILANCE" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "withAbilityType" : "VIGILANCE",
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "WHITE", "COLORLESS", "TAP" ]
+    }
+  } ]
+}
