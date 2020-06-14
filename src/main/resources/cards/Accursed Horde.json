@@ -13,7 +13,8 @@
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
       "cardInstanceSelector" : {
-        "selectorType" : "PLAYER",
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
         "ofSubtype" : [ "ZOMBIE" ],
         "statusTypes" : [ "ATTACKING" ]
       }

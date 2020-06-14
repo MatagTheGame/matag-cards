@@ -1,0 +1,42 @@
+{
+  "name" : "Cartouche of Ambition",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e68b96b1-b75e-4ee1-a6d7-6545a34fef9b.jpg?1543675218",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ENCHANTMENT" ],
+  "subtypes" : [ "AURA", "CARTOUCHE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Enchant creature you control. When Cartouche of Ambition enters the battlefield, you may put a -1/-1 counter on target creature. Enchanted creature gets +1/+1 and has lifelink.",
+  "abilities" : [ {
+    "abilityType" : "ENCHANT",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "+1/+1", "LIFELINK" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ "MINUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

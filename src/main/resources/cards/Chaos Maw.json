@@ -1,0 +1,29 @@
+{
+  "name" : "Chaos Maw",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/0/8094908b-1d3a-42df-bc27-8456fbb98e65.jpg?1562805282",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HELLION" ],
+  "rarity" : "RARE",
+  "ruleText" : "When Chaos Maw enters the battlefield, it deals 3 damage to each other creature.",
+  "power" : 6,
+  "toughness" : 6,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "others" : true
+    },
+    "parameters" : [ "DAMAGE:3" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

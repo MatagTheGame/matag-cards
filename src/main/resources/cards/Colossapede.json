@@ -1,0 +1,11 @@
+{
+  "name" : "Colossapede",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/6/7642bfc5-ace8-419e-b57b-2b881bfe023e.jpg?1543675789",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "INSECT" ],
+  "rarity" : "COMMON",
+  "power" : 5,
+  "toughness" : 5
+}

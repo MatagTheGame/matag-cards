@@ -1,0 +1,26 @@
+{
+  "name" : "Fan Bearer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4f587d8d-1bef-4e4b-9b94-94c0ae11bc8f.jpg?1548379594",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ZOMBIE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{2}, {T}: Tap target creature.",
+  "power" : 1,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS", "TAP" ]
+    }
+  } ]
+}

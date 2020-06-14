@@ -1,0 +1,26 @@
+{
+  "name" : "Devotee of Strength",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/7/977698ab-3b64-41f2-a214-ac95e04c9956.jpg?1562807840",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "NAGA", "WIZARD" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "{4}{G}: Target creature gets +2/+2 until end of turn.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+2/+2" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}

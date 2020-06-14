@@ -1,0 +1,15 @@
+{
+  "name" : "Cursed Minotaur",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/f/df48004d-004b-41b6-b975-80b350408944.jpg?1573509251",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "MINOTAUR", "ZOMBIE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Menace",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "MENACE"
+  } ]
+}
