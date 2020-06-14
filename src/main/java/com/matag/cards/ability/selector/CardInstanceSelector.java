@@ -36,10 +36,6 @@ public class CardInstanceSelector {
   boolean itself;
   boolean nonToken;
   boolean currentEnchanted;
-  boolean attacking;
-  boolean attacked;
-  boolean blocking;
-  boolean blocked;
   TurnStatusType turnStatusType;
   boolean historic;
 

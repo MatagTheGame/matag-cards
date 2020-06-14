@@ -1,11 +1,20 @@
 {
   "name" : "Accursed Horde",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/709bcbca-7238-4c31-8d9e-ec0d54d0b298.jpg?1576267280",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ZOMBIE" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "{1}{B}: Target attacking Zombie gains indestructible until end of turn.",
+  "power" : 3,
+  "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "cardInstanceSelector" : {
       "selectorType" : "PLAYER",
       "ofSubtype" : [ "ZOMBIE" ],
-      "attacking" : true
+      "statusTypes" : [ "ATTACKING" ]
     },
     "parameters" : [ "INDESTRUCTIBLE" ],
     "trigger" : {
