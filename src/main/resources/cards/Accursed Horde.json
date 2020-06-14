@@ -1,0 +1,16 @@
+{
+  "name" : "Accursed Horde",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "ofSubtype" : [ "ZOMBIE" ],
+      "attacking" : true
+    },
+    "parameters" : [ "INDESTRUCTIBLE" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "BLACK", "COLORLESS" ]
+    }
+  } ]
+}
