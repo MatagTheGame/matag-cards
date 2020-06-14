@@ -1,0 +1,23 @@
+{
+  "name" : "Timber Gorge",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/5/c5ac9935-ffe7-4280-8b0b-d5913dbf9e6b.jpg?1582624553",
+  "types" : [ "LAND" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Timber Gorge enters the battlefield tapped. {T}: Add {R} or {G}.",
+  "abilities" : [ {
+    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
+    "parameters" : [ ":TAPPED" ]
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "RED" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "GREEN" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  } ]
+}

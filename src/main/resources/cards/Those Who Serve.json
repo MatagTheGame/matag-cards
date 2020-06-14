@@ -1,0 +1,11 @@
+{
+  "name" : "Those Who Serve",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/4/b4f27dd9-7ee4-4cdc-8f65-a4349b6aa47f.jpg?1543674807",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ZOMBIE" ],
+  "rarity" : "COMMON",
+  "power" : 2,
+  "toughness" : 4
+}

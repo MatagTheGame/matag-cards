@@ -1,0 +1,43 @@
+{
+  "name" : "Unraveling Mummy",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg?1562821263",
+  "colors" : [ "WHITE", "BLACK" ],
+  "cost" : [ "WHITE", "BLACK", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ZOMBIE" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "{1}{W}: Target attacking Zombie gains lifelink until end of turn. {1}{B}: Target attacking Zombie gains deathtouch until end of turn.",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "ZOMBIE" ],
+        "statusTypes" : [ "ATTACKING" ]
+      }
+    } ],
+    "parameters" : [ "LIFELINK" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "WHITE", "COLORLESS" ]
+    }
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "ZOMBIE" ],
+        "statusTypes" : [ "ATTACKING" ]
+      }
+    } ],
+    "parameters" : [ "DEATHTOUCH" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "BLACK", "COLORLESS" ]
+    }
+  } ]
+}

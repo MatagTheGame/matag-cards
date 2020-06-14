@@ -1,0 +1,23 @@
+{
+  "name" : "Woodland Stream",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/9/d996a106-40b1-43fe-b7b9-359620c3794c.jpg?1568005469",
+  "types" : [ "LAND" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Woodland Stream enters the battlefield tapped. {T}: Add {G} or {U}.",
+  "abilities" : [ {
+    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
+    "parameters" : [ ":TAPPED" ]
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "GREEN" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "BLUE" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  } ]
+}
