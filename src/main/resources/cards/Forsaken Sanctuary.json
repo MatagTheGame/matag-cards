@@ -1,0 +1,23 @@
+{
+  "name" : "Forsaken Sanctuary",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/3/f3e0b983-62e7-43fb-b5d5-402ea60a64d7.jpg?1561928262",
+  "types" : [ "LAND" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Forsaken Sanctuary enters the battlefield tapped. {T}: Add {W} or {B}.",
+  "abilities" : [ {
+    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
+    "parameters" : [ ":TAPPED" ]
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "WHITE" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "BLACK" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  } ]
+}

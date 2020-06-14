@@ -1,0 +1,29 @@
+{
+  "name" : "Galestrike",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8907a45-0136-49f5-8f6a-285a77ac283e.jpg?1576267253",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Return target tapped creature to its owner's hand. Draw a card.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "statusTypes" : [ "TAPPED" ]
+      }
+    } ],
+    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "DRAW_X_CARDS",
+    "parameters" : [ "1" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}
