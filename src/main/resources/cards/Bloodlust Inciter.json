@@ -1,0 +1,26 @@
+{
+  "name" : "Bloodlust Inciter",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/b/1ba618ad-414c-4fe6-acb9-67160c34dcea.jpg?1573511143",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "WARRIOR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{T}: Target creature gains haste until end of turn.",
+  "power" : 1,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    } ],
+    "parameters" : [ ":HASTE" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS" ]
+    }
+  } ]
+}

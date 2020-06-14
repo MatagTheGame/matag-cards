@@ -53,8 +53,8 @@ public class AbilityService {
     return parameter.equals(":TAPPED");
   }
 
-  public boolean tappedDoesNotUntapNextTurnFromParameter(String parameter) {
-    return parameter.equals(":TAPPED_DOES_NOT_UNTAP_NEXT_TURN");
+  public boolean doesNotUntapNextTurnFromParameter(String parameter) {
+    return parameter.equals(":DOES_NOT_UNTAP_NEXT_TURN");
   }
 
   public boolean returnToOwnerHandFromParameter(String parameter) {
@@ -112,8 +112,8 @@ public class AbilityService {
     } else if (parameter.startsWith("CONTROLLER_DAMAGE:")) {
       return "to its controller " + parameter.replace("CONTROLLER_DAMAGE:", "") + " damage";
 
-    } else if (parameter.equals(":TAPPED_DOES_NOT_UNTAP_NEXT_TURN")) {
-      return "tapped doesn't untap next turn";
+    } else if (parameter.equals(":DOES_NOT_UNTAP_NEXT_TURN")) {
+      return "doesn't untap next turn";
 
     } else if (parameter.equals(":RETURN_TO_OWNER_HAND")) {
       return "returned to its owner's hand";

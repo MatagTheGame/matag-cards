@@ -152,24 +152,24 @@ public class AbilityServiceTest {
   }
 
   @Test
-  public void testTappedDoesNotUntapNextTurnFromParameter() {
+  public void testDoesNotUntapNextTurnFromParameter() {
     // Given
-    String parameter = ":TAPPED_DOES_NOT_UNTAP_NEXT_TURN";
+    String parameter = ":DOES_NOT_UNTAP_NEXT_TURN";
 
     // When
-    boolean tappedDoesNotUntapNextTurn = abilityService.tappedDoesNotUntapNextTurnFromParameter(parameter);
+    boolean doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter(parameter);
 
     // Then
-    assertThat(tappedDoesNotUntapNextTurn).isTrue();
+    assertThat(doesNotUntapNextTurn).isTrue();
   }
 
   @Test
-  public void testTappedDoesNotUntapNextTurnFromParameterAbsent() {
+  public void testDoesNotUntapNextTurnFromParameterAbsent() {
     // When
-    boolean tappedDoesNotUntapNextTurn = abilityService.tappedDoesNotUntapNextTurnFromParameter("TRAMPLE");
+    boolean doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter("TRAMPLE");
 
     // Then
-    assertThat(tappedDoesNotUntapNextTurn).isFalse();
+    assertThat(doesNotUntapNextTurn).isFalse();
   }
 
   @Test
@@ -253,12 +253,12 @@ public class AbilityServiceTest {
   @Test
   public void testParametersAsString() {
     // Given
-    List<String> parameters = asList("+2/+2", "TRAMPLE", "DAMAGE:2", "HASTE", "CONTROLLER_DAMAGE:3", ":TAPPED_DOES_NOT_UNTAP_NEXT_TURN", ":DESTROYED", ":RETURN_TO_OWNER_HAND", "PLUS_1_COUNTERS:2", "KEYWORD_COUNTER:MENACE");
+    List<String> parameters = asList("+2/+2", "TRAMPLE", "DAMAGE:2", "HASTE", "CONTROLLER_DAMAGE:3", ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN", ":DESTROYED", ":RETURN_TO_OWNER_HAND", "PLUS_1_COUNTERS:2", "KEYWORD_COUNTER:MENACE");
 
     // When
     String parametersAsString = AbilityService.parametersAsString(parameters);
 
     // Then
-    assertThat(parametersAsString).isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter");
+    assertThat(parametersAsString).isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter");
   }
 }
