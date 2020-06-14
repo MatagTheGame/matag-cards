@@ -1,0 +1,27 @@
+{
+  "name" : "Khenra Charioteer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/a/8ab1454e-3c69-4450-bd4c-934af2ff2bcb.jpg?1543676070",
+  "colors" : [ "RED", "GREEN" ],
+  "cost" : [ "RED", "GREEN", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "JACKAL", "WARRIOR" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Trample. Other creatures you control have trample.",
+  "power" : 3,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "TRAMPLE"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER",
+      "others" : true
+    },
+    "parameters" : [ "TRAMPLE" ],
+    "trigger" : {
+      "type" : "STATIC"
+    }
+  } ]
+}

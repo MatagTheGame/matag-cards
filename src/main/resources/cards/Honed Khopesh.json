@@ -1,0 +1,24 @@
+{
+  "name" : "Honed Khopesh",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/7/c7d80b98-baa2-48ea-9611-96e64d7cb950.jpg?1543676284",
+  "cost" : [ "COLORLESS" ],
+  "types" : [ "ARTIFACT" ],
+  "subtypes" : [ "EQUIPMENT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Equipped creature gets +1/+1. Equip {1}",
+  "abilities" : [ {
+    "abilityType" : "EQUIP",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+1/+1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS" ]
+    },
+    "sorcerySpeed" : true
+  } ]
+}
