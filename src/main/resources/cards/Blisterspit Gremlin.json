@@ -9,7 +9,7 @@
   "ruleText" : "{1}, {T}: Blisterspit Gremlin deals 1 damage to each opponent. Whenever you cast a noncreature spell, untap Blisterspit Gremlin.",
   "power" : 1,
   "toughness" : 1,
-  "abilities" : [{
+  "abilities" : [ {
     "abilityType" : "ADD_X_LIFE",
     "cardInstanceSelector" : {
       "selectorType" : "PLAYER",
