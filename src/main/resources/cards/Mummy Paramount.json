@@ -1,17 +1,15 @@
 {
-  "name" : "Griffin Protector",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/c/5c32c4f2-4fa5-4874-8413-eac822121a0b.jpg?1563898317",
+  "name" : "Mummy Paramount",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/8/e8b1a3e5-cf77-439d-8e0d-cf6571f6891c.jpg?1562818686",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],
-  "subtypes" : [ "GRIFFIN" ],
+  "subtypes" : [ "ZOMBIE" ],
   "rarity" : "COMMON",
-  "ruleText" : "Flying. Whenever another creature enters the battlefield under your control, Griffin Protector gets +1/+1 until end of turn.",
+  "ruleText" : "Whenever another Zombie enters the battlefield under your control, Mummy Paramount gets +1/+1 until end of turn.",
   "power" : 2,
-  "toughness" : 3,
+  "toughness" : 2,
   "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
     "cardInstanceSelector" : {
       "selectorType" : "PERMANENT",
@@ -24,6 +22,7 @@
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "ZOMBIE" ],
         "controllerType" : "PLAYER",
         "others" : true
       }

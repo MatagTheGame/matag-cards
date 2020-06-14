@@ -1,0 +1,26 @@
+{
+  "name" : "Minotaur Sureshot",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/7/777b98c3-d0b8-4ee3-9d89-e86344269ff1.jpg?1543675657",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ARCHER", "MINOTAUR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Reach. {1}{R}: Minotaur Sureshot gets +1/+0 until end of turn.",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "REACH"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+0" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "RED", "COLORLESS" ]
+    }
+  } ]
+}

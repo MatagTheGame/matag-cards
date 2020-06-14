@@ -24,7 +24,10 @@
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
       "cardInstanceSelector" : {
         "selectorType" : "PERMANENT",
-        "itself" : true
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "ZOMBIE" ],
+        "controllerType" : "PLAYER",
+        "others" : true
       }
     }
   } ]

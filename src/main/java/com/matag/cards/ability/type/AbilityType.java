@@ -109,7 +109,7 @@ public enum AbilityType {
 //  DETHRONE(null),
 //  HIDDEN_AGENDA(null),
 //  OUTLAST(null),
-//  PROWESS(null),
+  PROWESS("Prowess."),
 //  DASH(null),
 //  EXPLOIT(null),
   MENACE("Menace."),
@@ -151,7 +151,6 @@ public enum AbilityType {
   SELECTED_PERMANENTS_GET("%s %s"),
   SHUFFLE_GRAVEYARD_INTO_LIBRARY_FOR_TARGET_PLAYER("Shuffle graveyard into library."),
   TAP_ADD_MANA("Tap add %s mana."),
-  THAT_TARGET_CONTROLLER_GETS("That target controller gets %s."),
   THAT_TARGETS_GET("That targets get %s.");
 
   private String text;
