@@ -11,11 +11,13 @@
   "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
-    "cardInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "ofSubtype" : [ "ZOMBIE" ],
-      "statusTypes" : [ "ATTACKING" ]
-    },
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PLAYER",
+        "ofSubtype" : [ "ZOMBIE" ],
+        "statusTypes" : [ "ATTACKING" ]
+      }
+    } ],
     "parameters" : [ "INDESTRUCTIBLE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
