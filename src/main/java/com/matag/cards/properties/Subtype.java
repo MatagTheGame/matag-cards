@@ -22,6 +22,7 @@ public enum Subtype {
   CRAB,
   CROCODILE,
   CYCLOPS,
+  DEMON,
   DEVIL,
   DINOSAUR,
   DRAGON,

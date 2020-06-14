@@ -83,6 +83,13 @@ public class AbilityService {
     return 0;
   }
 
+  public int minus1CountersFromParameter(String parameter) {
+    if (parameter.startsWith("MINUS_1_COUNTERS:")) {
+      return parseInt(parameter.replace("MINUS_1_COUNTERS:", ""));
+    }
+    return 0;
+  }
+
   public AbilityType keywordCounterFromParameter(String parameter) {
     if (parameter.startsWith("KEYWORD_COUNTER:")) {
       return AbilityType.valueOf(parameter.replace("KEYWORD_COUNTER:", ""));
@@ -113,6 +120,9 @@ public class AbilityService {
 
     } else if (parameter.startsWith("PLUS_1_COUNTERS:")) {
       return parameter.replace("PLUS_1_COUNTERS:", "") + " +1/+1 counters";
+
+    } else if (parameter.startsWith("MINUS_1_COUNTERS:")) {
+      return parameter.replace("MINUS_1_COUNTERS:", "") + " -1/-1 counters";
 
     } else if (parameter.startsWith("KEYWORD_COUNTER:")) {
       return "a " + parameter.replace("KEYWORD_COUNTER:", "").toLowerCase().replace("_", " ") + " counter";

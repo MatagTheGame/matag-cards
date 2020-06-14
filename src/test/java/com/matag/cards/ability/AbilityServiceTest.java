@@ -227,6 +227,18 @@ public class AbilityServiceTest {
   }
 
   @Test
+  public void testMinus1CountersFromParameter() {
+    // Given
+    String parameter = "MINUS_1_COUNTERS:3";
+
+    // When
+    int draw = abilityService.minus1CountersFromParameter(parameter);
+
+    // Then
+    assertThat(draw).isEqualTo(3);
+  }
+
+  @Test
   public void testKeywordCounterFromParameter() {
     // Given
     String parameter = "KEYWORD_COUNTER:MENACE";
