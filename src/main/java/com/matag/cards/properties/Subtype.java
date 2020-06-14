@@ -24,6 +24,7 @@ public enum Subtype {
   CROCODILE,
   CYCLOPS,
   DEMON,
+  DESERT,
   DEVIL,
   DINOSAUR,
   DRAGON,

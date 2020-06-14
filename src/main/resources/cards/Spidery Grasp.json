@@ -1,0 +1,22 @@
+{
+  "name" : "Spidery Grasp",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/d/1dc24c93-2670-47c0-bb15-d1fff0fd19eb.jpg?1576267428",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Untap target creature. It gets +2/+4 and gains reach until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":UNTAPPED", "+2/+4", "REACH" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

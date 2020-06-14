@@ -1,0 +1,37 @@
+{
+  "name" : "Painful Lesson",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/5/d54b51da-bc5a-4ef3-a6a3-e0b1e343c67c.jpg?1573510160",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Target player draws two cards and loses 2 life.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "DRAW:2", "DAMAGE:2" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "-1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_DIE",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "ZOMBIE" ]
+      }
+    }
+  } ]
+}

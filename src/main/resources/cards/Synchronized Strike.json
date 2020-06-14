@@ -1,0 +1,28 @@
+{
+  "name" : "Synchronized Strike",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fcb09d11-5a6d-498f-9173-3539760b19fb.jpg?1543675997",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Untap up to two target creatures. They each get +2/+2 until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    }, {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ ":UNTAPPED", "+2/+2" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

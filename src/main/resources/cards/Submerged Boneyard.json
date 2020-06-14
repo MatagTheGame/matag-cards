@@ -1,0 +1,23 @@
+{
+  "name" : "Submerged Boneyard",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/4/4490b5fe-6a69-4d76-91f2-1b8dc016e2b5.jpg?1561906280",
+  "types" : [ "LAND" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Submerged Boneyard enters the battlefield tapped. {T}: Add {U} or {B}.",
+  "abilities" : [ {
+    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
+    "parameters" : [ ":TAPPED" ]
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "BLUE" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "BLACK" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  } ]
+}

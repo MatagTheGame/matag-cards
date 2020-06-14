@@ -1,0 +1,31 @@
+{
+  "name" : "Ornery Kudu",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8ba1d3a1-8c1b-4b77-b149-13d5ad9f125a.jpg?1543675912",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ANTELOPE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Ornery Kudu enters the battlefield, put a -1/-1 counter on target creature you control.",
+  "power" : 3,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "MINUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
