@@ -1,0 +1,19 @@
+{
+  "name" : "Aven Battle Priest",
+  "abilities" : [ {
+    "abilityType" : "ADD_X_LIFE",
+    "cardInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "3" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

@@ -1,0 +1,17 @@
+{
+  "name" : "Akroan Jailer",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "TAP" ]
+    }
+  } ]
+}

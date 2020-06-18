@@ -1,0 +1,20 @@
+{
+  "name" : "Blessed Spirits",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "ENCHANTMENT" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

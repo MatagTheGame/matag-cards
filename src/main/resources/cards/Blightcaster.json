@@ -1,0 +1,23 @@
+{
+  "name" : "Blightcaster",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ "-2/-2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "cardInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "ENCHANTMENT" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

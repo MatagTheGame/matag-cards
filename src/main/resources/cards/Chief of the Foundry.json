@@ -1,0 +1,16 @@
+{
+  "name" : "Chief of the Foundry",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "cardInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "ARTIFACT", "CREATURE" ],
+      "controllerType" : "PLAYER",
+      "others" : true
+    },
+    "parameters" : [ "+1/+1" ],
+    "trigger" : {
+      "type" : "STATIC"
+    }
+  } ]
+}

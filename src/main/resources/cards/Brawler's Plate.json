@@ -1,0 +1,18 @@
+{
+  "name" : "Brawler's Plate",
+  "abilities" : [ {
+    "abilityType" : "EQUIP",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+2/+2", "TRAMPLE" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    },
+    "sorcerySpeed" : true
+  } ]
+}

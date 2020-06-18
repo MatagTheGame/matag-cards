@@ -1,0 +1,18 @@
+{
+  "name" : "Anointer of Champions",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "cardInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "statusTypes" : [ "ATTACKING" ]
+      }
+    } ],
+    "parameters" : [ "+1/+1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "TAP" ]
+    }
+  } ]
+}
