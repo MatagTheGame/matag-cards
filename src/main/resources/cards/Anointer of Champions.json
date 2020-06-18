@@ -1,5 +1,14 @@
 {
   "name" : "Anointer of Champions",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/3/3379dc97-abdf-43d7-8625-f8ac04b5687e.jpg?1562904554",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CLERIC", "HUMAN" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "{T}: Target attacking creature gets +1/+1 until end of turn.",
+  "power" : 1,
+  "toughness" : 1,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

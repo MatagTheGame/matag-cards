@@ -1,5 +1,11 @@
 {
   "name" : "Brawler's Plate",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg?1562044708",
+  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ARTIFACT" ],
+  "subtypes" : [ "EQUIPMENT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Equipped creature gets +2/+2 and has trample. Equip {4}",
   "abilities" : [ {
     "abilityType" : "EQUIP",
     "targets" : [ {

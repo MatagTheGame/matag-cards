@@ -1,5 +1,14 @@
 {
   "name" : "Aven Battle Priest",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a37d3345-3950-4977-af19-209c7a2f8d0c.jpg?1573504847",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "BIRD", "CLERIC" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. When Aven Battle Priest enters the battlefield, you gain 3 life.",
+  "power" : 3,
+  "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "ADD_X_LIFE",
     "cardInstanceSelector" : {

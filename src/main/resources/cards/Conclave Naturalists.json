@@ -1,5 +1,14 @@
 {
   "name" : "Conclave Naturalists",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/7/3759fc28-9adb-41ed-851c-566a3a424e09.jpg?1562014874",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DRYAD" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "When Conclave Naturalists enters the battlefield, you may destroy target artifact or enchantment.",
+  "power" : 4,
+  "toughness" : 4,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

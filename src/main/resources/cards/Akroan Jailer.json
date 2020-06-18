@@ -1,5 +1,14 @@
 {
   "name" : "Akroan Jailer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/d/8d96bc2b-2e31-4654-b192-c3f023d9fde6.jpg?1562030815",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "SOLDIER" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{2}{W}, {T}: Tap target creature.",
+  "power" : 1,
+  "toughness" : 1,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

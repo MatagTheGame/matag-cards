@@ -1,5 +1,14 @@
 {
   "name" : "Blightcaster",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8986163-6362-4c70-8ece-22ae22da5031.jpg?1562038435",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "WIZARD" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Whenever you cast an enchantment spell, you may have target creature get -2/-2 until end of turn.",
+  "power" : 2,
+  "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
