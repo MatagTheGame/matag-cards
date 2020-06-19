@@ -12,7 +12,7 @@
   }, {
     "abilityType" : "ENCHANT",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ]
       }

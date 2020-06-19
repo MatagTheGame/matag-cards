@@ -12,7 +12,7 @@
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ],
         "controllerType" : "PLAYER"
@@ -22,7 +22,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "itself" : true
       }

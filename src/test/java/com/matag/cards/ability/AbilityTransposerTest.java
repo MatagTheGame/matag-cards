@@ -34,13 +34,13 @@ public class AbilityTransposerTest {
 
     // Then
     assertThat(transposed.getAbilityType()).isEqualTo(AbilityType.SELECTED_PERMANENTS_GET);
-    assertThat(transposed.getCardInstanceSelector().getSelectorType()).isEqualTo(SelectorType.PERMANENT);
-    assertThat(transposed.getCardInstanceSelector().isItself()).isTrue();
+    assertThat(transposed.getMagicInstanceSelector().getSelectorType()).isEqualTo(SelectorType.PERMANENT);
+    assertThat(transposed.getMagicInstanceSelector().isItself()).isTrue();
     assertThat(transposed.getParameters()).containsExactly("+1/+1");
     assertThat(transposed.getTrigger().getType()).isEqualTo(TriggerType.TRIGGERED_ABILITY);
     assertThat(transposed.getTrigger().getSubtype()).isEqualTo(TriggerSubtype.WHEN_CAST);
-    assertThat(transposed.getTrigger().getCardInstanceSelector().getSelectorType()).isEqualTo(SelectorType.SPELL);
-    assertThat(transposed.getTrigger().getCardInstanceSelector().getNotOfType()).containsExactly(Type.CREATURE);
-    assertThat(transposed.getTrigger().getCardInstanceSelector().getControllerType()).isEqualTo(PlayerType.PLAYER);
+    assertThat(transposed.getTrigger().getMagicInstanceSelector().getSelectorType()).isEqualTo(SelectorType.SPELL);
+    assertThat(transposed.getTrigger().getMagicInstanceSelector().getNotOfType()).containsExactly(Type.CREATURE);
+    assertThat(transposed.getTrigger().getMagicInstanceSelector().getControllerType()).isEqualTo(PlayerType.PLAYER);
   }
 }

@@ -13,7 +13,7 @@
     "abilityType" : "FLASH"
   }, {
     "abilityType" : "ADD_X_LIFE",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "controllerType" : "OPPONENT"
     },
@@ -21,7 +21,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "SPELL",
         "notOfType" : [ "CREATURE" ],
         "withAbilityType" : "FLASH",
@@ -34,7 +34,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "SPELL",
         "notOfType" : [ "CREATURE" ],
         "withAbilityType" : "FLASH",

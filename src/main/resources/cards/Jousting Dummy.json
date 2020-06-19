@@ -10,7 +10,7 @@
   "toughness" : 1,
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "itself" : true
     },

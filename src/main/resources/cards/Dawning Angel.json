@@ -13,7 +13,7 @@
     "abilityType" : "FLYING"
   }, {
     "abilityType" : "ADD_X_LIFE",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "itself" : true
     },
@@ -21,7 +21,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "itself" : true
       }

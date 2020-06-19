@@ -10,7 +10,7 @@
   "toughness" : 5,
   "abilities" : [ {
     "abilityType" : "ADD_X_LIFE",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "controllerType" : "OPPONENT"
     },
@@ -21,7 +21,7 @@
     }
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "itself" : true
     },
@@ -29,7 +29,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "SPELL",
         "ofType" : [ "CREATURE" ],
         "ofSubtype" : [ "PIRATE" ],

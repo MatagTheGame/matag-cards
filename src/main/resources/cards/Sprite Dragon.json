@@ -15,7 +15,7 @@
     "abilityType" : "HASTE"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "itself" : true
     },
@@ -23,7 +23,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "SPELL",
         "notOfType" : [ "CREATURE" ],
         "controllerType" : "PLAYER"

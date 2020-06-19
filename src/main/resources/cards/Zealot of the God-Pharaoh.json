@@ -12,7 +12,7 @@
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PLAYER",
         "controllerType" : "OPPONENT"
       }

@@ -8,7 +8,7 @@
   "ruleText" : "Storm's Wrath deals 4 damage to each creature and each planeswalker.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE", "PLANESWALKER" ]
     },

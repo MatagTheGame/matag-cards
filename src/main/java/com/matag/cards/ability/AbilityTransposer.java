@@ -1,6 +1,6 @@
 package com.matag.cards.ability;
 
-import com.matag.cards.ability.selector.CardInstanceSelector;
+import com.matag.cards.ability.selector.MagicInstanceSelector;
 import com.matag.cards.ability.trigger.Trigger;
 import com.matag.cards.ability.trigger.TriggerSubtype;
 import com.matag.cards.ability.trigger.TriggerType;
@@ -14,8 +14,8 @@ import static com.matag.cards.properties.Type.CREATURE;
 import static java.util.Collections.singletonList;
 
 public class AbilityTransposer {
-  private static final CardInstanceSelector SELECTOR_IT = CardInstanceSelector.builder().selectorType(PERMANENT).itself(true).build();
-  private static final CardInstanceSelector YOUR_NON_CREATURE_SPELL = CardInstanceSelector.builder().selectorType(SPELL).notOfType(singletonList(CREATURE)).controllerType(PlayerType.PLAYER).build();
+  private static final MagicInstanceSelector SELECTOR_IT = MagicInstanceSelector.builder().selectorType(PERMANENT).itself(true).build();
+  private static final MagicInstanceSelector YOUR_NON_CREATURE_SPELL = MagicInstanceSelector.builder().selectorType(SPELL).notOfType(singletonList(CREATURE)).controllerType(PlayerType.PLAYER).build();
 
   public static Ability transpose(Ability ability) {
     if (ability.getAbilityType() == PROWESS) {
@@ -27,7 +27,7 @@ public class AbilityTransposer {
           Trigger.builder()
               .type(TriggerType.TRIGGERED_ABILITY)
               .subtype(TriggerSubtype.WHEN_CAST)
-              .cardInstanceSelector(YOUR_NON_CREATURE_SPELL)
+              .magicInstanceSelector(YOUR_NON_CREATURE_SPELL)
               .build(),
           null,
           false

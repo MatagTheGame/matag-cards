@@ -9,7 +9,7 @@
   "abilities" : [ {
     "abilityType" : "SHUFFLE_GRAVEYARD_INTO_LIBRARY_FOR_TARGET_PLAYER",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PLAYER"
       }
     } ],

@@ -13,7 +13,7 @@
     "abilityType" : "DOUBLE_STRIKE"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "withAbilityType" : "FIRST_STRIKE",

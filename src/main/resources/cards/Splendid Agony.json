@@ -9,12 +9,12 @@
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ]
       }
     }, {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ]
       }

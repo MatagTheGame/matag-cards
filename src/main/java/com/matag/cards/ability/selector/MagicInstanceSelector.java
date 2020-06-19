@@ -17,9 +17,9 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Value
-@JsonDeserialize(builder = CardInstanceSelector.CardInstanceSelectorBuilder.class)
+@JsonDeserialize(builder = MagicInstanceSelector.MagicInstanceSelectorBuilder.class)
 @Builder(toBuilder = true)
-public class CardInstanceSelector {
+public class MagicInstanceSelector {
   SelectorType selectorType;
   List<Type> ofType;
   List<Type> notOfType;
@@ -40,7 +40,7 @@ public class CardInstanceSelector {
   boolean historic;
 
   @JsonPOJOBuilder(withPrefix = "")
-  public static class CardInstanceSelectorBuilder {
+  public static class MagicInstanceSelectorBuilder {
 
   }
 

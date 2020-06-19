@@ -10,7 +10,7 @@
   "abilities" : [ {
     "abilityType" : "ENCHANT",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ]
       }
@@ -25,7 +25,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "itself" : true
       }

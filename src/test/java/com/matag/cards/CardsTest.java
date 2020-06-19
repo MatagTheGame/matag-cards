@@ -1,7 +1,7 @@
 package com.matag.cards;
 
 import com.matag.cards.ability.Ability;
-import com.matag.cards.ability.selector.CardInstanceSelector;
+import com.matag.cards.ability.selector.MagicInstanceSelector;
 import com.matag.cards.ability.selector.SelectorType;
 import com.matag.cards.ability.target.Target;
 import com.matag.cards.ability.trigger.Trigger;
@@ -66,7 +66,7 @@ public class CardsTest {
       Ability.builder()
         .abilityType(THAT_TARGETS_GET)
         .targets(singletonList(Target.builder()
-          .cardInstanceSelector(CardInstanceSelector.builder()
+          .magicInstanceSelector(MagicInstanceSelector.builder()
             .selectorType(SelectorType.PERMANENT)
             .ofType(singletonList(Type.CREATURE))
             .build())
@@ -102,8 +102,8 @@ public class CardsTest {
     card.getAbilities().stream()
         .filter(ability -> ability.getAbilityType().equals(SELECTED_PERMANENTS_GET))
         .forEach(ability -> {
-          if (ability.getCardInstanceSelector() == null) {
-            throw new RuntimeException("Card '" + name + "' is missing cardInstanceSelector");
+          if (ability.getMagicInstanceSelector() == null) {
+            throw new RuntimeException("Card '" + name + "' is missing magicInstanceSelector");
           }
         });
   }

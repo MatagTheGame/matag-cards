@@ -8,7 +8,7 @@
   "ruleText" : "Destroy all creatures. Lands you control don't untap during your next untap step.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ]
     },
@@ -18,7 +18,7 @@
     }
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "LAND" ],
       "controllerType" : "PLAYER"

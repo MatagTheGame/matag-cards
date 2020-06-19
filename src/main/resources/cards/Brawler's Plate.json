@@ -9,7 +9,7 @@
   "abilities" : [ {
     "abilityType" : "EQUIP",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE" ]
       }

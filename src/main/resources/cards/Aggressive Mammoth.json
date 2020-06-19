@@ -13,7 +13,7 @@
     "abilityType" : "TRAMPLE"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "controllerType" : "PLAYER",

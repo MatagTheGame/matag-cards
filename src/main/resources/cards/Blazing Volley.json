@@ -8,7 +8,7 @@
   "ruleText" : "Blazing Volley deals 1 damage to each creature your opponents control.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "controllerType" : "OPPONENT"

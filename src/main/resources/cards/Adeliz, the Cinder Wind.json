@@ -11,7 +11,7 @@
   "toughness" : 2,
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "ofSubtype" : [ "WIZARD" ],
@@ -21,7 +21,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "SPELL",
         "ofType" : [ "INSTANT", "SORCERY" ],
         "controllerType" : "PLAYER"

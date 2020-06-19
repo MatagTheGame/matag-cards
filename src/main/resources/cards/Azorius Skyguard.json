@@ -15,7 +15,7 @@
     "abilityType" : "FIRST_STRIKE"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "controllerType" : "OPPONENT"

@@ -13,7 +13,7 @@
     "abilityType" : "PROWESS"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "statusTypes" : [ "ATTACKING" ],
       "itself" : true

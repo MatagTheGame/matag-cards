@@ -12,7 +12,7 @@
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "SPELL",
         "notOfType" : [ "CREATURE" ],
         "controllerType" : "PLAYER"

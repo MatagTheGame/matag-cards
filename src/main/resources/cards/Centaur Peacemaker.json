@@ -11,14 +11,14 @@
   "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "ADD_X_LIFE",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PLAYER"
     },
     "parameters" : [ "4" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "itself" : true
       }

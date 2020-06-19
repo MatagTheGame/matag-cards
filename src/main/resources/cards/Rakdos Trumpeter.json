@@ -13,7 +13,7 @@
     "abilityType" : "MENACE"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "itself" : true
     },

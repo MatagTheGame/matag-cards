@@ -8,7 +8,7 @@
   "ruleText" : "Destroy all nonland permanents your opponents control.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "notOfType" : [ "LAND" ],
       "controllerType" : "OPPONENT"

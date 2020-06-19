@@ -8,7 +8,7 @@
   "ruleText" : "Creatures you control get +2/+0 until end of turn.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "controllerType" : "PLAYER"

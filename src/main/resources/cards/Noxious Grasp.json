@@ -9,7 +9,7 @@
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
-      "cardInstanceSelector" : {
+      "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
         "ofType" : [ "CREATURE", "PLANESWALKER" ],
         "ofColors" : [ "GREEN", "WHITE" ]
@@ -21,7 +21,7 @@
     }
   }, {
     "abilityType" : "ADD_X_LIFE",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "itself" : true
     },

@@ -8,7 +8,7 @@
   "ruleText" : "Creatures you control gain trample until end of turn. Draw a card.",
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "CREATURE" ],
       "controllerType" : "PLAYER"

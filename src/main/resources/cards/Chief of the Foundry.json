@@ -10,7 +10,7 @@
   "toughness" : 3,
   "abilities" : [ {
     "abilityType" : "SELECTED_PERMANENTS_GET",
-    "cardInstanceSelector" : {
+    "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
       "ofType" : [ "ARTIFACT", "CREATURE" ],
       "controllerType" : "PLAYER",
