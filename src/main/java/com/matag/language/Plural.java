@@ -1,12 +1,24 @@
 package com.matag.language;
 
+import java.util.Map;
+
 public class Plural {
+  private static final Map<String, String> IRREGULARS = Map.of(
+      "CYCLOPS", "CYCLOPES"
+  );
+
   public static String plural(String word) {
-    if (word.endsWith("f")) {
-      return replaceLast(word, "f", "ves");
+    if (IRREGULARS.containsKey(word)) {
+      return IRREGULARS.get(word);
+
+    } if (word.endsWith("S") || word.endsWith("SH") || word.endsWith("CH") || word.endsWith("X") || word.endsWith("Z")) {
+      return word + "ES";
+
+    } else if (word.endsWith("F")) {
+      return replaceLast(word, "F", "VES");
 
     } else {
-      return word + "s";
+      return word + "S";
     }
   }
 

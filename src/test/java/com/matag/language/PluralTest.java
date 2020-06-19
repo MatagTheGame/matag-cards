@@ -8,11 +8,21 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class PluralTest {
   @Test
   public void pluralOfNormalWord() {
-    assertThat(plural("wizard")).isEqualTo("wizards");
+    assertThat(plural("WIZARD")).isEqualTo("WIZARDS");
   }
 
   @Test
-  public void pluralOfNormalElf() {
-    assertThat(plural("elf")).isEqualTo("elves");
+  public void pluralOfWordsThatNeedEs() {
+    assertThat(plural("JELLYFISH")).isEqualTo("JELLYFISHES");
+  }
+
+  @Test
+  public void pluralOfWordEndingWithF() {
+    assertThat(plural("ELF")).isEqualTo("ELVES");
+  }
+
+  @Test
+  public void pluralOfIrregularWords() {
+    assertThat(plural("CYCLOPS")).isEqualTo("CYCLOPES");
   }
 }
