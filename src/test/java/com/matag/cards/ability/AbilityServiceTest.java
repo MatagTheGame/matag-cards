@@ -12,7 +12,7 @@ import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AbilityServiceTest {
-  private AbilityService abilityService = new AbilityService();
+  private final AbilityService abilityService = new AbilityService();
 
   @Test
   public void replaceLastTest() {
@@ -101,36 +101,6 @@ public class AbilityServiceTest {
   }
 
   @Test
-  public void testControllerDamageFromParameterAbsent() {
-    // When
-    int damage = abilityService.controllerDamageFromParameter("TRAMPLE");
-
-    // Then
-    assertThat(damage).isEqualTo(0);
-  }
-
-  @Test
-  public void testDestroyedFromParameter() {
-    // Given
-    String parameter = ":DESTROYED";
-
-    // When
-    boolean destroyed = abilityService.destroyedFromParameter(parameter);
-
-    // Then
-    assertThat(destroyed).isTrue();
-  }
-
-  @Test
-  public void testDestroyedFromParameterAbsent() {
-    // When
-    boolean destroyed = abilityService.destroyedFromParameter("TRAMPLE");
-
-    // Then
-    assertThat(destroyed).isFalse();
-  }
-
-  @Test
   public void testTappedFromParameter() {
     // Given
     String parameter = ":TAPPED";
@@ -140,36 +110,6 @@ public class AbilityServiceTest {
 
     // Then
     assertThat(tapped).isTrue();
-  }
-
-  @Test
-  public void testTappedFromParameterAbsent() {
-    // When
-    boolean tapped = abilityService.tappedFromParameter("TRAMPLE");
-
-    // Then
-    assertThat(tapped).isFalse();
-  }
-
-  @Test
-  public void testDoesNotUntapNextTurnFromParameter() {
-    // Given
-    String parameter = ":DOES_NOT_UNTAP_NEXT_TURN";
-
-    // When
-    boolean doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter(parameter);
-
-    // Then
-    assertThat(doesNotUntapNextTurn).isTrue();
-  }
-
-  @Test
-  public void testDoesNotUntapNextTurnFromParameterAbsent() {
-    // When
-    boolean doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter("TRAMPLE");
-
-    // Then
-    assertThat(doesNotUntapNextTurn).isFalse();
   }
 
   @Test
@@ -185,13 +125,89 @@ public class AbilityServiceTest {
   }
 
   @Test
-  public void testUntappedFromParameterAbsent() {
+  public void testDoesNotUntapNextTurnFromParameter() {
+    // Given
+    String parameter = ":DOES_NOT_UNTAP_NEXT_TURN";
+
     // When
-    boolean untapped = abilityService.untappedFromParameter("TRAMPLE");
+    boolean doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter(parameter);
 
     // Then
-    assertThat(untapped).isFalse();
+    assertThat(doesNotUntapNextTurn).isTrue();
   }
+
+  @Test
+  public void testDestroyedFromParameter() {
+    // Given
+    String parameter = ":DESTROYED";
+
+    // When
+    boolean destroyed = abilityService.destroyedFromParameter(parameter);
+
+    // Then
+    assertThat(destroyed).isTrue();
+  }
+
+  @Test
+  public void testReturnedToOwnerHandFromParameter() {
+    // Given
+    String parameter = ":RETURN_TO_OWNER_HAND";
+
+    // When
+    boolean returnToOwnerHand = abilityService.returnToOwnerHandFromParameter(parameter);
+
+    // Then
+    assertThat(returnToOwnerHand).isTrue();
+  }
+
+  @Test
+  public void testControlledFromParameter() {
+    // Given
+    String parameter = ":CONTROLLED";
+
+    // When
+    boolean controlled = abilityService.controlledFromParameter(parameter);
+
+    // Then
+    assertThat(controlled).isTrue();
+  }
+
+  @Test
+  public void testPlus1CountersFromParameter() {
+    // Given
+    String parameter = "PLUS_1_COUNTERS:2";
+
+    // When
+    int counters = abilityService.plus1CountersFromParameter(parameter);
+
+    // Then
+    assertThat(counters).isEqualTo(2);
+  }
+
+  @Test
+  public void testMinus1CountersFromParameter() {
+    // Given
+    String parameter = "MINUS_1_COUNTERS:3";
+
+    // When
+    int counters = abilityService.minus1CountersFromParameter(parameter);
+
+    // Then
+    assertThat(counters).isEqualTo(3);
+  }
+
+  @Test
+  public void testKeywordCounterFromParameter() {
+    // Given
+    String parameter = "KEYWORD_COUNTER:MENACE";
+
+    // When
+    AbilityType keywordAbility = abilityService.keywordCounterFromParameter(parameter);
+
+    // Then
+    assertThat(keywordAbility).isEqualTo(MENACE);
+  }
+
 
   @Test
   public void testDrawFromParameter() {
@@ -215,43 +231,19 @@ public class AbilityServiceTest {
   }
 
   @Test
-  public void testPlus1CountersFromParameter() {
+  public void testLifeFromParameter() {
     // Given
-    String parameter = "PLUS_1_COUNTERS:2";
+    String parameter = "LIFE:3";
 
     // When
-    int draw = abilityService.plus1CountersFromParameter(parameter);
+    int life = abilityService.lifeFromParameter(parameter);
 
     // Then
-    assertThat(draw).isEqualTo(2);
+    assertThat(life).isEqualTo(3);
   }
 
   @Test
-  public void testMinus1CountersFromParameter() {
-    // Given
-    String parameter = "MINUS_1_COUNTERS:3";
-
-    // When
-    int draw = abilityService.minus1CountersFromParameter(parameter);
-
-    // Then
-    assertThat(draw).isEqualTo(3);
-  }
-
-  @Test
-  public void testKeywordCounterFromParameter() {
-    // Given
-    String parameter = "KEYWORD_COUNTER:MENACE";
-
-    // When
-    AbilityType keywordAbility = abilityService.keywordCounterFromParameter(parameter);
-
-    // Then
-    assertThat(keywordAbility).isEqualTo(MENACE);
-  }
-
-  @Test
-  public void testParametersAsString() {
+  public void testPermanentParametersAsString() {
     // Given
     List<String> parameters = asList("+2/+2", "TRAMPLE", "DAMAGE:2", "HASTE", "CONTROLLER_DAMAGE:3", ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN", ":DESTROYED", ":RETURN_TO_OWNER_HAND", "PLUS_1_COUNTERS:2", "KEYWORD_COUNTER:MENACE");
 
@@ -260,5 +252,17 @@ public class AbilityServiceTest {
 
     // Then
     assertThat(parametersAsString).isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter");
+  }
+
+  @Test
+  public void testPlayerParametersAsString() {
+    // Given
+    List<String> parameters = asList("LIFE:2", "LIFE:-3", "DRAW:1", "DRAW:2");
+
+    // When
+    String parametersAsString = AbilityService.parametersAsString(parameters);
+
+    // Then
+    assertThat(parametersAsString).isEqualTo("gain 2 life, lose 3 life, draw 1 card and draw 2 cards");
   }
 }
