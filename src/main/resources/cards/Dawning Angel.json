@@ -12,12 +12,12 @@
   "abilities" : [ {
     "abilityType" : "FLYING"
   }, {
-    "abilityType" : "ADD_X_LIFE",
+    "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "itself" : true
     },
-    "parameters" : [ "4" ],
+    "parameters" : [ "LIFE:4" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",

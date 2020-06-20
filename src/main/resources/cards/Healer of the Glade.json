@@ -10,12 +10,12 @@
   "power" : 1,
   "toughness" : 2,
   "abilities" : [ {
-    "abilityType" : "ADD_X_LIFE",
+    "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "itself" : true
     },
-    "parameters" : [ "3" ],
+    "parameters" : [ "LIFE:3" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",

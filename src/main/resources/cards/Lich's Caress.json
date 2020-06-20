@@ -19,12 +19,12 @@
       "type" : "CAST"
     }
   }, {
-    "abilityType" : "ADD_X_LIFE",
+    "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "itself" : true
     },
-    "parameters" : [ "3" ],
+    "parameters" : [ "LIFE:3" ],
     "trigger" : {
       "type" : "CAST"
     }

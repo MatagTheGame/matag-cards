@@ -146,7 +146,6 @@ public enum AbilityType {
   // Others
   ADAMANT("Adamant"),
   DRAW_X_CARDS("Draw %s cards."),
-  ADD_X_LIFE("%s %s %s life."),
   ENTERS_THE_BATTLEFIELD_WITH("Enters the battlefield %s."),
   SELECTED_PERMANENTS_GET("%s %s"),
   SHUFFLE_GRAVEYARD_INTO_LIBRARY_FOR_TARGET_PLAYER("Shuffle graveyard into library."),

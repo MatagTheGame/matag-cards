@@ -28,12 +28,12 @@
       }
     }
   }, {
-    "abilityType" : "ADD_X_LIFE",
+    "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "controllerType" : "OPPONENT"
     },
-    "parameters" : [ "-1" ],
+    "parameters" : [ "LIFE:-1" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",

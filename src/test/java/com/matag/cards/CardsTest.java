@@ -84,11 +84,7 @@ public class CardsTest {
     }
 
     if (card.getTypes().isEmpty()) {
-      throw new RuntimeException("Card '" + name + "' does not have a type");
-    }
-
-    if (card.getRarity() == null) {
-      throw new RuntimeException("Card '" + name + "' does not have rarity");
+      throw new RuntimeException("Card '" + name + "' does not have a type. Remove the image and run cardImageLinker");
     }
 
     card.getAbilities().stream()
@@ -97,6 +93,10 @@ public class CardsTest {
           if (ability.getTargets().isEmpty()) {
             throw new RuntimeException("Card '" + name + "' is missing targets");
           }
+
+          if (ability.getParameters().isEmpty()) {
+            throw new RuntimeException("Card '" + name + "' is missing parameters");
+          }
         });
 
     card.getAbilities().stream()
@@ -104,6 +104,10 @@ public class CardsTest {
         .forEach(ability -> {
           if (ability.getMagicInstanceSelector() == null) {
             throw new RuntimeException("Card '" + name + "' is missing magicInstanceSelector");
+          }
+
+          if (ability.getParameters().isEmpty()) {
+            throw new RuntimeException("Card '" + name + "' is missing parameters");
           }
         });
   }

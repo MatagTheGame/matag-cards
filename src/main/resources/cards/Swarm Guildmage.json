@@ -22,12 +22,12 @@
       "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "TAP" ]
     }
   }, {
-    "abilityType" : "ADD_X_LIFE",
+    "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
       "itself" : true
     },
-    "parameters" : [ "2" ],
+    "parameters" : [ "LIFE:2" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
       "cost" : [ "GREEN", "COLORLESS", "TAP" ]
