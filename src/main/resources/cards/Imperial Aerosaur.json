@@ -21,7 +21,7 @@
         "others" : true
       }
     } ],
-    "parameters" : [ "+1/+1", "Flying" ],
+    "parameters" : [ "+1/+1", "FLYING" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",

@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+import static com.matag.language.StringUtils.replaceLast;
 import static java.util.Collections.singletonList;
 
 @Component
@@ -94,54 +95,63 @@ public class AbilityService {
     return getParameterIntValue(parameter, LIFE);
   }
 
-  public static String parametersAsString(List<String> parameters) {
-    String text = parameters.stream().map(AbilityService::parameterAsString).collect(Collectors.joining(", "));
+  public String parametersAsString(List<String> parameters) {
+    String text = parameters.stream().map(this::parameterAsString).collect(Collectors.joining(", "));
     return replaceLast(text, ",", " and");
   }
 
-  private static String parameterAsString(String parameter) {
-    if (parameter == null) {
-      return null;
+  private String parameterAsString(String parameter) {
+    if (parameter.contains("/")) {
+      return parameter;
 
     } else if (parameter.startsWith("DAMAGE:")) {
-      return parameter.replace("DAMAGE:", "") + " damage";
+      return damageFromParameter(parameter) + " damage";
 
     } else if (parameter.startsWith("CONTROLLER_DAMAGE:")) {
-      return "to its controller " + parameter.replace("CONTROLLER_DAMAGE:", "") + " damage";
+      return "to its controller " + controllerDamageFromParameter(parameter) + " damage";
 
-    } else if (parameter.equals(":DOES_NOT_UNTAP_NEXT_TURN")) {
+    } else if (tappedFromParameter(parameter)) {
+      return "tapped";
+
+    } else if (untappedFromParameter(parameter)) {
+      return "untapped";
+
+    } else if (doesNotUntapNextTurnFromParameter(parameter)) {
       return "doesn't untap next turn";
 
-    } else if (parameter.equals(":RETURN_TO_OWNER_HAND")) {
+    } else if (destroyedFromParameter(parameter)) {
+      return "destroyed";
+
+    } else if (returnToOwnerHandFromParameter(parameter)) {
       return "returned to its owner's hand";
 
+    } else if (controlledFromParameter(parameter)) {
+      return "controlled";
+
     } else if (parameter.startsWith("PLUS_1_COUNTERS:")) {
-      return parameter.replace("PLUS_1_COUNTERS:", "") + " +1/+1 counters";
+      return plus1CountersFromParameter(parameter) + " +1/+1 counters";
 
     } else if (parameter.startsWith("MINUS_1_COUNTERS:")) {
-      return parameter.replace("MINUS_1_COUNTERS:", "") + " -1/-1 counters";
+      return minus1CountersFromParameter(parameter) + " -1/-1 counters";
 
     } else if (parameter.startsWith("KEYWORD_COUNTER:")) {
-      return "a " + parameter.replace("KEYWORD_COUNTER:", "").toLowerCase().replace("_", " ") + " counter";
+      return "a " + abilityParameterAsString(keywordCounterFromParameter(parameter)) + " counter";
 
     } else if (parameter.startsWith("LIFE:")) {
-      int life = Integer.parseInt(parameter.replace("LIFE:", ""));
-      if (life > 0) {
-        return "gain " + life + " life";
-
-      } else {
-        return "lose " + (-life) + " life";
-      }
+      int life = lifeFromParameter(parameter);
+      return (life > 0 ? "gain " + life : "lose " + (-life)) + " life";
 
     } else if (parameter.startsWith("DRAW:")) {
-      int draw = Integer.parseInt(parameter.replace("DRAW:", ""));
-      String text = "draw " + draw + " card";
-      text += draw > 1 ? "s" : "";
-      return text;
+      int draw = drawFromParameter(parameter);
+      return "draw " + draw + " card" + (draw > 1 ? "s" : "");
 
     } else {
-      return parameter.replace(":", "").toLowerCase();
+      return abilityParameterAsString(AbilityType.valueOf(parameter));
     }
+  }
+
+  private String abilityParameterAsString(AbilityType abilityType) {
+    return abilityType.getText().substring(0, abilityType.getText().length() - 1).toLowerCase();
   }
 
   private Optional<String> getParameterValue(String parameter, String parameterType) {
@@ -153,9 +163,5 @@ public class AbilityService {
 
   private int getParameterIntValue(String parameter, String parameterType) {
     return getParameterValue(parameter, parameterType).map(Integer::parseInt).orElse(0);
-  }
-
-  static String replaceLast(String text, String regex, String replacement) {
-    return text.replaceFirst("(?s)" + regex + "(?!.*?" + regex + ")", replacement);
   }
 }

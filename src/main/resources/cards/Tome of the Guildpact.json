@@ -6,8 +6,12 @@
   "rarity" : "RARE",
   "ruleText" : "Whenever you cast a multicolored spell, draw a card. {T}: Add one mana of any color.",
   "abilities" : [ {
-    "abilityType" : "DRAW_X_CARDS",
-    "parameters" : [ "1" ],
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",

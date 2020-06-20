@@ -7,8 +7,12 @@
   "rarity" : "COMMON",
   "ruleText" : "Draw two cards.",
   "abilities" : [ {
-    "abilityType" : "DRAW_X_CARDS",
-    "parameters" : [ "2" ],
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:2" ],
     "trigger" : {
       "type" : "CAST"
     }

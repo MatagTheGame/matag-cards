@@ -17,7 +17,7 @@
         "itself" : true
       }
     } ],
-    "parameters" : [ ":HASTE" ],
+    "parameters" : [ "HASTE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
       "cost" : [ "COLORLESS" ]

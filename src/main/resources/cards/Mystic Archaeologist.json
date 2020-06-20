@@ -10,8 +10,12 @@
   "power" : 2,
   "toughness" : 1,
   "abilities" : [ {
-    "abilityType" : "DRAW_X_CARDS",
-    "parameters" : [ "2" ],
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:2" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
       "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ]

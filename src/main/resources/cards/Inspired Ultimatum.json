@@ -29,8 +29,12 @@
       "type" : "CAST"
     }
   }, {
-    "abilityType" : "DRAW_X_CARDS",
-    "parameters" : [ "5" ],
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:5" ],
     "trigger" : {
       "type" : "CAST"
     }

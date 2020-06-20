@@ -6,18 +6,12 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static com.matag.cards.ability.AbilityService.replaceLast;
 import static com.matag.cards.ability.type.AbilityType.MENACE;
 import static java.util.Arrays.asList;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class AbilityServiceTest {
   private final AbilityService abilityService = new AbilityService();
-
-  @Test
-  public void replaceLastTest() {
-    assertThat(replaceLast("cat dog cat", "cat", "other")).isEqualTo("cat dog other");
-  }
 
   @Test
   public void testPowerAndToughnessFromParameter() {
@@ -248,7 +242,7 @@ public class AbilityServiceTest {
     List<String> parameters = asList("+2/+2", "TRAMPLE", "DAMAGE:2", "HASTE", "CONTROLLER_DAMAGE:3", ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN", ":DESTROYED", ":RETURN_TO_OWNER_HAND", "PLUS_1_COUNTERS:2", "KEYWORD_COUNTER:MENACE");
 
     // When
-    String parametersAsString = AbilityService.parametersAsString(parameters);
+    String parametersAsString = abilityService.parametersAsString(parameters);
 
     // Then
     assertThat(parametersAsString).isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter");
@@ -260,7 +254,7 @@ public class AbilityServiceTest {
     List<String> parameters = asList("LIFE:2", "LIFE:-3", "DRAW:1", "DRAW:2");
 
     // When
-    String parametersAsString = AbilityService.parametersAsString(parameters);
+    String parametersAsString = abilityService.parametersAsString(parameters);
 
     // Then
     assertThat(parametersAsString).isEqualTo("gain 2 life, lose 3 life, draw 1 card and draw 2 cards");

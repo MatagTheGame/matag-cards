@@ -1,6 +1,7 @@
 package com.matag.cards;
 
 import com.matag.cards.ability.Ability;
+import com.matag.cards.ability.AbilityService;
 import com.matag.cards.ability.selector.MagicInstanceSelector;
 import com.matag.cards.ability.selector.SelectorType;
 import com.matag.cards.ability.target.Target;
@@ -12,6 +13,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import java.util.List;
 
 import static com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET;
 import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
@@ -25,6 +28,9 @@ public class CardsTest {
 
   @Autowired
   private Cards cards;
+
+  @Autowired
+  private AbilityService abilityService;
 
   @Test
   public void shouldLoadAllCards() {
@@ -94,9 +100,7 @@ public class CardsTest {
             throw new RuntimeException("Card '" + name + "' is missing targets");
           }
 
-          if (ability.getParameters().isEmpty()) {
-            throw new RuntimeException("Card '" + name + "' is missing parameters");
-          }
+          validateParameters(name, ability.getParameters());
         });
 
     card.getAbilities().stream()
@@ -106,9 +110,19 @@ public class CardsTest {
             throw new RuntimeException("Card '" + name + "' is missing magicInstanceSelector");
           }
 
-          if (ability.getParameters().isEmpty()) {
-            throw new RuntimeException("Card '" + name + "' is missing parameters");
-          }
+          validateParameters(name, ability.getParameters());
         });
+  }
+
+  private void validateParameters(String name, List<String> parameters) {
+    if (parameters.isEmpty()) {
+      throw new RuntimeException("Card '" + name + "' is missing parameters");
+    }
+
+    try {
+      abilityService.parametersAsString(parameters);
+    } catch (Exception e) {
+      throw new RuntimeException("Card '" + name + "' has invalid parameters: " + parameters, e);
+    }
   }
 }
