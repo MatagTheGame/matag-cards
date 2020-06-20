@@ -120,7 +120,7 @@ public class CardsTest {
     }
 
     try {
-      abilityService.parametersAsString(parameters);
+      parameters.forEach(parameter -> abilityService.parameterAsString(parameter));
     } catch (Exception e) {
       throw new RuntimeException("Card '" + name + "' has invalid parameters: " + parameters, e);
     }

@@ -96,11 +96,19 @@ public class AbilityService {
   }
 
   public String parametersAsString(List<String> parameters) {
-    String text = parameters.stream().map(this::parameterAsString).collect(Collectors.joining(", "));
+    String text = parameters.stream().map(this::safeParameterAsString).collect(Collectors.joining(", "));
     return replaceLast(text, ",", " and");
   }
 
-  private String parameterAsString(String parameter) {
+  public String safeParameterAsString(String parameter) {
+    try {
+      return parameterAsString(parameter);
+    } catch (Exception e) {
+      return parameter.toLowerCase();
+    }
+  }
+
+  public String parameterAsString(String parameter) throws RuntimeException {
     if (parameter.contains("/")) {
       return parameter;
 
