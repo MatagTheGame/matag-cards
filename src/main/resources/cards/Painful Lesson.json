@@ -17,21 +17,5 @@
     "trigger" : {
       "type" : "CAST"
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ]
-      }
-    }
-  } ]
+  }]
 }

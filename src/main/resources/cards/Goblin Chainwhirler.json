@@ -33,7 +33,7 @@
       "selectorType" : "PLAYER",
       "controllerType" : "OPPONENT"
     },
-    "parameters" : [ "LIFE:-1" ],
+    "parameters" : [ "DAMAGE:1" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
