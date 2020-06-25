@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class MtgSets {
-  private Map<String, MtgSet> SETS = new LinkedHashMap<>();
+  private final Map<String, MtgSet> SETS = new LinkedHashMap<>();
 
   public MtgSets(ObjectMapper objectMapper, ResourceLoader resourceLoader) {
     Resource[] setResources = resourceLoader.getSetsFileNames();

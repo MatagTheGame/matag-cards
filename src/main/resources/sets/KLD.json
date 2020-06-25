@@ -2,8 +2,11 @@
   "code" : "KLD",
   "name" : "Kaladesh",
   "cards" : [
+    "Chief of the Foundry",
     "Demolish",
+    "Impeccable Timing",
     "Inspired Charge",
+    "Stone Quarry",
     "Woodland Stream"
   ]
 }

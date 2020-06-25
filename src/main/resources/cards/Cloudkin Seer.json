@@ -15,7 +15,7 @@
       "selectorType" : "PLAYER",
       "itself" : true
     },
-    "parameters": [ "DRAW:1" ],
+    "parameters" : [ "DRAW:1" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
