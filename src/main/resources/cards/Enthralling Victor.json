@@ -1,0 +1,35 @@
+{
+  "name" : "Enthralling Victor",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/2/226a0528-30ff-410a-aade-e2307d03daa0.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "WARRIOR" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "When Enthralling Victor enters the battlefield, gain control of target creature an opponent controls with power 2 or less until end of turn. Untap that creature. It gains haste until end of turn.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "powerToughnessConstraint" : {
+          "powerOrToughness" : "POWER",
+          "powerToughnessConstraintType" : "LESS_OR_EQUAL",
+          "value" : 2
+        }
+      }
+    } ],
+    "parameters" : [ ":CONTROLLED", ":UNTAPPED", "HASTE" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

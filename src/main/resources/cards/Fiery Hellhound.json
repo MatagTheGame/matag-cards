@@ -1,0 +1,24 @@
+{
+  "name" : "Fiery Hellhound",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/4/2439ba29-229c-4e2a-be01-8d2b6767f0af.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "RED", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ELEMENTAL", "HOUND" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{R}: Fiery Hellhound gets +1/+0 until end of turn.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+0" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "RED" ]
+    }
+  } ]
+}

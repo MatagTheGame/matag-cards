@@ -153,6 +153,7 @@ public class CardScryFallLinker {
 
     return Stream.of(scryFallTypesSplit[1].split(" "))
         .map(String::toUpperCase)
+        .map(subtype -> subtype.equals("DOG") ? "HOUND" : subtype)
         .map(Subtype::valueOf)
         .collect(Collectors.toCollection(TreeSet::new));
   }

@@ -1,0 +1,21 @@
+{
+  "name" : "Eyeblight Massacre",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/7/d73484db-5fd0-4a01-83fd-54748cc21a0f.jpg",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Non-Elf creatures get -2/-2 until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "notOfSubtype" : [ "HUMAN" ]
+    },
+    "parameters" : [ "-2/-2" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

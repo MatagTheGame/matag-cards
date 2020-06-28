@@ -1,0 +1,30 @@
+{
+  "name" : "Enlightened Ascetic",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/6/f64f49cb-7c9c-4702-b933-667ee7436144.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CAT", "MONK" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Enlightened Ascetic enters the battlefield, you may destroy target enchantment.",
+  "power" : 1,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "ENCHANTMENT" ]
+      }
+    } ],
+    "parameters" : [ ":DESTROYED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
