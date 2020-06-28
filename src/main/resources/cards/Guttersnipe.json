@@ -1,6 +1,6 @@
 {
   "name" : "Guttersnipe",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/d/6d5a14b4-e67c-4129-91dc-9e2fefbe27d2.jpg?1573511940",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/d/6d5a14b4-e67c-4129-91dc-9e2fefbe27d2.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

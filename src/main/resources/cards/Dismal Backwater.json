@@ -1,6 +1,6 @@
 {
   "name" : "Dismal Backwater",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/d/9de0981e-54fc-4919-96a4-a9608a5452fc.jpg?1591228624",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/d/9de0981e-54fc-4919-96a4-a9608a5452fc.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Dismal Backwater enters the battlefield tapped. When Dismal Backwater enters the battlefield, you gain 1 life. {T}: Add {U} or {B}.",

@@ -1,6 +1,6 @@
 {
   "name" : "Thorned Moloch",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/1/01ab2615-5a02-4b59-b8bd-577b91a1a0e3.jpg?1562787276",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/1/01ab2615-5a02-4b59-b8bd-577b91a1a0e3.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

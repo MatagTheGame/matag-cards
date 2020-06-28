@@ -1,6 +1,6 @@
 {
   "name" : "Frenzied Rage",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/9/f9ca9c16-5720-4531-88ea-48b48d189479.jpg?1591104402",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/9/f9ca9c16-5720-4531-88ea-48b48d189479.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

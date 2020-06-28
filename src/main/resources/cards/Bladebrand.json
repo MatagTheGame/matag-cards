@@ -1,6 +1,6 @@
 {
   "name" : "Bladebrand",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/0/3003857b-d502-4a37-88ff-2165a0555ce8.jpg?1573509016",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/0/3003857b-d502-4a37-88ff-2165a0555ce8.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "INSTANT" ],

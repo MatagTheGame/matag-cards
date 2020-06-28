@@ -1,6 +1,6 @@
 {
   "name" : "Swarm Guildmage",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/7599adc7-72b2-4079-ac0a-1a821f9de925.jpg?1572893826",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/7599adc7-72b2-4079-ac0a-1a821f9de925.jpg",
   "colors" : [ "BLACK", "GREEN" ],
   "cost" : [ "BLACK", "GREEN" ],
   "types" : [ "CREATURE" ],

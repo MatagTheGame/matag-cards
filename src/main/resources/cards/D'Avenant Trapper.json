@@ -1,6 +1,6 @@
 {
   "name" : "D'Avenant Trapper",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a5881ab3-566b-4999-997e-cd5ecb84282b.jpg?1562740739",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a5881ab3-566b-4999-997e-cd5ecb84282b.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

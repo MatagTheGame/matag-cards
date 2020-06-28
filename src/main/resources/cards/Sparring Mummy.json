@@ -1,6 +1,6 @@
 {
   "name" : "Sparring Mummy",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/5/5515b086-a653-453e-80ab-8a4864ff6879.jpg?1573506505",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/5/5515b086-a653-453e-80ab-8a4864ff6879.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

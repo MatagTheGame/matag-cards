@@ -1,6 +1,6 @@
 {
   "name" : "Manalith",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/0/f0d7d904-f29b-4524-9223-27910d748bdb.jpg?1548379879",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/0/f0d7d904-f29b-4524-9223-27910d748bdb.jpg",
   "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "rarity" : "COMMON",

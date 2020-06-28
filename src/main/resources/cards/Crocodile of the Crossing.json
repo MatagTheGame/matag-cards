@@ -1,6 +1,6 @@
 {
   "name" : "Crocodile of the Crossing",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2f64ca9c-99c4-45d4-bd21-3ede61702250.jpg?1543675797",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2f64ca9c-99c4-45d4-bd21-3ede61702250.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

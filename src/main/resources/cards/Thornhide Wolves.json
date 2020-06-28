@@ -1,6 +1,6 @@
 {
   "name" : "Thornhide Wolves",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/9/89f6b21d-a228-498d-86ef-ed8a1a8e22ed.jpg?1573514702",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/9/89f6b21d-a228-498d-86ef-ed8a1a8e22ed.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Unexpected Fangs",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/a/aa6494ad-a35e-4b09-8623-7740f3c20b0b.jpg?1591226994",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/a/aa6494ad-a35e-4b09-8623-7740f3c20b0b.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "INSTANT" ],

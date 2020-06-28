@@ -1,6 +1,6 @@
 {
   "name" : "Bedevil",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/1/81e2b96b-ecf2-4dd9-bc9d-3c46ee8c59e6.jpg?1584831400",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/1/81e2b96b-ecf2-4dd9-bc9d-3c46ee8c59e6.jpg",
   "colors" : [ "BLACK", "RED" ],
   "cost" : [ "BLACK", "BLACK", "RED" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Blood Curdle",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/1/4184c851-1419-476c-ba9c-9f0cb1137114.jpg?1591226609",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/1/4184c851-1419-476c-ba9c-9f0cb1137114.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Collar the Culprit",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/4/545f38df-88c3-4472-afc9-ee5f67542cb8.jpg?1573505071",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/4/545f38df-88c3-4472-afc9-ee5f67542cb8.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

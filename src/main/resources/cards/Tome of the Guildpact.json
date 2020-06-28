@@ -1,6 +1,6 @@
 {
   "name" : "Tome of the Guildpact",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/95e307d4-7e5f-4f00-869e-da0e7abbf27f.jpg?1584832202",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/95e307d4-7e5f-4f00-869e-da0e7abbf27f.jpg",
   "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "rarity" : "RARE",

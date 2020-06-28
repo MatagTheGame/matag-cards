@@ -1,6 +1,6 @@
 {
   "name" : "Mountain",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e609028b-43b8-4aea-9f9a-25aa127482db.jpg?1586518795",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e609028b-43b8-4aea-9f9a-25aa127482db.jpg",
   "types" : [ "BASIC", "LAND" ],
   "subtypes" : [ "MOUNTAIN" ],
   "rarity" : "COMMON",

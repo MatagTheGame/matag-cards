@@ -1,6 +1,6 @@
 {
   "name" : "Plague Belcher",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/280ae211-f025-4971-83e6-118ca08a1911.jpg?1543675375",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/280ae211-f025-4971-83e6-118ca08a1911.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

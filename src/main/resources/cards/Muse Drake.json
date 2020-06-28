@@ -1,6 +1,6 @@
 {
   "name" : "Muse Drake",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg?1572892784",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

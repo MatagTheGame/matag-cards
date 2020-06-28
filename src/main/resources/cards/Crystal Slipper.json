@@ -1,6 +1,6 @@
 {
   "name" : "Crystal Slipper",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/f/9f738ca6-5254-4dbc-9f59-854e81c8dac2.jpg?1572490325",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/f/9f738ca6-5254-4dbc-9f59-854e81c8dac2.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],

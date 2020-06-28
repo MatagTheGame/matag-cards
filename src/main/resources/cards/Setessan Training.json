@@ -1,6 +1,6 @@
 {
   "name" : "Setessan Training",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8322d31-6194-4fda-99a3-b6426c57488a.jpg?1581480908",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8322d31-6194-4fda-99a3-b6426c57488a.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

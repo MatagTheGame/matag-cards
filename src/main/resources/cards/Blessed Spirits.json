@@ -1,6 +1,6 @@
 {
   "name" : "Blessed Spirits",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4ffa548f-3c72-40a8-9ca9-8e7ae8bab838.jpg?1573504909",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4ffa548f-3c72-40a8-9ca9-8e7ae8bab838.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

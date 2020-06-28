@@ -1,6 +1,6 @@
 {
   "name" : "Duskfang Mentor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fc38fe5d-6c35-4fff-8f1b-726a0685c6f8.jpg?1591226756",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fc38fe5d-6c35-4fff-8f1b-726a0685c6f8.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Shriekdiver",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0a1c3148-7a6f-4963-af0b-18d9a156bf22.jpg?1557576544",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0a1c3148-7a6f-4963-af0b-18d9a156bf22.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

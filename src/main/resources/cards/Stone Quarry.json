@@ -1,6 +1,6 @@
 {
   "name" : "Stone Quarry",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/c/3c64d130-2864-4e1e-9024-58821eec3be5.jpg?1568005399",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/c/3c64d130-2864-4e1e-9024-58821eec3be5.jpg",
   "types" : [ "LAND" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Stone Quarry enters the battlefield tapped. {T}: Add {R} or {W}.",

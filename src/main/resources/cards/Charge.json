@@ -1,6 +1,6 @@
 {
   "name" : "Charge",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8b46269c-35d3-4f8f-8fef-f58cf8be4054.jpg?1573505041",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8b46269c-35d3-4f8f-8fef-f58cf8be4054.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE" ],
   "types" : [ "INSTANT" ],

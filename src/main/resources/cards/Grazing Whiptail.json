@@ -1,6 +1,6 @@
 {
   "name" : "Grazing Whiptail",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7e16e48-25f0-4099-9892-09586561ebc3.jpg?1576267411",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7e16e48-25f0-4099-9892-09586561ebc3.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

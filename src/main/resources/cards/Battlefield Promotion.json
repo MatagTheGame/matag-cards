@@ -1,6 +1,6 @@
 {
   "name" : "Battlefield Promotion",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/9/89f8e970-b90c-4829-8970-0a3364027bbb.jpg?1557575884",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/9/89f8e970-b90c-4829-8970-0a3364027bbb.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "INSTANT" ],

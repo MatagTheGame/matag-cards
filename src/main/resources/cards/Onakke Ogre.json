@@ -1,6 +1,6 @@
 {
   "name" : "Onakke Ogre",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/e/9e016da6-8800-47b4-9b96-1887677c795c.jpg?1562303411",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/e/9e016da6-8800-47b4-9b96-1887677c795c.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

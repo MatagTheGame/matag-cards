@@ -1,6 +1,6 @@
 {
   "name" : "Decision Paralysis",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/4/e46c7d04-977a-449b-9088-38e07bf62314.jpg?1576267235",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/4/e46c7d04-977a-449b-9088-38e07bf62314.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

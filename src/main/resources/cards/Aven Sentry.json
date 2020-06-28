@@ -1,6 +1,6 @@
 {
   "name" : "Aven Sentry",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/c/ec03fcba-20dd-4685-b54d-966f2beab962.jpg?1573504855",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/c/ec03fcba-20dd-4685-b54d-966f2beab962.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

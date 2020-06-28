@@ -1,6 +1,6 @@
 {
   "name" : "Orazca Raptor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7080f86-0a9f-4471-a52b-0d44d19e6e59.jpg?1555040479",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7080f86-0a9f-4471-a52b-0d44d19e6e59.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

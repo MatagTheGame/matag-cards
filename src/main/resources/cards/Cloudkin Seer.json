@@ -1,6 +1,6 @@
 {
   "name" : "Cloudkin Seer",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/9/998f8818-1463-4f4d-bae7-53f81cf07184.jpg?1573507122",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/9/998f8818-1463-4f4d-bae7-53f81cf07184.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

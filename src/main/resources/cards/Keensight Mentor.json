@@ -1,6 +1,6 @@
 {
   "name" : "Keensight Mentor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/0/a0583065-9a6c-4ea4-b6dd-2edfbaed1181.jpg?1591230288",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/0/a0583065-9a6c-4ea4-b6dd-2edfbaed1181.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Nylea's Forerunner",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/c/2cf2b6be-80a8-4464-a909-8cc658196a14.jpg?1581480774",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/c/2cf2b6be-80a8-4464-a909-8cc658196a14.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE", "ENCHANTMENT" ],

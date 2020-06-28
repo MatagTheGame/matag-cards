@@ -1,6 +1,6 @@
 {
   "name" : "Hornbash Mentor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/4/d47d2596-a321-44c0-a9f6-87bf80abc1c4.jpg?1591227700",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/4/d47d2596-a321-44c0-a9f6-87bf80abc1c4.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

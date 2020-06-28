@@ -1,6 +1,6 @@
 {
   "name" : "Iron Bully",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/e/ded2c66e-402c-4d5c-b987-402679aa914b.jpg?1557577426",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/e/ded2c66e-402c-4d5c-b987-402679aa914b.jpg",
   "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "GOLEM" ],

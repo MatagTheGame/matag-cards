@@ -1,6 +1,6 @@
 {
   "name" : "Douser of Lights",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/c/7c554be7-6fd4-4642-aaa0-2781d9c388e4.jpg?1572892951",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/c/7c554be7-6fd4-4642-aaa0-2781d9c388e4.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

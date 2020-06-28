@@ -1,6 +1,6 @@
 {
   "name" : "Blightcaster",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8986163-6362-4c70-8ece-22ae22da5031.jpg?1562038435",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8986163-6362-4c70-8ece-22ae22da5031.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

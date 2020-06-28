@@ -1,6 +1,6 @@
 {
   "name" : "Aven of Enduring Hope",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/2/02c1310c-1b54-42dd-bf24-889770fa2ded.jpg?1562787311",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/2/02c1310c-1b54-42dd-bf24-889770fa2ded.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

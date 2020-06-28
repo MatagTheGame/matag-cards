@@ -1,6 +1,6 @@
 {
   "name" : "Oakenform",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/1/d1ca08a0-c58d-4c13-bf63-0401d89839b4.jpg?1563900476",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/1/d1ca08a0-c58d-4c13-bf63-0401d89839b4.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "ENCHANTMENT" ],

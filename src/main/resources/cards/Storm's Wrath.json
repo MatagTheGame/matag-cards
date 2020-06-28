@@ -1,6 +1,6 @@
 {
   "name" : "Storm's Wrath",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/f/6f774b26-7b8b-4d06-bec8-764429445e93.jpg?1580254677",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/f/6f774b26-7b8b-4d06-bec8-764429445e93.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "SORCERY" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Jhoira, Weatherlight Captain",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/3/73cf8c6b-1322-4bc5-a604-6e372607fae4.jpg?1588760041",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/3/73cf8c6b-1322-4bc5-a604-6e372607fae4.jpg",
   "colors" : [ "BLUE", "RED" ],
   "cost" : [ "BLUE", "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE", "LEGENDARY" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Serra Angel",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/8/88e29f9c-8ef8-4c04-a7d8-69ec52e6c4b5.jpg?1548379621",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/8/88e29f9c-8ef8-4c04-a7d8-69ec52e6c4b5.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

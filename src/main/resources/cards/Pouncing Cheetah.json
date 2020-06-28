@@ -1,6 +1,6 @@
 {
   "name" : "Pouncing Cheetah",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/8/5803f4d8-4d8e-46d6-83c8-c53b38c8c140.jpg?1573514278",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/8/5803f4d8-4d8e-46d6-83c8-c53b38c8c140.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Goblin Assailant",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/c/8cfefb65-b6e4-44a1-baa9-d3c00ee8ba96.jpg?1563900428",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/c/8cfefb65-b6e4-44a1-baa9-d3c00ee8ba96.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS" ],
   "types" : [ "CREATURE" ],

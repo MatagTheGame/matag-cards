@@ -1,6 +1,6 @@
 {
   "name" : "Feral Prowler",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a9887a8b-e3d3-48f4-8afa-0b956adc23da.jpg?1573513664",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a9887a8b-e3d3-48f4-8afa-0b956adc23da.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS" ],
   "types" : [ "CREATURE" ],

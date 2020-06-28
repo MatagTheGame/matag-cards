@@ -1,6 +1,6 @@
 {
   "name" : "Centaur Courser",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb7eb6f0-a329-4fcd-ba23-ec435659441d.jpg?1573513299",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb7eb6f0-a329-4fcd-ba23-ec435659441d.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

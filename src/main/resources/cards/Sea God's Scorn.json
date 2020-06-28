@@ -1,6 +1,6 @@
 {
   "name" : "Sea God's Scorn",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/9504dc26-f5d8-4b9d-9eb1-51a12b893beb.jpg?1581479487",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/9504dc26-f5d8-4b9d-9eb1-51a12b893beb.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "SORCERY" ],

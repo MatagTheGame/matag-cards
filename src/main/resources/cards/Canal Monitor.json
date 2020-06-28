@@ -1,6 +1,6 @@
 {
   "name" : "Canal Monitor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/8/78226edc-87dd-4c38-987c-52aefe0f9531.jpg?1555040134",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/8/78226edc-87dd-4c38-987c-52aefe0f9531.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

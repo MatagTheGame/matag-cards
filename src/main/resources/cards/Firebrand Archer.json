@@ -1,6 +1,6 @@
 {
   "name" : "Firebrand Archer",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/4/d439230e-3920-40b5-afc2-0f725ecce24e.jpg?1573511639",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/4/d439230e-3920-40b5-afc2-0f725ecce24e.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS" ],
   "types" : [ "CREATURE" ],

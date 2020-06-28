@@ -1,6 +1,6 @@
 {
   "name" : "Blighted Bat",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/7/f76d1050-eaaa-4c23-900f-22f95fb04e1f.jpg?1573509030",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/7/f76d1050-eaaa-4c23-900f-22f95fb04e1f.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Elite Guardmage",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/2/d2e40b14-48a2-4b9e-b767-e914cab04b30.jpg?1557577129",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/2/d2e40b14-48a2-4b9e-b767-e914cab04b30.jpg",
   "colors" : [ "WHITE", "BLUE" ],
   "cost" : [ "WHITE", "BLUE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

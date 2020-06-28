@@ -1,6 +1,6 @@
 {
   "name" : "Youthful Knight",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/4/c48cae7b-fb95-4f7c-a216-05fb868dfa4d.jpg?1573506799",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/4/c48cae7b-fb95-4f7c-a216-05fb868dfa4d.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

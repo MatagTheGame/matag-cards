@@ -1,6 +1,6 @@
 {
   "name" : "Frillscare Mentor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/4/24c7d034-6403-41e2-9e44-4d58ef54cf10.jpg?1591227240",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/4/24c7d034-6403-41e2-9e44-4d58ef54cf10.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

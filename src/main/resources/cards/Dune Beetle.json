@@ -1,6 +1,6 @@
 {
   "name" : "Dune Beetle",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/8/a80605d5-4cb1-403c-94aa-8c25d782251f.jpg?1573509505",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/8/a80605d5-4cb1-403c-94aa-8c25d782251f.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Hyena Pack",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/d/1dce786c-af9c-49f5-b372-741458180a09.jpg?1573511985",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/d/1dce786c-af9c-49f5-b372-741458180a09.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Vampire Sovereign",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg?1562304880",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

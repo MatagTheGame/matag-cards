@@ -1,6 +1,6 @@
 {
   "name" : "Strider Harness",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/e/5e94daa9-5b9b-4fd2-829e-081eed22c18f.jpg?1555041055",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/e/5e94daa9-5b9b-4fd2-829e-081eed22c18f.jpg",
   "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Nyxborn Courser",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/f/0fd32240-c003-4e18-adf1-e2e992c702b1.jpg?1581479176",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/f/0fd32240-c003-4e18-adf1-e2e992c702b1.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE", "ENCHANTMENT" ],

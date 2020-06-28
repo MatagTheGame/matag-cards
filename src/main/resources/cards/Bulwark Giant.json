@@ -1,6 +1,6 @@
 {
   "name" : "Bulwark Giant",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/d/7d7b411f-9188-4230-8403-05d48c19a3cd.jpg?1573504941",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/d/7d7b411f-9188-4230-8403-05d48c19a3cd.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

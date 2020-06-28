@@ -1,6 +1,6 @@
 {
   "name" : "Bronze Sword",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/b/0b33162d-8d8f-4312-b31e-04ce86e3b914.jpg?1581481182",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/b/0b33162d-8d8f-4312-b31e-04ce86e3b914.jpg",
   "cost" : [ "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],

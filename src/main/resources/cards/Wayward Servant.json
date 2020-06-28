@@ -1,6 +1,6 @@
 {
   "name" : "Wayward Servant",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/9/e9e00112-8c6c-4551-ad68-389e315fe148.jpg?1543676118",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/9/e9e00112-8c6c-4551-ad68-389e315fe148.jpg",
   "colors" : [ "WHITE", "BLACK" ],
   "cost" : [ "WHITE", "BLACK" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Marauder's Axe",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/3/73ac5204-69ef-491d-9ca8-f522b99f1412.jpg?1563899812",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/3/73ac5204-69ef-491d-9ca8-f522b99f1412.jpg",
   "cost" : [ "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],

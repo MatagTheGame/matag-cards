@@ -1,6 +1,6 @@
 {
   "name" : "Jungle Delver",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/1/51ab0316-c0c2-44c8-b841-4f796e347b74.jpg?1573513918",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/1/51ab0316-c0c2-44c8-b841-4f796e347b74.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN" ],
   "types" : [ "CREATURE" ],

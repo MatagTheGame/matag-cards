@@ -1,6 +1,6 @@
 {
   "name" : "Splendid Agony",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/8/58d38abd-116d-4015-91e4-3fc267ad099d.jpg?1543675411",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/8/58d38abd-116d-4015-91e4-3fc267ad099d.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

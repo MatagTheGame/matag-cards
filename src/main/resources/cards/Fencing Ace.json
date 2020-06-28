@@ -1,6 +1,6 @@
 {
   "name" : "Fencing Ace",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/2/c2452306-1bd8-442e-a482-b0e3b61eb530.jpg?1573505485",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/2/c2452306-1bd8-442e-a482-b0e3b61eb530.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

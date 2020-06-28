@@ -1,6 +1,6 @@
 {
   "name" : "Griffin Sentinel",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/b/cb13aaa4-d40a-4fb2-9fd6-62bf76db6a13.jpg?1563898328",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/b/cb13aaa4-d40a-4fb2-9fd6-62bf76db6a13.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

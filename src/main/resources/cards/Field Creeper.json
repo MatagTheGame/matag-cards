@@ -1,6 +1,6 @@
 {
   "name" : "Field Creeper",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/1/e148c1bf-84a2-48cd-882e-ad0fd74b8f0f.jpg?1562304812",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/1/e148c1bf-84a2-48cd-882e-ad0fd74b8f0f.jpg",
   "cost" : [ "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "SCARECROW" ],

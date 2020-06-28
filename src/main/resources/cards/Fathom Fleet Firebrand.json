@@ -1,6 +1,6 @@
 {
   "name" : "Fathom Fleet Firebrand",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52280963-ba5b-4735-b5cb-67866f8624c9.jpg?1562555362",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52280963-ba5b-4735-b5cb-67866f8624c9.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS" ],
   "types" : [ "CREATURE" ],

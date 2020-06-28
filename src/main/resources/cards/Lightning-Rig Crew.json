@@ -1,6 +1,6 @@
 {
   "name" : "Lightning-Rig Crew",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb4a34ce-94d5-4e4d-97cc-1326cf5241f5.jpg?1562566048",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb4a34ce-94d5-4e4d-97cc-1326cf5241f5.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

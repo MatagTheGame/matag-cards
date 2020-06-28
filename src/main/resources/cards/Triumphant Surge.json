@@ -1,6 +1,6 @@
 {
   "name" : "Triumphant Surge",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/75d6eb18-a49d-4fa5-a333-78aafbc4abcb.jpg?1581479273",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/75d6eb18-a49d-4fa5-a333-78aafbc4abcb.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

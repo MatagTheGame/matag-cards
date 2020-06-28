@@ -1,6 +1,6 @@
 {
   "name" : "Rubblebelt Boar",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/9/196bf114-e135-43f3-83d5-cb08ca766881.jpg?1572893247",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/9/196bf114-e135-43f3-83d5-cb08ca766881.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

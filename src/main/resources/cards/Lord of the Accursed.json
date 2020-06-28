@@ -1,6 +1,6 @@
 {
   "name" : "Lord of the Accursed",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/d/0dc3a3ce-03d3-4d7f-a3dd-3e1a53ed878e.jpg?1576267315",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/d/0dc3a3ce-03d3-4d7f-a3dd-3e1a53ed878e.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

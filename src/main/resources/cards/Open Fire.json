@@ -1,6 +1,6 @@
 {
   "name" : "Open Fire",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/4/448f9fb5-ffb5-4325-9f81-ce8782e5f9e9.jpg?1562797508",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/4/448f9fb5-ffb5-4325-9f81-ce8782e5f9e9.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "INSTANT" ],

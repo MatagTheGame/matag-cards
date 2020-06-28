@@ -1,6 +1,6 @@
 {
   "name" : "Skyscanner",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb1b7a49-f89f-4c38-8c0f-9260f855d00c.jpg?1573517462",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb1b7a49-f89f-4c38-8c0f-9260f855d00c.jpg",
   "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "THOPTER" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Lazotep Behemoth",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/0/b0d90056-a3a7-48df-90c3-bf15de48c667.jpg?1573509943",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/0/b0d90056-a3a7-48df-90c3-bf15de48c667.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

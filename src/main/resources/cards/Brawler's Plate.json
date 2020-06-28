@@ -1,6 +1,6 @@
 {
   "name" : "Brawler's Plate",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg?1562044708",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg",
   "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],

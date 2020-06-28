@@ -1,6 +1,6 @@
 {
   "name" : "Noxious Groodion",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/6/b6cb3d78-1a60-4e9b-b387-afeb58677536.jpg?1584830637",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/6/b6cb3d78-1a60-4e9b-b387-afeb58677536.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

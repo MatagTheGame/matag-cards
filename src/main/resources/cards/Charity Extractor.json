@@ -1,6 +1,6 @@
 {
   "name" : "Charity Extractor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/5/3594f726-cdbb-4b7d-bcfe-17d5f8cd5228.jpg?1557576411",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/5/3594f726-cdbb-4b7d-bcfe-17d5f8cd5228.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

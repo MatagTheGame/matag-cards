@@ -1,6 +1,6 @@
 {
   "name" : "Aven Battle Priest",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a37d3345-3950-4977-af19-209c7a2f8d0c.jpg?1573504847",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a37d3345-3950-4977-af19-209c7a2f8d0c.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

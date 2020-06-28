@@ -1,6 +1,6 @@
 {
   "name" : "Checkpoint Officer",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.jpg?1591230200",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

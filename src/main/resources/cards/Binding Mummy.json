@@ -1,6 +1,6 @@
 {
   "name" : "Binding Mummy",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/a/fae54072-ae27-4aae-a2b7-71f4551934f6.jpg?1543674592",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/a/fae54072-ae27-4aae-a2b7-71f4551934f6.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Boggart Brute",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/4/042f10fb-5c19-4890-80ba-ea2c28805f0b.jpg?1573511184",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/4/042f10fb-5c19-4890-80ba-ea2c28805f0b.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

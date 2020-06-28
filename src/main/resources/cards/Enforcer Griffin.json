@@ -1,6 +1,6 @@
 {
   "name" : "Enforcer Griffin",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/4/e4d6d488-01df-4d61-92ff-9881838b4018.jpg?1557575925",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/4/e4d6d488-01df-4d61-92ff-9881838b4018.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

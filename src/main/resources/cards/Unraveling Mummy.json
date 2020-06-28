@@ -1,6 +1,6 @@
 {
   "name" : "Unraveling Mummy",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg?1562821263",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg",
   "colors" : [ "WHITE", "BLACK" ],
   "cost" : [ "WHITE", "BLACK", "COLORLESS" ],
   "types" : [ "CREATURE" ],

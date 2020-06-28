@@ -1,6 +1,6 @@
 {
   "name" : "Dutiful Servants",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/6/7684db4c-6eff-4da1-a410-48d707fb5bf1.jpg?1562803856",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/6/7684db4c-6eff-4da1-a410-48d707fb5bf1.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

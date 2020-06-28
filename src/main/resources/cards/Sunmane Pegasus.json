@@ -1,6 +1,6 @@
 {
   "name" : "Sunmane Pegasus",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52e28f5a-55ee-4fcc-bc16-e59944592fcd.jpg?1581479252",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52e28f5a-55ee-4fcc-bc16-e59944592fcd.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

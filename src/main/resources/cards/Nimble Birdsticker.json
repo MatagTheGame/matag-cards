@@ -1,6 +1,6 @@
 {
   "name" : "Nimble Birdsticker",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4ff9bcbd-48fe-4a74-aae5-a447c99aa64b.jpg?1564023032",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4ff9bcbd-48fe-4a74-aae5-a447c99aa64b.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

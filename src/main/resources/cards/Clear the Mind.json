@@ -1,6 +1,6 @@
 {
   "name" : "Clear the Mind",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/3/335c5756-c1ac-4251-af0b-e7354a91c28e.jpg?1573507100",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/3/335c5756-c1ac-4251-af0b-e7354a91c28e.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
   "types" : [ "SORCERY" ],

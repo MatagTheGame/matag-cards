@@ -1,6 +1,6 @@
 {
   "name" : "Wishcoin Crab",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/3/f368f804-055f-4a4f-bb0c-fe3dc52433c0.jpg?1573508840",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/3/f368f804-055f-4a4f-bb0c-fe3dc52433c0.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Ornery Kudu",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8ba1d3a1-8c1b-4b77-b149-13d5ad9f125a.jpg?1543675912",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8ba1d3a1-8c1b-4b77-b149-13d5ad9f125a.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],

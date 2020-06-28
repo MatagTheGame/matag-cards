@@ -55,7 +55,7 @@ public class CardScryFallLinker {
       sets = convertSets(jsonNode);
 
       JsonNode cardJsonNode = findBestCardRepresentation(jsonNode);
-      image = cardJsonNode.path("image_uris").path("large").asText();
+      image = convertImageUrl(cardJsonNode);
       colors = convertColors(cardJsonNode.path("colors"));
       manaCost = convertCost(cardJsonNode.path("mana_cost").asText());
       String[] scryFallTypesSplit = cardJsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
@@ -69,6 +69,11 @@ public class CardScryFallLinker {
     } catch (Exception e) {
       throw new Exception("Error loading card: " + card.getName(), e);
     }
+  }
+
+  private String convertImageUrl(JsonNode cardJsonNode) {
+    String fullUrl = cardJsonNode.path("image_uris").path("large").asText();
+    return fullUrl.substring(0, fullUrl.indexOf("?"));
   }
 
   private JsonNode findBestCardRepresentation(JsonNode jsonNode) {

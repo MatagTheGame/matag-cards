@@ -1,6 +1,6 @@
 {
   "name" : "Aven Reedstalker",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/0/f0c2d70a-d646-44eb-9f65-ddf6e329ab43.jpg?1562819676",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/0/f0c2d70a-d646-44eb-9f65-ddf6e329ab43.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
   "types" : [ "CREATURE" ],
