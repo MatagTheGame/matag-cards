@@ -1,0 +1,17 @@
+{
+  "name" : "Eagle of the Watch",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/a/8af7956d-f811-49d3-bef7-07f294dcea3c.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "BIRD" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying, vigilance",
+  "power" : 2,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "VIGILANCE"
+  } ]
+}
