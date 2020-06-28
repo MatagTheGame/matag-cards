@@ -63,17 +63,14 @@ public class LinkerTest {
       System.out.println("Downloaded " + (i + 1) + " of " + cardsToLink.size() + " -> " + card.getName());
 
       if (!card.getTypes().contains(BASIC)) {
-        for (String scryFallSets : cardScryFallLinker.getSets()) {
-          if (sets.containsKey(scryFallSets)) {
-            sets.get(scryFallSets).getCards().add(card.getName());
+        for (String scryFallSet : cardScryFallLinker.getSets()) {
+          if (sets.containsKey(scryFallSet)) {
+            sets.get(scryFallSet).getCards().add(card.getName());
+            String setJson = setsObjectMapper.writeValueAsString(sets.get(scryFallSet));
+            Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/sets/" + scryFallSet + ".json"), setJson.getBytes());
           }
         }
       }
-    }
-
-    for (String setName : sets.keySet()) {
-      String setJson = setsObjectMapper.writeValueAsString(sets.get(setName));
-      Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/sets/" + setName + ".json"), setJson.getBytes());
     }
   }
 
