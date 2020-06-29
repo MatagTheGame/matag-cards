@@ -1,0 +1,29 @@
+{
+  "name" : "Rabid Bloodsucker",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/d/ed20b43d-7cad-4dc3-a128-46247ef4b612.jpg",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "VAMPIRE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. When Rabid Bloodsucker enters the battlefield, each player loses 2 life.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER"
+    },
+    "parameters" : [ "LIFE:-2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

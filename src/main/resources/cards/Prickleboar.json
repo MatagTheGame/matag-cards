@@ -1,0 +1,24 @@
+{
+  "name" : "Prickleboar",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e6da2545-e2f5-40e6-bb92-3bc1822695ae.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "BOAR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "As long as it's your turn, Prickleboar gets +2/+0 and has first strike.",
+  "power" : 3,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true,
+      "turnStatusType" : "YOUR_TURN"
+    },
+    "parameters" : [ "+2/+0", "FIRST_STRIKE" ],
+    "trigger" : {
+      "type" : "STATIC"
+    }
+  } ]
+}
