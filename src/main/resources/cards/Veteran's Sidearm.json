@@ -1,11 +1,11 @@
 {
-  "name" : "Marauder's Axe",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/9/49d8aa8a-3e87-42ac-9c79-2baec771c1ef.jpg",
+  "name" : "Veteran's Sidearm",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/c/9c1b3e7d-0fd8-4324-be7b-382e75ae9c17.jpg",
   "cost" : [ "COLORLESS", "COLORLESS" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],
   "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +2/+0. Equip {2}",
+  "ruleText" : "Equipped creature gets +1/+1. Equip {1}",
   "abilities" : [ {
     "abilityType" : "EQUIP",
     "targets" : [ {
@@ -15,10 +15,10 @@
         "controllerType" : "PLAYER"
       }
     } ],
-    "parameters" : [ "+2/+0" ],
+    "parameters" : [ "+1/+1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS" ]
+      "cost" : [ "COLORLESS" ]
     },
     "sorcerySpeed" : true
   } ]

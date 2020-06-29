@@ -12,7 +12,8 @@
     "targets" : [ {
       "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
       }
     } ],
     "parameters" : [ "+1/+0", "HASTE" ],

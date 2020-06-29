@@ -1,0 +1,30 @@
+{
+  "name" : "Yeva's Forcemage",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/28fa08ce-3a9c-40a3-afb0-55fdfb0cc431.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ELF", "SHAMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Yeva's Forcemage enters the battlefield, target creature gets +2/+2 until end of turn.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+2/+2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
