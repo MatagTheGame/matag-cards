@@ -41,7 +41,7 @@ public class LinkerTest {
     Map<String, MtgSet> sets = mtgSets.getSets();
 
     List<Card> cardsToLink = cards.getAll().stream()
-      //.filter(card -> StringUtils.isBlank(card.getImageUrl()))
+      .filter(card -> StringUtils.isBlank(card.getImageUrl()))
       .collect(toList());
 
     for (int i = 0; i < cardsToLink.size(); i++) {
