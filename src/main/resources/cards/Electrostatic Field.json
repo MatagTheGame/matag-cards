@@ -1,0 +1,30 @@
+{
+  "name" : "Electrostatic Field",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/7096c9a6-2e73-41f8-b20a-b29a9f0b760c.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "WALL" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Defender. Whenever you cast an instant or sorcery spell, Electrostatic Field deals 1 damage to each opponent.",
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "DEFENDER"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "INSTANT", "SORCERY" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

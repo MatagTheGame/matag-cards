@@ -1,0 +1,27 @@
+{
+  "name" : "Grappling Sundew",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/7/f74d8d76-8091-424d-ad11-e8a1faae584d.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "PLANT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Defender, reach. {4}{G}: Grappling Sundew gains indestructible until end of turn.",
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "DEFENDER"
+  }, {
+    "abilityType" : "REACH"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "INDESTRUCTIBLE" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}

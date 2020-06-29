@@ -1,0 +1,17 @@
+{
+  "name" : "Guardians of Meletis",
+  "abilities" : [ {
+    "abilityType" : "DEFENDER"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "INDESTRUCTIBLE" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}

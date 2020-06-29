@@ -1,0 +1,24 @@
+{
+  "name" : "Spear Spewer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/b/dbee1daa-b4ba-49ee-bed1-e70fa09942a2.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "GOBLIN", "WARRIOR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Defender. {T}: Spear Spewer deals 1 damage to each player.",
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "DEFENDER"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER"
+    },
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "TAP" ]
+    }
+  } ]
+}
