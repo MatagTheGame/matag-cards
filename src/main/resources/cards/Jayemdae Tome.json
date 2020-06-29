@@ -1,0 +1,20 @@
+{
+  "name" : "Jayemdae Tome",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/1/518af905-f518-4269-89b4-781085be8dd2.jpg",
+  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ARTIFACT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "{4}, {T}: Draw a card.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "TAP" ]
+    }
+  } ]
+}

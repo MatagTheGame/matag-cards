@@ -1,0 +1,20 @@
+{
+  "name" : "Languish",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/b/9b53ce1b-9353-42ad-89a0-36e907ba576a.jpg",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "RARE",
+  "ruleText" : "All creatures get -4/-4 until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ]
+    },
+    "parameters" : [ "-4/-4" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

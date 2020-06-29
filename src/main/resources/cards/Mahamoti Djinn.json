@@ -1,0 +1,15 @@
+{
+  "name" : "Mahamoti Djinn",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/7/37f1d02c-8258-45e8-97f3-67b610081092.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DJINN" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flying",
+  "power" : 5,
+  "toughness" : 6,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  } ]
+}
