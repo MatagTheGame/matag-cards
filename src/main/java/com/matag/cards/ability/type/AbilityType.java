@@ -5,7 +5,7 @@ import java.util.Objects;
 public enum AbilityType {
   // Keyword
   DEATHTOUCH("Deathtouch."),
-//  DEFENDER(null),
+  DEFENDER("Defender."),
   DOUBLE_STRIKE("Double strike."),
   ENCHANT("Enchanted creature gets %s."),
   EQUIP("Equipped creature gets %s."),

@@ -15,6 +15,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
+
 @Getter
 public class CardScryFallLinker {
   private static final String SPECIAL_DASH = "—"; // it's not an ascii dash
@@ -48,7 +50,7 @@ public class CardScryFallLinker {
   @SneakyThrows
   public CardScryFallLinker(Card card) {
     try {
-      String file = readHttpResource("https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode("!\"" + card.getName() + "\"", "UTF-8") + "&unique=prints");
+      String file = readHttpResource("https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode("!\"" + card.getName() + "\"", UTF_8) + "&unique=prints");
       JsonNode jsonNode = new ObjectMapper().readTree(file);
       checkSearchWorked(jsonNode);
 
