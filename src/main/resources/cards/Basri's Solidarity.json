@@ -1,0 +1,21 @@
+{
+  "name" : "Basri's Solidarity",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/a/aa6daf0d-d581-434e-9b5f-cea1e7fd7967.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Put a +1/+1 counter on each creature you control.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

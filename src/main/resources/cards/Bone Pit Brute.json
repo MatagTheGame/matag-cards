@@ -1,0 +1,32 @@
+{
+  "name" : "Bone Pit Brute",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/0/6075e0a3-a0ab-4a11-8ad2-7dabb071d309.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CYCLOPS" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Menace. When Bone Pit Brute enters the battlefield, target creature gets +4/+0 until end of turn.",
+  "power" : 4,
+  "toughness" : 5,
+  "abilities" : [ {
+    "abilityType" : "MENACE"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+4/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
