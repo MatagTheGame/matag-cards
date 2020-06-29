@@ -10,7 +10,7 @@
   "power" : 1,
   "toughness" : 2,
   "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET"
+    "abilityType" : "FLYING"
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
