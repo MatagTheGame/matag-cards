@@ -1,0 +1,30 @@
+{
+  "name" : "Gale Swooper",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/2/d2e3b99c-e48e-4f4d-ba7a-e9218137b432.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "GRIFFIN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. When Gale Swooper enters the battlefield, target creature gains flying until end of turn.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "FLYING" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

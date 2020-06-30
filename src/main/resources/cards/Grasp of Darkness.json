@@ -1,0 +1,22 @@
+{
+  "name" : "Grasp of Darkness",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/7/7737b578-8ae3-4846-b508-93ef40f25244.jpg",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "BLACK" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Target creature gets -4/-4 until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "-4/-4" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

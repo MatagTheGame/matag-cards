@@ -1,0 +1,30 @@
+{
+  "name" : "Goblin Arsonist",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/a/fa4bf664-3b92-4598-b905-2bc090958c8b.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "GOBLIN", "SHAMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Goblin Arsonist dies, you may have it deal 1 damage to any target.",
+  "power" : 1,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "ANY"
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_DIE",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

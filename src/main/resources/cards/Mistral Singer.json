@@ -1,0 +1,17 @@
+{
+  "name" : "Mistral Singer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/9/d961c441-b76b-4bd8-b510-a3e073207a1b.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "SIREN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. Prowess",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "PROWESS"
+  } ]
+}
