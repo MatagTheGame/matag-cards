@@ -1,0 +1,29 @@
+{
+  "name" : "Rookie Mistake",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+0/+2" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      },
+      "others" : true
+    } ],
+    "parameters" : [ "-2/-0" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}
