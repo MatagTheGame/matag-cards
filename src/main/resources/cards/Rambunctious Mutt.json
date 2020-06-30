@@ -1,0 +1,31 @@
+{
+  "name" : "Rambunctious Mutt",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/f/3f602ecc-c264-4f3e-adeb-d0186668653e.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DOG" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Rambunctious Mutt enters the battlefield, destroy target artifact or enchantment an opponent controls.",
+  "power" : 3,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "ARTIFACT", "ENCHANTMENT" ],
+        "controllerType" : "OPPONENT"
+      }
+    } ],
+    "parameters" : [ ":DESTROYED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

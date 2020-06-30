@@ -74,6 +74,7 @@ public enum Subtype {
   MINOTAUR,
   MONK,
   MOUNTAIN,
+  MYR,
   NAGA,
   NIGHTMARE,
   NOBLE,

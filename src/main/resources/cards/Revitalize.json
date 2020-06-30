@@ -1,0 +1,20 @@
+{
+  "name" : "Revitalize",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a3bd4bce-8ab0-40b9-aad7-7d57a011bb0b.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "You gain 3 life. Draw a card.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1", "LIFE:3" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}
