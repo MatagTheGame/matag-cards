@@ -1,0 +1,22 @@
+{
+  "name" : "Silent Dart",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/e/4e12530d-5509-46f1-8273-dce2c1f60965.jpg",
+  "cost" : [ "COLORLESS" ],
+  "types" : [ "ARTIFACT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{4}, {T}, Sacrifice Silent Dart: It deals 3 damage to target creature.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "DAMAGE:3" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "TAP" ]
+    }
+  } ]
+}

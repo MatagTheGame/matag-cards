@@ -1,0 +1,34 @@
+{
+  "name" : "Roaming Ghostlight",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/c/8cbac0e4-f79f-476d-b410-d19ab3696606.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "SPIRIT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. When Roaming Ghostlight enters the battlefield, return up to one target non-Spirit creature to its owner's hand.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "notOfSubtype" : [ "SPIRIT" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

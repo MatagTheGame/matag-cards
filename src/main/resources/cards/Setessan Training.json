@@ -1,5 +1,12 @@
 {
   "name" : "Setessan Training",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/9/1947f64a-5ca0-4dda-8bbd-8472e72ecf18.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS" ],
+  "types" : [ "ENCHANTMENT" ],
+  "subtypes" : [ "AURA" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Enchant creature you control. When Setessan Training enters the battlefield, draw a card. Enchanted creature gets +1/+0 and has trample.",
   "abilities" : [ {
     "abilityType" : "ENCHANT",
     "targets" : [ {

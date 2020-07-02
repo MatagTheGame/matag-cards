@@ -1,0 +1,29 @@
+{
+  "name" : "Skyway Sniper",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/7/1776f5b4-1292-460f-9719-e1b603cee46c.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ARCHER", "ELF" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Reach. {2}{G}: Skyway Sniper deals 1 damage to target creature with flying.",
+  "power" : 1,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "REACH"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "withAbilityType" : "FLYING"
+      }
+    } ],
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "name" : "Staunch Shieldmate",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/b/db17f25a-32d1-469b-bb5f-f1761e227990.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DWARF", "SOLDIER" ],
+  "rarity" : "COMMON",
+  "power" : 1,
+  "toughness" : 3
+}

@@ -1,0 +1,28 @@
+{
+  "name" : "Storm Caller",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/b/1b6d123c-c16d-43fa-b183-8a59c7e1a11e.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "OGRE", "SHAMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Storm Caller enters the battlefield, it deals 2 damage to each opponent.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "DAMAGE:2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

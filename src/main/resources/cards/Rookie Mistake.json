@@ -1,5 +1,11 @@
 {
   "name" : "Rookie Mistake",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/1/b19de7a5-c291-405b-a2e6-8d3ac56e6570.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Until end of turn, target creature gets +0/+2 and another target creature gets -2/-0.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {
@@ -17,9 +23,9 @@
     "targets" : [ {
       "magicInstanceSelector" : {
         "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      },
-      "others" : true
+        "ofType" : [ "CREATURE" ],
+        "others" : true
+      }
     } ],
     "parameters" : [ "-2/-0" ],
     "trigger" : {
