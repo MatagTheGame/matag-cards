@@ -1,0 +1,28 @@
+{
+  "name" : "Brazen Wolves",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/b/7b8fe19a-c5a0-4db0-8d0d-daa9a84be1ed.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "WOLF" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever Brazen Wolves attacks, it gets +2/+0 until end of turn.",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+2/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
