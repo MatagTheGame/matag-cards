@@ -11,17 +11,15 @@ import java.util.List;
 
 @Value
 @JsonDeserialize(builder = Trigger.TriggerBuilder.class)
-@Builder(toBuilder = true)
+@Builder
 public class Trigger {
-  private final TriggerType type;
-  private final TriggerSubtype subtype;
-  private final List<Cost> cost;
-  private final MagicInstanceSelector magicInstanceSelector;
+  TriggerType type;
+  TriggerSubtype subtype;
+  List<Cost> cost;
+  MagicInstanceSelector magicInstanceSelector;
 
   @JsonPOJOBuilder(withPrefix = "")
-  public static class TriggerBuilder {
-
-  }
+  public static class TriggerBuilder {}
 
   public static Trigger castTrigger() {
     return new Trigger(TriggerType.CAST, null, null, null);

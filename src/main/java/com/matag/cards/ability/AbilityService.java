@@ -96,7 +96,7 @@ public class AbilityService {
   }
 
   public String parametersAsString(List<String> parameters) {
-    String text = parameters.stream().map(this::safeParameterAsString).collect(Collectors.joining(", "));
+    var text = parameters.stream().map(this::safeParameterAsString).collect(Collectors.joining(", "));
     return replaceLast(text, ",", " and");
   }
 
@@ -146,11 +146,11 @@ public class AbilityService {
       return "a " + abilityParameterAsString(keywordCounterFromParameter(parameter)) + " counter";
 
     } else if (parameter.startsWith("LIFE:")) {
-      int life = lifeFromParameter(parameter);
+      var life = lifeFromParameter(parameter);
       return (life > 0 ? "gain " + life : "lose " + (-life)) + " life";
 
     } else if (parameter.startsWith("DRAW:")) {
-      int draw = drawFromParameter(parameter);
+      var draw = drawFromParameter(parameter);
       return "draw " + draw + " card" + (draw > 1 ? "s" : "");
 
     } else {

@@ -9,14 +9,12 @@ import java.util.TreeSet;
 
 @Value
 @JsonDeserialize(builder = MtgSet.MtgSetBuilder.class)
-@Builder(toBuilder = true)
+@Builder
 public class MtgSet {
-  private final String code;
-  private final String name;
-  private final TreeSet<String> cards;
+  String code;
+  String name;
+  TreeSet<String> cards;
 
   @JsonPOJOBuilder(withPrefix = "")
-  public static class MtgSetBuilder {
-
-  }
+  public static class MtgSetBuilder {}
 }

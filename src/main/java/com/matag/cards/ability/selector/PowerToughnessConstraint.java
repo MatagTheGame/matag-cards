@@ -9,18 +9,16 @@ import lombok.Value;
 @Value
 @AllArgsConstructor
 @JsonDeserialize(builder = PowerToughnessConstraint.PowerToughnessConstraintBuilder.class)
-@Builder(toBuilder = true)
+@Builder
 public class PowerToughnessConstraint {
   public enum PowerOrToughness {
     POWER, TOUGHNESS
   }
 
-  private final PowerOrToughness powerOrToughness;
-  private final PowerToughnessConstraintType powerToughnessConstraintType;
-  private final int value;
+  PowerOrToughness powerOrToughness;
+  PowerToughnessConstraintType powerToughnessConstraintType;
+  int value;
 
   @JsonPOJOBuilder(withPrefix = "")
-  public static class PowerToughnessConstraintBuilder {
-
-  }
+  public static class PowerToughnessConstraintBuilder {}
 }

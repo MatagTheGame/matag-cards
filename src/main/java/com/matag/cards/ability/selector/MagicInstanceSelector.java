@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @Value
 @JsonDeserialize(builder = MagicInstanceSelector.MagicInstanceSelectorBuilder.class)
-@Builder(toBuilder = true)
+@Builder
 public class MagicInstanceSelector {
   SelectorType selectorType;
   List<Type> ofType;
@@ -40,13 +40,11 @@ public class MagicInstanceSelector {
   boolean historic;
 
   @JsonPOJOBuilder(withPrefix = "")
-  public static class MagicInstanceSelectorBuilder {
-
-  }
+  public static class MagicInstanceSelectorBuilder {}
 
   @JsonIgnore
   public String getText() {
-    StringBuilder stringBuilder = new StringBuilder();
+    var stringBuilder = new StringBuilder();
 
     if (selectorType == SelectorType.PERMANENT) {
 
@@ -101,7 +99,7 @@ public class MagicInstanceSelector {
       }
     }
 
-    String str = stringBuilder.toString();
+    var str = stringBuilder.toString();
     str = str.toLowerCase();
     str = str.isEmpty() ? str : str.substring(0, 1).toUpperCase() + str.substring(1);
 

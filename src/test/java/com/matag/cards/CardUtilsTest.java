@@ -26,7 +26,7 @@ public class CardUtilsTest {
   }
 
   @Test
-  public void isOnlyColorless() {
+  public void isOnlyAnyOfTheColors() {
     assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Captain"), Set.of(WHITE, RED))).isTrue();
     assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Fiery Finish"), Set.of(WHITE, RED))).isTrue();
     assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Veteran"), Set.of(WHITE, RED))).isTrue();

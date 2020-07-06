@@ -2,6 +2,8 @@ package com.matag.cards.properties;
 
 import lombok.Data;
 
+import static java.lang.Integer.parseInt;
+
 @Data
 public class PowerToughness {
   private final int power;
@@ -13,7 +15,7 @@ public class PowerToughness {
   }
 
   public static PowerToughness powerToughness(String powerToughnessString) {
-    String[] powerToughness = powerToughnessString.split("/");
-    return new PowerToughness(Integer.parseInt(powerToughness[0]), Integer.parseInt(powerToughness[1]));
+    var powerToughness = powerToughnessString.split("/");
+    return new PowerToughness(parseInt(powerToughness[0]), parseInt(powerToughness[1]));
   }
 }

@@ -15,6 +15,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.lang.Integer.parseInt;
 import static java.nio.charset.StandardCharsets.UTF_8;
 
 @Getter
@@ -50,17 +51,17 @@ public class CardScryFallLinker {
   @SneakyThrows
   public CardScryFallLinker(Card card) {
     try {
-      String file = readHttpResource("https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode("!\"" + card.getName() + "\"", UTF_8) + "&unique=prints");
-      JsonNode jsonNode = new ObjectMapper().readTree(file);
+      var file = readHttpResource("https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode("!\"" + card.getName() + "\"", UTF_8) + "&unique=prints");
+      var jsonNode = new ObjectMapper().readTree(file);
       checkSearchWorked(jsonNode);
 
       sets = convertSets(jsonNode);
 
-      JsonNode cardJsonNode = findBestCardRepresentation(jsonNode);
+      var cardJsonNode = findBestCardRepresentation(jsonNode);
       image = convertImageUrl(cardJsonNode);
       colors = convertColors(cardJsonNode.path("colors"));
       manaCost = convertCost(cardJsonNode.path("mana_cost").asText());
-      String[] scryFallTypesSplit = cardJsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
+      var scryFallTypesSplit = cardJsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
       types = convertType(scryFallTypesSplit);
       subtypes = convertSubtype(scryFallTypesSplit);
       rarity = Rarity.valueOf(cardJsonNode.path("rarity").asText().toUpperCase());
@@ -74,7 +75,7 @@ public class CardScryFallLinker {
   }
 
   private String convertImageUrl(JsonNode cardJsonNode) {
-    String fullUrl = cardJsonNode.path("image_uris").path("large").asText();
+    var fullUrl = cardJsonNode.path("image_uris").path("large").asText();
     return fullUrl.substring(0, fullUrl.indexOf("?"));
   }
 
@@ -100,7 +101,7 @@ public class CardScryFallLinker {
   }
 
   private List<String> convertSets(JsonNode jsonNode) {
-    List<String> sets = new ArrayList<>();
+    var sets = new ArrayList<String>();
 
     for (int i = 0; i < jsonNode.path("data").size(); i++) {
       sets.add(jsonNode.path("data").get(i).path("set").asText().toUpperCase());
@@ -110,9 +111,9 @@ public class CardScryFallLinker {
   }
 
   private TreeSet<Color> convertColors(JsonNode jsonColors) {
-    TreeSet<Color> colors = new TreeSet<>();
+    var colors = new TreeSet<Color>();
     for (int i = 0; i < jsonColors.size(); i++) {
-      String color = jsonColors.get(i).asText();
+      var color = jsonColors.get(i).asText();
       if (!COLORS.containsKey(color)) {
         throw new RuntimeException("Color " + color + " not recognised");
       }
@@ -122,7 +123,7 @@ public class CardScryFallLinker {
   }
 
   private List<Cost> convertCost(String manaCost) {
-    List<Cost> cost = new ArrayList<>();
+    var cost = new ArrayList<Cost>();
 
     for (Map.Entry<String, Cost> costEntry : COSTS.entrySet()) {
       while (manaCost.contains("{" + costEntry.getKey() + "}")) {
@@ -133,7 +134,7 @@ public class CardScryFallLinker {
 
     manaCost = manaCost.replaceFirst("\\{", "").replaceFirst("}", "");
     if (!manaCost.isBlank()) {
-      for (int i = 0; i < Integer.parseInt(manaCost); i++) {
+      for (int i = 0; i < parseInt(manaCost); i++) {
         cost.add(Cost.COLORLESS);
       }
     }
@@ -169,6 +170,6 @@ public class CardScryFallLinker {
   }
 
   private int intOrZero(JsonNode jsonNode, String field) {
-    return jsonNode.has(field) ? Integer.parseInt(jsonNode.path(field).asText()) : 0;
+    return jsonNode.has(field) ? parseInt(jsonNode.path(field).asText()) : 0;
   }
 }

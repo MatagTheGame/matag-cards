@@ -1,6 +1,7 @@
 package com.matag.cards.ability.type;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public enum AbilityType {
   // Keyword
@@ -151,7 +152,7 @@ public enum AbilityType {
   TAP_ADD_MANA("Tap add %s mana."),
   THAT_TARGETS_GET("That targets get %s.");
 
-  private String text;
+  private final String text;
 
   AbilityType(String text) {
     Objects.requireNonNull(text);
@@ -163,10 +164,8 @@ public enum AbilityType {
   }
 
   public static AbilityType abilityType(String text) {
-    if (text == null) {
-      return null;
-    }
-
-    return AbilityType.valueOf(text);
+    return Optional.ofNullable(text)
+        .map(AbilityType::valueOf)
+        .orElse(null);
   }
 }

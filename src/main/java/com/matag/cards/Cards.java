@@ -1,22 +1,20 @@
 package com.matag.cards;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
+import java.util.*;
+
 @Component
 public class Cards {
-  private Map<String, Card> CARDS = new LinkedHashMap<>();
+  private final Map<String, Card> CARDS = new LinkedHashMap<>();
 
   public Cards(ObjectMapper objectMapper, ResourceLoader resourceLoader) {
-    Resource[] cardResources = resourceLoader.getCardsFileNames();
+    var cardResources = resourceLoader.getCardsFileNames();
     for (Resource cardResource : cardResources) {
       try {
-        Card card = objectMapper.readValue(cardResource.getInputStream(), Card.class);
+        var card = objectMapper.readValue(cardResource.getInputStream(), Card.class);
         CARDS.put(card.getName(), card);
 
       } catch (Exception e) {
@@ -34,9 +32,7 @@ public class Cards {
   }
 
   public Card get(String name) {
-    if (CARDS.containsKey(name)) {
-      return CARDS.get(name);
-    }
-    throw new RuntimeException("Card " + name + " not found!");
+    return Optional.ofNullable(CARDS.get(name))
+        .orElseThrow(() -> new RuntimeException("Card " + name + " not found!"));
   }
 }

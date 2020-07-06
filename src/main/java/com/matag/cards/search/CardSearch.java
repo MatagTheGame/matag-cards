@@ -21,63 +21,63 @@ public class CardSearch {
   }
 
   public CardSearch ofType(Type type) {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
       .filter(card -> CardUtils.isOfType(card, type))
       .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch notOfType(Type type) {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
       .filter(card -> CardUtils.isNotOfType(card, type))
       .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch ofSubtype(Subtype subtype) {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
       .filter(card -> CardUtils.isOfSubtype(card, subtype))
       .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch notOfSubtype(Subtype subtype) {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
       .filter(card -> CardUtils.isNotOfSubtype(card, subtype))
       .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch ofColor(Color color) {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
       .filter(card -> CardUtils.isOfColor(card, color))
       .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch ofOnlyAnyOfTheColors(Set<Color> colors) {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
       .filter(card -> CardUtils.isOfOnlyAnyOfTheColors(card, colors))
       .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch colorless() {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
         .filter(CardUtils::isColorless)
         .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch multicolor() {
-    List<Card> cards = this.cards.stream()
+    var cards = this.cards.stream()
         .filter(CardUtils::isMulticolor)
         .collect(toList());
     return new CardSearch(cards);
   }
 
   public CardSearch concat(List<Card> moreCards) {
-    List<Card> cards = Stream.concat(this.cards.stream(), moreCards.stream()).collect(toList());
+    var cards = Stream.concat(this.cards.stream(), moreCards.stream()).collect(toList());
     return new CardSearch(cards);
   }
 
