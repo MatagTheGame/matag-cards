@@ -35,19 +35,19 @@ public class LinkerTest {
 
   @Test
   public void scryFallLinker() throws Exception {
-    ObjectMapper cardsObjectMapper = createCardsObjectMapper();
-    ObjectMapper setsObjectMapper = createSetsObjectMapper();
+    var cardsObjectMapper = createCardsObjectMapper();
+    var setsObjectMapper = createSetsObjectMapper();
 
-    Map<String, MtgSet> sets = mtgSets.getSets();
+    var sets = mtgSets.getSets();
 
-    List<Card> cardsToLink = cards.getAll().stream()
+    var cardsToLink = cards.getAll().stream()
       .filter(card -> StringUtils.isBlank(card.getImageUrl()))
       .collect(toList());
 
     for (int i = 0; i < cardsToLink.size(); i++) {
-      Card card = cardsToLink.get(i);
-      CardScryFallLinker cardScryFallLinker = new CardScryFallLinker(card);
-      Card updatedCard = card.toBuilder()
+      var card = cardsToLink.get(i);
+      var cardScryFallLinker = new CardScryFallLinker(card);
+      var updatedCard = card.toBuilder()
           .imageUrl(cardScryFallLinker.getImage())
           .types(cardScryFallLinker.getTypes())
           .subtypes(cardScryFallLinker.getSubtypes())
@@ -58,16 +58,16 @@ public class LinkerTest {
           .colors(cardScryFallLinker.getColors())
           .cost(cardScryFallLinker.getManaCost())
           .build();
-      String cardJson = cardsObjectMapper.writeValueAsString(updatedCard);
-      Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson.getBytes());
+      var cardJson = cardsObjectMapper.writeValueAsString(updatedCard);
+      Files.writeString(Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.getName() + ".json"), cardJson);
       System.out.println("Downloaded " + (i + 1) + " of " + cardsToLink.size() + " -> " + card.getName());
 
       if (!card.getTypes().contains(BASIC)) {
         for (String scryFallSet : cardScryFallLinker.getSets()) {
           if (sets.containsKey(scryFallSet)) {
             sets.get(scryFallSet).getCards().add(card.getName());
-            String setJson = setsObjectMapper.writeValueAsString(sets.get(scryFallSet));
-            Files.write(Paths.get(CardsConfiguration.getResourcesPath() + "/sets/" + scryFallSet + ".json"), setJson.getBytes());
+            var setJson = setsObjectMapper.writeValueAsString(sets.get(scryFallSet));
+            Files.writeString(Paths.get(CardsConfiguration.getResourcesPath() + "/sets/" + scryFallSet + ".json"), setJson);
           }
         }
       }
@@ -75,14 +75,14 @@ public class LinkerTest {
   }
 
   public ObjectMapper createCardsObjectMapper() {
-    ObjectMapper objectMapper = new ObjectMapper();
+    var objectMapper = new ObjectMapper();
     objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
     objectMapper.setDefaultPropertyInclusion(JsonInclude.Include.NON_DEFAULT);
     return objectMapper;
   }
 
   public ObjectMapper createSetsObjectMapper() {
-    ObjectMapper objectMapper = new ObjectMapper();
+    var objectMapper = new ObjectMapper();
     objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
     DefaultPrettyPrinter prettyPrinter = new DefaultPrettyPrinter();
     prettyPrinter.indentArraysWith(DefaultIndenter.SYSTEM_LINEFEED_INSTANCE);

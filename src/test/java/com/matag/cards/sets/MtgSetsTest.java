@@ -36,7 +36,7 @@ public class MtgSetsTest {
 
     @Test
     public void shouldLoadASet() {
-        MtgSet m20 = mtgSets.getSet("M20");
+        var m20 = mtgSets.getSet("M20");
         assertThat(m20.getCode()).isEqualTo("M20");
         assertThat(m20.getName()).isEqualTo("Core Set 2020");
         assertThat(m20.getCards()).contains("Bladebrand");
@@ -53,7 +53,7 @@ public class MtgSetsTest {
 
 
     private Map<String, Integer> countCardsBySet(Map<String, MtgSet> sets) {
-        Map<String, Integer> countCardsBySet = new HashMap<>();
+        var countCardsBySet = new HashMap<String, Integer>();
 
         for (String setName : sets.keySet()) {
             countCardsBySet.put(setName, sets.get(setName).getCards().size());

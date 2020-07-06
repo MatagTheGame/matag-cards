@@ -15,10 +15,10 @@ public class AbilityTransposerTest {
   @Test
   public void notTransposableAbility() {
     // Given
-    Ability lifelink = Ability.builder().abilityType(AbilityType.LIFELINK).build();
+    var lifelink = Ability.builder().abilityType(AbilityType.LIFELINK).build();
 
     // When
-    Ability transposed = AbilityTransposer.transpose(lifelink);
+    var transposed = AbilityTransposer.transpose(lifelink);
 
     // Then
     assertThat(transposed).isEqualTo(lifelink);
@@ -27,10 +27,10 @@ public class AbilityTransposerTest {
   @Test
   public void transposeProwess() {
     // Given
-    Ability prowess = Ability.builder().abilityType(AbilityType.PROWESS).build();
+    var prowess = Ability.builder().abilityType(AbilityType.PROWESS).build();
 
     // When
-    Ability transposed = AbilityTransposer.transpose(prowess);
+    var transposed = AbilityTransposer.transpose(prowess);
 
     // Then
     assertThat(transposed.getAbilityType()).isEqualTo(AbilityType.SELECTED_PERMANENTS_GET);

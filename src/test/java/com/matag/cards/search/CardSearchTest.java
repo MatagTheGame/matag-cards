@@ -45,10 +45,10 @@ public class CardSearchTest {
   @Test
   public void ofType() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Bedevil")));
+    var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Bedevil")));
 
     // When
-    List<Card> result = cardSearch.ofType(Type.LAND).getCards();
+    var result = cardSearch.ofType(Type.LAND).getCards();
 
     // Then
     assertThat(result).contains(cards.get("Plains"));
@@ -57,10 +57,10 @@ public class CardSearchTest {
   @Test
   public void notOfType() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Bedevil")));
+    var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Bedevil")));
 
     // When
-    List<Card> result = cardSearch.notOfType(Type.LAND).getCards();
+    var result = cardSearch.notOfType(Type.LAND).getCards();
 
     // Then
     assertThat(result).contains(cards.get("Bedevil"));
@@ -69,10 +69,10 @@ public class CardSearchTest {
   @Test
   public void ofSubtype() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
+    var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
 
     // When
-    List<Card> result = cardSearch.ofSubtype(Subtype.SOLDIER).getCards();
+    var result = cardSearch.ofSubtype(Subtype.SOLDIER).getCards();
 
     // Then
     assertThat(result).contains(cards.get("Dusk Legion Zealot"));
@@ -81,10 +81,10 @@ public class CardSearchTest {
   @Test
   public void notOfSubtype() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
+    var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
 
     // When
-    List<Card> result = cardSearch.notOfSubtype(Subtype.SOLDIER).getCards();
+    var result = cardSearch.notOfSubtype(Subtype.SOLDIER).getCards();
 
     // Then
     assertThat(result).contains(cards.get("Plains"));
@@ -93,14 +93,14 @@ public class CardSearchTest {
   @Test
   public void ofColor() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(
+    var cardSearch = new CardSearch(List.of(
         cards.get("Empyrean Eagle"), // white blue
         cards.get("Angel of the Dawn"), // white
         cards.get("Dark Nourishment") // black
     ));
 
     // When
-    List<Card> result = cardSearch.ofColor(Color.WHITE).getCards();
+    var result = cardSearch.ofColor(Color.WHITE).getCards();
 
     // Then
     assertThat(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"));
@@ -109,7 +109,7 @@ public class CardSearchTest {
   @Test
   public void ofOnlyAnyOfTheColors() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(
+    var cardSearch = new CardSearch(List.of(
         cards.get("Empyrean Eagle"), // white blue
         cards.get("Angel of the Dawn"), // white
         cards.get("Swiftblade Vindicator"), // white red
@@ -117,7 +117,7 @@ public class CardSearchTest {
     ));
 
     // When
-    List<Card> result = cardSearch.ofOnlyAnyOfTheColors(Set.of(Color.WHITE, Color.BLUE)).getCards();
+    var result = cardSearch.ofOnlyAnyOfTheColors(Set.of(Color.WHITE, Color.BLUE)).getCards();
 
     // Then
     assertThat(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"));
@@ -126,14 +126,14 @@ public class CardSearchTest {
   @Test
   public void colorless() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(
+    var cardSearch = new CardSearch(List.of(
         cards.get("Empyrean Eagle"), // white blue
         cards.get("Angel of the Dawn"), // white
         cards.get("Jousting Dummy") // colorless
     ));
 
     // When
-    List<Card> result = cardSearch.colorless().getCards();
+    var result = cardSearch.colorless().getCards();
 
     // Then
     assertThat(result).contains(cards.get("Jousting Dummy"));
@@ -142,14 +142,14 @@ public class CardSearchTest {
   @Test
   public void multicolor() {
     // Given
-    CardSearch cardSearch = new CardSearch(List.of(
+    var cardSearch = new CardSearch(List.of(
         cards.get("Empyrean Eagle"), // white blue
         cards.get("Angel of the Dawn"), // white
         cards.get("Jousting Dummy") // colorless
     ));
 
     // When
-    List<Card> result = cardSearch.multicolor().getCards();
+    var result = cardSearch.multicolor().getCards();
 
     // Then
     assertThat(result).contains(cards.get("Empyrean Eagle"));

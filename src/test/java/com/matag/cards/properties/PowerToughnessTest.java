@@ -8,36 +8,36 @@ public class PowerToughnessTest {
     @Test
     public void powerToughnessPositiveTest() {
         // Given
-        String powerToughnessString = "+1/+1";
+        var powerToughnessString = "+1/+1";
 
         // When
-        PowerToughness PowerToughness = com.matag.cards.properties.PowerToughness.powerToughness(powerToughnessString);
+        var powerToughness = PowerToughness.powerToughness(powerToughnessString);
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(1, 1));
+        assertThat(powerToughness).isEqualTo(new PowerToughness(1, 1));
     }
 
     @Test
     public void powerToughnessNegativeTest() {
         // Given
-        String powerToughnessString = "-1/-1";
+        var powerToughnessString = "-1/-1";
 
         // When
-        PowerToughness PowerToughness = com.matag.cards.properties.PowerToughness.powerToughness(powerToughnessString);
+        var powerToughness = PowerToughness.powerToughness(powerToughnessString);
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(-1, -1));
+        assertThat(powerToughness).isEqualTo(new PowerToughness(-1, -1));
     }
 
     @Test
     public void powerToughnessMixedTest() {
         // Given
-        String powerToughnessString = "+2/-3";
+        var powerToughnessString = "+2/-3";
 
         // When
-        PowerToughness PowerToughness = com.matag.cards.properties.PowerToughness.powerToughness(powerToughnessString);
+        var powerToughness = PowerToughness.powerToughness(powerToughnessString);
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(2, -3));
+        assertThat(powerToughness).isEqualTo(new PowerToughness(2, -3));
     }
 }
