@@ -6,7 +6,6 @@ import com.matag.cards.ability.selector.MagicInstanceSelector;
 import com.matag.cards.ability.target.Target;
 import com.matag.cards.ability.trigger.Trigger;
 import com.matag.cards.ability.type.AbilityType;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
@@ -16,15 +15,25 @@ import java.util.List;
 @Data
 @JsonDeserialize(builder = Ability.AbilityBuilder.class)
 @Builder
-@AllArgsConstructor
 public class Ability {
   protected AbilityType abilityType;
-  @Builder.Default protected List<Target> targets = new ArrayList<>();
+  protected List<Target> targets;
   protected MagicInstanceSelector magicInstanceSelector;
-  @Builder.Default protected List<String> parameters = new ArrayList<>();
+  protected List<String> parameters;
   protected Trigger trigger;
   protected Ability ability;
   protected boolean sorcerySpeed;
+
+  public Ability(AbilityType abilityType, List<Target> targets, MagicInstanceSelector magicInstanceSelector,
+                 List<String> parameters, Trigger trigger, Ability ability, boolean sorcerySpeed) {
+    this.abilityType = abilityType;
+    this.targets = targets != null ? targets : new ArrayList<>();
+    this.magicInstanceSelector = magicInstanceSelector;
+    this.parameters = parameters != null ? parameters : new ArrayList<>();
+    this.trigger = trigger;
+    this.ability = ability;
+    this.sorcerySpeed = sorcerySpeed;
+  }
 
   @JsonPOJOBuilder(withPrefix = "")
   public static class AbilityBuilder {}

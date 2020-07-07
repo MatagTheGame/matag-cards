@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import com.matag.cards.ability.Ability;
 import com.matag.cards.properties.*;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Value;
 
@@ -15,19 +14,33 @@ import java.util.TreeSet;
 @Value
 @JsonDeserialize(builder = Card.CardBuilder.class)
 @Builder(toBuilder = true)
-@AllArgsConstructor
 public class Card {
   String name;
   String imageUrl;
-  @Builder.Default TreeSet<Color> colors = new TreeSet<>();
-  @Builder.Default List<Cost> cost = new ArrayList<>();
-  @Builder.Default TreeSet<Type> types = new TreeSet<>();
-  @Builder.Default TreeSet<Subtype> subtypes = new TreeSet<>();
+  TreeSet<Color> colors;
+  List<Cost> cost;
+  TreeSet<Type> types;
+  TreeSet<Subtype> subtypes;
   Rarity rarity;
   String ruleText;
   int power;
   int toughness;
-  @Builder.Default List<Ability> abilities = new ArrayList<>();
+  List<Ability> abilities;
+
+  public Card(String name, String imageUrl, TreeSet<Color> colors, List<Cost> cost, TreeSet<Type> types,
+              TreeSet<Subtype> subtypes, Rarity rarity, String ruleText, int power, int toughness, List<Ability> abilities) {
+    this.name = name;
+    this.imageUrl = imageUrl;
+    this.colors = colors != null ? colors : new TreeSet<>();
+    this.cost = cost != null ? cost : new ArrayList<>();
+    this.types = types != null ? types : new TreeSet<>();
+    this.subtypes = subtypes != null ? subtypes : new TreeSet<>();
+    this.rarity = rarity;
+    this.ruleText = ruleText != null ? ruleText : "";
+    this.power = power;
+    this.toughness = toughness;
+    this.abilities = abilities != null ? abilities : new ArrayList<>();
+  }
 
   @JsonPOJOBuilder(withPrefix = "")
   public static class CardBuilder {}
