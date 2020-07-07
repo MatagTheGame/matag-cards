@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import com.matag.cards.ability.Ability;
 import com.matag.cards.properties.*;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Value;
 
@@ -14,6 +15,7 @@ import java.util.TreeSet;
 @Value
 @JsonDeserialize(builder = Card.CardBuilder.class)
 @Builder(toBuilder = true)
+@AllArgsConstructor
 public class Card {
   String name;
   String imageUrl;
