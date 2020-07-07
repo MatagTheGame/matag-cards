@@ -7,11 +7,11 @@ import com.matag.cards.ability.target.Target;
 import com.matag.cards.ability.trigger.Trigger;
 import com.matag.cards.ability.type.AbilityType;
 import lombok.Builder;
-import lombok.Value;
+import lombok.Data;
 
 import java.util.List;
 
-@Value
+@Data
 @JsonDeserialize(builder = Ability.AbilityBuilder.class)
 @Builder
 public class Ability {
