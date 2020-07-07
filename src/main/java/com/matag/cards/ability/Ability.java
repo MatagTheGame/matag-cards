@@ -15,13 +15,13 @@ import java.util.List;
 @JsonDeserialize(builder = Ability.AbilityBuilder.class)
 @Builder
 public class Ability {
-  AbilityType abilityType;
-  List<Target> targets;
-  MagicInstanceSelector magicInstanceSelector;
-  List<String> parameters;
-  Trigger trigger;
-  Ability ability;
-  boolean sorcerySpeed;
+  protected AbilityType abilityType;
+  protected List<Target> targets;
+  protected MagicInstanceSelector magicInstanceSelector;
+  protected List<String> parameters;
+  protected Trigger trigger;
+  protected Ability ability;
+  protected boolean sorcerySpeed;
 
   @JsonPOJOBuilder(withPrefix = "")
   public static class AbilityBuilder {}
