@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -18,9 +19,9 @@ import java.util.List;
 @AllArgsConstructor
 public class Ability {
   protected AbilityType abilityType;
-  protected List<Target> targets;
+  @Builder.Default protected List<Target> targets = new ArrayList<>();
   protected MagicInstanceSelector magicInstanceSelector;
-  protected List<String> parameters;
+  @Builder.Default protected List<String> parameters = new ArrayList<>();
   protected Trigger trigger;
   protected Ability ability;
   protected boolean sorcerySpeed;
