@@ -5,7 +5,6 @@ import com.fasterxml.jackson.core.util.DefaultIndenter;
 import com.fasterxml.jackson.core.util.DefaultPrettyPrinter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import com.matag.cards.sets.MtgSet;
 import com.matag.cards.sets.MtgSets;
 import com.matag.downloader.CardScryFallLinker;
 import org.junit.Test;
@@ -17,8 +16,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.List;
-import java.util.Map;
 
 import static com.matag.cards.properties.Type.BASIC;
 import static java.util.stream.Collectors.toList;
