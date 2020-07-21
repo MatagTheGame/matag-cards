@@ -1,0 +1,23 @@
+{
+  "name" : "Kozilek's Sentinel",
+  "abilities" : [ {
+    "abilityType" : "DEVOID"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "ANY"
+      }
+    } ],
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "colorless" : true,
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

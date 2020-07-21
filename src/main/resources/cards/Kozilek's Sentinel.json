@@ -1,0 +1,31 @@
+{
+  "name" : "Kozilek's Sentinel",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/8/786c6a0f-3f75-45ff-aae9-5c866be279d0.jpg",
+  "cost" : [ "RED", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DRONE", "ELDRAZI" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Devoid. Whenever you cast a colorless spell, Kozilek's Sentinel gets +1/+0 until end of turn.",
+  "power" : 1,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "DEVOID"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "ANY"
+      }
+    } ],
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "colorless" : true,
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

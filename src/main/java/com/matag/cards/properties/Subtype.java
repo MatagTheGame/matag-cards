@@ -33,6 +33,7 @@ public enum Subtype {
   DOG,
   DRAGON,
   DRAKE,
+  DRONE,
   DRUID,
   DRYAD,
   DWARF,

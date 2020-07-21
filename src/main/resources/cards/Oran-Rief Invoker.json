@@ -1,0 +1,24 @@
+{
+  "name" : "Oran-Rief Invoker",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/6/d68a25a7-ac43-4aac-a417-91bf72040160.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "SHAMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{8}: Oran-Rief Invoker gets +5/+5 and gains trample until end of turn.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+5/+5" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}
