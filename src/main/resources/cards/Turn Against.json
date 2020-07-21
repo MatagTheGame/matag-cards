@@ -1,0 +1,23 @@
+{
+  "name" : "Turn Against",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/d/4de8ef35-f141-4bc6-8ea1-f87aa6f5ecd7.jpg",
+  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Devoid. Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "DEVOID"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":CONTROLLED", ":UNTAPPED", "HASTE" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

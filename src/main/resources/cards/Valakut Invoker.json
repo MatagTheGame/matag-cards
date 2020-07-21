@@ -1,0 +1,25 @@
+{
+  "name" : "Valakut Invoker",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/e/7e142dd7-feb9-437a-904b-130c4fede48e.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "SHAMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{8}: Valakut Invoker deals 3 damage to any target.",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "ANY"
+      }
+    } ],
+    "parameters" : [ "DAMAGE:3" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}

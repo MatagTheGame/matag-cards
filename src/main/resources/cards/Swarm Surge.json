@@ -1,0 +1,32 @@
+{
+  "name" : "Swarm Surge",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/3/837287cc-f3a4-4ba7-8518-9b1e4a53acda.jpg",
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Devoid. Creatures you control get +2/+0 until end of turn. Colorless creatures you control also gain first strike until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ "+2/+0" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "colorless" : true,
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ "FIRST_STRIKE" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}
