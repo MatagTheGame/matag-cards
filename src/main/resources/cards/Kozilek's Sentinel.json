@@ -11,13 +11,12 @@
   "abilities" : [ {
     "abilityType" : "DEVOID"
   }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
-      }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+0" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",

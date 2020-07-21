@@ -1,0 +1,34 @@
+{
+  "name" : "Aerial Guide",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b744c138-9b9e-47f6-9d56-feb6a78ce377.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DRAKE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. Whenever Aerial Guide attacks, another target attacking creature gains flying until end of turn.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "statusTypes" : [ "ATTACKING" ],
+        "others" : true
+      }
+    } ],
+    "parameters" : [ "FLYING" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

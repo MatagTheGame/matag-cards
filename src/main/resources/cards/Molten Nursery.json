@@ -1,5 +1,10 @@
 {
-  "name" : "Kozilek's Sentinel",
+  "name" : "Molten Nursery",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/d/3db8aaf5-e2bf-40ea-bd5d-663017cfd4a6.jpg",
+  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ENCHANTMENT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Devoid. Whenever you cast a colorless spell, Molten Nursery deals 1 damage to any target.",
   "abilities" : [ {
     "abilityType" : "DEVOID"
   }, {
