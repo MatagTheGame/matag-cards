@@ -1,0 +1,34 @@
+{
+  "name" : "Sandstone Bridge",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/7/c781e932-4605-47aa-add1-4ee62f4e7ead.jpg",
+  "types" : [ "LAND" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Sandstone Bridge enters the battlefield tapped. When Sandstone Bridge enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn. {T}: Add {W}.",
+  "abilities" : [ {
+    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
+    "parameters" : [ ":TAPPED" ]
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+1/+1", "VIGILANCE" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  }, {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "WHITE" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  } ]
+}

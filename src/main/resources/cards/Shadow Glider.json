@@ -1,0 +1,15 @@
+{
+  "name" : "Shadow Glider",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/4/b4ffaf62-2e12-4b1d-a590-f63aacb4a30b.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "KOR", "SOLDIER" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  } ]
+}

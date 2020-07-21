@@ -1,0 +1,30 @@
+{
+  "name" : "Silent Skimmer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/b/9b715fc0-9c36-4619-8d65-6d1064ed8a32.jpg",
+  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DRONE", "ELDRAZI" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Devoid. Flying. Whenever Silent Skimmer attacks, defending player loses 2 life.",
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "DEVOID"
+  }, {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "LIFE:-2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

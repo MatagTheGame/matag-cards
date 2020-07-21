@@ -1,0 +1,15 @@
+{
+  "name" : "Shatterskull Recruit",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/8/c8add5f2-4ccf-4505-86f6-cc36aff1c3fe.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ALLY", "GIANT", "WARRIOR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Menace",
+  "power" : 4,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "MENACE"
+  } ]
+}
