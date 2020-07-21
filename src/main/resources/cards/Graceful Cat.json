@@ -1,0 +1,28 @@
+{
+  "name" : "Graceful Cat",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/4/b42ba8bf-9fc1-4d57-9c80-42491d18d929.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CAT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever Graceful Cat attacks, it gets +1/+1 until end of turn.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+1/+1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

@@ -1,0 +1,33 @@
+{
+  "name" : "Dauntless Aven",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/1/01e6320c-6f8b-4582-ad11-9b868bff08a1.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "BIRD", "WARRIOR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. Whenever Dauntless Aven attacks, untap target creature you control.",
+  "power" : 2,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ ":UNTAPPED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

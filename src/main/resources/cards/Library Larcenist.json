@@ -1,0 +1,28 @@
+{
+  "name" : "Library Larcenist",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/b/cb33529b-80bd-4f52-94cc-d8371c53ad75.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "MERFOLK", "ROGUE" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever Library Larcenist attacks, draw a card.",
+  "power" : 1,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

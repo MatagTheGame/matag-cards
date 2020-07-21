@@ -1,0 +1,30 @@
+{
+  "name" : "Linden, the Steadfast Queen",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/5/052ab231-6575-4682-9208-13ac6b9d7910.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "WHITE", "WHITE" ],
+  "types" : [ "CREATURE", "LEGENDARY" ],
+  "subtypes" : [ "HUMAN", "NOBLE" ],
+  "rarity" : "RARE",
+  "ruleText" : "Vigilance. Whenever a white creature you control attacks, you gain 1 life.",
+  "power" : 3,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "LIFE:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofColors" : [ "WHITE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

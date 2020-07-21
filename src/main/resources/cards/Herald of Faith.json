@@ -1,0 +1,30 @@
+{
+  "name" : "Herald of Faith",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/5/452591ca-7273-4e47-820b-3ff89697a036.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ANGEL" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flying. Whenever Herald of Faith attacks, you gain 2 life.",
+  "power" : 4,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "LIFE:2" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

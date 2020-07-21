@@ -1,0 +1,42 @@
+{
+  "name" : "Campaign of Vengeance",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/e/eeb4800c-639f-479a-99ab-5a44a7d2d76b.jpg",
+  "colors" : [ "WHITE", "BLACK" ],
+  "cost" : [ "WHITE", "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ENCHANTMENT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "LIFE:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "LIFE:-1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

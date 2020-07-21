@@ -1,0 +1,32 @@
+{
+  "name" : "Honored Crop-Captain",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/1/b1b44194-fed5-491c-a791-80b986dd66d6.jpg",
+  "colors" : [ "WHITE", "RED" ],
+  "cost" : [ "WHITE", "RED" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "WARRIOR" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Whenever Honored Crop-Captain attacks, other attacking creatures get +1/+0 until end of turn.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "statusTypes" : [ "ATTACKING" ],
+      "others" : true
+    },
+    "parameters" : [ "+1/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
