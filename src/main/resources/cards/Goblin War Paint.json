@@ -1,0 +1,23 @@
+{
+  "name" : "Goblin War Paint",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/d/adf99238-6d5d-4920-8d56-91d1edeb7759.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS" ],
+  "types" : [ "ENCHANTMENT" ],
+  "subtypes" : [ "AURA" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Enchant creature. Enchanted creature gets +2/+2 and has haste.",
+  "abilities" : [ {
+    "abilityType" : "ENCHANT",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "+2/+2", "HASTE" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

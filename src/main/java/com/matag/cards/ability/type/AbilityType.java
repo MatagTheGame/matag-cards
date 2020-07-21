@@ -116,7 +116,7 @@ public enum AbilityType {
   MENACE("Menace."),
 //  RENOWN(null),
 //  AWAKEN(null),
-//  DEVOID(null),
+  DEVOID("Devoid."),
 //  INGEST(null),
 //  MYRIAD(null),
 //  SURGE(null),
