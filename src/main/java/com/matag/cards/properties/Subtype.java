@@ -1,6 +1,7 @@
 package com.matag.cards.properties;
 
 public enum Subtype {
+  ALLY,
   ANGEL,
   ANTELOPE,
   APE,
@@ -36,6 +37,7 @@ public enum Subtype {
   DRYAD,
   DWARF,
   ELDER,
+  ELDRAZI,
   ELEMENTAL,
   ELEPHANT,
   ELF,
@@ -68,6 +70,7 @@ public enum Subtype {
   JACKAL,
   JELLYFISH,
   KNIGHT,
+  KOR,
   LIZARD,
   MANTICORE,
   MERFOLK,

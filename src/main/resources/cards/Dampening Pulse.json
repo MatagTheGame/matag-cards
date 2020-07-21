@@ -1,0 +1,21 @@
+{
+  "name" : "Dampening Pulse",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/a/4a4393f6-54d7-4963-a3c0-b3a083c2440c.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ENCHANTMENT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Creatures your opponents control get -1/-0.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ "-1/-0" ],
+    "trigger" : {
+      "type" : "STATIC"
+    }
+  } ]
+}

@@ -1,0 +1,11 @@
+{
+  "name" : "Expedition Envoy",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/1/41193ef1-1619-4448-9905-26b05079c79a.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ALLY", "HUMAN", "SCOUT" ],
+  "rarity" : "UNCOMMON",
+  "power" : 2,
+  "toughness" : 1
+}

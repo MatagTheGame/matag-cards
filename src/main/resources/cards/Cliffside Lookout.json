@@ -1,0 +1,24 @@
+{
+  "name" : "Cliffside Lookout",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/0/10c09d9e-e9ee-4a3c-8f88-a8990c1c244e.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ALLY", "KOR", "SCOUT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{4}{W}: Creatures you control get +1/+1 until end of turn.",
+  "power" : 1,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ]
+    },
+    "parameters" : [ "+1/+1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}
