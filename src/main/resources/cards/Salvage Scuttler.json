@@ -1,0 +1,31 @@
+{
+  "name" : "Salvage Scuttler",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/8/480be626-cf37-410d-a9c7-e5464345085f.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CRAB" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Whenever Salvage Scuttler attacks, return an artifact you control to its owner's hand.",
+  "power" : 4,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "ARTIFACT" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
