@@ -1,0 +1,34 @@
+{
+  "name" : "Roc Charger",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/9/4932c635-b729-4348-92de-2c1b207ea460.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "BIRD" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flying. Whenever Roc Charger attacks, target attacking creature without flying gains flying until end of turn.",
+  "power" : 1,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "withoutAbilityType" : "FLYING",
+        "statusTypes" : [ "ATTACKING" ]
+      }
+    } ],
+    "parameters" : [ "FLYING" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

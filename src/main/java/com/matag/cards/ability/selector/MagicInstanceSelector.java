@@ -26,6 +26,7 @@ public class MagicInstanceSelector {
   List<Subtype> ofSubtype;
   List<Subtype> notOfSubtype;
   AbilityType withAbilityType;
+  AbilityType withoutAbilityType;
   List<Color> ofColors;
   boolean colorless;
   boolean multicolor;
