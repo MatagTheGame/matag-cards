@@ -1,0 +1,30 @@
+{
+  "name" : "Perimeter Sergeant",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/a/2a174587-d964-48b3-8f69-fa576c1b8bba.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "SOLDIER" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever Perimeter Sergeant attacks, other Humans you control get +1/+0 until end of turn.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "ofSubtype" : [ "HUMAN" ],
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ "+1/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
