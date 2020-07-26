@@ -14,7 +14,7 @@ public enum AbilityType {
   FLASH("Flash."),
   FLYING("Flying."),
   HASTE("Haste."),
-//  HEXPROOF(null),
+  HEXPROOF("Hexproof."),
   INDESTRUCTIBLE("Indestructible."),
 //  INTIMIDATE(null),
 //  LANDWALK(null),
