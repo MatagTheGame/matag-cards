@@ -30,6 +30,7 @@ public class AbilityTransposer {
               .magicInstanceSelector(YOUR_NON_CREATURE_SPELL)
               .build(),
           null,
+          false,
           false
       );
     }

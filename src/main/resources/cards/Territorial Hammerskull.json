@@ -1,0 +1,31 @@
+{
+  "name" : "Territorial Hammerskull",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/0/507fb744-c6dc-4ff2-a329-872bd8c4d39c.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "DINOSAUR" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever Territorial Hammerskull attacks, tap target creature an opponent controls.",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "OPPONENT"
+      }
+    } ],
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

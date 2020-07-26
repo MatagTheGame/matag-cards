@@ -1,0 +1,31 @@
+{
+  "name" : "Vedalken Mesmerist",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/b/5b5e0a12-2589-473b-90e4-1ee5acc055a2.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "VEDALKEN", "WIZARD" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Whenever Vedalken Mesmerist attacks, target creature an opponent controls gets -2/-0 until end of turn.",
+  "power" : 2,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "OPPONENT"
+      }
+    } ],
+    "parameters" : [ "-2/-0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ATTACK",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

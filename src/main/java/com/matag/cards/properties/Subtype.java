@@ -105,6 +105,7 @@ public enum Subtype {
   SLUG,
   SNAKE,
   SOLDIER,
+  SPHINX,
   SPIDER,
   SPIRIT,
   SWAMP,
