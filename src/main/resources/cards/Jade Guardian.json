@@ -1,0 +1,35 @@
+{
+  "name" : "Jade Guardian",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/c/aca83e48-6e32-477f-8714-6103e77c06df.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "MERFOLK", "SHAMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Hexproof. When Jade Guardian enters the battlefield, put a +1/+1 counter on target Merfolk you control.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "HEXPROOF"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "MERFOLK" ],
+        "controllerType" : "PLAYER"
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

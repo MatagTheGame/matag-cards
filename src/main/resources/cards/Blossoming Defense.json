@@ -1,0 +1,23 @@
+{
+  "name" : "Blossoming Defense",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/c/5c026c39-b09c-408a-844f-fb5eb785862a.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Target creature you control gets +2/+2 and gains hexproof until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "+2/+2", "HEXPROOF" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

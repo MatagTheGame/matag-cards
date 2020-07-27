@@ -60,6 +60,7 @@ public enum Subtype {
   GRIFFIN,
   HELLION,
   HIPPO,
+  HOMUNCULUS,
   HORROR,
   HOUND,
   HUMAN,

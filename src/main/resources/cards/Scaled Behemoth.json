@@ -1,0 +1,15 @@
+{
+  "name" : "Scaled Behemoth",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/c/5c05a60f-660a-42d3-82b3-06984366afb4.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CROCODILE" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Hexproof",
+  "power" : 6,
+  "toughness" : 7,
+  "abilities" : [ {
+    "abilityType" : "HEXPROOF"
+  } ]
+}

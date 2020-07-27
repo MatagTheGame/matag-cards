@@ -1,0 +1,23 @@
+{
+  "name" : "Woodcutter's Grit",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/c/cc329134-4b71-4c33-8cfb-c3867a733115.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Target creature you control gets +3/+3 and gains hexproof until end of turn.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "+3/+3", "HEXPROOF" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

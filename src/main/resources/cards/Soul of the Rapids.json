@@ -1,0 +1,17 @@
+{
+  "name" : "Soul of the Rapids",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/a/2a1aed7d-4236-4d44-9366-ee03e15469bc.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ELEMENTAL" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flying. Hexproof",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "HEXPROOF"
+  } ]
+}

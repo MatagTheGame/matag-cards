@@ -1,0 +1,34 @@
+{
+  "name" : "Swift Warden",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/5/1531cb47-b0ff-4d66-acf2-ef5bb5f690fc.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "GREEN", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "MERFOLK", "WARRIOR" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flash. When Swift Warden enters the battlefield, target Merfolk you control gains hexproof until end of turn.",
+  "power" : 3,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "MERFOLK" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "HEXPROOF" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
