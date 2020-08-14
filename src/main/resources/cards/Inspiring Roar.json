@@ -1,0 +1,21 @@
+{
+  "name" : "Inspiring Roar",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/e/4ef9708e-bfe4-4d24-8304-1618daa1c3ee.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Put a +1/+1 counter on each creature you control.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}
