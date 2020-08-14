@@ -2,7 +2,11 @@
   "code" : "AER",
   "name" : "Aether Revolt",
   "cards" : [
+    "Aegis Automaton",
+    "Alley Strangler",
+    "Augmenting Automaton",
     "Bastion Enforcer",
+    "Chandra's Revolution",
     "Druid of the Cowl",
     "Heroic Intervention",
     "Salvage Scuttler",

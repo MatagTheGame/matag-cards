@@ -1,6 +1,7 @@
 package com.matag.cards.properties;
 
 public enum Subtype {
+  AETHERBORN,
   ALLY,
   ANGEL,
   ANTELOPE,

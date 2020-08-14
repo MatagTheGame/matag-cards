@@ -1,0 +1,34 @@
+{
+  "name" : "Chandra's Revolution",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/2/02239be6-5202-4766-bbd2-7ef9ce0b20cd.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Chandra's Revolution deals 4 damage to target creature. Tap target land. That land doesn't untap during its controller's next untap step.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ "DAMAGE:4" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "LAND" ]
+      }
+    } ],
+    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}
