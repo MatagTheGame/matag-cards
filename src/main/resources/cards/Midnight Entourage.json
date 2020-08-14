@@ -24,7 +24,7 @@
     "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PLAYER",
-      "others" : true
+      "itself" : true
     },
     "parameters" : [ "LIFE:-1", "DRAW:1" ],
     "trigger" : {
