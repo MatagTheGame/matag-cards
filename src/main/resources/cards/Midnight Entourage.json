@@ -26,7 +26,7 @@
       "selectorType" : "PLAYER",
       "others" : true
     },
-    "parameters" : [ "LIFE-1", "DRAW:1" ],
+    "parameters" : [ "LIFE:-1", "DRAW:1" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
