@@ -1,0 +1,33 @@
+{
+  "name" : "Dispersal Technician",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/d/5d93a915-ffea-4f50-88ac-2b3253f7dfdf.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ARTIFICER", "VEDALKEN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "When Dispersal Technician enters the battlefield, you may return target artifact to its owner's hand.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "ARTIFACT" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
