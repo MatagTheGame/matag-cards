@@ -1,0 +1,14 @@
+{
+  "name" : "Wastes",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/0/60682c00-c661-4a9d-8326-f3f014a04e3e.jpg",
+  "types" : [ "BASIC", "LAND" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{T}: Add {C}.",
+  "abilities" : [ {
+    "abilityType" : "TAP_ADD_MANA",
+    "parameters" : [ "COLORLESS" ],
+    "trigger" : {
+      "type" : "MANA_ABILITY"
+    }
+  } ]
+}
