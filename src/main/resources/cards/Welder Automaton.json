@@ -1,7 +1,13 @@
 {
   "name" : "Welder Automaton",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/3/938066de-d111-4df2-87f0-9eb72aa4cdac.jpg",
+  "cost" : [ "COLORLESS", "COLORLESS" ],
+  "types" : [ "ARTIFACT", "CREATURE" ],
+  "subtypes" : [ "CONSTRUCT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{3}{R}: Welder Automaton deals 1 damage to each opponent.",
   "power" : 2,
-  "toughness" : 2,
+  "toughness" : 1,
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

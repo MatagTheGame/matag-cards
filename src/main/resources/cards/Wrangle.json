@@ -1,5 +1,11 @@
 {
   "name" : "Wrangle",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/e/5ea93a49-5a7c-4d15-8548-a57c9460e0f0.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "COLORLESS" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Gain control of target creature with power 4 or less until end of turn. Untap that creature. It gains haste until end of turn.",
   "abilities" : [ {
     "abilityType" : "THAT_TARGETS_GET",
     "targets" : [ {

@@ -1,0 +1,15 @@
+{
+  "name" : "Affa Protector",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/f/9f770d50-420c-4e88-953a-d6e9c719869a.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ALLY", "HUMAN", "SOLDIER" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Vigilance",
+  "power" : 1,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "VIGILANCE"
+  } ]
+}
