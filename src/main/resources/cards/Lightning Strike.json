@@ -2,7 +2,7 @@
   "name" : "Lightning Strike",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/1/116d6679-2834-4cfe-a848-846c17f1af42.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Lightning Strike deals 3 damage to any target.",

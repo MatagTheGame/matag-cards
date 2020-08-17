@@ -2,7 +2,7 @@
   "name" : "Fire Elemental",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/e/3e83e706-067f-41a9-8ffb-e3cd308282c0.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELEMENTAL" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Mortify",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/d/8d29e7a2-bcb3-41d0-b467-2a6263bf5223.jpg",
   "colors" : [ "WHITE", "BLACK" ],
-  "cost" : [ "WHITE", "BLACK", "COLORLESS" ],
+  "cost" : [ "WHITE", "BLACK", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Destroy target creature or enchantment.",

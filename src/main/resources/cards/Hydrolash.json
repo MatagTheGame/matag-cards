@@ -2,7 +2,7 @@
   "name" : "Hydrolash",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/d/5d219ee8-ca60-4850-9652-a7274eb4c443.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Attacking creatures get -2/-0 until end of turn. Draw a card.",

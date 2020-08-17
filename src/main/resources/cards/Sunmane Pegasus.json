@@ -2,7 +2,7 @@
   "name" : "Sunmane Pegasus",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52e28f5a-55ee-4fcc-bc16-e59944592fcd.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "PEGASUS" ],
   "rarity" : "COMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "VIGILANCE", "LIFELINK" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "COLORLESS" ]
+      "cost" : [ "WHITE", "ANY" ]
     }
   } ]
 }

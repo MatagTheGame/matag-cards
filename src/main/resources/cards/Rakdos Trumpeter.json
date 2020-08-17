@@ -2,7 +2,7 @@
   "name" : "Rakdos Trumpeter",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/2822aff3-9985-424b-9f19-b49e987c25e4.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SHAMAN" ],
   "rarity" : "COMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "+2/+0" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "RED", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

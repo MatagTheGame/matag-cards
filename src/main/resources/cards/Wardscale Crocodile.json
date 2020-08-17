@@ -2,7 +2,7 @@
   "name" : "Wardscale Crocodile",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/a/aa5341b9-06e4-4360-a75d-f405d468276e.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CROCODILE" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Chandra's Outrage",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/d/edbfe793-6644-43ed-bbe1-e122c01c5e53.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Chandra's Outrage deals 4 damage to target creature and 2 damage to that creature's controller.",

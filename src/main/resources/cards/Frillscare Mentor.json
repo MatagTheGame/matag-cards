@@ -2,7 +2,7 @@
   "name" : "Frillscare Mentor",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/4/24c7d034-6403-41e2-9e44-4d58ef54cf10.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "WARRIOR" ],
   "rarity" : "UNCOMMON",
@@ -39,7 +39,7 @@
     "parameters" : [ "PLUS_1_COUNTERS:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "COLORLESS", "COLORLESS", "TAP" ]
+      "cost" : [ "RED", "ANY", "ANY", "TAP" ]
     }
   } ]
 }

@@ -2,7 +2,7 @@
   "name" : "Salvage Scuttler",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/8/480be626-cf37-410d-a9c7-e5464345085f.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CRAB" ],
   "rarity" : "UNCOMMON",

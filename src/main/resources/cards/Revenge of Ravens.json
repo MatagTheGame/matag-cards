@@ -2,7 +2,7 @@
   "name" : "Revenge of Ravens",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/4/3474289a-193e-452d-b248-e53ee99e22c0.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Whenever a creature attacks you or a planeswalker you control, that creature's controller loses 1 life and you gain 1 life.",

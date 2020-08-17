@@ -2,7 +2,7 @@
   "name" : "Moment of Craving",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/5/2589a32c-c09f-4479-ac23-4a08a984f2e7.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets -2/-2 until end of turn. You gain 2 life.",

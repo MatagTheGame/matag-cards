@@ -45,7 +45,7 @@ public class CardsTest {
     var card = cards.get("Feral Maaka");
     assertThat(card.getName()).isEqualTo("Feral Maaka");
     assertThat(card.getColors()).containsExactly(Color.RED);
-    assertThat(card.getCost()).containsExactly(Cost.RED, Cost.COLORLESS);
+    assertThat(card.getCost()).containsExactly(Cost.RED, Cost.ANY);
     assertThat(card.getTypes()).containsExactly(Type.CREATURE);
     assertThat(card.getSubtypes()).containsExactlyInAnyOrder(Subtype.CAT);
     assertThat(card.getRarity()).isEqualTo(Rarity.COMMON);
@@ -59,7 +59,7 @@ public class CardsTest {
     var card = cards.get("Act of Treason");
     assertThat(card.getName()).isEqualTo("Act of Treason");
     assertThat(card.getColors()).containsExactly(Color.RED);
-    assertThat(card.getCost()).containsExactly(Cost.RED, Cost.COLORLESS, Cost.COLORLESS);
+    assertThat(card.getCost()).containsExactly(Cost.RED, Cost.ANY, Cost.ANY);
     assertThat(card.getTypes()).containsExactly(Type.SORCERY);
     assertThat(card.getSubtypes()).isNullOrEmpty();
     assertThat(card.getRarity()).isEqualTo(Rarity.COMMON);

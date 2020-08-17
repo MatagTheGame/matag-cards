@@ -2,7 +2,7 @@
   "name" : "Befuddle",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/4/94c1f80e-65b7-4534-bfd4-1ae88274945b.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets -4/-0 until end of turn. Draw a card.",

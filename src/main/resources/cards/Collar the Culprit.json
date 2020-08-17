@@ -2,7 +2,7 @@
   "name" : "Collar the Culprit",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/4/545f38df-88c3-4472-afc9-ee5f67542cb8.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature with toughness 4 or greater.",

@@ -2,7 +2,7 @@
   "name" : "Senate Courier",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/a/da8dc5c8-4eb7-4e41-8431-b41251f7814e.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BIRD" ],
   "rarity" : "COMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "VIGILANCE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "COLORLESS" ]
+      "cost" : [ "WHITE", "ANY" ]
     }
   } ]
 }

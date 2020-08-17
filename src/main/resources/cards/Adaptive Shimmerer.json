@@ -1,7 +1,7 @@
 {
   "name" : "Adaptive Shimmerer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/8/d8a2e243-e446-46c6-8a37-e26620951c41.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "INSECT" ],
   "rarity" : "COMMON",

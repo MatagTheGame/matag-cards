@@ -2,7 +2,7 @@
   "name" : "Blighted Bat",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/c/6c0cc3d9-85f1-49ed-bf8a-81fc6c60bd2a.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BAT", "ZOMBIE" ],
   "rarity" : "COMMON",
@@ -22,7 +22,7 @@
     "parameters" : [ "HASTE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS" ]
+      "cost" : [ "ANY" ]
     }
   } ]
 }

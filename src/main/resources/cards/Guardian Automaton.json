@@ -1,7 +1,7 @@
 {
   "name" : "Guardian Automaton",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/e/7e8916b7-f5e4-4fae-8db8-9859d69212ec.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "CONSTRUCT" ],
   "rarity" : "COMMON",

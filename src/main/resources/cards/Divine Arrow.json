@@ -2,7 +2,7 @@
   "name" : "Divine Arrow",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/5/352c4997-2b96-45da-a4e1-70a86453c6fa.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Divine Arrow deals 4 damage to target attacking or blocking creature.",

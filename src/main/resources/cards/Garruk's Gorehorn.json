@@ -2,7 +2,7 @@
   "name" : "Garruk's Gorehorn",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/d/dd5c6492-4934-4d61-85ef-3dd64677dee3.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BEAST" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Accursed Horde",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/709bcbca-7238-4c31-8d9e-ec0d54d0b298.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ZOMBIE" ],
   "rarity" : "UNCOMMON",
@@ -22,7 +22,7 @@
     "parameters" : [ "INDESTRUCTIBLE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "COLORLESS" ]
+      "cost" : [ "BLACK", "ANY" ]
     }
   } ]
 }

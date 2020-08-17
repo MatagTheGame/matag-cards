@@ -2,7 +2,7 @@
   "name" : "Steeple Creeper",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/4/f4afafb4-3fc0-4ccf-a942-e4bd2f146d89.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "FROG", "SNAKE" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "FLYING" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "BLUE", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

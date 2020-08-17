@@ -18,7 +18,7 @@
     "parameters" : [ "PLUS_1_COUNTERS:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "ANY", "ANY", "ANY" ]
     }
   } ]
 }

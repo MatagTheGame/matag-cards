@@ -2,7 +2,7 @@
   "name" : "Naturalize",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/1/717a07df-2259-4bbe-8e6a-04de1ca7bcdc.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target artifact or enchantment.",

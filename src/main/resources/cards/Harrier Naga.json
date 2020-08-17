@@ -2,7 +2,7 @@
   "name" : "Harrier Naga",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/c/bcdc68c9-f5f3-4c5b-80df-85508cf15f84.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "NAGA", "WARRIOR" ],
   "rarity" : "COMMON",

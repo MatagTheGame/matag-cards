@@ -2,7 +2,7 @@
   "name" : "Yeva's Forcemage",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/28fa08ce-3a9c-40a3-afb0-55fdfb0cc431.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELF", "SHAMAN" ],
   "rarity" : "COMMON",

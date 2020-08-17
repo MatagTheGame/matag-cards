@@ -2,7 +2,7 @@
   "name" : "Rambunctious Mutt",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/f/3f602ecc-c264-4f3e-adeb-d0186668653e.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DOG" ],
   "rarity" : "COMMON",

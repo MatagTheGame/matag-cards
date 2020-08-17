@@ -2,7 +2,7 @@
   "name" : "Divination",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/95d1e5bd-9360-4ba5-83b5-38a9bf8bb5b9.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Draw two cards.",

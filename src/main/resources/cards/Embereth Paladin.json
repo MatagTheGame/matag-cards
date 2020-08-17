@@ -2,7 +2,7 @@
   "name" : "Embereth Paladin",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/b/6bcfe06b-3bb5-434e-acf4-4bfa8a94141d.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",

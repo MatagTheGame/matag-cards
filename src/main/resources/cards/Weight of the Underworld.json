@@ -2,7 +2,7 @@
   "name" : "Weight of the Underworld",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/3/839dcbcb-1061-4cba-a2f7-e7b01531c6a0.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

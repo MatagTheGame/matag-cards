@@ -2,7 +2,7 @@
   "name" : "Valor in Akros",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/f/ef2a3fe4-a0c3-4956-a52b-060c4538c0b2.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Whenever a creature enters the battlefield under your control, creatures you control get +1/+1 until end of turn.",

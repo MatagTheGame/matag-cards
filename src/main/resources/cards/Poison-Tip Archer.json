@@ -2,7 +2,7 @@
   "name" : "Poison-Tip Archer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/e/5e058ff8-043c-498b-8310-0ca45466ac27.jpg",
   "colors" : [ "BLACK", "GREEN" ],
-  "cost" : [ "BLACK", "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ARCHER", "ELF" ],
   "rarity" : "UNCOMMON",

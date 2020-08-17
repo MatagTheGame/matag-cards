@@ -2,7 +2,7 @@
   "name" : "Rabid Bloodsucker",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/d/ed20b43d-7cad-4dc3-a128-46247ef4b612.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "VAMPIRE" ],
   "rarity" : "COMMON",

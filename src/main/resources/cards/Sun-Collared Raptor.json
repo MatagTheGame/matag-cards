@@ -2,7 +2,7 @@
   "name" : "Sun-Collared Raptor",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/2/62fbd1bc-3e57-43d5-ad54-443ca740fcc4.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "COMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "+3/+0" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "RED", "ANY", "ANY" ]
     }
   } ]
 }

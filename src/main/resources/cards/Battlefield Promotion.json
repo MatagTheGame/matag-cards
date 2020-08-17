@@ -2,7 +2,7 @@
   "name" : "Battlefield Promotion",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/7/c7bac081-a946-4278-90f0-c0f262b7abf2.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Put a +1/+1 counter on target creature. That creature gains first strike until end of turn. You gain 2 life.",

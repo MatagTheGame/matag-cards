@@ -2,7 +2,7 @@
   "name" : "Syr Alin, the Lion's Claw",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/c/4cddb2d2-d813-4b83-a592-380ba4edf54f.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE", "LEGENDARY" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "UNCOMMON",

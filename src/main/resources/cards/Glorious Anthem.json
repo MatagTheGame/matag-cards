@@ -2,7 +2,7 @@
   "name" : "Glorious Anthem",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a3ba79d6-7da0-46ba-a26a-dc484bdae41d.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "WHITE", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "rarity" : "RARE",
   "ruleText" : "Creatures you control get +1/+1.",

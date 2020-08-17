@@ -19,7 +19,7 @@
     "parameters" : [ "+1/+0", "MENACE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "TAP" ]
+      "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY", "TAP" ]
     }
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",
@@ -30,7 +30,7 @@
     "parameters" : [ "LIFE:2" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "COLORLESS", "TAP" ]
+      "cost" : [ "GREEN", "ANY", "TAP" ]
     }
   } ]
 }

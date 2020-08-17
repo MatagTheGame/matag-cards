@@ -2,7 +2,7 @@
   "name" : "Frost Breath",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/9/393fc485-d3c1-4826-933d-89f66df769d4.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.",

@@ -2,7 +2,7 @@
   "name" : "Unraveling Mummy",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg",
   "colors" : [ "WHITE", "BLACK" ],
-  "cost" : [ "WHITE", "BLACK", "COLORLESS" ],
+  "cost" : [ "WHITE", "BLACK", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ZOMBIE" ],
   "rarity" : "UNCOMMON",
@@ -22,7 +22,7 @@
     "parameters" : [ "LIFELINK" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "COLORLESS" ]
+      "cost" : [ "WHITE", "ANY" ]
     }
   }, {
     "abilityType" : "THAT_TARGETS_GET",
@@ -37,7 +37,7 @@
     "parameters" : [ "DEATHTOUCH" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "COLORLESS" ]
+      "cost" : [ "BLACK", "ANY" ]
     }
   } ]
 }

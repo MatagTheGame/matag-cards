@@ -2,7 +2,7 @@
   "name" : "Steadfast Sentry",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/d/8d92614e-05da-4b5c-a98b-addf8ab2de7b.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "COMMON",

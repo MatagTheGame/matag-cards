@@ -2,7 +2,7 @@
   "name" : "Veiled Shade",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/5/35cb18ae-0229-40a1-8838-ffb678ab2ed9.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SHADE" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "+1/+1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "COLORLESS" ]
+      "cost" : [ "RED", "ANY" ]
     }
   } ]
 }

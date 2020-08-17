@@ -2,7 +2,7 @@
   "name" : "Colossal Dreadmaw",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/0/8059c52b-5d25-4052-b48a-e9e219a7a546.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Primordial Wurm",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fc0e8298-adac-4922-8824-a1fafa089f72.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WURM" ],
   "rarity" : "COMMON",

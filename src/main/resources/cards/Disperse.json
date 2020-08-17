@@ -2,7 +2,7 @@
   "name" : "Disperse",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Return target nonland permanent to its owner's hand.",

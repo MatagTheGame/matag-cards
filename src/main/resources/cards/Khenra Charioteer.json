@@ -2,7 +2,7 @@
   "name" : "Khenra Charioteer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/a/8ab1454e-3c69-4450-bd4c-934af2ff2bcb.jpg",
   "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "COLORLESS" ],
+  "cost" : [ "RED", "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "JACKAL", "WARRIOR" ],
   "rarity" : "UNCOMMON",

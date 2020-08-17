@@ -1,7 +1,7 @@
 {
   "name" : "Gold-Forged Sentinel",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/a/ca1bcaee-52bf-4000-8ffa-ee5e04703de6.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "CHIMERA" ],
   "rarity" : "UNCOMMON",

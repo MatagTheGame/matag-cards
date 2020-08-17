@@ -2,7 +2,7 @@
   "name" : "Swift Warden",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/5/1531cb47-b0ff-4d66-acf2-ef5bb5f690fc.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MERFOLK", "WARRIOR" ],
   "rarity" : "UNCOMMON",

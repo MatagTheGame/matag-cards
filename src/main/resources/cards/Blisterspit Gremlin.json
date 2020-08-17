@@ -18,7 +18,7 @@
     "parameters" : [ "DAMAGE:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "TAP" ]
+      "cost" : [ "ANY", "TAP" ]
     }
   }, {
     "abilityType" : "SELECTED_PERMANENTS_GET",

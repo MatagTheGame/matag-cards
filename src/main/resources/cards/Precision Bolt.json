@@ -2,7 +2,7 @@
   "name" : "Precision Bolt",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a59b4e5b-e9e0-4507-b9e7-8fba7e3a54f9.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Precision Bolt deals 3 damage to any target.",

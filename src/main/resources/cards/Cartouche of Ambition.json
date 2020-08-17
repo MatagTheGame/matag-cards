@@ -2,7 +2,7 @@
   "name" : "Cartouche of Ambition",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e68b96b1-b75e-4ee1-a6d7-6545a34fef9b.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA", "CARTOUCHE" ],
   "rarity" : "COMMON",

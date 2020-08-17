@@ -2,7 +2,7 @@
   "name" : "Druid of the Cowl",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/6/76ceff1d-9e83-41cc-b54b-8bf90d985da9.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "ELF" ],
   "rarity" : "COMMON",

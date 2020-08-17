@@ -2,7 +2,7 @@
   "name" : "Igneous Cur",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/2/d2bfec5d-3182-415a-afe8-0b5511cfd656.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DOG", "ELEMENTAL" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "+2/+0" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "COLORLESS" ]
+      "cost" : [ "RED", "ANY" ]
     }
   } ]
 }

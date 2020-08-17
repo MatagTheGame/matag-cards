@@ -2,7 +2,7 @@
   "name" : "Daggerback Basilisk",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/e/3e6e079c-9a68-4069-94cb-990b1f72f0bd.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BASILISK" ],
   "rarity" : "COMMON",

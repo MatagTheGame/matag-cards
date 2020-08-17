@@ -2,7 +2,7 @@
   "name" : "Honey Mammoth",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/4/84b9bee2-b973-4de7-b72d-7f36f8e8153c.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELEPHANT" ],
   "rarity" : "COMMON",

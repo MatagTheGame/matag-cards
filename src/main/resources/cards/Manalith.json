@@ -1,7 +1,7 @@
 {
   "name" : "Manalith",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/0/f0d7d904-f29b-4524-9223-27910d748bdb.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "rarity" : "COMMON",
   "ruleText" : "{T}: Add one mana of any color.",

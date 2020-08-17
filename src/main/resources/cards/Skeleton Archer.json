@@ -2,7 +2,7 @@
   "name" : "Skeleton Archer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fcb8d414-7f80-4a61-a0f2-0f16bf53e1b9.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ARCHER", "SKELETON" ],
   "rarity" : "COMMON",

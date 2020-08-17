@@ -2,7 +2,7 @@
   "name" : "Kraul Raider",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/3/133d9d56-d906-4252-9954-e34cc8564ced.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "INSECT", "WARRIOR" ],
   "rarity" : "COMMON",

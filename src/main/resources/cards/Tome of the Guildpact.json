@@ -1,7 +1,7 @@
 {
   "name" : "Tome of the Guildpact",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/95e307d4-7e5f-4f00-869e-da0e7abbf27f.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "rarity" : "RARE",
   "ruleText" : "Whenever you cast a multicolored spell, draw a card. {T}: Add one mana of any color.",

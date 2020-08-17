@@ -2,7 +2,7 @@
   "name" : "Vedalken Mesmerist",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/b/5b5e0a12-2589-473b-90e4-1ee5acc055a2.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "VEDALKEN", "WIZARD" ],
   "rarity" : "COMMON",

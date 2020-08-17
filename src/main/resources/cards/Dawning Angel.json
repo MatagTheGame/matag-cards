@@ -2,7 +2,7 @@
   "name" : "Dawning Angel",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4f3d90ef-6f70-4897-85c1-4e1beeb33363.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ANGEL" ],
   "rarity" : "COMMON",

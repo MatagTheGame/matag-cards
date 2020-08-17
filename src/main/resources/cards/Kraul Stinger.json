@@ -2,7 +2,7 @@
   "name" : "Kraul Stinger",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/6/46b88fe9-2450-47ee-ac1e-bbbccbf5684f.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ASSASSIN", "INSECT" ],
   "rarity" : "COMMON",

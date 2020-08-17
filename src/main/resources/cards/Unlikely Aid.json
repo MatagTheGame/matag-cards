@@ -2,7 +2,7 @@
   "name" : "Unlikely Aid",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/a/bac3409e-7c24-43b0-9956-5f0cdeae6468.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +2/+0 and gains indestructible until end of turn.",

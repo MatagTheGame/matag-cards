@@ -2,7 +2,7 @@
   "name" : "Aggressive Urge",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/f/ff69e6a8-f34f-4aea-9a54-c4b64ed3116c.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +1/+1 until end of turn. Draw a card.",

@@ -2,7 +2,7 @@
   "name" : "Prickleboar",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e6da2545-e2f5-40e6-bb92-3bc1822695ae.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BOAR" ],
   "rarity" : "COMMON",

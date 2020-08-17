@@ -2,7 +2,7 @@
   "name" : "Duskfang Mentor",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fc38fe5d-6c35-4fff-8f1b-726a0685c6f8.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CLERIC", "HUMAN" ],
   "rarity" : "UNCOMMON",
@@ -39,7 +39,7 @@
     "parameters" : [ "PLUS_1_COUNTERS:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "COLORLESS", "TAP" ]
+      "cost" : [ "BLACK", "ANY", "TAP" ]
     }
   } ]
 }

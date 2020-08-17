@@ -2,7 +2,7 @@
   "name" : "Elemental Bond",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/1/516ebdba-0f25-459a-a26b-f6fa928b96e6.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Whenever a creature with power 3 or greater enters the battlefield under your control, draw a card.",

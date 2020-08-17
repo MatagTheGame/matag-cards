@@ -2,7 +2,7 @@
   "name" : "Jade Guardian",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/c/aca83e48-6e32-477f-8714-6103e77c06df.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MERFOLK", "SHAMAN" ],
   "rarity" : "COMMON",

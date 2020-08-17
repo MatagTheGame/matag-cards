@@ -2,7 +2,7 @@
   "name" : "Gift of Strength",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/75f5e144-4dd6-441f-b3e2-433aa82bdf7b.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +3/+3 and gains reach until end of turn.",

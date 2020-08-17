@@ -2,7 +2,7 @@
   "name" : "Manticore of the Gauntlet",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/2/82b6ece3-1574-4634-b940-829e54c4f78d.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MANTICORE" ],
   "rarity" : "COMMON",

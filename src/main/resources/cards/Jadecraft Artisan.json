@@ -2,7 +2,7 @@
   "name" : "Jadecraft Artisan",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/b/2b745934-c1fe-49f5-bda4-b0eafa1408e1.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MERFOLK", "SHAMAN" ],
   "rarity" : "COMMON",

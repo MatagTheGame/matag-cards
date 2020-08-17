@@ -2,7 +2,7 @@
   "name" : "Centaur Courser",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/b/eb7eb6f0-a329-4fcd-ba23-ec435659441d.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CENTAUR", "WARRIOR" ],
   "rarity" : "COMMON",

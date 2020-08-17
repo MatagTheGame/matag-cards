@@ -2,7 +2,7 @@
   "name" : "Decision Paralysis",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/4/e46c7d04-977a-449b-9088-38e07bf62314.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.",

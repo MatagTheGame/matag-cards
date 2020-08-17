@@ -2,7 +2,7 @@
   "name" : "Ravenous Chupacabra",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/0/40d3e58e-f989-4169-9e2c-a66a23170dcf.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BEAST", "HORROR" ],
   "rarity" : "UNCOMMON",

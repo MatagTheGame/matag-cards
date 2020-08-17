@@ -2,7 +2,7 @@
   "name" : "Hagra Sharpshooter",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/7/a706b2e3-bd0e-4111-8b68-976869c7d707.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ALLY", "ASSASSIN", "HUMAN" ],
   "rarity" : "UNCOMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "-1/-1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

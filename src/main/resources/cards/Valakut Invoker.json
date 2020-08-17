@@ -2,7 +2,7 @@
   "name" : "Valakut Invoker",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/e/7e142dd7-feb9-437a-904b-130c4fede48e.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SHAMAN" ],
   "rarity" : "COMMON",
@@ -19,7 +19,7 @@
     "parameters" : [ "DAMAGE:3" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

@@ -2,7 +2,7 @@
   "name" : "Pegasus Courser",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/c/cca2ad42-884f-4898-a643-5abff536e946.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "PEGASUS" ],
   "rarity" : "COMMON",

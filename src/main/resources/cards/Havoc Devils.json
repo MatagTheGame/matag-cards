@@ -2,7 +2,7 @@
   "name" : "Havoc Devils",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2f003678-0f17-4f1d-87d5-83613a82044b.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DEVIL" ],
   "rarity" : "COMMON",

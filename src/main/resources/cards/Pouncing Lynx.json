@@ -2,7 +2,7 @@
   "name" : "Pouncing Lynx",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/3/9383956f-90bc-40e4-ae5c-503e98e21832.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT" ],
   "rarity" : "COMMON",

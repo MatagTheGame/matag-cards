@@ -1,7 +1,7 @@
 {
   "name" : "Nettle Drone",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e633833a-cc4b-4c8c-a0d3-cd263e09df81.jpg",
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRONE", "ELDRAZI" ],
   "rarity" : "COMMON",

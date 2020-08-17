@@ -2,7 +2,7 @@
   "name" : "Colossification",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/1/9111b3dc-63da-45c7-bbe6-42a443ac2015.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "RARE",

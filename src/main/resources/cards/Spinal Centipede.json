@@ -2,7 +2,7 @@
   "name" : "Spinal Centipede",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/4/74d579fb-615a-43a6-a1c1-c535087abf2a.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "INSECT" ],
   "rarity" : "COMMON",

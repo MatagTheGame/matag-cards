@@ -1,7 +1,7 @@
 {
   "name" : "Kozilek's Channeler",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/5/c550d179-32ec-4ad8-91c2-d79320a21cba.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELDRAZI" ],
   "rarity" : "COMMON",

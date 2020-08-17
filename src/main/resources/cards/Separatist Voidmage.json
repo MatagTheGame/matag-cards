@@ -2,7 +2,7 @@
   "name" : "Separatist Voidmage",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/5/e5634d1a-ca4b-4528-9e0e-b88f1025d434.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "WIZARD" ],
   "rarity" : "COMMON",

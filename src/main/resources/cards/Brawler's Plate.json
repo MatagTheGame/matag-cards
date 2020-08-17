@@ -1,7 +1,7 @@
 {
   "name" : "Brawler's Plate",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],
   "rarity" : "UNCOMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "+2/+2", "TRAMPLE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "ANY", "ANY", "ANY", "ANY" ]
     },
     "sorcerySpeed" : true
   } ]

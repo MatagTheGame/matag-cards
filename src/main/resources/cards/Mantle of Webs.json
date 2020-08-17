@@ -2,7 +2,7 @@
   "name" : "Mantle of Webs",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a96285a4-57bf-4ef1-b960-b03601e6d209.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

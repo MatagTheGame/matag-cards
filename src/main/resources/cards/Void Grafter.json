@@ -1,7 +1,7 @@
 {
   "name" : "Void Grafter",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/c/6c2e37e2-a4bd-4f90-9191-3125784a3369.jpg",
-  "cost" : [ "BLUE", "GREEN", "COLORLESS" ],
+  "cost" : [ "BLUE", "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRONE", "ELDRAZI" ],
   "rarity" : "UNCOMMON",

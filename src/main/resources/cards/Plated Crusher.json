@@ -2,7 +2,7 @@
   "name" : "Plated Crusher",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a5f38436-9edf-42a1-83ba-0f5210b2cb86.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BEAST" ],
   "rarity" : "UNCOMMON",

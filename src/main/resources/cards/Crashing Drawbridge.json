@@ -1,7 +1,7 @@
 {
   "name" : "Crashing Drawbridge",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7d7108f-635c-423b-988a-bc8fc4c6edef.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "WALL" ],
   "rarity" : "COMMON",

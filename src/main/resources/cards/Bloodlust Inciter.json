@@ -20,7 +20,7 @@
     "parameters" : [ "HASTE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS" ]
+      "cost" : [ "ANY" ]
     }
   } ]
 }

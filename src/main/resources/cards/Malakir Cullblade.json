@@ -2,7 +2,7 @@
   "name" : "Malakir Cullblade",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/70861692-1eb2-4cb1-8d7f-b881386c37d1.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "VAMPIRE", "WARRIOR" ],
   "rarity" : "UNCOMMON",

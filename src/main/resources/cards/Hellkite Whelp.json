@@ -2,7 +2,7 @@
   "name" : "Hellkite Whelp",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/5/65e902e8-bbd5-40fe-a655-45d3d3bc9fde.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRAGON" ],
   "rarity" : "UNCOMMON",

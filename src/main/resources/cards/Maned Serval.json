@@ -2,7 +2,7 @@
   "name" : "Maned Serval",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/a/5ac51e35-e2c5-4457-981c-e59894584288.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT" ],
   "rarity" : "COMMON",

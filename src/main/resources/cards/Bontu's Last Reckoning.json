@@ -2,7 +2,7 @@
   "name" : "Bontu's Last Reckoning",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/b/1b4d0102-c0d6-4d50-941a-dd1c3575a3a8.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "RARE",
   "ruleText" : "Destroy all creatures. Lands you control don't untap during your next untap step.",

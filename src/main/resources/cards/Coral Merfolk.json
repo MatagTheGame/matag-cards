@@ -2,7 +2,7 @@
   "name" : "Coral Merfolk",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/7/97a74ccf-8165-4db1-a87c-52c2d8ea0058.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MERFOLK" ],
   "rarity" : "COMMON",

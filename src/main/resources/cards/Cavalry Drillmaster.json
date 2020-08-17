@@ -2,7 +2,7 @@
   "name" : "Cavalry Drillmaster",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/2/62d2e929-7ae3-4560-9cfa-53b89c8a6016.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",

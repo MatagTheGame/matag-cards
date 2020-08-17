@@ -2,7 +2,7 @@
   "name" : "Ogre Errant",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/e/0e96f3dc-dc58-4034-8d3d-3ae74fa64562.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "KNIGHT", "OGRE" ],
   "rarity" : "COMMON",

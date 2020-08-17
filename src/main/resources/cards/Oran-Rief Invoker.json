@@ -2,7 +2,7 @@
   "name" : "Oran-Rief Invoker",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/6/d68a25a7-ac43-4aac-a417-91bf72040160.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SHAMAN" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "+5/+5" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

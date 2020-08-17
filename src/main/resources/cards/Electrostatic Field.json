@@ -2,7 +2,7 @@
   "name" : "Electrostatic Field",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/7096c9a6-2e73-41f8-b20a-b29a9f0b760c.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WALL" ],
   "rarity" : "UNCOMMON",

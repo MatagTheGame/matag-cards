@@ -2,7 +2,7 @@
   "name" : "Huatli's Snubhorn",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/2/e2d88e6c-4aa8-4175-9f5d-a4c0182cdf74.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "COMMON",

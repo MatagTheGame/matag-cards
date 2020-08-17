@@ -2,7 +2,7 @@
   "name" : "Wild Ceratok",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/4/4464e11a-c5b9-40ea-8be0-dab29d14e289.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "RHINO" ],
   "rarity" : "COMMON",

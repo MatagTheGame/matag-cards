@@ -2,7 +2,7 @@
   "name" : "Raging Regisaur",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/c/0c1632bd-30bc-40a2-963f-44be3b42efb3.jpg",
   "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "UNCOMMON",

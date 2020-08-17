@@ -2,7 +2,7 @@
   "name" : "Lava Axe",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/3/c3dab325-8f4f-4288-9f3f-960e52b4335b.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Lava Axe deals 5 damage to target player or planeswalker.",

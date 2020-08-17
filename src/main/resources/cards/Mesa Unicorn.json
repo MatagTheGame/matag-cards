@@ -2,7 +2,7 @@
   "name" : "Mesa Unicorn",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/3/e321bbb0-1660-4452-a9b7-d41674f7f743.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "UNICORN" ],
   "rarity" : "COMMON",

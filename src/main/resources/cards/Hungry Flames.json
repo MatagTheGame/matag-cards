@@ -2,7 +2,7 @@
   "name" : "Hungry Flames",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/7/07392a36-e63a-4648-b8df-1172403922eb.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Hungry Flames deals 3 damage to target creature and 2 damage to target player or planeswalker.",

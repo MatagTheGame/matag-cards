@@ -2,7 +2,7 @@
   "name" : "Sanctum Seeker",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/2/72150779-0bb6-4d20-a898-cda93a66e7cd.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "KNIGHT", "VAMPIRE" ],
   "rarity" : "RARE",

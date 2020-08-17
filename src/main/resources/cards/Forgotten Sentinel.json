@@ -1,7 +1,7 @@
 {
   "name" : "Forgotten Sentinel",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/b/3bd39a06-c53a-42c2-b2df-028358f03406.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "GOLEM" ],
   "rarity" : "COMMON",

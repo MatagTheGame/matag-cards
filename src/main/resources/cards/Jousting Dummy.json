@@ -1,7 +1,7 @@
 {
   "name" : "Jousting Dummy",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/d/3d0c95b0-7b63-40e8-92ad-5ae5ffd3c4c1.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "KNIGHT", "SCARECROW" ],
   "rarity" : "COMMON",
@@ -17,7 +17,7 @@
     "parameters" : [ "+1/+0" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "ANY", "ANY", "ANY" ]
     }
   } ]
 }

@@ -2,7 +2,7 @@
   "name" : "Rhox Oracle",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/281f04d5-af45-4494-ac11-a605d3a06643.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MONK", "RHINO" ],
   "rarity" : "COMMON",

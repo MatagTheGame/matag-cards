@@ -2,7 +2,7 @@
   "name" : "Fully Grown",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/b/0b683d3f-025c-4b8d-89d7-3513488649d5.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +3/+3 until end of turn. Put a trample counter on it.",

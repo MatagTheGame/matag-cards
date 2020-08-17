@@ -2,7 +2,7 @@
   "name" : "Vexing Gull",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/6/869fee23-df75-448d-9fca-6ba6713d459f.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BIRD" ],
   "rarity" : "COMMON",

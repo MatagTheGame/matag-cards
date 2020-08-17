@@ -2,7 +2,7 @@
   "name" : "Setessan Training",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/9/1947f64a-5ca0-4dda-8bbd-8472e72ecf18.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

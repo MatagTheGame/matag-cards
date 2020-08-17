@@ -2,7 +2,7 @@
   "name" : "Sunblade Angel",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/2/9211c0e1-b314-495f-9c43-9a0e95c9efb9.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ANGEL" ],
   "rarity" : "UNCOMMON",

@@ -2,7 +2,7 @@
   "name" : "Hornbash Mentor",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/4/d47d2596-a321-44c0-a9f6-87bf80abc1c4.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "WARRIOR" ],
   "rarity" : "UNCOMMON",
@@ -39,7 +39,7 @@
     "parameters" : [ "PLUS_1_COUNTERS:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "TAP" ]
+      "cost" : [ "GREEN", "ANY", "ANY", "TAP" ]
     }
   } ]
 }

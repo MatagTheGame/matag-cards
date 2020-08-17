@@ -2,7 +2,7 @@
   "name" : "Gyre Engineer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/6/26dd6a1d-4dcb-4392-9856-c0e4140efbd7.jpg",
   "colors" : [ "BLUE", "GREEN" ],
-  "cost" : [ "BLUE", "GREEN", "COLORLESS" ],
+  "cost" : [ "BLUE", "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "VEDALKEN", "WIZARD" ],
   "rarity" : "UNCOMMON",

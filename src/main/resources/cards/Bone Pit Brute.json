@@ -2,7 +2,7 @@
   "name" : "Bone Pit Brute",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/0/6075e0a3-a0ab-4a11-8ad2-7dabb071d309.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CYCLOPS" ],
   "rarity" : "COMMON",

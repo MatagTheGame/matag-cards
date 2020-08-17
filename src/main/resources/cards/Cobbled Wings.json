@@ -1,7 +1,7 @@
 {
   "name" : "Cobbled Wings",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/b/3b2ff4f0-0dd1-4551-826b-68e8ff1e5860.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "FLYING" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS" ]
+      "cost" : [ "ANY" ]
     },
     "sorcerySpeed" : true
   } ]

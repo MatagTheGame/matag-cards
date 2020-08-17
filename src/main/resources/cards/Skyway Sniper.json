@@ -23,7 +23,7 @@
     "parameters" : [ "DAMAGE:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "GREEN", "ANY", "ANY" ]
     }
   } ]
 }

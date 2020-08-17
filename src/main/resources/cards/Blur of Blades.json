@@ -2,7 +2,7 @@
   "name" : "Blur of Blades",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/8/883ae574-932e-4236-a7c4-25b66c4f8f15.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Put a -1/-1 counter on target creature. Blur of Blades deals 2 damage to that creature's controller.",

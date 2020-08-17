@@ -2,7 +2,7 @@
   "name" : "Greenwood Sentinel",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/f/ffa93223-5a6d-4999-b64f-d81edfe317ea.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELF", "SCOUT" ],
   "rarity" : "COMMON",

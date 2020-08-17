@@ -1,7 +1,7 @@
 {
   "name" : "Anvilwrought Raptor",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/a/aa6d7bbe-0418-4a58-a97b-13b50eb0b642.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "BIRD" ],
   "rarity" : "COMMON",

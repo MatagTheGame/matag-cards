@@ -2,7 +2,7 @@
   "name" : "Managorger Hydra",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/2/f2e4ab33-150e-4004-a346-4842f4e701cc.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HYDRA" ],
   "rarity" : "RARE",

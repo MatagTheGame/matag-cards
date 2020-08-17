@@ -2,7 +2,7 @@
   "name" : "Valiant Knight",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "RARE",
@@ -33,7 +33,7 @@
     "parameters" : [ "DOUBLE_STRIKE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

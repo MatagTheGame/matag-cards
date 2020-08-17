@@ -2,7 +2,7 @@
   "name" : "Kaervek, the Spiteful",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/5/85082679-360f-48a2-a131-ce939f774749.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE", "LEGENDARY" ],
   "subtypes" : [ "HUMAN", "WARLOCK" ],
   "rarity" : "RARE",

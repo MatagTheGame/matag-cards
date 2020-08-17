@@ -2,7 +2,7 @@
   "name" : "Roaming Ghostlight",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/c/8cbac0e4-f79f-476d-b410-d19ab3696606.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SPIRIT" ],
   "rarity" : "COMMON",

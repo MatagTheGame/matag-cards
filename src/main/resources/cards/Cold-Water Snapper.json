@@ -2,7 +2,7 @@
   "name" : "Cold-Water Snapper",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/f/cf339549-4325-40c6-adde-0cd31bb738e0.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "TURTLE" ],
   "rarity" : "COMMON",

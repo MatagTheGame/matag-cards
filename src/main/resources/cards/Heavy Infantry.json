@@ -2,7 +2,7 @@
   "name" : "Heavy Infantry",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/b/4b2bf2c3-26d7-480d-8d3c-e00853966879.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "COMMON",

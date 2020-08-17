@@ -2,7 +2,7 @@
   "name" : "Reave Soul",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/e/ce7ff657-aa44-4336-895a-87518159cef6.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature with power 3 or less.",

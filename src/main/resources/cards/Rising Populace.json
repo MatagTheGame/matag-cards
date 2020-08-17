@@ -2,7 +2,7 @@
   "name" : "Rising Populace",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/d/edcacc28-aacf-4d40-b8cc-f8c028380340.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN" ],
   "rarity" : "COMMON",

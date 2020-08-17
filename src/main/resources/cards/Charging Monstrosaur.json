@@ -2,7 +2,7 @@
   "name" : "Charging Monstrosaur",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/8/98a55e1c-ec67-4300-9820-e5812438ad18.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "UNCOMMON",

@@ -2,7 +2,7 @@
   "name" : "Mire's Grasp",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0ae0c536-612d-4916-a8da-5aaaf14218b1.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

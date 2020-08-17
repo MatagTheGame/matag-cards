@@ -2,7 +2,7 @@
   "name" : "Mammoth Spider",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/e/1ee9bca2-1195-4bd0-aa5c-16b3726a8ff2.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SPIDER" ],
   "rarity" : "COMMON",

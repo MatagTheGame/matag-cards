@@ -2,7 +2,7 @@
   "name" : "Ancient Brontodon",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0a571223-1f43-4a47-a09c-a7ccb9edd298.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "COMMON",

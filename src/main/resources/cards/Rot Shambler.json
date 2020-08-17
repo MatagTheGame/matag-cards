@@ -2,7 +2,7 @@
   "name" : "Rot Shambler",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/a/1a403b28-f91a-4637-af72-d6fc86c3bb9a.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "FUNGUS" ],
   "rarity" : "UNCOMMON",

@@ -2,7 +2,7 @@
   "name" : "Infectious Horror",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/1/d17aaa92-10ca-4f70-b45e-5a51e9192efb.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HORROR", "ZOMBIE" ],
   "rarity" : "COMMON",

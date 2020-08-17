@@ -2,7 +2,7 @@
   "name" : "Devkarin Dissident",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/9/490cd287-5f09-442f-9150-4a6ac2cf3e2e.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELF", "WARRIOR" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "+2/+2" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

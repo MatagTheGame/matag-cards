@@ -2,7 +2,7 @@
   "name" : "Walking Corpse",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/5/053b59b4-a22c-4228-aadc-ae9da6bb465e.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ZOMBIE" ],
   "rarity" : "COMMON",

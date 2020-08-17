@@ -2,7 +2,7 @@
   "name" : "End-Raze Forerunners",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a50d79fe-6d37-42f3-b7b0-0c3018282fa2.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BOAR" ],
   "rarity" : "RARE",

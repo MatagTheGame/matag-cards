@@ -2,7 +2,7 @@
   "name" : "Charging Griffin",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/8/d86bd259-bc2f-402c-9e7a-030f9a3781e2.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GRIFFIN" ],
   "rarity" : "COMMON",

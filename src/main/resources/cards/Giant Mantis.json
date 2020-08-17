@@ -2,7 +2,7 @@
   "name" : "Giant Mantis",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/8/98518e4a-d1d0-4e41-bae7-242c779f06a1.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "INSECT" ],
   "rarity" : "COMMON",

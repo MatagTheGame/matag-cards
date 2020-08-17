@@ -2,7 +2,7 @@
   "name" : "Highland Game",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/e/4ec59964-42c1-4c29-8c60-37b7f376c347.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELK" ],
   "rarity" : "COMMON",

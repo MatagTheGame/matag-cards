@@ -2,7 +2,7 @@
   "name" : "Noxious Groodion",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/6/b6cb3d78-1a60-4e9b-b387-afeb58677536.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BEAST" ],
   "rarity" : "COMMON",

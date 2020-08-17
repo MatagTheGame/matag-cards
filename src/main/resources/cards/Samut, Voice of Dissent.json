@@ -2,7 +2,7 @@
   "name" : "Samut, Voice of Dissent",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/0/60f2d8f1-43a9-438a-830c-9d6b5701f950.jpg",
   "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE", "LEGENDARY" ],
   "subtypes" : [ "HUMAN", "WARRIOR" ],
   "rarity" : "MYTHIC",

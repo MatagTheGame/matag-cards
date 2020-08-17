@@ -2,7 +2,7 @@
   "name" : "Exultant Skymarcher",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/6/06da4cae-94ab-4268-9800-f4de06d03347.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SOLDIER", "VAMPIRE" ],
   "rarity" : "COMMON",

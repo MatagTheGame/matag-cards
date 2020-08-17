@@ -2,7 +2,7 @@
   "name" : "Swab Goblin",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/4/0403b8e5-29c5-4a4a-b9e7-1e79a7452f14.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GOBLIN", "PIRATE" ],
   "rarity" : "COMMON",

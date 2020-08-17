@@ -2,7 +2,7 @@
   "name" : "Enlightened Ascetic",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/6/f64f49cb-7c9c-4702-b933-667ee7436144.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT", "MONK" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Vampire Revenant",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/b/2bd3a6c6-33b8-4530-9d80-c488898afd6e.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SPIRIT", "VAMPIRE" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Two-Headed Zombie",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/c/2cc5760e-8b27-4d37-9772-c9eda90b1d95.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ZOMBIE" ],
   "rarity" : "COMMON",

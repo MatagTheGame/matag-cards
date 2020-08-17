@@ -2,7 +2,7 @@
   "name" : "Enthralling Victor",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/2/226a0528-30ff-410a-aade-e2307d03daa0.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "WARRIOR" ],
   "rarity" : "UNCOMMON",

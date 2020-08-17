@@ -2,7 +2,7 @@
   "name" : "Elvish Visionary",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/3/331f42a5-0a78-4972-aaea-309f3f3916e3.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELF", "SHAMAN" ],
   "rarity" : "COMMON",

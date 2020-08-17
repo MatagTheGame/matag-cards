@@ -2,7 +2,7 @@
   "name" : "Demolish",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/c/6ce356aa-9374-4f11-95b4-48bcaec64e93.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target artifact or land.",

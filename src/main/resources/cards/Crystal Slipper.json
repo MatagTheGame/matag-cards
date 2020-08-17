@@ -2,7 +2,7 @@
   "name" : "Crystal Slipper",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/f/9f738ca6-5254-4dbc-9f59-854e81c8dac2.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],
   "rarity" : "COMMON",
@@ -19,7 +19,7 @@
     "parameters" : [ "+1/+0", "HASTE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS" ]
+      "cost" : [ "ANY" ]
     },
     "sorcerySpeed" : true
   } ]

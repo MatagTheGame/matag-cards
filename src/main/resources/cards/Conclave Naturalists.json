@@ -2,7 +2,7 @@
   "name" : "Conclave Naturalists",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/7/3759fc28-9adb-41ed-851c-566a3a424e09.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRYAD" ],
   "rarity" : "UNCOMMON",

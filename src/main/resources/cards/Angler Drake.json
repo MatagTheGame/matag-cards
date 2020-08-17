@@ -2,7 +2,7 @@
   "name" : "Angler Drake",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/1/d14c753e-c5bf-4c34-b408-ac367b6ca6ab.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRAKE" ],
   "rarity" : "UNCOMMON",

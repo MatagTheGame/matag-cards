@@ -2,7 +2,7 @@
   "name" : "Voracious Vampire",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/6/d66a9f1b-31c8-4557-888b-a927922d37af.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "KNIGHT", "VAMPIRE" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Natural End",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/4/84dcd314-f4d2-461e-a66e-7b1d8f141879.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target artifact or enchantment. You gain 3 life.",

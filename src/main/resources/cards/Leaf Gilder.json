@@ -2,7 +2,7 @@
   "name" : "Leaf Gilder",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/8/58b3bd44-3b01-4507-b9be-ab94601ea736.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "ELF" ],
   "rarity" : "COMMON",

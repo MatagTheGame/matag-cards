@@ -2,7 +2,7 @@
   "name" : "Disenchant",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/3/239932a9-13fc-4e94-8b05-9d58795a0bcf.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target artifact or enchantment.",

@@ -2,7 +2,7 @@
   "name" : "Bulwark Giant",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/1/5104d4fe-4c20-4106-b405-a2b35140c942.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GIANT", "SOLDIER" ],
   "rarity" : "COMMON",

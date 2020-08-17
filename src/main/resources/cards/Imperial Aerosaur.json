@@ -2,7 +2,7 @@
   "name" : "Imperial Aerosaur",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/d/7d08f90b-9b98-4237-9826-578fb812d412.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "UNCOMMON",

@@ -2,7 +2,7 @@
   "name" : "Nyxborn Marauder",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/d/fd2a923a-1f9c-4a29-9c6b-344ae4d5ae8f.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE", "ENCHANTMENT" ],
   "subtypes" : [ "MINOTAUR" ],
   "rarity" : "COMMON",

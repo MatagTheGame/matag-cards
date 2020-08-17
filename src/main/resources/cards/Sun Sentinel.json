@@ -2,7 +2,7 @@
   "name" : "Sun Sentinel",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/c/5cd0b4d6-9753-46a3-924c-2adf3dad2819.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "COMMON",

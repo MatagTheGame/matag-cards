@@ -2,7 +2,7 @@
   "name" : "Mistral Singer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/9/d961c441-b76b-4bd8-b510-a3e073207a1b.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SIREN" ],
   "rarity" : "COMMON",

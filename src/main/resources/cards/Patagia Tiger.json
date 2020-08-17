@@ -2,7 +2,7 @@
   "name" : "Patagia Tiger",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/e/be398100-89e2-432b-8017-74fb7e4dbc26.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT" ],
   "rarity" : "COMMON",

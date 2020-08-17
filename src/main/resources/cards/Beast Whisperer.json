@@ -2,7 +2,7 @@
   "name" : "Beast Whisperer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0aa99539-0002-4661-85b2-a3d770ff004c.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "ELF" ],
   "rarity" : "RARE",

@@ -2,7 +2,7 @@
   "name" : "Frost Lynx",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/f/dfcaeccc-fc8c-4a9e-80d5-b48da71d7ff1.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT", "ELEMENTAL" ],
   "rarity" : "COMMON",

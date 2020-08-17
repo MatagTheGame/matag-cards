@@ -2,7 +2,7 @@
   "name" : "Mummy Paramount",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/8/e8b1a3e5-cf77-439d-8e0d-cf6571f6891c.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ZOMBIE" ],
   "rarity" : "COMMON",

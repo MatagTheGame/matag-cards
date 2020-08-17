@@ -2,7 +2,7 @@
   "name" : "Desperate Lunge",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/9/69ce134a-25ef-4f8d-a385-7c29fc5707dc.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +2/+2 and gains flying until end of turn. You gain 2 life.",

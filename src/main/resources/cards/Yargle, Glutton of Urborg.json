@@ -2,7 +2,7 @@
   "name" : "Yargle, Glutton of Urborg",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/c/dc2efd68-98ff-4ddb-8a74-bac0ef5a6561.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE", "LEGENDARY" ],
   "subtypes" : [ "FROG", "SPIRIT" ],
   "rarity" : "UNCOMMON",

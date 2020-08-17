@@ -2,7 +2,7 @@
   "name" : "Impale",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/f/dfa0c4f7-3497-467d-9453-104fb4b5a0f3.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature.",

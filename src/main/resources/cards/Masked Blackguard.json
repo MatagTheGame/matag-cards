@@ -2,7 +2,7 @@
   "name" : "Masked Blackguard",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/6/d61b4b71-3cbb-4422-8ce7-657ca3bb6a82.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "ROGUE" ],
   "rarity" : "COMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "+1/+1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "BLACK", "ANY", "ANY" ]
     }
   } ]
 }

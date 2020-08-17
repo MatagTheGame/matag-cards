@@ -2,7 +2,7 @@
   "name" : "Immortal Phoenix",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/f/afcb9f15-be65-494c-9672-162d38c6f0a5.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "PHOENIX" ],
   "rarity" : "RARE",

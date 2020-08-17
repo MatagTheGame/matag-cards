@@ -2,7 +2,7 @@
   "name" : "SwashBuckling",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/0/c08d3b3a-6923-4891-b545-51cfe65e4c7d.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

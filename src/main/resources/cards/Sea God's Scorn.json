@@ -2,7 +2,7 @@
   "name" : "Sea God's Scorn",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/9/5/9504dc26-f5d8-4b9d-9eb1-51a12b893beb.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Return up to three target creatures and/or enchantments to their owners' hands.",

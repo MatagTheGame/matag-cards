@@ -2,7 +2,7 @@
   "name" : "Courier Griffin",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/d/4d3afc71-f5db-45c3-96b2-8454b7f33542.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GRIFFIN" ],
   "rarity" : "COMMON",

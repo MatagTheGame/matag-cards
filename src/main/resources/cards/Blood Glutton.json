@@ -2,7 +2,7 @@
   "name" : "Blood Glutton",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/28ff52a2-4223-4551-b388-b4dd21cc1437.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "VAMPIRE" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Conviction",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/1/71a505f9-3717-470d-bac5-e935d7f59b2b.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

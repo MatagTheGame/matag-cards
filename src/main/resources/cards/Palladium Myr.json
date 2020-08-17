@@ -1,7 +1,7 @@
 {
   "name" : "Palladium Myr",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/7/27305aad-f1bd-4895-8611-143bc0250bee.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "MYR" ],
   "rarity" : "UNCOMMON",

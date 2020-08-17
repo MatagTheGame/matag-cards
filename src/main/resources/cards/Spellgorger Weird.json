@@ -2,7 +2,7 @@
   "name" : "Spellgorger Weird",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/a/baefa06e-28ba-41b9-866e-1ed0c4969852.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WEIRD" ],
   "rarity" : "COMMON",

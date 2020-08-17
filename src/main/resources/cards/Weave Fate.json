@@ -2,7 +2,7 @@
   "name" : "Weave Fate",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/4/04e57fc1-1633-447f-ae32-ad7da25a4177.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Draw two cards.",

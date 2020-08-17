@@ -2,7 +2,7 @@
   "name" : "Blightcaster",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8986163-6362-4c70-8ece-22ae22da5031.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "WIZARD" ],
   "rarity" : "UNCOMMON",

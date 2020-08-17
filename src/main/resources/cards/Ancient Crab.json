@@ -2,7 +2,7 @@
   "name" : "Ancient Crab",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/c/7c2ca68b-15fb-4691-b549-268df92ca413.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CRAB" ],
   "rarity" : "COMMON",

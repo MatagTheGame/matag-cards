@@ -2,7 +2,7 @@
   "name" : "Crash the Ramparts",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/0/20b52d17-7efb-4c6e-9e6a-4763d1ef1daa.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +3/+3 and gains trample until end of turn.",

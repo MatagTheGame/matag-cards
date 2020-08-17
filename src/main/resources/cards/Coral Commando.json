@@ -2,7 +2,7 @@
   "name" : "Coral Commando",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/8/889cc2a0-d9a6-4368-92e0-055a7d7bf9d1.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "MERFOLK", "WARRIOR" ],
   "rarity" : "COMMON",

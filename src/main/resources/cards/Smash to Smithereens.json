@@ -2,7 +2,7 @@
   "name" : "Smash to Smithereens",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/1/815dd60c-989b-4ace-9f47-44e3405a0065.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target artifact. Smash to Smithereens deals 3 damage to that artifact's controller.",

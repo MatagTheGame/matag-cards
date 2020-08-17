@@ -1,7 +1,7 @@
 {
   "name" : "Strider Harness",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/e/5e94daa9-5b9b-4fd2-829e-081eed22c18f.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],
   "rarity" : "COMMON",
@@ -18,7 +18,7 @@
     "parameters" : [ "+1/+1", "HASTE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS" ]
+      "cost" : [ "ANY" ]
     },
     "sorcerySpeed" : true
   } ]

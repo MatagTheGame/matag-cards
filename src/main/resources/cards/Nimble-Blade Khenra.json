@@ -2,7 +2,7 @@
   "name" : "Nimble-Blade Khenra",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/0/f066e3b8-c16f-4e94-9ec0-14be98828bbf.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "JACKAL", "WARRIOR" ],
   "rarity" : "COMMON",

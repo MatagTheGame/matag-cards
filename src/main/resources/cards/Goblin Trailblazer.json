@@ -2,7 +2,7 @@
   "name" : "Goblin Trailblazer",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/5/152b2d16-bdf5-4249-9dc1-bb51498aa33b.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GOBLIN", "PIRATE" ],
   "rarity" : "COMMON",

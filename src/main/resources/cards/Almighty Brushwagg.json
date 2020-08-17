@@ -18,7 +18,7 @@
     "parameters" : [ "+3/+3" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "GREEN", "ANY", "ANY", "ANY" ]
     }
   } ]
 }

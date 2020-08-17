@@ -2,7 +2,7 @@
   "name" : "Pouncing Cheetah",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/3/73f5156b-b200-41f7-8b93-557c4cdc2bf7.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT" ],
   "rarity" : "COMMON",

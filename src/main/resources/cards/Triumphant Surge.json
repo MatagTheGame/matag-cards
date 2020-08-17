@@ -2,7 +2,7 @@
   "name" : "Triumphant Surge",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/75d6eb18-a49d-4fa5-a333-78aafbc4abcb.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature with power 4 or greater. You gain 3 life.",

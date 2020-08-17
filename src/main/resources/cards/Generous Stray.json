@@ -2,7 +2,7 @@
   "name" : "Generous Stray",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/2/3289db66-231f-4370-aca6-644d75bee293.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT" ],
   "rarity" : "COMMON",

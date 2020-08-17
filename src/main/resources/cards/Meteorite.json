@@ -1,7 +1,7 @@
 {
   "name" : "Meteorite",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/c/ec3a2c95-4e7a-43c5-90bd-6f1de7c82a5c.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "When Meteorite enters the battlefield, it deals 2 damage to any target. {T}: Add one mana of any color.",

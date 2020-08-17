@@ -2,7 +2,7 @@
   "name" : "Graceful Cat",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/4/b42ba8bf-9fc1-4d57-9c80-42491d18d929.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT" ],
   "rarity" : "COMMON",

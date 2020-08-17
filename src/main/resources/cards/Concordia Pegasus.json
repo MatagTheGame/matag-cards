@@ -2,7 +2,7 @@
   "name" : "Concordia Pegasus",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/0/600d3517-e370-47ae-ac4f-c7ef8995a89c.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "PEGASUS" ],
   "rarity" : "COMMON",

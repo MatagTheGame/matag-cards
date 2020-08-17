@@ -2,7 +2,7 @@
   "name" : "Shriekdiver",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/a/0a1c3148-7a6f-4963-af0b-18d9a156bf22.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "BIRD", "WARRIOR", "ZOMBIE" ],
   "rarity" : "COMMON",
@@ -20,7 +20,7 @@
     "parameters" : [ "HASTE" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS" ]
+      "cost" : [ "ANY" ]
     }
   } ]
 }

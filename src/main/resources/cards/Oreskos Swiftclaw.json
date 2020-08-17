@@ -2,7 +2,7 @@
   "name" : "Oreskos Swiftclaw",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/e/1ee9cc04-a9b8-4dca-a4d6-324deb6a1b17.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CAT", "WARRIOR" ],
   "rarity" : "COMMON",

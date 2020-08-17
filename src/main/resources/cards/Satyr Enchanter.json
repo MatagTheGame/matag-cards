@@ -2,7 +2,7 @@
   "name" : "Satyr Enchanter",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/f/4f910c5b-3de9-40e8-a1d5-dfe6b3725404.jpg",
   "colors" : [ "WHITE", "GREEN" ],
-  "cost" : [ "WHITE", "GREEN", "COLORLESS" ],
+  "cost" : [ "WHITE", "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "SATYR" ],
   "rarity" : "UNCOMMON",

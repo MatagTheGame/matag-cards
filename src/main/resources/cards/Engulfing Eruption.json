@@ -2,7 +2,7 @@
   "name" : "Engulfing Eruption",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/1/f198c7e3-8a85-48f3-a7c2-93320fd4fb81.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Engulfing Eruption deals 5 damage to target creature.",

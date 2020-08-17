@@ -2,7 +2,7 @@
   "name" : "Nest Robber",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/7/576d3845-f45a-4db0-9f7c-845cedb64c49.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS" ],
+  "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DINOSAUR" ],
   "rarity" : "COMMON",

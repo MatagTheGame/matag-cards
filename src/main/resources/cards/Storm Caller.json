@@ -2,7 +2,7 @@
   "name" : "Storm Caller",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/b/1b6d123c-c16d-43fa-b183-8a59c7e1a11e.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "OGRE", "SHAMAN" ],
   "rarity" : "COMMON",

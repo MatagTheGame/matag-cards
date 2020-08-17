@@ -2,7 +2,7 @@
   "name" : "Fortified Rampart",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/0/5095e2ab-a7f5-45bc-8b2f-31198ea27bba.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WALL" ],
   "rarity" : "COMMON",

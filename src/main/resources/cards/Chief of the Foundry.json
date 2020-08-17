@@ -1,7 +1,7 @@
 {
   "name" : "Chief of the Foundry",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/4/145ae70d-8d0d-4bf2-b50c-af75b6874899.jpg",
-  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "CONSTRUCT" ],
   "rarity" : "UNCOMMON",

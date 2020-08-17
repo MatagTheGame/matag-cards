@@ -2,7 +2,7 @@
   "name" : "Loxodon Sergeant",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/5/c57f873b-5fb2-4638-b66c-f6d1aec156ba.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELEPHANT", "SOLDIER" ],
   "rarity" : "COMMON",

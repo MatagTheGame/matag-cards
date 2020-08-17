@@ -2,7 +2,7 @@
   "name" : "Quirion Dryad",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/2/a20d20f7-bc4d-42fa-9f5b-5bb330eb7f38.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRYAD" ],
   "rarity" : "UNCOMMON",

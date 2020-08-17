@@ -2,7 +2,7 @@
   "name" : "Wildwood Patrol",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/c/cceaf927-261e-4d61-9fac-eb8abbe87593.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "CENTAUR", "SCOUT" ],
   "rarity" : "COMMON",

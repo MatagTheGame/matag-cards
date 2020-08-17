@@ -2,7 +2,7 @@
   "name" : "Mahamoti Djinn",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/7/37f1d02c-8258-45e8-97f3-67b610081092.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DJINN" ],
   "rarity" : "UNCOMMON",

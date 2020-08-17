@@ -2,7 +2,7 @@
   "name" : "Snapping Drake",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/5/05b05c26-4179-4faf-9de5-a83b4614f6bd.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRAKE" ],
   "rarity" : "COMMON",

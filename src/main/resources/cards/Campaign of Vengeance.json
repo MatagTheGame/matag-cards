@@ -2,7 +2,7 @@
   "name" : "Campaign of Vengeance",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/e/e/eeb4800c-639f-479a-99ab-5a44a7d2d76b.jpg",
   "colors" : [ "WHITE", "BLACK" ],
-  "cost" : [ "WHITE", "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Whenever a creature you control attacks, defending player loses 1 life and you gain 1 life.",

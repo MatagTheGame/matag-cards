@@ -2,7 +2,7 @@
   "name" : "Vastwood Gorger",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/f/df9547f7-2789-4cac-bf61-78e4047a95fb.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WURM" ],
   "rarity" : "COMMON",

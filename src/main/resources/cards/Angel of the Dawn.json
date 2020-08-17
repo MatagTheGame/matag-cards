@@ -2,7 +2,7 @@
   "name" : "Angel of the Dawn",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/f/4/f4bae0e4-1143-4dc4-afb1-e6b4201ff101.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ANGEL" ],
   "rarity" : "COMMON",

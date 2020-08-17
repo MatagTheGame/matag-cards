@@ -2,7 +2,7 @@
   "name" : "Spontaneous Flight",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/3/d/3dc24dd4-d259-4687-8247-f56aa7abb5b9.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Target creature gets +2/+2 until end of turn. Put a flying counter on it.",

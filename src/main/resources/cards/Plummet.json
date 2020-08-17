@@ -2,7 +2,7 @@
   "name" : "Plummet",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/8/d884b2f2-946e-4d5d-b8cf-ef035726a188.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature with flying.",

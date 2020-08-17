@@ -2,7 +2,7 @@
   "name" : "Windreader Sphinx",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/0/d0346326-6bdf-4385-ab41-7b06e9f66ffd.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "SPHINX" ],
   "rarity" : "RARE",

@@ -2,7 +2,7 @@
   "name" : "Noxious Grasp",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/e/8e5758cc-1f84-455d-a983-8ec471727eaf.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Destroy target creature or planeswalker that's green or white. You gain 1 life.",

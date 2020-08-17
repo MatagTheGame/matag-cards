@@ -20,7 +20,7 @@
     "parameters" : [ ":TAPPED" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "TAP" ]
+      "cost" : [ "ANY", "ANY", "TAP" ]
     }
   } ]
 }

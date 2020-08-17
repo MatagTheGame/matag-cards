@@ -2,7 +2,7 @@
   "name" : "Impeccable Timing",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a98cee1e-64d8-4662-a911-009b031dc888.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Impeccable Timing deals 3 damage to target attacking or blocking creature.",

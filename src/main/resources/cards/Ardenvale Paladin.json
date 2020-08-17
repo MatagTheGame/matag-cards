@@ -2,7 +2,7 @@
   "name" : "Ardenvale Paladin",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/a/3/a32fa360-6c41-4146-931b-c19e9a766803.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",

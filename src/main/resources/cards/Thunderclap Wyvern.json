@@ -2,7 +2,7 @@
   "name" : "Thunderclap Wyvern",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/4/64551550-6279-4f6e-a5b9-e1332e927421.jpg",
   "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRAKE" ],
   "rarity" : "UNCOMMON",

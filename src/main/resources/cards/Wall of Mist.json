@@ -2,7 +2,7 @@
   "name" : "Wall of Mist",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/2/62a37646-8f7c-40fc-851d-e3fdd205b012.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "WALL" ],
   "rarity" : "COMMON",

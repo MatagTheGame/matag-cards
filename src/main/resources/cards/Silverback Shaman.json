@@ -2,7 +2,7 @@
   "name" : "Silverback Shaman",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/e/4e97e62e-4a77-4512-b5fa-400e01517e23.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "APE", "SHAMAN" ],
   "rarity" : "COMMON",

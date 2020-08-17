@@ -2,7 +2,7 @@
   "name" : "Lifespring Druid",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/1/01abad84-abb9-4c8e-94f8-12d2a6627188.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRUID", "ELF" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Spire Patrol ",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/d/1daaf494-70af-4a8d-836f-f6a9d6c1f080.jpg",
   "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "UNCOMMON",

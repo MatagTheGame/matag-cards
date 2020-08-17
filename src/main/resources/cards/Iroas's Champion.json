@@ -2,7 +2,7 @@
   "name" : "Iroas's Champion",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/6/2/627c63f5-4e33-49e1-8d0c-b42deec898d4.jpg",
   "colors" : [ "WHITE", "RED" ],
-  "cost" : [ "WHITE", "RED", "COLORLESS" ],
+  "cost" : [ "WHITE", "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "SOLDIER" ],
   "rarity" : "UNCOMMON",

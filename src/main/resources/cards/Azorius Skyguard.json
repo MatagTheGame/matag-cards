@@ -2,7 +2,7 @@
   "name" : "Azorius Skyguard",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/2/c2fddecd-e660-43de-bccc-52f60a089052.jpg",
   "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "BLUE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "UNCOMMON",

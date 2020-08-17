@@ -2,7 +2,7 @@
   "name" : "Cloud Manta",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/1/8/1854f819-d08e-4a23-bedb-4618b79623e9.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "FISH" ],
   "rarity" : "COMMON",

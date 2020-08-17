@@ -2,7 +2,7 @@
   "name" : "Skyraker Giant",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/c/5/c5f0d87a-8f37-4598-9106-c3545dadf6fd.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "GIANT" ],
   "rarity" : "UNCOMMON",

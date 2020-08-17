@@ -2,7 +2,7 @@
   "name" : "Prodigious Growth",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/a/ba2b0966-4e9e-44dc-9145-3c1e644578bc.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "RARE",

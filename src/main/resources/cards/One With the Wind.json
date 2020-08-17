@@ -2,7 +2,7 @@
   "name" : "One With the Wind",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/2/c/2c00f8bf-0088-44ad-b40b-26a2951a2428.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

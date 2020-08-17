@@ -2,7 +2,7 @@
   "name" : "Legion's Judgment",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/0/3/032f6c5a-8d88-4a55-a54b-28df42d801e1.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature with power 4 or greater.",

@@ -2,7 +2,7 @@
   "name" : "Bitterbow Sharpshooters",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/5/753d2393-ce5a-422f-858c-25e3f61d52bd.jpg",
   "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ARCHER", "JACKAL" ],
   "rarity" : "COMMON",

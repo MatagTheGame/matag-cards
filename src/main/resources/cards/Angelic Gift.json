@@ -2,7 +2,7 @@
   "name" : "Angelic Gift",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b7391a75-bc22-47dc-a818-7a5d3ea076c8.jpg",
   "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "COLORLESS" ],
+  "cost" : [ "WHITE", "ANY" ],
   "types" : [ "ENCHANTMENT" ],
   "subtypes" : [ "AURA" ],
   "rarity" : "COMMON",

@@ -2,7 +2,7 @@
   "name" : "Volcanic Rambler",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/7/f/7fc075ee-16e9-4cf5-bbb0-7b3b4b9eb3f4.jpg",
   "colors" : [ "RED" ],
-  "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "ELEMENTAL" ],
   "rarity" : "COMMON",
@@ -19,7 +19,7 @@
     "parameters" : [ "DAMAGE:1" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "COLORLESS", "COLORLESS" ]
+      "cost" : [ "RED", "ANY", "ANY" ]
     }
   } ]
 }

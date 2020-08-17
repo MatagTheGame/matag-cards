@@ -2,7 +2,7 @@
   "name" : "Blood Curdle",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/4/1/4184c851-1419-476c-ba9c-9f0cb1137114.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "COMMON",
   "ruleText" : "Destroy target creature. Put a menace counter on a creature you control.",

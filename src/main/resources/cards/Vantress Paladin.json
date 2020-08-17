@@ -2,7 +2,7 @@
   "name" : "Vantress Paladin",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52dd633f-9a07-47df-adb1-36013fc2f43a.jpg",
   "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "HUMAN", "KNIGHT" ],
   "rarity" : "COMMON",

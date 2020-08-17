@@ -1,7 +1,7 @@
 {
   "name" : "Pacification Array",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/8/b/8bed742a-a12a-4728-a771-07e3d1417419.jpg",
-  "cost" : [ "COLORLESS" ],
+  "cost" : [ "ANY" ],
   "types" : [ "ARTIFACT" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "{2}, {T}: Tap target artifact or creature.",
@@ -16,7 +16,7 @@
     "parameters" : [ ":TAPPED" ],
     "trigger" : {
       "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "COLORLESS", "TAP" ]
+      "cost" : [ "ANY", "ANY", "TAP" ]
     }
   } ]
 }

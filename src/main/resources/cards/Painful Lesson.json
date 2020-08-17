@@ -2,7 +2,7 @@
   "name" : "Painful Lesson",
   "imageUrl" : "https://img.scryfall.com/cards/large/front/d/5/d54b51da-bc5a-4ef3-a6a3-e0b1e343c67c.jpg",
   "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "COLORLESS", "COLORLESS" ],
+  "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",
   "ruleText" : "Target player draws two cards and loses 2 life.",
