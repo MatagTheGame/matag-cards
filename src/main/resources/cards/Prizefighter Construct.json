@@ -1,0 +1,10 @@
+{
+  "name" : "Prizefighter Construct",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/e/8e389c92-b54b-46b3-a7ab-b8a5a2a7d380.jpg",
+  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ARTIFACT", "CREATURE" ],
+  "subtypes" : [ "CONSTRUCT" ],
+  "rarity" : "COMMON",
+  "power" : 6,
+  "toughness" : 2
+}

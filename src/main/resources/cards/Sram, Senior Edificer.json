@@ -1,0 +1,29 @@
+{
+  "name" : "Sram, Senior Edificer",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/b/1b323e2c-59dd-4d70-9a48-b10f807bb818.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "COLORLESS" ],
+  "types" : [ "CREATURE", "LEGENDARY" ],
+  "subtypes" : [ "ADVISOR", "DWARF" ],
+  "rarity" : "RARE",
+  "ruleText" : "Whenever you cast an Aura, Equipment, or Vehicle spell, draw a card.",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofSubtype" : [ "AURA", "EQUIPMENT", "VEHICLE" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

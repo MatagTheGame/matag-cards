@@ -1,0 +1,25 @@
+{
+  "name" : "Paradox Engine",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/d/fd8ccd81-9e11-47fa-8e16-064c52c24506.jpg",
+  "cost" : [ "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS", "COLORLESS" ],
+  "types" : [ "ARTIFACT", "LEGENDARY" ],
+  "rarity" : "MYTHIC",
+  "ruleText" : "Whenever you cast a spell, untap all nonland permanents you control.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "notOfType" : [ "LAND" ],
+      "controllerType" : "PLAYER"
+    },
+    "parameters" : [ ":UNTAPPED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

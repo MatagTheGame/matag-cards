@@ -2,6 +2,7 @@ package com.matag.cards.properties;
 
 public enum Subtype {
   AETHERBORN,
+  ADVISOR,
   ALLY,
   ANGEL,
   ANTELOPE,
@@ -117,6 +118,7 @@ public enum Subtype {
   UNICORN,
   VAMPIRE,
   VEDALKEN,
+  VEHICLE,
   WALL,
   WARLOCK,
   WARRIOR,
