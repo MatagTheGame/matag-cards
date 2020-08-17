@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 public class MagicInstanceSelector {
   SelectorType selectorType;
   List<Type> ofType;
+  List<Type> ofAllTypes;
   List<Type> notOfType;
   List<Subtype> ofSubtype;
   List<Subtype> notOfSubtype;

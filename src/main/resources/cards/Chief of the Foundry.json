@@ -12,7 +12,7 @@
     "abilityType" : "SELECTED_PERMANENTS_GET",
     "magicInstanceSelector" : {
       "selectorType" : "PERMANENT",
-      "ofType" : [ "ARTIFACT", "CREATURE" ],
+      "ofAllTypes" : [ "ARTIFACT", "CREATURE" ],
       "controllerType" : "PLAYER",
       "others" : true
     },
