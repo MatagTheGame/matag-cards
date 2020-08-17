@@ -1,0 +1,21 @@
+{
+  "name" : "Wrangle",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "powerToughnessConstraint" : {
+          "powerOrToughness" : "POWER",
+          "powerToughnessConstraintType" : "LESS_OR_EQUAL",
+          "value" : 4
+        }
+      }
+    } ],
+    "parameters" : [ ":CONTROLLED", ":UNTAPPED", "HASTE" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

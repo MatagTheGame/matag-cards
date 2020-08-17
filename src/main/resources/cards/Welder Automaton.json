@@ -1,0 +1,19 @@
+{
+  "name" : "Welder Automaton",
+  "power" : 2,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PLAYER",
+        "controllerType" : "OPPONENT"
+      }
+    } ],
+    "parameters" : [ "DAMAGE:1" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "RED", "COLORLESS", "COLORLESS", "COLORLESS" ]
+    }
+  } ]
+}
