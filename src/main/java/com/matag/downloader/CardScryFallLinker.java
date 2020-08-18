@@ -30,7 +30,7 @@ public class CardScryFallLinker {
   );
   private static final LinkedHashMap<String, Cost> COSTS = new LinkedHashMap<>();
   static {
-    COSTS.put("C", Cost.COLORLESS);
+    COSTS.put("C", Cost.ANY);
     COSTS.put("W", Cost.WHITE);
     COSTS.put("U", Cost.BLUE);
     COSTS.put("B", Cost.BLACK);
@@ -136,7 +136,7 @@ public class CardScryFallLinker {
     manaCost = manaCost.replaceFirst("\\{", "").replaceFirst("}", "");
     if (!manaCost.isBlank()) {
       for (int i = 0; i < parseInt(manaCost); i++) {
-        cost.add(Cost.COLORLESS);
+        cost.add(Cost.ANY);
       }
     }
 
