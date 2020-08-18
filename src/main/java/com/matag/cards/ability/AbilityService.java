@@ -13,7 +13,6 @@ import static java.util.Collections.singletonList;
 
 @Component
 public class AbilityService {
-  // permanent
   private static final String DAMAGE = "DAMAGE:";
   private static final String CONTROLLER_DAMAGE = "CONTROLLER_DAMAGE:";
   private static final String TAPPED = ":TAPPED";
@@ -22,10 +21,10 @@ public class AbilityService {
   private static final String DESTROYED = ":DESTROYED";
   private static final String RETURN_TO_OWNER_HAND = ":RETURN_TO_OWNER_HAND";
   private static final String CONTROLLED = ":CONTROLLED";
+  private static final String CANCELLED = ":CANCELLED";
   private static final String PLUS_1_COUNTERS = "PLUS_1_COUNTERS:";
   private static final String MINUS_1_COUNTERS = "MINUS_1_COUNTERS:";
   private static final String KEYWORD_COUNTER = "KEYWORD_COUNTER:";
-  // player
   private static final String DRAW = "DRAW:";
   private static final String LIFE = "LIFE:";
 
@@ -71,6 +70,10 @@ public class AbilityService {
 
   public boolean controlledFromParameter(String parameter) {
     return parameter.equals(CONTROLLED);
+  }
+
+  public boolean cancelledFromParameter(String parameter) {
+    return parameter.equals(CANCELLED);
   }
 
   public int plus1CountersFromParameter(String parameter) {
@@ -135,6 +138,9 @@ public class AbilityService {
 
     } else if (controlledFromParameter(parameter)) {
       return "controlled";
+
+    } else if (cancelledFromParameter(parameter)) {
+      return "cancelled";
 
     } else if (parameter.startsWith("PLUS_1_COUNTERS:")) {
       return plus1CountersFromParameter(parameter) + " +1/+1 counters";
