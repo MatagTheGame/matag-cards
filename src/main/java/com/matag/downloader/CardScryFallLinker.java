@@ -30,7 +30,7 @@ public class CardScryFallLinker {
   );
   private static final LinkedHashMap<String, Cost> COSTS = new LinkedHashMap<>();
   static {
-    COSTS.put("C", Cost.ANY);
+    COSTS.put("C", Cost.COLORLESS);
     COSTS.put("W", Cost.WHITE);
     COSTS.put("U", Cost.BLUE);
     COSTS.put("B", Cost.BLACK);
