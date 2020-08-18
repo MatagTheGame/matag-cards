@@ -15,8 +15,7 @@
     } ],
     "parameters" : [ ":CANCELLED" ],
     "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLUE", "BLUE", "ANY" ]
+      "type" : "CAST"
     }
   } ]
 }
