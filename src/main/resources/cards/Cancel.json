@@ -1,0 +1,22 @@
+{
+  "name" : "Cancel",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/9/59e14910-ee2e-49ae-855e-46a8ab6cad82.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "BLUE", "COLORLESS" ],
+  "types" : [ "INSTANT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Counter target spell.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL"
+      }
+    } ],
+    "parameters" : [ ":CANCELLED" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "BLUE", "BLUE", "ANY" ]
+    }
+  } ]
+}
