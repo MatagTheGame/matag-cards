@@ -2,6 +2,7 @@
   "code" : "RNA",
   "name" : "Ravnica Allegiance",
   "cards" : [
+    "Absorb",
     "Act of Treason",
     "Axebane Beast",
     "Azorius Guildgate",
@@ -16,7 +17,9 @@
     "Consign to the Pit",
     "Coral Commando",
     "End-Raze Forerunners",
+    "Essence Capture",
     "Feral Maaka",
+    "Frilled Mystic",
     "Gift of Strength",
     "Gravel-Hide Goblin",
     "Gruul Guildgate",

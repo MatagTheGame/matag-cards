@@ -1,0 +1,33 @@
+{
+  "name" : "Frilled Mystic",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/0/50595d02-edad-48a6-b10c-6fa859cc88bb.jpg",
+  "colors" : [ "BLUE", "GREEN" ],
+  "cost" : [ "BLUE", "BLUE", "GREEN", "GREEN" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ELF", "LIZARD", "WIZARD" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flash. When Frilled Mystic enters the battlefield, you may counter target spell.",
+  "power" : 3,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "ARTIFACT", "CREATURE" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ ":CANCELLED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

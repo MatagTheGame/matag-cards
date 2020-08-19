@@ -103,6 +103,7 @@ public enum Subtype {
   SCOUT,
   SHADE,
   SHAMAN,
+  SHARK,
   SIREN,
   SKELETON,
   SLUG,

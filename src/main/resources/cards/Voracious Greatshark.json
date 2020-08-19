@@ -1,0 +1,33 @@
+{
+  "name" : "Voracious Greatshark",
+  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/c/5c5ee3a2-c683-4657-98c8-daebaa7819f1.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "SHARK" ],
+  "rarity" : "RARE",
+  "ruleText" : "Flash. When Voracious Greatshark enters the battlefield, counter target artifact or creature spell.",
+  "power" : 5,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "ARTIFACT", "CREATURE" ]
+      },
+      "optional" : true
+    } ],
+    "parameters" : [ ":CANCELLED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
