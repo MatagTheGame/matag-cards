@@ -7,6 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.matag.cards.sets.MtgSets;
 import com.matag.downloader.CardScryFallLinker;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.platform.commons.util.StringUtils;
 import org.junit.runner.RunWith;
@@ -30,6 +31,7 @@ public class LinkerTest {
   @Autowired
   private MtgSets mtgSets;
 
+  @Ignore
   @Test
   public void scryFallLinker() throws Exception {
     var cardsObjectMapper = createCardsObjectMapper();
