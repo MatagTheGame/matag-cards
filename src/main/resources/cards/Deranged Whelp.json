@@ -1,0 +1,15 @@
+{
+  "name" : "Deranged Whelp",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/f/d/fd06f9eb-112e-458b-83c8-3761df6d60ff.jpg",
+  "colors" : [ "RED" ],
+  "cost" : [ "RED", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "WOLF" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Menace",
+  "power" : 2,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "MENACE"
+  } ]
+}

@@ -1,0 +1,32 @@
+{
+  "name" : "Certain Death",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/6/b/6b944c3a-a0b1-4a54-addd-a82d685390b8.jpg",
+  "colors" : [ "BLACK" ],
+  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY", "ANY" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Destroy target creature. Its controller loses 2 life and you gain 2 life.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":DESTROYED", "CONTROLLER_DAMAGE:2" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "LIFE:2" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

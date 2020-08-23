@@ -1,0 +1,24 @@
+{
+  "name" : "Cathar's Shield",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/6/1/61c18ffa-ffff-4dc4-9db0-d5f183c35e17.jpg",
+  "types" : [ "ARTIFACT" ],
+  "subtypes" : [ "EQUIPMENT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Equipped creature gets +0/+3 and has vigilance. Equip {3}",
+  "abilities" : [ {
+    "abilityType" : "EQUIP",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "PLAYER"
+      }
+    } ],
+    "parameters" : [ "+0/+3", "VIGILANCE" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "ANY", "ANY", "ANY" ]
+    },
+    "sorcerySpeed" : true
+  } ]
+}

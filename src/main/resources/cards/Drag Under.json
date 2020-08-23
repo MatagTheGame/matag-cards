@@ -1,0 +1,32 @@
+{
+  "name" : "Drag Under",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/2/2/2269284b-0ca8-4ab9-bd17-b277821bdafd.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Return target creature to its owner's hand. Draw a card.",
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ]
+      }
+    } ],
+    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1" ],
+    "trigger" : {
+      "type" : "CAST"
+    }
+  } ]
+}

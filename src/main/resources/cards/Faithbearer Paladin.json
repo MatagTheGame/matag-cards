@@ -1,0 +1,15 @@
+{
+  "name" : "Faithbearer Paladin",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/3/a/3ab2938e-a68f-4eb4-ae05-42f051677f15.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "KNIGHT" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Lifelink",
+  "power" : 3,
+  "toughness" : 4,
+  "abilities" : [ {
+    "abilityType" : "LIFELINK"
+  } ]
+}
