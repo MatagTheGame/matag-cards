@@ -116,6 +116,7 @@ public enum Subtype {
   SWAMP,
   THOPTER,
   THRULL,
+  TREEFOLK,
   TURTLE,
   UNICORN,
   VAMPIRE,

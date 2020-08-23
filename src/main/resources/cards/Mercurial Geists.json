@@ -1,0 +1,31 @@
+{
+  "name" : "Mercurial Geists",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/8/b/8bb0e56e-48d5-4e0e-91f3-8f5a39151e2b.jpg",
+  "colors" : [ "BLUE", "RED" ],
+  "cost" : [ "BLUE", "RED", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "SPIRIT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flying. Whenever you cast an instant or sorcery spell, Mercurial Geists gets +3/+0 until end of turn.",
+  "power" : 1,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "PROWESS"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "itself" : true
+    },
+    "parameters" : [ "+3/+0" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_CAST",
+      "magicInstanceSelector" : {
+        "selectorType" : "SPELL",
+        "ofType" : [ "INSTANT", "SORCERY" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

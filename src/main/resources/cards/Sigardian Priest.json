@@ -1,0 +1,27 @@
+{
+  "name" : "Sigardian Priest",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/f/8/f8e798c7-0cbc-444e-8033-629baec7dca8.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "CLERIC", "HUMAN" ],
+  "rarity" : "COMMON",
+  "ruleText" : "{1}, {T}: Tap target non-Human creature.",
+  "power" : 1,
+  "toughness" : 2,
+  "abilities" : [ {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "notOfSubtype" : [ "HUMAN" ]
+      }
+    } ],
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "ACTIVATED_ABILITY",
+      "cost" : [ "ANY", "TAP" ]
+    }
+  } ]
+}

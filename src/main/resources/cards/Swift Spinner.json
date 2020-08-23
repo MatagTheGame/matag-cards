@@ -1,0 +1,17 @@
+{
+  "name" : "Swift Spinner",
+  "imageUrl" : "htps://c1.scryfall.com/file/scryfall-cards/large/front/2/6/264f78d8-d554-45f3-867e-19dba38e4644.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "SPIDER" ],
+  "rarity" : "COMMON",
+  "ruleText" : "Flash. Reach",
+  "power" : 2,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "REACH"
+  } ]
+}

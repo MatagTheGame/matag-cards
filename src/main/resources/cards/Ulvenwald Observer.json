@@ -1,0 +1,34 @@
+{
+  "name" : "Ulvenwald Observer",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/7/a/7a9d23d5-2f94-48e6-824f-f1de8f742989.jpg",
+  "colors" : [ "GREEN" ],
+  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "TREEFOLK" ],
+  "rarity" : "RARE",
+  "ruleText" : "Whenever a creature you control with toughness 4 or greater dies, draw a card.",
+  "power" : 6,
+  "toughness" : 6,
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PLAYER",
+      "itself" : true
+    },
+    "parameters" : [ "DRAW:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_DIE",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "powerToughnessConstraint" : {
+          "powerOrToughness" : "TOUGHNESS",
+          "powerToughnessConstraintType" : "GREATER_OR_EQUAL",
+          "value" : 4
+        },
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

@@ -1,0 +1,36 @@
+{
+  "name" : "Heron's Grace Champion",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/6/4/6448b2e2-01b2-4693-b41e-263909dc6a95.jpg",
+  "colors" : [ "WHITE", "GREEN" ],
+  "cost" : [ "WHITE", "GREEN", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "HUMAN", "KNIGHT" ],
+  "rarity" : "RARE",
+  "ruleText" : "Flash. Lifelink. When Heron's Grace Champion enters the battlefield, other Humans you control get +1/+1 and gain lifelink until end of turn.",
+  "power" : 3,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "LIFELINK"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "HUMAN" ],
+        "others" : true
+      }
+    } ],
+    "parameters" : [ "+1/+1", "LIFELINK" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}

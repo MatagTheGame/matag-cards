@@ -1,0 +1,37 @@
+{
+  "name" : "Nebelgast Herald",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/7/6/768c0715-416c-4316-98ef-ff90bb3112ae.jpg",
+  "colors" : [ "BLUE" ],
+  "cost" : [ "BLUE", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "SPIRIT" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flash. Flying. Whenever Nebelgast Herald or another Spirit enters the battlefield under your control, tap target creature an opponent controls.",
+  "power" : 2,
+  "toughness" : 1,
+  "abilities" : [ {
+    "abilityType" : "FLASH"
+  }, {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "THAT_TARGETS_GET",
+    "targets" : [ {
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "controllerType" : "OPPONENT"
+      }
+    } ],
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "ofType" : [ "CREATURE" ],
+        "ofSubtype" : [ "SPIRIT" ],
+        "controllerType" : "PLAYER"
+      }
+    }
+  } ]
+}

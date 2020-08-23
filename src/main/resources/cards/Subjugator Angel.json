@@ -1,0 +1,31 @@
+{
+  "name" : "Subjugator Angel",
+  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/2/3/23b909f8-ad6b-43f0-b517-7d02f2a97cd4.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY" ],
+  "types" : [ "CREATURE" ],
+  "subtypes" : [ "ANGEL" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Flying. When Subjugator Angel enters the battlefield, tap all creatures your opponents control.",
+  "power" : 4,
+  "toughness" : 3,
+  "abilities" : [ {
+    "abilityType" : "FLYING"
+  }, {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "OPPONENT"
+    },
+    "parameters" : [ ":TAPPED" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
+      }
+    }
+  } ]
+}
