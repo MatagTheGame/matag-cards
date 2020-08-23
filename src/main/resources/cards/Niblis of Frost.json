@@ -22,7 +22,7 @@
         "controllerType" : "OPPONENT"
       }
     } ],
-    "parameters" : [ ":TAPPED", ",:DOES_NOT_UNTAP_NEXT_TURN" ],
+    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
     "trigger" : {
       "type" : "TRIGGERED_ABILITY",
       "subtype" : "WHEN_CAST",
