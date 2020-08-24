@@ -27,6 +27,7 @@ public class AbilityService {
   private static final String KEYWORD_COUNTER = "KEYWORD_COUNTER:";
   private static final String DRAW = "DRAW:";
   private static final String LIFE = "LIFE:";
+  private static final String SCRY = "SCRY:";
 
   public PowerToughness powerToughnessFromParameters(List<String> parameters) {
     return parameters.stream()
@@ -98,6 +99,10 @@ public class AbilityService {
     return getParameterIntValue(parameter, LIFE);
   }
 
+  public int scryFromParameter(String parameter) {
+    return getParameterIntValue(parameter, SCRY);
+  }
+
   public String parametersAsString(List<String> parameters) {
     var text = parameters.stream().map(this::safeParameterAsString).collect(Collectors.joining(", "));
     return replaceLast(text, ",", " and");
@@ -158,6 +163,10 @@ public class AbilityService {
     } else if (parameter.startsWith("DRAW:")) {
       var draw = drawFromParameter(parameter);
       return "draw " + draw + " card" + (draw > 1 ? "s" : "");
+
+    } else if (parameter.startsWith("SCRY:")) {
+      var scry = scryFromParameter(parameter);
+      return "scry " + scry;
 
     } else {
       return abilityParameterAsString(AbilityType.valueOf(parameter));
