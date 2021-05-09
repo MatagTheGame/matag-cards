@@ -1,11 +1,13 @@
 package com.matag.cards.sets;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.matag.cards.ResourceLoader;
 import java.util.LinkedHashMap;
 import java.util.Map;
+
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.matag.cards.ResourceLoader;
 
 @Component
 public class MtgSets {

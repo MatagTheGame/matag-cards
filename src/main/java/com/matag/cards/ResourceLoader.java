@@ -1,9 +1,10 @@
 package com.matag.cards;
 
-import lombok.SneakyThrows;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.stereotype.Component;
+
+import lombok.SneakyThrows;
 
 @Component
 public class ResourceLoader {

@@ -1,15 +1,20 @@
 package com.matag.cards;
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import com.matag.cards.ability.Ability;
-import com.matag.cards.properties.*;
-import lombok.Builder;
-import lombok.Value;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.TreeSet;
+
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+import com.matag.cards.ability.Ability;
+import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Cost;
+import com.matag.cards.properties.Rarity;
+import com.matag.cards.properties.Subtype;
+import com.matag.cards.properties.Type;
+
+import lombok.Builder;
+import lombok.Value;
 
 @Value
 @JsonDeserialize(builder = Card.CardBuilder.class)

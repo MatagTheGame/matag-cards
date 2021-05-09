@@ -1,8 +1,12 @@
 package com.matag.cards.sets;
 
-import com.matag.cards.Card;
-import com.matag.cards.Cards;
-import com.matag.cards.CardsConfiguration;
+import static java.util.stream.Collectors.counting;
+import static java.util.stream.Collectors.groupingBy;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -11,12 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.HashMap;
-import java.util.Map;
-
-import static java.util.stream.Collectors.counting;
-import static java.util.stream.Collectors.groupingBy;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.Card;
+import com.matag.cards.Cards;
+import com.matag.cards.CardsConfiguration;
 
 @RunWith(SpringRunner.class)
 @Import(CardsConfiguration.class)

@@ -1,9 +1,9 @@
 package com.matag.language;
 
-import org.junit.Test;
-
 import static com.matag.language.StringUtils.replaceLast;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.Test;
 
 public class StringUtilsTest {
   @Test

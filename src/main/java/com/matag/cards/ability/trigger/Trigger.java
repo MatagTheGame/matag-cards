@@ -1,13 +1,14 @@
 package com.matag.cards.ability.trigger;
 
+import java.util.List;
+
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import com.matag.cards.ability.selector.MagicInstanceSelector;
 import com.matag.cards.properties.Cost;
+
 import lombok.Builder;
 import lombok.Value;
-
-import java.util.List;
 
 @Value
 @JsonDeserialize(builder = Trigger.TriggerBuilder.class)

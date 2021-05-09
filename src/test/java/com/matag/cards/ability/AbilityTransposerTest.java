@@ -1,14 +1,15 @@
 package com.matag.cards.ability;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.Test;
+
 import com.matag.cards.ability.selector.SelectorType;
 import com.matag.cards.ability.trigger.TriggerSubtype;
 import com.matag.cards.ability.trigger.TriggerType;
 import com.matag.cards.ability.type.AbilityType;
 import com.matag.cards.properties.Type;
 import com.matag.player.PlayerType;
-import org.junit.Test;
-
-import static org.assertj.core.api.Assertions.assertThat;
 
 public class AbilityTransposerTest {
 

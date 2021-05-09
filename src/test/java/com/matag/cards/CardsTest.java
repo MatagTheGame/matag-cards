@@ -1,25 +1,30 @@
 package com.matag.cards;
 
-import com.matag.cards.ability.Ability;
-import com.matag.cards.ability.AbilityService;
-import com.matag.cards.ability.selector.MagicInstanceSelector;
-import com.matag.cards.ability.selector.SelectorType;
-import com.matag.cards.ability.target.Target;
-import com.matag.cards.ability.trigger.Trigger;
-import com.matag.cards.properties.*;
+import static com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET;
+import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
+import static java.util.Arrays.asList;
+import static java.util.Collections.singletonList;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
-
-import static com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET;
-import static com.matag.cards.ability.type.AbilityType.THAT_TARGETS_GET;
-import static java.util.Arrays.asList;
-import static java.util.Collections.singletonList;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.ability.Ability;
+import com.matag.cards.ability.AbilityService;
+import com.matag.cards.ability.selector.MagicInstanceSelector;
+import com.matag.cards.ability.selector.SelectorType;
+import com.matag.cards.ability.target.Target;
+import com.matag.cards.ability.trigger.Trigger;
+import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Cost;
+import com.matag.cards.properties.Rarity;
+import com.matag.cards.properties.Subtype;
+import com.matag.cards.properties.Type;
 
 @RunWith(SpringRunner.class)
 @Import(CardsConfiguration.class)

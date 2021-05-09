@@ -1,5 +1,9 @@
 package com.matag.cards.ability.selector;
 
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
@@ -9,12 +13,9 @@ import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
 import com.matag.language.Plural;
 import com.matag.player.PlayerType;
+
 import lombok.Builder;
 import lombok.Value;
-
-import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 @Value
 @JsonDeserialize(builder = MagicInstanceSelector.MagicInstanceSelectorBuilder.class)

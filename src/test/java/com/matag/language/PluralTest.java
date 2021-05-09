@@ -1,9 +1,9 @@
 package com.matag.language;
 
-import org.junit.Test;
-
 import static com.matag.language.Plural.plural;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.Test;
 
 public class PluralTest {
   @Test

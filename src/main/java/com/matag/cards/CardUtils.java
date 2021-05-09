@@ -1,10 +1,10 @@
 package com.matag.cards;
 
+import java.util.Set;
+
 import com.matag.cards.properties.Color;
 import com.matag.cards.properties.Subtype;
 import com.matag.cards.properties.Type;
-
-import java.util.Set;
 
 public class CardUtils {
   public static boolean isOfType(Card card, Type type) {

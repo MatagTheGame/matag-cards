@@ -1,15 +1,16 @@
 package com.matag.cards.ability;
 
-import com.matag.cards.ability.type.AbilityType;
-import com.matag.cards.properties.PowerToughness;
-import org.springframework.stereotype.Component;
+import static com.matag.language.StringUtils.replaceLast;
+import static java.util.Collections.singletonList;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import static com.matag.language.StringUtils.replaceLast;
-import static java.util.Collections.singletonList;
+import org.springframework.stereotype.Component;
+
+import com.matag.cards.ability.type.AbilityType;
+import com.matag.cards.properties.PowerToughness;
 
 @Component
 public class AbilityService {

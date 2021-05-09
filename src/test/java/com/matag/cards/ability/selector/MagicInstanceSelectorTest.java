@@ -1,9 +1,5 @@
 package com.matag.cards.ability.selector;
 
-import org.junit.Test;
-
-import java.util.List;
-
 import static com.matag.cards.ability.selector.SelectorType.PERMANENT;
 import static com.matag.cards.properties.Subtype.ZOMBIE;
 import static com.matag.cards.properties.Type.CREATURE;
@@ -11,6 +7,10 @@ import static com.matag.player.PlayerType.OPPONENT;
 import static com.matag.player.PlayerType.PLAYER;
 import static java.util.Collections.singletonList;
 import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+
+import org.junit.Test;
 
 public class MagicInstanceSelectorTest {
   @Test

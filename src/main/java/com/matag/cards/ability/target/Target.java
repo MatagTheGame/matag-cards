@@ -3,6 +3,7 @@ package com.matag.cards.ability.target;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
 import com.matag.cards.ability.selector.MagicInstanceSelector;
+
 import lombok.Builder;
 import lombok.Value;
 

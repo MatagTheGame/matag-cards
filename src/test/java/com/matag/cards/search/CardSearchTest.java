@@ -1,22 +1,22 @@
 package com.matag.cards.search;
 
-import com.matag.cards.Card;
-import com.matag.cards.Cards;
-import com.matag.cards.CardsConfiguration;
-import com.matag.cards.properties.Color;
-import com.matag.cards.properties.Subtype;
-import com.matag.cards.properties.Type;
+import static java.util.Collections.emptyList;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.List;
+import java.util.Set;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
-import java.util.Set;
-
-import static java.util.Collections.emptyList;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.Cards;
+import com.matag.cards.CardsConfiguration;
+import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Subtype;
+import com.matag.cards.properties.Type;
 
 @RunWith(SpringRunner.class)
 @Import(CardsConfiguration.class)

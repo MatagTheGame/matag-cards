@@ -1,8 +1,8 @@
 package com.matag.cards.properties;
 
-import lombok.Data;
-
 import static java.lang.Integer.parseInt;
+
+import lombok.Data;
 
 @Data
 public class PowerToughness {

@@ -1,17 +1,17 @@
 package com.matag.cards.ability;
 
-import com.matag.cards.ability.selector.MagicInstanceSelector;
-import com.matag.cards.ability.trigger.Trigger;
-import com.matag.cards.ability.trigger.TriggerSubtype;
-import com.matag.cards.ability.trigger.TriggerType;
-import com.matag.player.PlayerType;
-
 import static com.matag.cards.ability.selector.SelectorType.PERMANENT;
 import static com.matag.cards.ability.selector.SelectorType.SPELL;
 import static com.matag.cards.ability.type.AbilityType.PROWESS;
 import static com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET;
 import static com.matag.cards.properties.Type.CREATURE;
 import static java.util.Collections.singletonList;
+
+import com.matag.cards.ability.selector.MagicInstanceSelector;
+import com.matag.cards.ability.trigger.Trigger;
+import com.matag.cards.ability.trigger.TriggerSubtype;
+import com.matag.cards.ability.trigger.TriggerType;
+import com.matag.player.PlayerType;
 
 public class AbilityTransposer {
   private static final MagicInstanceSelector SELECTOR_IT = MagicInstanceSelector.builder().selectorType(PERMANENT).itself(true).build();

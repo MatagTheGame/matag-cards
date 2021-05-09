@@ -1,11 +1,12 @@
 package com.matag.cards.sets;
 
+import java.util.TreeSet;
+
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+
 import lombok.Builder;
 import lombok.Value;
-
-import java.util.TreeSet;
 
 @Value
 @JsonDeserialize(builder = MtgSet.MtgSetBuilder.class)

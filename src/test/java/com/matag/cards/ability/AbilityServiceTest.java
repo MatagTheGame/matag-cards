@@ -1,13 +1,13 @@
 package com.matag.cards.ability;
 
-import com.matag.cards.ability.type.AbilityType;
-import com.matag.cards.properties.PowerToughness;
-import org.junit.Test;
+import static com.matag.cards.ability.type.AbilityType.MENACE;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
 
-import static com.matag.cards.ability.type.AbilityType.MENACE;
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Test;
+
+import com.matag.cards.properties.PowerToughness;
 
 public class AbilityServiceTest {
   private final AbilityService abilityService = new AbilityService();

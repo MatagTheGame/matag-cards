@@ -1,16 +1,16 @@
 package com.matag.cards;
 
+import static com.matag.cards.properties.Color.RED;
+import static com.matag.cards.properties.Color.WHITE;
+import static org.assertj.core.api.Assertions.assertThat;
+
+import java.util.Set;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.Set;
-
-import static com.matag.cards.properties.Color.RED;
-import static com.matag.cards.properties.Color.WHITE;
-import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @Import(CardsConfiguration.class)

@@ -1,22 +1,31 @@
 package com.matag.downloader;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.matag.cards.Card;
-import com.matag.cards.properties.*;
-import lombok.Getter;
-import lombok.SneakyThrows;
+import static java.lang.Integer.parseInt;
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeSet;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static java.lang.Integer.parseInt;
-import static java.nio.charset.StandardCharsets.UTF_8;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.matag.cards.Card;
+import com.matag.cards.properties.Color;
+import com.matag.cards.properties.Cost;
+import com.matag.cards.properties.Rarity;
+import com.matag.cards.properties.Subtype;
+import com.matag.cards.properties.Type;
+
+import lombok.Getter;
+import lombok.SneakyThrows;
 
 @Getter
 public class CardScryFallLinker {
