@@ -1,6 +1,6 @@
 {
   "name" : "Pardic Wanderer",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2fffe967-3a99-4f00-af46-f4e5567598df.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/f/2fffe967-3a99-4f00-af46-f4e5567598df.jpg",
   "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "GOLEM" ],

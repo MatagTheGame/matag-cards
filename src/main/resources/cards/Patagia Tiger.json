@@ -1,6 +1,6 @@
 {
   "name" : "Patagia Tiger",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/e/be398100-89e2-432b-8017-74fb7e4dbc26.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/e/be398100-89e2-432b-8017-74fb7e4dbc26.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Smite the Monstrous",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/6/766aad27-e987-45ab-82aa-e5f44fcc34ef.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/6/766aad27-e987-45ab-82aa-e5f44fcc34ef.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

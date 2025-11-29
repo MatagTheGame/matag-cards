@@ -1,6 +1,6 @@
 {
   "name" : "Dark Nourishment",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/5/053c4cf0-992b-4f76-b8d1-cd67f894172c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/5/053c4cf0-992b-4f76-b8d1-cd67f894172c.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Demon's Grasp",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/d/6d3b72b0-3043-48c7-a95a-10e632caa8ea.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/6/d/6d3b72b0-3043-48c7-a95a-10e632caa8ea.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],

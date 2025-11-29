@@ -1,6 +1,6 @@
 {
   "name" : "Elemental Bond",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/1/516ebdba-0f25-459a-a26b-f6fa928b96e6.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/1/516ebdba-0f25-459a-a26b-f6fa928b96e6.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],

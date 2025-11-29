@@ -1,6 +1,6 @@
 {
   "name" : "Angelic Guardian",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/0/e058dc51-b200-42ee-a345-a63cfaa397fe.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/e/0/e058dc51-b200-42ee-a345-a63cfaa397fe.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

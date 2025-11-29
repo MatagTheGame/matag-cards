@@ -1,6 +1,6 @@
 {
   "name" : "Midnight Entourage",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/8/2838c6dd-d816-4363-a861-f2f8052d1430.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/8/2838c6dd-d816-4363-a861-f2f8052d1430.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

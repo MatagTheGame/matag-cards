@@ -1,6 +1,6 @@
 {
   "name" : "Cancel",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/9/59e14910-ee2e-49ae-855e-46a8ab6cad82.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/9/59e14910-ee2e-49ae-855e-46a8ab6cad82.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "BLUE", "ANY" ],
   "types" : [ "INSTANT" ],

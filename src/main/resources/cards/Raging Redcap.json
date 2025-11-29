@@ -1,6 +1,6 @@
 {
   "name" : "Raging Redcap",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/9/d9325398-41c3-4177-a64d-ea38cb7a8737.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/d/9/d9325398-41c3-4177-a64d-ea38cb7a8737.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

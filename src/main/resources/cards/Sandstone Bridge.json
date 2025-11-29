@@ -1,6 +1,6 @@
 {
   "name" : "Sandstone Bridge",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/7/c781e932-4605-47aa-add1-4ee62f4e7ead.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/7/c781e932-4605-47aa-add1-4ee62f4e7ead.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Sandstone Bridge enters the battlefield tapped. When Sandstone Bridge enters the battlefield, target creature gets +1/+1 and gains vigilance until end of turn. {T}: Add {W}.",

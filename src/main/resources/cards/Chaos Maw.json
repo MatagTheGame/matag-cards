@@ -1,6 +1,6 @@
 {
   "name" : "Chaos Maw",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/0/8094908b-1d3a-42df-bc27-8456fbb98e65.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/0/8094908b-1d3a-42df-bc27-8456fbb98e65.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

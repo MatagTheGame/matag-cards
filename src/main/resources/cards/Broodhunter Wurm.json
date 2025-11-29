@@ -1,6 +1,6 @@
 {
   "name" : "Broodhunter Wurm",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/e/eee6ecdc-fff9-41a1-802a-08615ca6289f.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/e/e/eee6ecdc-fff9-41a1-802a-08615ca6289f.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

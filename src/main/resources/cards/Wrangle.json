@@ -1,6 +1,6 @@
 {
   "name" : "Wrangle",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/e/5ea93a49-5a7c-4d15-8548-a57c9460e0f0.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/e/5ea93a49-5a7c-4d15-8548-a57c9460e0f0.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY" ],
   "types" : [ "SORCERY" ],

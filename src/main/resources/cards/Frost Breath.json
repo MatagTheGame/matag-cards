@@ -1,6 +1,6 @@
 {
   "name" : "Frost Breath",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/9/393fc485-d3c1-4826-933d-89f66df769d4.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/3/9/393fc485-d3c1-4826-933d-89f66df769d4.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

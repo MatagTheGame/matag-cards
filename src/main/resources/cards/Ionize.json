@@ -1,6 +1,6 @@
 {
   "name" : "Ionize",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/1/f161f7d2-eaa1-4931-93f9-befa8b5df821.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/1/f161f7d2-eaa1-4931-93f9-befa8b5df821.jpg",
   "colors" : [ "BLUE", "RED" ],
   "cost" : [ "BLUE", "RED", "ANY" ],
   "types" : [ "INSTANT" ],

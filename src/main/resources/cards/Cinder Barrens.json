@@ -1,6 +1,6 @@
 {
   "name" : "Cinder Barrens",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/8/08136a39-bf9f-493c-92d6-178567647fb2.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/8/08136a39-bf9f-493c-92d6-178567647fb2.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Cinder Barrens enters the battlefield tapped. {T}: Add {B} or {R}.",

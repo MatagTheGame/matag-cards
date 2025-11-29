@@ -1,6 +1,6 @@
 {
   "name" : "Glimmerbell",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/4/54f71f8a-546a-465e-a254-09a3ae873ef4.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/4/54f71f8a-546a-465e-a254-09a3ae873ef4.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],

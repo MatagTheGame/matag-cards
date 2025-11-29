@@ -1,6 +1,6 @@
 {
   "name" : "Tide Drifter",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/c/4c590579-e0ef-4839-8f67-f52813cd9fe7.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/4/c/4c590579-e0ef-4839-8f67-f52813cd9fe7.jpg",
   "cost" : [ "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRONE", "ELDRAZI" ],

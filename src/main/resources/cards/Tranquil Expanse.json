@@ -1,6 +1,6 @@
 {
   "name" : "Tranquil Expanse",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/2/123cd67f-7226-4e69-8637-382380fb213e.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/1/2/123cd67f-7226-4e69-8637-382380fb213e.jpg",
   "types" : [ "LAND" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Tranquil Expanse enters the battlefield tapped. {T}: Add {G} or {W}.",

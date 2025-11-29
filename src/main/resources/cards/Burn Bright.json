@@ -1,6 +1,6 @@
 {
   "name" : "Burn Bright",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/1/f19b4a80-41e1-4c5f-869a-682f08543f12.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/1/f19b4a80-41e1-4c5f-869a-682f08543f12.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

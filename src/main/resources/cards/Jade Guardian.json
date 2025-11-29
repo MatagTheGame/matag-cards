@@ -1,6 +1,6 @@
 {
   "name" : "Jade Guardian",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/c/aca83e48-6e32-477f-8714-6103e77c06df.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/a/c/aca83e48-6e32-477f-8714-6103e77c06df.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

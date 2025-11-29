@@ -1,6 +1,6 @@
 {
   "name" : "Lyra Dawnbringer",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/3/93be6799-7b9d-44d4-84dc-2961692b5a85.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/3/93be6799-7b9d-44d4-84dc-2961692b5a85.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE", "LEGENDARY" ],

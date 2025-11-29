@@ -1,6 +1,6 @@
 {
   "name" : "Kozilek's Sentinel",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/8/786c6a0f-3f75-45ff-aae9-5c866be279d0.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/8/786c6a0f-3f75-45ff-aae9-5c866be279d0.jpg",
   "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRONE", "ELDRAZI" ],

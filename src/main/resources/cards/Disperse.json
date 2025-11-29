@@ -1,6 +1,6 @@
 {
   "name" : "Disperse",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/f/2ff7c89c-41dc-4ac3-bbce-38ab86f435ea.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY" ],
   "types" : [ "INSTANT" ],

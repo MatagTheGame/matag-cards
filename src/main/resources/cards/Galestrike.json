@@ -1,6 +1,6 @@
 {
   "name" : "Galestrike",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b8907a45-0136-49f5-8f6a-285a77ac283e.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/8/b8907a45-0136-49f5-8f6a-285a77ac283e.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

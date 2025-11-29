@@ -1,6 +1,6 @@
 {
   "name" : "Bolt Hound",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/f/9f8cf3f9-4e3b-4af2-b5ef-a97eb1d2b674.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/f/9f8cf3f9-4e3b-4af2-b5ef-a97eb1d2b674.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

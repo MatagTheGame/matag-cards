@@ -1,6 +1,6 @@
 {
   "name" : "Sunblade Angel",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/2/9211c0e1-b314-495f-9c43-9a0e95c9efb9.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/2/9211c0e1-b314-495f-9c43-9a0e95c9efb9.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

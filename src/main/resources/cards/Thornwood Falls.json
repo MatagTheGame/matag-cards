@@ -1,6 +1,6 @@
 {
   "name" : "Thornwood Falls",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/8/f82851a5-5f70-488a-b21c-bdd65d2fca7c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/8/f82851a5-5f70-488a-b21c-bdd65d2fca7c.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Thornwood Falls enters the battlefield tapped. When Thornwood Falls enters the battlefield, you gain 1 life. {T}: Add {G} or {U}.",

@@ -1,6 +1,6 @@
 {
   "name" : "Tranquil Cove",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/f/0fee9b4b-1510-4b78-bdde-2e0bb319ee33.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/f/0fee9b4b-1510-4b78-bdde-2e0bb319ee33.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Tranquil Cove enters the battlefield tapped. When Tranquil Cove enters the battlefield, you gain 1 life. {T}: Add {W} or {U}.",

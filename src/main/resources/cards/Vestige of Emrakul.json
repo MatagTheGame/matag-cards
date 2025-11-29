@@ -1,6 +1,6 @@
 {
   "name" : "Vestige of Emrakul",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a5d84986-64a1-4bd1-a4f6-3eb147aca357.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/a/5/a5d84986-64a1-4bd1-a4f6-3eb147aca357.jpg",
   "cost" : [ "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRONE", "ELDRAZI" ],

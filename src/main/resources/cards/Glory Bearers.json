@@ -1,6 +1,6 @@
 {
   "name" : "Glory Bearers",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/a/8a70e1be-f04a-43c1-8fca-205a24e3db38.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/a/8a70e1be-f04a-43c1-8fca-205a24e3db38.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE", "ENCHANTMENT" ],

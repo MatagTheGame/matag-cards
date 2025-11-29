@@ -1,6 +1,6 @@
 {
   "name" : "Dampening Pulse",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/a/4a4393f6-54d7-4963-a3c0-b3a083c2440c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/4/a/4a4393f6-54d7-4963-a3c0-b3a083c2440c.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],

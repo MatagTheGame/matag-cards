@@ -1,6 +1,6 @@
 {
   "name" : "Canopy Spider",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/1/c19e76e5-a60c-4eaa-a90e-aa29eca10055.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/1/c19e76e5-a60c-4eaa-a90e-aa29eca10055.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY" ],
   "types" : [ "CREATURE" ],

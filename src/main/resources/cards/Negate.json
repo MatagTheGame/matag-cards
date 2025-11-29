@@ -1,6 +1,6 @@
 {
   "name" : "Negate",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/0/d0165d1f-6d9f-40e1-aaff-d587e4112220.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/d/0/d0165d1f-6d9f-40e1-aaff-d587e4112220.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY" ],
   "types" : [ "INSTANT" ],

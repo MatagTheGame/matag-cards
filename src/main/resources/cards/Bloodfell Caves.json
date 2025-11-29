@@ -1,6 +1,6 @@
 {
   "name" : "Bloodfell Caves",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/d/5d89a0e2-1163-4a11-b0df-deef2e6c8108.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/d/5d89a0e2-1163-4a11-b0df-deef2e6c8108.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Bloodfell Caves enters the battlefield tapped. When Bloodfell Caves enters the battlefield, you gain 1 life. {T}: Add {B} or {R}.",

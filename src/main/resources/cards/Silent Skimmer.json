@@ -1,6 +1,6 @@
 {
   "name" : "Silent Skimmer",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/b/9b715fc0-9c36-4619-8d65-6d1064ed8a32.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/b/9b715fc0-9c36-4619-8d65-6d1064ed8a32.jpg",
   "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
   "subtypes" : [ "DRONE", "ELDRAZI" ],

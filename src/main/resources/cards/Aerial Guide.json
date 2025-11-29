@@ -1,6 +1,6 @@
 {
   "name" : "Aerial Guide",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/7/b744c138-9b9e-47f6-9d56-feb6a78ce377.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/7/b744c138-9b9e-47f6-9d56-feb6a78ce377.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

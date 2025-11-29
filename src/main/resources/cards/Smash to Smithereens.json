@@ -1,6 +1,6 @@
 {
   "name" : "Smash to Smithereens",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/1/815dd60c-989b-4ace-9f47-44e3405a0065.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/1/815dd60c-989b-4ace-9f47-44e3405a0065.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY" ],
   "types" : [ "INSTANT" ],

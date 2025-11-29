@@ -1,6 +1,6 @@
 {
   "name" : "Pitchburn Devils",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/b/fbd306cf-6625-4414-b9e5-4b909bb1bb13.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/b/fbd306cf-6625-4414-b9e5-4b909bb1bb13.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

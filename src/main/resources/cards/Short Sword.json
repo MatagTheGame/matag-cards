@@ -1,6 +1,6 @@
 {
   "name" : "Short Sword",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/7/973c166e-3e93-4ed5-b4c5-84dc158a8e4f.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/7/973c166e-3e93-4ed5-b4c5-84dc158a8e4f.jpg",
   "cost" : [ "ANY" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Nyxborn Brute",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/5/05bc4236-566f-401b-b9d7-f58126fa228b.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/5/05bc4236-566f-401b-b9d7-f58126fa228b.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE", "ENCHANTMENT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Electrostatic Field",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/7096c9a6-2e73-41f8-b20a-b29a9f0b760c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/0/7096c9a6-2e73-41f8-b20a-b29a9f0b760c.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],

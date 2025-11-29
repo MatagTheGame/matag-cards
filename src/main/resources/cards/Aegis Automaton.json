@@ -1,6 +1,6 @@
 {
   "name" : "Aegis Automaton",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/5/e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/e/5/e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c.jpg",
   "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "CONSTRUCT" ],

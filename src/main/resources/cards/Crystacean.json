@@ -1,6 +1,6 @@
 {
   "name" : "Crystacean",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/2/32afec8a-dbae-446e-919a-3efb556f5cb1.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/3/2/32afec8a-dbae-446e-919a-3efb556f5cb1.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

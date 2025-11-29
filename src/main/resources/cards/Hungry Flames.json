@@ -1,6 +1,6 @@
 {
   "name" : "Hungry Flames",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/7/07392a36-e63a-4648-b8df-1172403922eb.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/7/07392a36-e63a-4648-b8df-1172403922eb.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

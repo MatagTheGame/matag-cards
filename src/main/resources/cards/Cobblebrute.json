@@ -1,6 +1,6 @@
 {
   "name" : "Cobblebrute",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/d/2d450105-7655-452e-9fe8-3dee579c082d.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/d/2d450105-7655-452e-9fe8-3dee579c082d.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Swathcutter Giant",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/0/700b38c5-3fd2-4566-8d27-9a09d5ab02b2.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/0/700b38c5-3fd2-4566-8d27-9a09d5ab02b2.jpg",
   "colors" : [ "WHITE", "RED" ],
   "cost" : [ "WHITE", "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Finishing Blow",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/b/2b85a552-2119-4d9c-b7c1-c09c2d9f2f38.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/b/2b85a552-2119-4d9c-b7c1-c09c2d9f2f38.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Valor in Akros",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/f/ef2a3fe4-a0c3-4956-a52b-060c4538c0b2.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/e/f/ef2a3fe4-a0c3-4956-a52b-060c4538c0b2.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],

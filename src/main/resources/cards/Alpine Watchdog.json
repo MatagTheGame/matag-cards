@@ -1,6 +1,6 @@
 {
   "name" : "Alpine Watchdog",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/3/c392a7e5-6ff5-4c2f-9590-f8811a724f44.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/3/c392a7e5-6ff5-4c2f-9590-f8811a724f44.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY" ],
   "types" : [ "CREATURE" ],

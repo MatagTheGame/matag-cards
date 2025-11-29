@@ -1,6 +1,6 @@
 {
   "name" : "Nyxborn Seaguard",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/a/9ad0c7d7-0e44-496f-a2fc-fafc604cb1f1.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/a/9ad0c7d7-0e44-496f-a2fc-fafc604cb1f1.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE", "ENCHANTMENT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Plummet",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/8/d884b2f2-946e-4d5d-b8cf-ef035726a188.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/d/8/d884b2f2-946e-4d5d-b8cf-ef035726a188.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY" ],
   "types" : [ "INSTANT" ],

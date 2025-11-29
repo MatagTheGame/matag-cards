@@ -1,6 +1,6 @@
 {
   "name" : "Fire Urchin",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY" ],
   "types" : [ "CREATURE" ],

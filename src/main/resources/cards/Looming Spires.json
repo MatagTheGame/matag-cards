@@ -1,6 +1,6 @@
 {
   "name" : "Looming Spires",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/8/b88177a2-de41-417d-a8f1-07edf005b453.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/8/b88177a2-de41-417d-a8f1-07edf005b453.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Looming Spires enters the battlefield tapped. When Looming Spires enters the battlefield, target creature gets +1/+1 and gains first strike until end of turn. {T}: Add {R}.",

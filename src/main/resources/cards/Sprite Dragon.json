@@ -1,6 +1,6 @@
 {
   "name" : "Sprite Dragon",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/4/94d3b231-d15d-4186-826c-452009cd5c5e.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/4/94d3b231-d15d-4186-826c-452009cd5c5e.jpg",
   "colors" : [ "BLUE", "RED" ],
   "cost" : [ "BLUE", "RED" ],
   "types" : [ "CREATURE" ],

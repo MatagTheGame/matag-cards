@@ -1,6 +1,6 @@
 {
   "name" : "Azorius Skyguard",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/2/c2fddecd-e660-43de-bccc-52f60a089052.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/2/c2fddecd-e660-43de-bccc-52f60a089052.jpg",
   "colors" : [ "WHITE", "BLUE" ],
   "cost" : [ "WHITE", "BLUE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,7 +1,7 @@
 {
   "name" : "Absorb",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/1/e/1e8a43c1-42d1-45ef-8a63-4b87775a6e88.jpg",
-  "colors" : [ "WHITE", "BLUE" ],
+  "imageUrl" : "https://cards.scryfall.io/large/front/1/e/1e8a43c1-42d1-45ef-8a63-4b87775a6e88.jpg",
+  "colors": [ "WHITE", "BLUE" ],
   "cost" : [ "WHITE", "BLUE", "BLUE" ],
   "types" : [ "INSTANT" ],
   "rarity" : "RARE",

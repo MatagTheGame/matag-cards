@@ -1,6 +1,6 @@
 {
   "name" : "Meandering River",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/4/b4f2d2c8-7fea-4012-9f15-fbf37cd89a3c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/4/b4f2d2c8-7fea-4012-9f15-fbf37cd89a3c.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Meandering River enters the battlefield tapped. {T}: Add {W} or {U}.",

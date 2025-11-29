@@ -1,6 +1,6 @@
 {
   "name" : "Welder Automaton",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/3/938066de-d111-4df2-87f0-9eb72aa4cdac.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/3/938066de-d111-4df2-87f0-9eb72aa4cdac.jpg",
   "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "CONSTRUCT" ],

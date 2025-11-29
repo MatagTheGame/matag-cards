@@ -1,6 +1,6 @@
 {
   "name" : "Precision Bolt",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/5/a59b4e5b-e9e0-4507-b9e7-8fba7e3a54f9.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/a/5/a59b4e5b-e9e0-4507-b9e7-8fba7e3a54f9.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],

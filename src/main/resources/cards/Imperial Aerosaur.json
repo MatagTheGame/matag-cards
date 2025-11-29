@@ -1,6 +1,6 @@
 {
   "name" : "Imperial Aerosaur",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/d/7d08f90b-9b98-4237-9826-578fb812d412.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/d/7d08f90b-9b98-4237-9826-578fb812d412.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Skyline Cascade",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/9/29b0027d-c232-4cdd-89c4-75947687aa71.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/9/29b0027d-c232-4cdd-89c4-75947687aa71.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Skyline Cascade enters the battlefield tapped. When Skyline Cascade enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step. {T}: Add {U}.",

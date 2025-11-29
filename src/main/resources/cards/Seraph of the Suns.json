@@ -1,6 +1,6 @@
 {
   "name" : "Seraph of the Suns",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/0/80b56a6f-4d8b-4321-9a92-2272ec3f197c.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/0/80b56a6f-4d8b-4321-9a92-2272ec3f197c.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

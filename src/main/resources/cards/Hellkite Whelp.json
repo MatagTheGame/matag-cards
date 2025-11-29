@@ -1,6 +1,6 @@
 {
   "name" : "Hellkite Whelp",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/6/5/65e902e8-bbd5-40fe-a655-45d3d3bc9fde.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/6/5/65e902e8-bbd5-40fe-a655-45d3d3bc9fde.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

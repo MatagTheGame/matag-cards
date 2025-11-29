@@ -1,6 +1,6 @@
 {
   "name" : "Hellkite Punisher",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/b/7bf663d3-850b-4a24-8e4b-08311adf4ed0.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/b/7bf663d3-850b-4a24-8e4b-08311adf4ed0.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

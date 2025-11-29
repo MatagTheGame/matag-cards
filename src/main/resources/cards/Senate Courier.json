@@ -1,6 +1,6 @@
 {
   "name" : "Senate Courier",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/a/da8dc5c8-4eb7-4e41-8431-b41251f7814e.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/d/a/da8dc5c8-4eb7-4e41-8431-b41251f7814e.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

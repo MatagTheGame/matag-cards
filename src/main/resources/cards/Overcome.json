@@ -1,6 +1,6 @@
 {
   "name" : "Overcome",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/7/1/718352b9-1a68-44a1-947b-34f525f21223.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/7/1/718352b9-1a68-44a1-947b-34f525f21223.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],

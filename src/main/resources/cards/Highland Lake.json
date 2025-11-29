@@ -1,6 +1,6 @@
 {
   "name" : "Highland Lake",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/6/46bb20af-a326-4a42-94d3-cb1990300e0f.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/4/6/46bb20af-a326-4a42-94d3-cb1990300e0f.jpg",
   "types" : [ "LAND" ],
   "rarity" : "UNCOMMON",
   "ruleText" : "Highland Lake enters the battlefield tapped. {T}: Add {U} or {R}.",

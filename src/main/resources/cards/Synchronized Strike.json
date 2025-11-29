@@ -1,6 +1,6 @@
 {
   "name" : "Synchronized Strike",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/c/fcb09d11-5a6d-498f-9173-3539760b19fb.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/c/fcb09d11-5a6d-498f-9173-3539760b19fb.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Locthwain Gargoyle",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/2/02551bee-335c-4bf7-b38e-67dd71d1d567.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/2/02551bee-335c-4bf7-b38e-67dd71d1d567.jpg",
   "cost" : [ "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "GARGOYLE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Meteor Golem",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a9a086bf-19d2-4827-af2c-a6f57d640782.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/a/9/a9a086bf-19d2-4827-af2c-a6f57d640782.jpg",
   "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "GOLEM" ],

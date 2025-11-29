@@ -1,6 +1,6 @@
 {
   "name" : "Shivan Dragon",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/2/227cf1b5-f85b-41fe-be98-66e383652039.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/2/227cf1b5-f85b-41fe-be98-66e383652039.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Slitherwisp",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/2/d2a641ad-4268-46c4-a5fb-c1515e52d648.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/d/2/d2a641ad-4268-46c4-a5fb-c1515e52d648.jpg",
   "colors" : [ "BLUE", "BLACK" ],
   "cost" : [ "BLUE", "BLACK", "BLACK" ],
   "types" : [ "CREATURE" ],

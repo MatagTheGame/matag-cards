@@ -1,6 +1,6 @@
 {
   "name" : "Swarm Surge",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/3/837287cc-f3a4-4ba7-8518-9b1e4a53acda.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/3/837287cc-f3a4-4ba7-8518-9b1e4a53acda.jpg",
   "cost" : [ "BLACK", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],
   "rarity" : "COMMON",

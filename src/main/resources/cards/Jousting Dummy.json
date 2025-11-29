@@ -1,6 +1,6 @@
 {
   "name" : "Jousting Dummy",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/d/3d0c95b0-7b63-40e8-92ad-5ae5ffd3c4c1.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/3/d/3d0c95b0-7b63-40e8-92ad-5ae5ffd3c4c1.jpg",
   "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "KNIGHT", "SCARECROW" ],

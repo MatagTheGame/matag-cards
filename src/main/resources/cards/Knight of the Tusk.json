@@ -1,6 +1,6 @@
 {
   "name" : "Knight of the Tusk",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/f/2f81d2a0-5301-4cae-ac83-ad51647146e3.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/f/2f81d2a0-5301-4cae-ac83-ad51647146e3.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

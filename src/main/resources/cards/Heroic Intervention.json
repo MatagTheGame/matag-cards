@@ -1,6 +1,6 @@
 {
   "name" : "Heroic Intervention",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/f/cf9fb88e-d13d-46d0-a3c5-da886f43ffb9.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/f/cf9fb88e-d13d-46d0-a3c5-da886f43ffb9.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "ANY" ],
   "types" : [ "INSTANT" ],

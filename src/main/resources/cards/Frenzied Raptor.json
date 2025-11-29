@@ -1,6 +1,6 @@
 {
   "name" : "Frenzied Raptor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/f/5fb22ac0-3863-4165-8c93-f2ec1775474f.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/f/5fb22ac0-3863-4165-8c93-f2ec1775474f.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

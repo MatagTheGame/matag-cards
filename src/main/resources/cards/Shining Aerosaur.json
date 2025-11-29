@@ -1,6 +1,6 @@
 {
   "name" : "Shining Aerosaur",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/e/9e214072-551f-48fa-b207-8f6303646941.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/e/9e214072-551f-48fa-b207-8f6303646941.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

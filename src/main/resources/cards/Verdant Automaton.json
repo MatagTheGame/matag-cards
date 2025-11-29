@@ -1,6 +1,6 @@
 {
   "name" : "Verdant Automaton",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/2/52c66c5a-0b1b-4936-9e07-2d169f16c1a6.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/2/52c66c5a-0b1b-4936-9e07-2d169f16c1a6.jpg",
   "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT", "CREATURE" ],
   "subtypes" : [ "CONSTRUCT" ],

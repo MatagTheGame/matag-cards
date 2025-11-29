@@ -1,6 +1,6 @@
 {
   "name" : "Fiend Binder",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/c/0cf7800a-ff70-4308-b3a2-1ea48e53a1f8.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/c/0cf7800a-ff70-4308-b3a2-1ea48e53a1f8.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

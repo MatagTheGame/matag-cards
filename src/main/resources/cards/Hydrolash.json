@@ -1,6 +1,6 @@
 {
   "name" : "Hydrolash",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/5/d/5d219ee8-ca60-4850-9652-a7274eb4c443.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/5/d/5d219ee8-ca60-4850-9652-a7274eb4c443.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

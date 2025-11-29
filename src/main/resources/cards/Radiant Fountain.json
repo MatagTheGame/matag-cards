@@ -1,6 +1,6 @@
 {
   "name" : "Radiant Fountain",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/2/0296c34b-120b-483e-8b49-6d432c04f9a4.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/2/0296c34b-120b-483e-8b49-6d432c04f9a4.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "When Radiant Fountain enters the battlefield, you gain 2 life. {T}: Add {C}.",

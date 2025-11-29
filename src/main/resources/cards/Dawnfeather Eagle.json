@@ -1,6 +1,6 @@
 {
   "name" : "Dawnfeather Eagle",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/7/f7113ddc-cb3c-46da-a6c7-2567bd0affa9.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/7/f7113ddc-cb3c-46da-a6c7-2567bd0affa9.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

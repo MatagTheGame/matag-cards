@@ -1,6 +1,6 @@
 {
   "name" : "Wingspan Mentor",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/9/89348a02-29f6-40b9-b39f-cb5f8c230a02.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/9/89348a02-29f6-40b9-b39f-cb5f8c230a02.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

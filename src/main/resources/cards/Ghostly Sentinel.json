@@ -1,6 +1,6 @@
 {
   "name" : "Ghostly Sentinel",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/d/e/de867066-df5c-4412-9d51-56626b6d0220.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/d/e/de867066-df5c-4412-9d51-56626b6d0220.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Revenge of Ravens",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/4/3474289a-193e-452d-b248-e53ee99e22c0.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/3/4/3474289a-193e-452d-b248-e53ee99e22c0.jpg",
   "colors" : [ "BLACK" ],
   "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],

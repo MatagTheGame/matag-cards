@@ -1,6 +1,6 @@
 {
   "name" : "Campaign of Vengeance",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/e/eeb4800c-639f-479a-99ab-5a44a7d2d76b.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/e/e/eeb4800c-639f-479a-99ab-5a44a7d2d76b.jpg",
   "colors" : [ "WHITE", "BLACK" ],
   "cost" : [ "WHITE", "BLACK", "ANY", "ANY", "ANY" ],
   "types" : [ "ENCHANTMENT" ],

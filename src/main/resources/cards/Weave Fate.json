@@ -1,6 +1,6 @@
 {
   "name" : "Weave Fate",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/4/04e57fc1-1633-447f-ae32-ad7da25a4177.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/4/04e57fc1-1633-447f-ae32-ad7da25a4177.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

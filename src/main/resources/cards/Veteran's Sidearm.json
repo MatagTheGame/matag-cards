@@ -1,6 +1,6 @@
 {
   "name" : "Veteran's Sidearm",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/9/c/9c1b3e7d-0fd8-4324-be7b-382e75ae9c17.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/9/c/9c1b3e7d-0fd8-4324-be7b-382e75ae9c17.jpg",
   "cost" : [ "ANY", "ANY" ],
   "types" : [ "ARTIFACT" ],
   "subtypes" : [ "EQUIPMENT" ],

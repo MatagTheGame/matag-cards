@@ -1,6 +1,6 @@
 {
   "name" : "Swiftwater Cliffs",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/e/6/e649fc68-fca5-4234-aff4-0ec2382a66d4.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/e/6/e649fc68-fca5-4234-aff4-0ec2382a66d4.jpg",
   "types" : [ "LAND" ],
   "rarity" : "COMMON",
   "ruleText" : "Swiftwater Cliffs enters the battlefield tapped. When Swiftwater Cliffs enters the battlefield, you gain 1 life. {T}: Add {U} or {R}.",

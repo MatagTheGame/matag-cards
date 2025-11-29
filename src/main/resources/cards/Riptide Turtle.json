@@ -1,6 +1,6 @@
 {
   "name" : "Riptide Turtle",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/c/cc4ba296-950c-4e39-ab5e-06be07e4a190.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/c/cc4ba296-950c-4e39-ab5e-06be07e4a190.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY" ],
   "types" : [ "CREATURE" ],

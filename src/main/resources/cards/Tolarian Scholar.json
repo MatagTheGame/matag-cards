@@ -1,6 +1,6 @@
 {
   "name" : "Tolarian Scholar",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/2/e/2eda67da-02b5-4ecb-9038-10e026d454ec.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/2/e/2eda67da-02b5-4ecb-9038-10e026d454ec.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

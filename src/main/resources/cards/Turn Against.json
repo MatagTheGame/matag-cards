@@ -1,6 +1,6 @@
 {
   "name" : "Turn Against",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/4/d/4de8ef35-f141-4bc6-8ea1-f87aa6f5ecd7.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/4/d/4de8ef35-f141-4bc6-8ea1-f87aa6f5ecd7.jpg",
   "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],
   "rarity" : "UNCOMMON",

@@ -1,6 +1,6 @@
 {
   "name" : "Skysnare Spider",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/f/1/f1743227-94fd-44c0-884d-fa269bcfd67d.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/f/1/f1743227-94fd-44c0-884d-fa269bcfd67d.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

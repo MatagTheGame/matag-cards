@@ -1,6 +1,6 @@
 {
   "name" : "Spontaneous Flight",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/3/d/3dc24dd4-d259-4687-8247-f56aa7abb5b9.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/3/d/3dc24dd4-d259-4687-8247-f56aa7abb5b9.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Reclaiming Vines",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/8/88a864ef-bc44-4ec2-b88a-7f4a59a5c1bc.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/8/88a864ef-bc44-4ec2-b88a-7f4a59a5c1bc.jpg",
   "colors" : [ "GREEN" ],
   "cost" : [ "GREEN", "GREEN", "ANY", "ANY" ],
   "types" : [ "SORCERY" ],

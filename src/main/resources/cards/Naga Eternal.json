@@ -1,6 +1,6 @@
 {
   "name" : "Naga Eternal",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/0/f/0f244233-f2e8-48f8-9106-e7cd186efd51.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/0/f/0f244233-f2e8-48f8-9106-e7cd186efd51.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

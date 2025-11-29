@@ -1,6 +1,6 @@
 {
   "name" : "Swift Response",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/a/9/a90c1ad0-83bd-471c-8d4c-e65bc2abaa18.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/a/9/a90c1ad0-83bd-471c-8d4c-e65bc2abaa18.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "ANY" ],
   "types" : [ "INSTANT" ],

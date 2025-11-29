@@ -1,6 +1,6 @@
 {
   "name" : "Coral Commando",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/8/889cc2a0-d9a6-4368-92e0-055a7d7bf9d1.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/8/889cc2a0-d9a6-4368-92e0-055a7d7bf9d1.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

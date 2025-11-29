@@ -1,6 +1,6 @@
 {
   "name" : "Whirlwind of Thought",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/b/6/b6c48195-074a-4236-a82d-603b5dd1aa66.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/6/b6c48195-074a-4236-a82d-603b5dd1aa66.jpg",
   "colors" : [ "WHITE", "BLUE", "RED" ],
   "cost" : [ "WHITE", "BLUE", "RED", "ANY" ],
   "types" : [ "ENCHANTMENT" ],

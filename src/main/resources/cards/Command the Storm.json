@@ -1,6 +1,6 @@
 {
   "name" : "Command the Storm",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/4/c4144e98-957e-43ac-b107-8ccf450748df.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/4/c4144e98-957e-43ac-b107-8ccf450748df.jpg",
   "colors" : [ "RED" ],
   "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "INSTANT" ],

@@ -1,6 +1,6 @@
 {
   "name" : "Library Larcenist",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/c/b/cb33529b-80bd-4f52-94cc-d8371c53ad75.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/c/b/cb33529b-80bd-4f52-94cc-d8371c53ad75.jpg",
   "colors" : [ "BLUE" ],
   "cost" : [ "BLUE", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],

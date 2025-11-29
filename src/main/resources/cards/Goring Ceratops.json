@@ -1,6 +1,6 @@
 {
   "name" : "Goring Ceratops",
-  "imageUrl" : "https://img.scryfall.com/cards/large/front/8/3/8309f684-5912-4191-9f64-d573f1cc84c9.jpg",
+  "imageUrl" : "https://cards.scryfall.io/large/front/8/3/8309f684-5912-4191-9f64-d573f1cc84c9.jpg",
   "colors" : [ "WHITE" ],
   "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
   "types" : [ "CREATURE" ],
