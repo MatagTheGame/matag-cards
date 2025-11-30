@@ -1,25 +1,44 @@
 {
-  "name" : "Blinding Drone",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/e/4eb60957-0811-40c3-a92b-cce3e6a94745.jpg",
-  "cost" : [ "BLUE", "COLORLESS" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRONE", "ELDRAZI" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Devoid. {C}, {T}: Tap target creature.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Blinding Drone",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/e/4eb60957-0811-40c3-a92b-cce3e6a94745.jpg",
+  "cost": [
+    "BLUE",
+    "COLORLESS"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRONE",
+    "ELDRAZI"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Devoid. {C}, {T}: Tap target creature.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "COLORLESS",
+          "TAP"
+        ]
       }
-    } ],
-    "parameters" : [ ":TAPPED" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "COLORLESS", "TAP" ]
     }
-  } ]
+  ]
 }

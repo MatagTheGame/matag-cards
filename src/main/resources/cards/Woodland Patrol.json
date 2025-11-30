@@ -1,15 +1,28 @@
 {
-  "name" : "Woodland Patrol",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/7/a/7a134bd1-3c5a-467e-bad1-65548b33faa5.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SCOUT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Vigilance",
-  "power" : 3,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "VIGILANCE"
-  } ]
+  "name": "Woodland Patrol",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/7/a/7a134bd1-3c5a-467e-bad1-65548b33faa5.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SCOUT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Vigilance",
+  "power": 3,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "VIGILANCE"
+    }
+  ]
 }

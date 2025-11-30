@@ -1,32 +1,52 @@
 {
-  "name" : "Natural End",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/4/84dcd314-f4d2-461e-a66e-7b1d8f141879.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target artifact or enchantment. You gain 3 life.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT", "ENCHANTMENT" ]
+  "name": "Natural End",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/4/84dcd314-f4d2-461e-a66e-7b1d8f141879.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target artifact or enchantment. You gain 3 life.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT",
+              "ENCHANTMENT"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
     },
-    "parameters" : [ "LIFE:3" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

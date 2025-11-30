@@ -1,29 +1,47 @@
 {
-  "name" : "Jhoira, Weatherlight Captain",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/3/73cf8c6b-1322-4bc5-a604-6e372607fae4.jpg",
-  "colors" : [ "BLUE", "RED" ],
-  "cost" : [ "BLUE", "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE", "LEGENDARY" ],
-  "subtypes" : [ "ARTIFICER", "HUMAN" ],
-  "rarity" : "MYTHIC",
-  "ruleText" : "Whenever you cast a historic spell, draw a card.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "controllerType" : "PLAYER",
-        "historic" : true
+  "name": "Jhoira, Weatherlight Captain",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/3/73cf8c6b-1322-4bc5-a604-6e372607fae4.jpg",
+  "colors": [
+    "BLUE",
+    "RED"
+  ],
+  "cost": [
+    "BLUE",
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "LEGENDARY"
+  ],
+  "subtypes": [
+    "ARTIFICER",
+    "HUMAN"
+  ],
+  "rarity": "MYTHIC",
+  "ruleText": "Whenever you cast a historic spell, draw a card.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "controllerType": "PLAYER",
+          "historic": true
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,63 +1,103 @@
 {
-  "name" : "Death Baron",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/9/c9699446-b6f5-4e6a-a263-059cbf6e4b7e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "WIZARD", "ZOMBIE" ],
-  "rarity" : "RARE",
-  "ruleText" : "Skeletons you control and other Zombies you control get +1/+1 and have deathtouch.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "ZOMBIE" ],
-      "controllerType" : "PLAYER"
+  "name": "Death Baron",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/9/c9699446-b6f5-4e6a-a263-059cbf6e4b7e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "WIZARD",
+    "ZOMBIE"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Skeletons you control and other Zombies you control get +1/+1 and have deathtouch.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "ZOMBIE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "ZOMBIE" ],
-      "controllerType" : "PLAYER"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "ZOMBIE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "DEATHTOUCH"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     },
-    "parameters" : [ "DEATHTOUCH" ],
-    "trigger" : {
-      "type" : "STATIC"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "ZOMBIE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "ZOMBIE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "ZOMBIE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "DEATHTOUCH"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "ZOMBIE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
-    },
-    "parameters" : [ "DEATHTOUCH" ],
-    "trigger" : {
-      "type" : "STATIC"
-    }
-  } ]
+  ]
 }

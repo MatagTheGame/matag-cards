@@ -1,23 +1,40 @@
 {
-  "name" : "Knight's Pledge",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/e/4e786d0e-d6bf-4c6b-b989-28ca1ed53e2e.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Enchant creature. Enchanted creature gets +2/+2.",
-  "abilities" : [ {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Knight's Pledge",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/e/4e786d0e-d6bf-4c6b-b989-28ca1ed53e2e.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Enchant creature. Enchanted creature gets +2/+2.",
+  "abilities": [
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+2"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+2/+2" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

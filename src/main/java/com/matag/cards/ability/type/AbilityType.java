@@ -4,27 +4,27 @@ import java.util.Objects;
 import java.util.Optional;
 
 public enum AbilityType {
-  // Keyword
-  DEATHTOUCH("Deathtouch."),
-  DEFENDER("Defender."),
-  DOUBLE_STRIKE("Double strike."),
-  ENCHANT("Enchanted creature gets %s."),
-  EQUIP("Equipped creature gets %s."),
-  FIRST_STRIKE("First strike."),
-  FLASH("Flash."),
-  FLYING("Flying."),
-  HASTE("Haste."),
-  HEXPROOF("Hexproof."),
-  INDESTRUCTIBLE("Indestructible."),
-//  INTIMIDATE(null),
+    // Keyword
+    DEATHTOUCH("Deathtouch."),
+    DEFENDER("Defender."),
+    DOUBLE_STRIKE("Double strike."),
+    ENCHANT("Enchanted creature gets %s."),
+    EQUIP("Equipped creature gets %s."),
+    FIRST_STRIKE("First strike."),
+    FLASH("Flash."),
+    FLYING("Flying."),
+    HASTE("Haste."),
+    HEXPROOF("Hexproof."),
+    INDESTRUCTIBLE("Indestructible."),
+    //  INTIMIDATE(null),
 //  LANDWALK(null),
-  LIFELINK("Lifelink."),
-//  PROTECTION(null),
-  REACH("Reach."),
-//  SHROUD(null),
-  TRAMPLE("Trample."),
-  VIGILANCE("Vigilance."),
-//  BANDING(null),
+    LIFELINK("Lifelink."),
+    //  PROTECTION(null),
+    REACH("Reach."),
+    //  SHROUD(null),
+    TRAMPLE("Trample."),
+    VIGILANCE("Vigilance."),
+    //  BANDING(null),
 //  RAMPAGE(null),
 //  CUMULATIVE_UPKEEP(null),
 //  FLANKING(null),
@@ -110,13 +110,13 @@ public enum AbilityType {
 //  DETHRONE(null),
 //  HIDDEN_AGENDA(null),
 //  OUTLAST(null),
-  PROWESS("Prowess."),
-//  DASH(null),
+    PROWESS("Prowess."),
+    //  DASH(null),
 //  EXPLOIT(null),
-  MENACE("Menace."),
-//  RENOWN(null),
+    MENACE("Menace."),
+    //  RENOWN(null),
 //  AWAKEN(null),
-  DEVOID("Devoid."),
+    DEVOID("Devoid."),
 //  INGEST(null),
 //  MYRIAD(null),
 //  SURGE(null),
@@ -144,28 +144,28 @@ public enum AbilityType {
 //  COMPANION(null),
 //  MUTATE(null),
 
-  // Others
-  ADAMANT("Adamant"),
-  ENTERS_THE_BATTLEFIELD_WITH("Enters the battlefield %s."),
-  SELECTED_PERMANENTS_GET("%s %s"),
-  SHUFFLE_GRAVEYARD_INTO_LIBRARY_FOR_TARGET_PLAYER("Shuffle graveyard into library."),
-  TAP_ADD_MANA("Tap add %s mana."),
-  THAT_TARGETS_GET("That targets get %s.");
+    // Others
+    ADAMANT("Adamant"),
+    ENTERS_THE_BATTLEFIELD_WITH("Enters the battlefield %s."),
+    SELECTED_PERMANENTS_GET("%s %s"),
+    SHUFFLE_GRAVEYARD_INTO_LIBRARY_FOR_TARGET_PLAYER("Shuffle graveyard into library."),
+    TAP_ADD_MANA("Tap add %s mana."),
+    THAT_TARGETS_GET("That targets get %s.");
 
-  private final String text;
+    private final String text;
 
-  AbilityType(String text) {
-    Objects.requireNonNull(text);
-    this.text = text;
-  }
+    AbilityType(String text) {
+        Objects.requireNonNull(text);
+        this.text = text;
+    }
 
-  public String getText() {
-    return text;
-  }
+    public String getText() {
+        return text;
+    }
 
-  public static AbilityType abilityType(String text) {
-    return Optional.ofNullable(text)
-        .map(AbilityType::valueOf)
-        .orElse(null);
-  }
+    public static AbilityType abilityType(String text) {
+        return Optional.ofNullable(text)
+                .map(AbilityType::valueOf)
+                .orElse(null);
+    }
 }

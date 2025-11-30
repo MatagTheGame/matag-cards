@@ -1,15 +1,28 @@
 {
-  "name" : "Alley Strangler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/b/cbcf6273-1e02-446a-a300-d009c7909b5a.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "AETHERBORN", "ROGUE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Menace",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "MENACE"
-  } ]
+  "name": "Alley Strangler",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/b/cbcf6273-1e02-446a-a300-d009c7909b5a.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "AETHERBORN",
+    "ROGUE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Menace",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "MENACE"
+    }
+  ]
 }

@@ -1,23 +1,42 @@
 {
-  "name" : "Sandblast",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/f/0f3c501c-4e23-4e56-ad99-1803c8a877ca.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Sandblast deals 5 damage to target attacking or blocking creature.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "statusTypes" : [ "ATTACKING", "BLOCKING" ]
+  "name": "Sandblast",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/f/0f3c501c-4e23-4e56-ad99-1803c8a877ca.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Sandblast deals 5 damage to target attacking or blocking creature.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "statusTypes": [
+              "ATTACKING",
+              "BLOCKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:5"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:5" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

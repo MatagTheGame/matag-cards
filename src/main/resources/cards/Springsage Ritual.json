@@ -1,32 +1,53 @@
 {
-  "name" : "Springsage Ritual",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/2/e/2e0b23a4-5868-4dd8-ae68-846934e1bd52.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target artifact or enchantment. You gain 4 life.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT", "ENCHANTMENT" ]
+  "name": "Springsage Ritual",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/2/e/2e0b23a4-5868-4dd8-ae68-846934e1bd52.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target artifact or enchantment. You gain 4 life.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT",
+              "ENCHANTMENT"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
     },
-    "parameters" : [ "LIFE:4" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:4"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

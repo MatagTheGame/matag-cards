@@ -1,24 +1,38 @@
 {
-  "name" : "Simic Guildgate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/4/d4e7b715-38c5-406f-883c-9c174f87944e.jpg",
-  "types" : [ "LAND" ],
-  "subtypes" : [ "GATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Simic Guildgate enters the battlefield tapped. {T}: Add {G} or {U}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Simic Guildgate",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/4/d4e7b715-38c5-406f-883c-9c174f87944e.jpg",
+  "types": [
+    "LAND"
+  ],
+  "subtypes": [
+    "GATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Simic Guildgate enters the battlefield tapped. {T}: Add {G} or {U}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

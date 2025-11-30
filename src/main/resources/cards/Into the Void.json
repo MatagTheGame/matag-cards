@@ -1,29 +1,49 @@
 {
-  "name" : "Into the Void",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/5/55e240e7-d7b3-4fce-9acd-48b6a3bf2a80.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Return up to two target creatures to their owners' hands.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      },
-      "optional" : true
-    }, {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "CAST"
+  "name": "Into the Void",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/5/55e240e7-d7b3-4fce-9acd-48b6a3bf2a80.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Return up to two target creatures to their owners' hands.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          },
+          "optional": true
+        },
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          },
+          "optional": true
+        }
+      ],
+      "parameters": [
+        ":RETURN_TO_OWNER_HAND"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

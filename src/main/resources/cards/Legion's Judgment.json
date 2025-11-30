@@ -1,27 +1,43 @@
 {
-  "name" : "Legion's Judgment",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/3/032f6c5a-8d88-4a55-a54b-28df42d801e1.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target creature with power 4 or greater.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "powerToughnessConstraint" : {
-          "powerOrToughness" : "POWER",
-          "powerToughnessConstraintType" : "GREATER_OR_EQUAL",
-          "value" : 4
+  "name": "Legion's Judgment",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/3/032f6c5a-8d88-4a55-a54b-28df42d801e1.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target creature with power 4 or greater.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "powerToughnessConstraint": {
+              "powerOrToughness": "POWER",
+              "powerToughnessConstraintType": "GREATER_OR_EQUAL",
+              "value": 4
+            }
+          }
         }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

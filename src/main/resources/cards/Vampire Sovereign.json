@@ -1,47 +1,70 @@
 {
-  "name" : "Vampire Sovereign",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "NOBLE", "VAMPIRE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. When Vampire Sovereign enters the battlefield, target opponent loses 3 life and you gain 3 life.",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PLAYER",
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ "LIFE:-3" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
-      }
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Vampire Sovereign",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "NOBLE",
+    "VAMPIRE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. When Vampire Sovereign enters the battlefield, target opponent loses 3 life and you gain 3 life.",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "LIFE:3" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PLAYER",
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        "LIFE:-3"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:3"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

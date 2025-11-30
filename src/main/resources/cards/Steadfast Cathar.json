@@ -1,28 +1,42 @@
 {
-  "name" : "Steadfast Cathar",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/e/5e1b65a7-d385-428b-986c-a0d9283a5f75.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever Steadfast Cathar attacks, it gets +0/+2 until end of turn.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+0/+2" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Steadfast Cathar",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/e/5e1b65a7-d385-428b-986c-a0d9283a5f75.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever Steadfast Cathar attacks, it gets +0/+2 until end of turn.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+0/+2"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

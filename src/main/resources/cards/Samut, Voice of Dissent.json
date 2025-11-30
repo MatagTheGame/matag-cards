@@ -1,46 +1,81 @@
 {
-  "name" : "Samut, Voice of Dissent",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/0/60f2d8f1-43a9-438a-830c-9d6b5701f950.jpg",
-  "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE", "LEGENDARY" ],
-  "subtypes" : [ "HUMAN", "WARRIOR" ],
-  "rarity" : "MYTHIC",
-  "ruleText" : "Flash. Double strike, vigilance, haste. Other creatures you control have haste. {W}, {T}: Untap another target creature.",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "DOUBLE_STRIKE"
-  }, {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "HASTE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
+  "name": "Samut, Voice of Dissent",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/0/60f2d8f1-43a9-438a-830c-9d6b5701f950.jpg",
+  "colors": [
+    "RED",
+    "GREEN"
+  ],
+  "cost": [
+    "RED",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "LEGENDARY"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "WARRIOR"
+  ],
+  "rarity": "MYTHIC",
+  "ruleText": "Flash. Double strike, vigilance, haste. Other creatures you control have haste. {W}, {T}: Untap another target creature.",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "FLASH"
     },
-    "parameters" : [ "HASTE" ],
-    "trigger" : {
-      "type" : "STATIC"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "others" : true
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    },
+    {
+      "abilityType": "VIGILANCE"
+    },
+    {
+      "abilityType": "HASTE"
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "HASTE"
+      ],
+      "trigger": {
+        "type": "STATIC"
       }
-    } ],
-    "parameters" : [ ":UNTAPPED" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "TAP" ]
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "others": true
+          }
+        }
+      ],
+      "parameters": [
+        ":UNTAPPED"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "TAP"
+        ]
+      }
     }
-  } ]
+  ]
 }

@@ -1,17 +1,33 @@
 {
-  "name" : "Skysnare Spider",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/1/f1743227-94fd-44c0-884d-fa269bcfd67d.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SPIDER" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Vigilance. Reach",
-  "power" : 6,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "REACH"
-  } ]
+  "name": "Skysnare Spider",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/1/f1743227-94fd-44c0-884d-fa269bcfd67d.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SPIDER"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Vigilance. Reach",
+  "power": 6,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "VIGILANCE"
+    },
+    {
+      "abilityType": "REACH"
+    }
+  ]
 }

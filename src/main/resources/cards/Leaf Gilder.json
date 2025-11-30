@@ -1,19 +1,33 @@
 {
-  "name" : "Leaf Gilder",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/8/58b3bd44-3b01-4507-b9be-ab94601ea736.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRUID", "ELF" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{T}: Add {G}.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Leaf Gilder",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/8/58b3bd44-3b01-4507-b9be-ab94601ea736.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRUID",
+    "ELF"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{T}: Add {G}.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

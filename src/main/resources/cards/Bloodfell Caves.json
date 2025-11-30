@@ -1,38 +1,53 @@
 {
-  "name" : "Bloodfell Caves",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/d/5d89a0e2-1163-4a11-b0df-deef2e6c8108.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Bloodfell Caves enters the battlefield tapped. When Bloodfell Caves enters the battlefield, you gain 1 life. {T}: Add {B} or {R}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLACK" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Bloodfell Caves",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/d/5d89a0e2-1163-4a11-b0df-deef2e6c8108.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Bloodfell Caves enters the battlefield tapped. When Bloodfell Caves enters the battlefield, you gain 1 life. {T}: Add {B} or {R}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
     },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLACK"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

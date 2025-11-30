@@ -1,23 +1,35 @@
 {
-  "name" : "Highland Lake",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/6/46bb20af-a326-4a42-94d3-cb1990300e0f.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Highland Lake enters the battlefield tapped. {T}: Add {U} or {R}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Highland Lake",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/6/46bb20af-a326-4a42-94d3-cb1990300e0f.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Highland Lake enters the battlefield tapped. {T}: Add {U} or {R}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

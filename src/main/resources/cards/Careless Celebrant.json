@@ -1,30 +1,49 @@
 {
-  "name" : "Careless Celebrant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/a/bac6bdd4-b25b-41f6-835d-7d1570cdb951.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SATYR", "SHAMAN" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Careless Celebrant dies, it deals 2 damage to target creature or planeswalker an opponent controls.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE", "PLANESWALKER" ]
-      }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Careless Celebrant",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/a/bac6bdd4-b25b-41f6-835d-7d1570cdb951.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SATYR",
+    "SHAMAN"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Careless Celebrant dies, it deals 2 damage to target creature or planeswalker an opponent controls.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE",
+              "PLANESWALKER"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

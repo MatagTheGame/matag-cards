@@ -1,32 +1,51 @@
 {
-  "name" : "Thundering Ceratok",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/8/9888d9a4-ad72-43f6-8031-1031877171a9.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "RHINO" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Trample. When Thundering Ceratok enters the battlefield, other creatures you control gain trample until end of turn.",
-  "power" : 4,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Thundering Ceratok",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/8/9888d9a4-ad72-43f6-8031-1031877171a9.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "RHINO"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Trample. When Thundering Ceratok enters the battlefield, other creatures you control gain trample until end of turn.",
+  "power": 4,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
     },
-    "parameters" : [ "TRAMPLE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "TRAMPLE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

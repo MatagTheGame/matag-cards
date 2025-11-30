@@ -1,19 +1,36 @@
 {
-  "name" : "Gyre Engineer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/6/26dd6a1d-4dcb-4392-9856-c0e4140efbd7.jpg",
-  "colors" : [ "BLUE", "GREEN" ],
-  "cost" : [ "BLUE", "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "VEDALKEN", "WIZARD" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "{T}: Add {G}{U}.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN", "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Gyre Engineer",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/6/26dd6a1d-4dcb-4392-9856-c0e4140efbd7.jpg",
+  "colors": [
+    "BLUE",
+    "GREEN"
+  ],
+  "cost": [
+    "BLUE",
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "VEDALKEN",
+    "WIZARD"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "{T}: Add {G}{U}.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN",
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

@@ -1,42 +1,70 @@
 {
-  "name" : "Inspired Ultimatum",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/4/c4e96967-d694-4c26-8e10-d904e1e64c09.jpg",
-  "colors" : [ "WHITE", "BLUE", "RED" ],
-  "cost" : [ "WHITE", "WHITE", "BLUE", "BLUE", "RED", "RED", "RED" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "RARE",
-  "ruleText" : "Target player gains 5 life, Inspired Ultimatum deals 5 damage to any target, then you draw five cards.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PLAYER"
+  "name": "Inspired Ultimatum",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/4/c4e96967-d694-4c26-8e10-d904e1e64c09.jpg",
+  "colors": [
+    "WHITE",
+    "BLUE",
+    "RED"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "BLUE",
+    "BLUE",
+    "RED",
+    "RED",
+    "RED"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Target player gains 5 life, Inspired Ultimatum deals 5 damage to any target, then you draw five cards.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "LIFE:5"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "LIFE:5" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
-      }
-    } ],
-    "parameters" : [ "DAMAGE:5" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
     },
-    "parameters" : [ "DRAW:5" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:5"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:5"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

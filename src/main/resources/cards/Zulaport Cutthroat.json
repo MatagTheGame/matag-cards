@@ -1,45 +1,68 @@
 {
-  "name" : "Zulaport Cutthroat",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/6/5676c6b6-a1f7-4f4e-a8a6-3398fb5130fd.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ALLY", "HUMAN", "ROGUE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever Zulaport Cutthroat or another creature you control dies, each opponent loses 1 life and you gain 1 life.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
+  "name": "Zulaport Cutthroat",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/6/5676c6b6-a1f7-4f4e-a8a6-3398fb5130fd.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ALLY",
+    "HUMAN",
+    "ROGUE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever Zulaport Cutthroat or another creature you control dies, each opponent loses 1 life and you gain 1 life.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "VIGILANCE"
     },
-    "parameters" : [ "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ]
+        }
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ]
+        }
       }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      }
-    }
-  } ]
+  ]
 }

@@ -1,29 +1,47 @@
 {
-  "name" : "Ampryn Tactician",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/2/82a2e1d9-6763-4024-a18b-982d96395553.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Ampryn Tactician enters the battlefield, creatures you control get +1/+1 until end of turn.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Ampryn Tactician",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/2/82a2e1d9-6763-4024-a18b-982d96395553.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Ampryn Tactician enters the battlefield, creatures you control get +1/+1 until end of turn.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

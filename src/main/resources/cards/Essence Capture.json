@@ -1,36 +1,58 @@
 {
-  "name" : "Essence Capture",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/e/ce137910-0f0e-4f94-9b95-6e0eeeba164e.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Counter target creature spell. Put a +1/+1 counter on up to one target creature you control.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "CREATURE" ]
+  "name": "Essence Capture",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/e/ce137910-0f0e-4f94-9b95-6e0eeeba164e.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "BLUE"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Counter target creature spell. Put a +1/+1 counter on up to one target creature you control.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "SPELL",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":CANCELLED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":CANCELLED" ],
-    "trigger" : {
-      "type" : "CAST"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          },
+          "optional": true
+        }
+      ],
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  } ]
+  ]
 }

@@ -1,37 +1,57 @@
 {
-  "name" : "Triumphant Surge",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/5/75d6eb18-a49d-4fa5-a333-78aafbc4abcb.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target creature with power 4 or greater. You gain 3 life.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "powerToughnessConstraint" : {
-          "powerOrToughness" : "POWER",
-          "powerToughnessConstraintType" : "GREATER_OR_EQUAL",
-          "value" : 4
+  "name": "Triumphant Surge",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/5/75d6eb18-a49d-4fa5-a333-78aafbc4abcb.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target creature with power 4 or greater. You gain 3 life.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "powerToughnessConstraint": {
+              "powerOrToughness": "POWER",
+              "powerToughnessConstraintType": "GREATER_OR_EQUAL",
+              "value": 4
+            }
+          }
         }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
     },
-    "parameters" : [ "LIFE:3" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

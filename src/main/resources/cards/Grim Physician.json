@@ -1,31 +1,47 @@
 {
-  "name" : "Grim Physician",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/7/b7e92c82-840f-4c75-b617-7b58a07be5b4.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Grim Physician dies, target creature an opponent controls gets -1/-1 until end of turn.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ "-1/-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Grim Physician",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/7/b7e92c82-840f-4c75-b617-7b58a07be5b4.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Grim Physician dies, target creature an opponent controls gets -1/-1 until end of turn.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        "-1/-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

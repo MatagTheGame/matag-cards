@@ -1,23 +1,37 @@
 {
-  "name" : "Augmenting Automaton",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/d/7d017798-8278-4f9c-a691-912935c10c20.jpg",
-  "cost" : [ "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CONSTRUCT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{1}{B}: Augmenting Automaton gets +1/+1 until end of turn.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "ANY" ]
+  "name": "Augmenting Automaton",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/d/7d017798-8278-4f9c-a691-912935c10c20.jpg",
+  "cost": [
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CONSTRUCT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{1}{B}: Augmenting Automaton gets +1/+1 until end of turn.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

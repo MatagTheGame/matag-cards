@@ -14,26 +14,26 @@ import com.matag.cards.ability.trigger.TriggerType;
 import com.matag.player.PlayerType;
 
 public class AbilityTransposer {
-  private static final MagicInstanceSelector SELECTOR_IT = MagicInstanceSelector.builder().selectorType(PERMANENT).itself(true).build();
-  private static final MagicInstanceSelector YOUR_NON_CREATURE_SPELL = MagicInstanceSelector.builder().selectorType(SPELL).notOfType(singletonList(CREATURE)).controllerType(PlayerType.PLAYER).build();
+    private static final MagicInstanceSelector SELECTOR_IT = MagicInstanceSelector.builder().selectorType(PERMANENT).itself(true).build();
+    private static final MagicInstanceSelector YOUR_NON_CREATURE_SPELL = MagicInstanceSelector.builder().selectorType(SPELL).notOfType(singletonList(CREATURE)).controllerType(PlayerType.PLAYER).build();
 
-  public static Ability transpose(Ability ability) {
-    if (ability.getAbilityType() == PROWESS) {
-      return new Ability(
-          SELECTED_PERMANENTS_GET,
-          null,
-          SELECTOR_IT,
-          singletonList("+1/+1"),
-          Trigger.builder()
-              .type(TriggerType.TRIGGERED_ABILITY)
-              .subtype(TriggerSubtype.WHEN_CAST)
-              .magicInstanceSelector(YOUR_NON_CREATURE_SPELL)
-              .build(),
-          null,
-          false,
-          false
-      );
+    public static Ability transpose(Ability ability) {
+        if (ability.getAbilityType() == PROWESS) {
+            return new Ability(
+                    SELECTED_PERMANENTS_GET,
+                    null,
+                    SELECTOR_IT,
+                    singletonList("+1/+1"),
+                    Trigger.builder()
+                            .type(TriggerType.TRIGGERED_ABILITY)
+                            .subtype(TriggerSubtype.WHEN_CAST)
+                            .magicInstanceSelector(YOUR_NON_CREATURE_SPELL)
+                            .build(),
+                    null,
+                    false,
+                    false
+            );
+        }
+        return ability;
     }
-    return ability;
-  }
 }

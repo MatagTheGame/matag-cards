@@ -1,39 +1,68 @@
 {
-  "name" : "Lord of the Accursed",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/d/0dc3a3ce-03d3-4d7f-a3dd-3e1a53ed878e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Other Zombies you control get +1/+1. {1}{B}, {T}: All Zombies gain menace until end of turn.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "ZOMBIE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Lord of the Accursed",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/d/0dc3a3ce-03d3-4d7f-a3dd-3e1a53ed878e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Other Zombies you control get +1/+1. {1}{B}, {T}: All Zombies gain menace until end of turn.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "ZOMBIE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
       }
-    } ],
-    "parameters" : [ "MENACE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "ANY", "TAP" ]
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "MENACE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK",
+          "ANY",
+          "TAP"
+        ]
+      }
     }
-  } ]
+  ]
 }

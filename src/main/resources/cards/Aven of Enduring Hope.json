@@ -1,28 +1,45 @@
 {
-  "name" : "Aven of Enduring Hope",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/2/02c1310c-1b54-42dd-bf24-889770fa2ded.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD", "CLERIC" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. When Aven of Enduring Hope enters the battlefield, you gain 3 life.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:3" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Aven of Enduring Hope",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/2/02c1310c-1b54-42dd-bf24-889770fa2ded.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD",
+    "CLERIC"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. When Aven of Enduring Hope enters the battlefield, you gain 3 life.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:3"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,32 +1,54 @@
 {
-  "name" : "Get the Point",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/8/2/821c4ab5-eb75-445a-bbec-e50af54dba7a.jpg",
-  "colors" : [ "BLACK", "RED" ],
-  "cost" : [ "BLACK", "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target creature. Scry 1.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Get the Point",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/8/2/821c4ab5-eb75-445a-bbec-e50af54dba7a.jpg",
+  "colors": [
+    "BLACK",
+    "RED"
+  ],
+  "cost": [
+    "BLACK",
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target creature. Scry 1.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "PLAYER"
     },
-    "parameters" : [ "SCRY:1" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "SCRY:1"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

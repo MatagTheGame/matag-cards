@@ -1,34 +1,58 @@
 {
-  "name" : "Nivix Barrier",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/b/0b9b968d-b0cc-411d-9366-8358be28aef2.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ILLUSION", "WALL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flash. Defender. When Nivix Barrier enters the battlefield, target attacking creature gets -4/-0 until end of turn.",
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "DEFENDER"
-  }, {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "statusTypes" : [ "ATTACKING" ]
-      }
-    } ],
-    "parameters" : [ "-4/-0" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Nivix Barrier",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/b/0b9b968d-b0cc-411d-9366-8358be28aef2.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ILLUSION",
+    "WALL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flash. Defender. When Nivix Barrier enters the battlefield, target attacking creature gets -4/-0 until end of turn.",
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "DEFENDER"
+    },
+    {
+      "abilityType": "FLASH"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "statusTypes": [
+              "ATTACKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "-4/-0"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

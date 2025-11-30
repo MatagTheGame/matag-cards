@@ -1,12 +1,19 @@
 {
-  "name" : "Ornithopter",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/e/ce7b5056-241e-4982-b7a0-3d63ec886e35.jpg",
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "THOPTER" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying",
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Ornithopter",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/e/ce7b5056-241e-4982-b7a0-3d63ec886e35.jpg",
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "THOPTER"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying",
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

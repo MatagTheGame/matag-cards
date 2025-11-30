@@ -1,42 +1,69 @@
 {
-  "name" : "Cartouche of Ambition",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/6/e68b96b1-b75e-4ee1-a6d7-6545a34fef9b.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA", "CARTOUCHE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Enchant creature you control. When Cartouche of Ambition enters the battlefield, you may put a -1/-1 counter on target creature. Enchanted creature gets +1/+1 and has lifelink.",
-  "abilities" : [ {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Cartouche of Ambition",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/6/e68b96b1-b75e-4ee1-a6d7-6545a34fef9b.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA",
+    "CARTOUCHE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Enchant creature you control. When Cartouche of Ambition enters the battlefield, you may put a -1/-1 counter on target creature. Enchanted creature gets +1/+1 and has lifelink.",
+  "abilities": [
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+1",
+        "LIFELINK"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+1/+1", "LIFELINK" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ "MINUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          },
+          "optional": true
+        }
+      ],
+      "parameters": [
+        "MINUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

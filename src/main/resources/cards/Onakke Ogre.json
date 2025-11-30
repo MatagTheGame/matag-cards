@@ -1,11 +1,22 @@
 {
-  "name" : "Onakke Ogre",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/6/76e42d07-57d9-4de4-8d41-eb42dd1573ed.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "OGRE", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "power" : 4,
-  "toughness" : 2
+  "name": "Onakke Ogre",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/6/76e42d07-57d9-4de4-8d41-eb42dd1573ed.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "OGRE",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "power": 4,
+  "toughness": 2
 }

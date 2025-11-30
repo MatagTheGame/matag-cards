@@ -1,11 +1,25 @@
 {
-  "name" : "Nyxborn Colossus",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/b/8b4f003c-1e99-4e53-ad6d-81ff3c592b2c.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "GREEN", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE", "ENCHANTMENT" ],
-  "subtypes" : [ "GIANT" ],
-  "rarity" : "COMMON",
-  "power" : 6,
-  "toughness" : 7
+  "name": "Nyxborn Colossus",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/b/8b4f003c-1e99-4e53-ad6d-81ff3c592b2c.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "GIANT"
+  ],
+  "rarity": "COMMON",
+  "power": 6,
+  "toughness": 7
 }

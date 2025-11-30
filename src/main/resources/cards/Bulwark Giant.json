@@ -1,28 +1,46 @@
 {
-  "name" : "Bulwark Giant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/1/5104d4fe-4c20-4106-b405-a2b35140c942.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GIANT", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Bulwark Giant enters the battlefield, you gain 5 life.",
-  "power" : 3,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:5" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Bulwark Giant",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/1/5104d4fe-4c20-4106-b405-a2b35140c942.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GIANT",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Bulwark Giant enters the battlefield, you gain 5 life.",
+  "power": 3,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:5"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

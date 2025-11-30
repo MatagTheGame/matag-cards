@@ -1,29 +1,45 @@
 {
-  "name" : "Firebrand Archer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/4/d439230e-3920-40b5-afc2-0f725ecce24e.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ARCHER", "HUMAN" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever you cast a noncreature spell, Firebrand Archer deals 1 damage to each opponent.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "notOfType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Firebrand Archer",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/4/d439230e-3920-40b5-afc2-0f725ecce24e.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ARCHER",
+    "HUMAN"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever you cast a noncreature spell, Firebrand Archer deals 1 damage to each opponent.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "notOfType": [
+            "CREATURE"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

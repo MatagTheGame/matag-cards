@@ -1,26 +1,42 @@
 {
-  "name" : "Fetid Imp",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/6/56a95546-c45a-4da5-b1e8-d5658b5b7d53.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "IMP" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. {B}: Fetid Imp gains deathtouch until end of turn.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Fetid Imp",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/6/56a95546-c45a-4da5-b1e8-d5658b5b7d53.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "IMP"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. {B}: Fetid Imp gains deathtouch until end of turn.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "DEATHTOUCH" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "DEATHTOUCH"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK"
+        ]
+      }
     }
-  } ]
+  ]
 }

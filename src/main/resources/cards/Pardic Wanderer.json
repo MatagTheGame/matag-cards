@@ -1,14 +1,28 @@
 {
-  "name" : "Pardic Wanderer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/f/2fffe967-3a99-4f00-af46-f4e5567598df.jpg",
-  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "GOLEM" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Trample",
-  "power" : 5,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  } ]
+  "name": "Pardic Wanderer",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/f/2fffe967-3a99-4f00-af46-f4e5567598df.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOLEM"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Trample",
+  "power": 5,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
+    }
+  ]
 }

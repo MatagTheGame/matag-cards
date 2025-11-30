@@ -1,34 +1,52 @@
 {
-  "name" : "Llanowar Visionary",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/6/d6e23afa-7e08-4049-baf0-d4d0134ba2c8.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRUID", "ELF" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Llanowar Visionary enters the battlefield, draw a card. {T}: Add {G}.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Llanowar Visionary",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/6/d6e23afa-7e08-4049-baf0-d4d0134ba2c8.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRUID",
+    "ELF"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Llanowar Visionary enters the battlefield, draw a card. {T}: Add {G}.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

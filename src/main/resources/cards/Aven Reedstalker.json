@@ -1,17 +1,32 @@
 {
-  "name" : "Aven Reedstalker",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/0/f0c2d70a-d646-44eb-9f65-ddf6e329ab43.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flash. Flying",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Aven Reedstalker",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/0/f0c2d70a-d646-44eb-9f65-ddf6e329ab43.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flash. Flying",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLASH"
+    },
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

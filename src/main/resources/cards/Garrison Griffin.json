@@ -1,31 +1,50 @@
 {
-  "name" : "Garrison Griffin",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/4/94a04717-5cd7-4982-bf36-00cea30b9ef1.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GRIFFIN" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. Whenever Garrison Griffin attacks, target Knight you control gains flying until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "KNIGHT" ]
+  "name": "Garrison Griffin",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/4/94a04717-5cd7-4982-bf36-00cea30b9ef1.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GRIFFIN"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. Whenever Garrison Griffin attacks, target Knight you control gains flying until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "FLYING" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "KNIGHT"
+        ]
+      },
+      "parameters": [
+        "FLYING"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

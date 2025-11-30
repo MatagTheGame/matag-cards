@@ -1,25 +1,47 @@
 {
-  "name" : "Pyroclastic Elemental",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/5/15148b4e-19e2-4e39-8e6f-1dc94ea03463.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "{1}{R}{R}: Pyroclastic Elemental deals 1 damage to target player.",
-  "power" : 5,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PLAYER"
+  "name": "Pyroclastic Elemental",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/5/15148b4e-19e2-4e39-8e6f-1dc94ea03463.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "{1}{R}{R}: Pyroclastic Elemental deals 1 damage to target player.",
+  "power": 5,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "RED",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "RED", "ANY" ]
     }
-  } ]
+  ]
 }

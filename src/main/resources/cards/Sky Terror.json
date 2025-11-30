@@ -1,17 +1,30 @@
 {
-  "name" : "Sky Terror",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/6/167ed739-2953-47af-841f-bc1a092b3aa6.jpg",
-  "colors" : [ "WHITE", "RED" ],
-  "cost" : [ "WHITE", "RED" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DINOSAUR" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying, menace",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "MENACE"
-  } ]
+  "name": "Sky Terror",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/6/167ed739-2953-47af-841f-bc1a092b3aa6.jpg",
+  "colors": [
+    "WHITE",
+    "RED"
+  ],
+  "cost": [
+    "WHITE",
+    "RED"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DINOSAUR"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying, menace",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "MENACE"
+    }
+  ]
 }

@@ -1,20 +1,36 @@
 {
-  "name" : "Storm's Wrath",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/f/6f774b26-7b8b-4d06-bec8-764429445e93.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "RARE",
-  "ruleText" : "Storm's Wrath deals 4 damage to each creature and each planeswalker.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE", "PLANESWALKER" ]
-    },
-    "parameters" : [ "DAMAGE:3" ],
-    "trigger" : {
-      "type" : "CAST"
+  "name": "Storm's Wrath",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/f/6f774b26-7b8b-4d06-bec8-764429445e93.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Storm's Wrath deals 4 damage to each creature and each planeswalker.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE",
+          "PLANESWALKER"
+        ]
+      },
+      "parameters": [
+        "DAMAGE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

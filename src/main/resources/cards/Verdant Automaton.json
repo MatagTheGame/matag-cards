@@ -1,23 +1,40 @@
 {
-  "name" : "Verdant Automaton",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/2/52c66c5a-0b1b-4936-9e07-2d169f16c1a6.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CONSTRUCT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{3}{G}: Put a +1/+1 counter on Verdant Automaton.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "ANY", "ANY", "ANY" ]
+  "name": "Verdant Automaton",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/2/52c66c5a-0b1b-4936-9e07-2d169f16c1a6.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CONSTRUCT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{3}{G}: Put a +1/+1 counter on Verdant Automaton.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "GREEN",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

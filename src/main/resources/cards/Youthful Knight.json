@@ -1,15 +1,27 @@
 {
-  "name" : "Youthful Knight",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/4/c48cae7b-fb95-4f7c-a216-05fb868dfa4d.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "First strike",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FIRST_STRIKE"
-  } ]
+  "name": "Youthful Knight",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/4/c48cae7b-fb95-4f7c-a216-05fb868dfa4d.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "First strike",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FIRST_STRIKE"
+    }
+  ]
 }

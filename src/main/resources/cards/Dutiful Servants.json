@@ -1,11 +1,22 @@
 {
-  "name" : "Dutiful Servants",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/6/7684db4c-6eff-4da1-a410-48d707fb5bf1.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "power" : 2,
-  "toughness" : 5
+  "name": "Dutiful Servants",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/6/7684db4c-6eff-4da1-a410-48d707fb5bf1.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "power": 2,
+  "toughness": 5
 }

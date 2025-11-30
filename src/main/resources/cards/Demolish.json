@@ -1,22 +1,40 @@
 {
-  "name" : "Demolish",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/c/6ce356aa-9374-4f11-95b4-48bcaec64e93.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target artifact or land.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT", "LAND" ]
+  "name": "Demolish",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/c/6ce356aa-9374-4f11-95b4-48bcaec64e93.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target artifact or land.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT",
+              "LAND"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

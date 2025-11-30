@@ -1,11 +1,25 @@
 {
-  "name" : "Vorstclaw",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/9/79719ed0-468d-4946-8dfc-fb7e2b2e305e.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL", "HORROR" ],
-  "rarity" : "COMMON",
-  "power" : 7,
-  "toughness" : 7
+  "name": "Vorstclaw",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/9/79719ed0-468d-4946-8dfc-fb7e2b2e305e.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL",
+    "HORROR"
+  ],
+  "rarity": "COMMON",
+  "power": 7,
+  "toughness": 7
 }

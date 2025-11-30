@@ -1,38 +1,53 @@
 {
-  "name" : "Rugged Highlands",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/d/9daef8db-56a5-4b1e-b4bf-734d0516557c.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Rugged Highlands enters the battlefield tapped. When Rugged Highlands enters the battlefield, you gain 1 life. {T}: Add {R} or {G}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Rugged Highlands",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/d/9daef8db-56a5-4b1e-b4bf-734d0516557c.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Rugged Highlands enters the battlefield tapped. When Rugged Highlands enters the battlefield, you gain 1 life. {T}: Add {R} or {G}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
     },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

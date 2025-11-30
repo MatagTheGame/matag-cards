@@ -1,26 +1,45 @@
 {
-  "name" : "Warded Battlements",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/2/f234999b-54e9-40f5-a537-7d6ce169c710.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "WALL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Defender. Attacking creatures you control get +1/+0.",
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "DEFENDER"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "statusTypes" : [ "ATTACKING" ]
+  "name": "Warded Battlements",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/2/f234999b-54e9-40f5-a537-7d6ce169c710.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "WALL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Defender. Attacking creatures you control get +1/+0.",
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "DEFENDER"
     },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "statusTypes": [
+          "ATTACKING"
+        ]
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

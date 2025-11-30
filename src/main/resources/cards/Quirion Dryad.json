@@ -1,29 +1,47 @@
 {
-  "name" : "Quirion Dryad",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/2/a20d20f7-bc4d-42fa-9f5b-5bb330eb7f38.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRYAD" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever you cast a spell that's white, blue, black, or red, put a +1/+1 counter on Quirion Dryad.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofColors" : [ "WHITE", "BLUE", "BLACK", "RED" ],
-        "controllerType" : "PLAYER"
+  "name": "Quirion Dryad",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/2/a20d20f7-bc4d-42fa-9f5b-5bb330eb7f38.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRYAD"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever you cast a spell that's white, blue, black, or red, put a +1/+1 counter on Quirion Dryad.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "ofColors": [
+            "WHITE",
+            "BLUE",
+            "BLACK",
+            "RED"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,40 +1,60 @@
 {
-  "name" : "Tibalt's Rager",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/9/2947ad7e-d365-45ff-b107-35819b308f8c.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DEVIL" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Tibalt's Rager dies, it deals 1 damage to any target. {1}{R}: Tibalt's Rager gets +2/+0 until end of turn.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
+  "name": "Tibalt's Rager",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/9/2947ad7e-d365-45ff-b107-35819b308f8c.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DEVIL"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Tibalt's Rager dies, it deals 1 damage to any target. {1}{R}: Tibalt's Rager gets +2/+0 until end of turn.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
-      }
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
     },
-    "parameters" : [ "+2/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+2/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED"
+        ]
+      }
     }
-  } ]
+  ]
 }

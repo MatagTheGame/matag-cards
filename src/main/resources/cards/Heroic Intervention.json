@@ -1,20 +1,32 @@
 {
-  "name" : "Heroic Intervention",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/f/cf9fb88e-d13d-46d0-a3c5-da886f43ffb9.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Permanents you control gain hexproof and indestructible until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "HEXPROOF", "INDESTRUCTIBLE" ],
-    "trigger" : {
-      "type" : "CAST"
+  "name": "Heroic Intervention",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/f/cf9fb88e-d13d-46d0-a3c5-da886f43ffb9.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Permanents you control gain hexproof and indestructible until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "HEXPROOF",
+        "INDESTRUCTIBLE"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

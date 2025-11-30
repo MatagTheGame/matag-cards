@@ -1,46 +1,68 @@
 {
-  "name" : "Goblin Chainwhirler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/b/8bdb2883-3cfd-4fb0-9f99-6a57277f7fe4.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "RED" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GOBLIN", "WARRIOR" ],
-  "rarity" : "RARE",
-  "ruleText" : "First strike. When Goblin Chainwhirler enters the battlefield, it deals 1 damage to each opponent and each creature and planeswalker they control.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FIRST_STRIKE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE", "PLANESWALKER" ],
-      "controllerType" : "OPPONENT"
+  "name": "Goblin Chainwhirler",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/b/8bdb2883-3cfd-4fb0-9f99-6a57277f7fe4.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "RED"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOBLIN",
+    "WARRIOR"
+  ],
+  "rarity": "RARE",
+  "ruleText": "First strike. When Goblin Chainwhirler enters the battlefield, it deals 1 damage to each opponent and each creature and planeswalker they control.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FIRST_STRIKE"
     },
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE",
+          "PLANESWALKER"
+        ],
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
-      }
-    }
-  } ]
+  ]
 }

@@ -1,27 +1,44 @@
 {
-  "name" : "Valor in Akros",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/f/ef2a3fe4-a0c3-4956-a52b-060c4538c0b2.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever a creature enters the battlefield under your control, creatures you control get +1/+1 until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Valor in Akros",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/f/ef2a3fe4-a0c3-4956-a52b-060c4538c0b2.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever a creature enters the battlefield under your control, creatures you control get +1/+1 until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

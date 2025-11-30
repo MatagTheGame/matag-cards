@@ -1,15 +1,27 @@
 {
-  "name" : "Dawn Gryff",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/4/2/42d30894-82b9-4af8-b0bb-48a78acbc4bd.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HIPPOGRIFF" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Dawn Gryff",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/4/2/42d30894-82b9-4af8-b0bb-48a78acbc4bd.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HIPPOGRIFF"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

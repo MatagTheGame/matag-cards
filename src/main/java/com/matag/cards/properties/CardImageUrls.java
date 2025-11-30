@@ -12,9 +12,10 @@ import lombok.Value;
 @JsonDeserialize(builder = CardImageUrls.CardImageUrlsBuilder.class)
 @Builder
 public class CardImageUrls {
-  String lowResolution;
-  String highResolution;
+    String lowResolution;
+    String highResolution;
 
-  @JsonPOJOBuilder(withPrefix = "")
-  public static class CardImageUrlsBuilder {}
+    @JsonPOJOBuilder(withPrefix = "")
+    public static class CardImageUrlsBuilder {
+    }
 }

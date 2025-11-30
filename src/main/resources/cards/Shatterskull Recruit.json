@@ -1,15 +1,31 @@
 {
-  "name" : "Shatterskull Recruit",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/8/c8add5f2-4ccf-4505-86f6-cc36aff1c3fe.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ALLY", "GIANT", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Menace",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "MENACE"
-  } ]
+  "name": "Shatterskull Recruit",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/8/c8add5f2-4ccf-4505-86f6-cc36aff1c3fe.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ALLY",
+    "GIANT",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Menace",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "MENACE"
+    }
+  ]
 }

@@ -1,28 +1,45 @@
 {
-  "name" : "Honey Mammoth",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/4/84b9bee2-b973-4de7-b72d-7f36f8e8153c.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEPHANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Honey Mammoth enters the battlefield, you gain 4 life.",
-  "power" : 6,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:4" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Honey Mammoth",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/4/84b9bee2-b973-4de7-b72d-7f36f8e8153c.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEPHANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Honey Mammoth enters the battlefield, you gain 4 life.",
+  "power": 6,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:4"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

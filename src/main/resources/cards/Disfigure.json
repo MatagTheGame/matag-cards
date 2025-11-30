@@ -1,22 +1,36 @@
 {
-  "name" : "Disfigure",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/8/18069340-a698-4f75-82cc-cc94fcf82184.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Target creature gets -2/-2 until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Disfigure",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/8/18069340-a698-4f75-82cc-cc94fcf82184.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Target creature gets -2/-2 until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "-2/-2"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "-2/-2" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

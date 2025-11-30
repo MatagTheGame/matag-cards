@@ -1,23 +1,41 @@
 {
-  "name" : "Frenzied Rage",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/9/f9ca9c16-5720-4531-88ea-48b48d189479.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Enchant creature. Enchanted creature gets +2/+1 and has menace.",
-  "abilities" : [ {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Frenzied Rage",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/9/f9ca9c16-5720-4531-88ea-48b48d189479.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Enchant creature. Enchanted creature gets +2/+1 and has menace.",
+  "abilities": [
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+1",
+        "MENACE"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+2/+1", "MENACE" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

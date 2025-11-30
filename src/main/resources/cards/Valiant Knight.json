@@ -1,39 +1,72 @@
 {
-  "name" : "Valiant Knight",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Other Knights you control get +1/+1. {3}{W}{W}: Knights you control gain double strike until end of turn.",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "KNIGHT" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Valiant Knight",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/a/6ad750bc-850b-483b-8910-eb6562f925bc.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Other Knights you control get +1/+1. {3}{W}{W}: Knights you control gain double strike until end of turn.",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "KNIGHT"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "KNIGHT"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "DOUBLE_STRIKE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "WHITE",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "KNIGHT" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "DOUBLE_STRIKE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY" ]
-    }
-  } ]
+  ]
 }

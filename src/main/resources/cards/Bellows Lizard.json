@@ -1,24 +1,39 @@
 {
-  "name" : "Bellows Lizard",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/e/6e1b8569-3743-485c-a0ee-4ec52d65b31e.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "LIZARD" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{1}{R}: Bellows Lizard gets +1/+0 until end of turn.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY" ]
+  "name": "Bellows Lizard",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/e/6e1b8569-3743-485c-a0ee-4ec52d65b31e.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "LIZARD"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{1}{R}: Bellows Lizard gets +1/+0 until end of turn.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

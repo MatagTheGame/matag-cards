@@ -1,22 +1,38 @@
 {
-  "name" : "Unlikely Aid",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/a/bac3409e-7c24-43b0-9956-5f0cdeae6468.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature gets +2/+0 and gains indestructible until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Unlikely Aid",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/a/bac3409e-7c24-43b0-9956-5f0cdeae6468.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature gets +2/+0 and gains indestructible until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+0",
+        "INDESTRUCTIBLE"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+2/+0", "INDESTRUCTIBLE" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

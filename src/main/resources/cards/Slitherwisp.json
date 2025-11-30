@@ -1,49 +1,73 @@
 {
-  "name" : "Slitherwisp",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/2/d2a641ad-4268-46c4-a5fb-c1515e52d648.jpg",
-  "colors" : [ "BLUE", "BLACK" ],
-  "cost" : [ "BLUE", "BLACK", "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL", "NIGHTMARE" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flash. Whenever you cast another spell that has flash, you draw a card and each opponent loses 1 life.",
-  "power" : 3,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
+  "name": "Slitherwisp",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/2/d2a641ad-4268-46c4-a5fb-c1515e52d648.jpg",
+  "colors": [
+    "BLUE",
+    "BLACK"
+  ],
+  "cost": [
+    "BLUE",
+    "BLACK",
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL",
+    "NIGHTMARE"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flash. Whenever you cast another spell that has flash, you draw a card and each opponent loses 1 life.",
+  "power": 3,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLASH"
     },
-    "parameters" : [ "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "notOfType" : [ "CREATURE" ],
-        "withAbilityType" : "FLASH",
-        "controllerType" : "PLAYER"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "notOfType": [
+            "CREATURE"
+          ],
+          "withAbilityType": "FLASH",
+          "controllerType": "PLAYER"
+        }
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "notOfType": [
+            "CREATURE"
+          ],
+          "withAbilityType": "FLASH",
+          "controllerType": "PLAYER"
+        }
       }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "notOfType" : [ "CREATURE" ],
-        "withAbilityType" : "FLASH",
-        "controllerType" : "PLAYER"
-      }
-    }
-  } ]
+  ]
 }

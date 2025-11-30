@@ -1,15 +1,27 @@
 {
-  "name" : "Daybreak Chaplain",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/c/0ce89a0b-d0e4-4c71-b131-0d3b0b76bc3b.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CLERIC", "HUMAN" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Lifelink",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "LIFELINK"
-  } ]
+  "name": "Daybreak Chaplain",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/c/0ce89a0b-d0e4-4c71-b131-0d3b0b76bc3b.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CLERIC",
+    "HUMAN"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Lifelink",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "LIFELINK"
+    }
+  ]
 }

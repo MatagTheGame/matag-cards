@@ -1,17 +1,30 @@
 {
-  "name" : "Gifted Aetherborn",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/6/8644d4d1-8499-40a8-a01f-68172c82bf58.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "AETHERBORN", "VAMPIRE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Deathtouch, lifelink",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "DEATHTOUCH"
-  }, {
-    "abilityType" : "LIFELINK"
-  } ]
+  "name": "Gifted Aetherborn",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/6/8644d4d1-8499-40a8-a01f-68172c82bf58.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "AETHERBORN",
+    "VAMPIRE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Deathtouch, lifelink",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "DEATHTOUCH"
+    },
+    {
+      "abilityType": "LIFELINK"
+    }
+  ]
 }

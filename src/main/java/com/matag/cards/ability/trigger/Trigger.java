@@ -14,31 +14,32 @@ import lombok.Value;
 @JsonDeserialize(builder = Trigger.TriggerBuilder.class)
 @Builder
 public class Trigger {
-  TriggerType type;
-  TriggerSubtype subtype;
-  List<Cost> cost;
-  MagicInstanceSelector magicInstanceSelector;
+    TriggerType type;
+    TriggerSubtype subtype;
+    List<Cost> cost;
+    MagicInstanceSelector magicInstanceSelector;
 
-  @JsonPOJOBuilder(withPrefix = "")
-  public static class TriggerBuilder {}
+    @JsonPOJOBuilder(withPrefix = "")
+    public static class TriggerBuilder {
+    }
 
-  public static Trigger castTrigger() {
-    return new Trigger(TriggerType.CAST, null, null, null);
-  }
+    public static Trigger castTrigger() {
+        return new Trigger(TriggerType.CAST, null, null, null);
+    }
 
-  public static Trigger manaAbilityTrigger() {
-    return new Trigger(TriggerType.MANA_ABILITY, null, null, null);
-  }
+    public static Trigger manaAbilityTrigger() {
+        return new Trigger(TriggerType.MANA_ABILITY, null, null, null);
+    }
 
-  public static Trigger triggeredAbility(TriggerSubtype triggerSubtype, MagicInstanceSelector magicInstanceSelector) {
-    return new Trigger(TriggerType.TRIGGERED_ABILITY, triggerSubtype, null, magicInstanceSelector);
-  }
+    public static Trigger triggeredAbility(TriggerSubtype triggerSubtype, MagicInstanceSelector magicInstanceSelector) {
+        return new Trigger(TriggerType.TRIGGERED_ABILITY, triggerSubtype, null, magicInstanceSelector);
+    }
 
-  public static Trigger activatedAbility(List<Cost> cost) {
-    return new Trigger(TriggerType.ACTIVATED_ABILITY, null, cost, null);
-  }
+    public static Trigger activatedAbility(List<Cost> cost) {
+        return new Trigger(TriggerType.ACTIVATED_ABILITY, null, cost, null);
+    }
 
-  public static Trigger staticAbility() {
-    return new Trigger(TriggerType.STATIC, null, null, null);
-  }
+    public static Trigger staticAbility() {
+        return new Trigger(TriggerType.STATIC, null, null, null);
+    }
 }

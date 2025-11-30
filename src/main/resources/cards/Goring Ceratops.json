@@ -1,31 +1,52 @@
 {
-  "name" : "Goring Ceratops",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/3/8309f684-5912-4191-9f64-d573f1cc84c9.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DINOSAUR" ],
-  "rarity" : "RARE",
-  "ruleText" : "Double strike. Whenever Goring Ceratops attacks, other creatures you control gain double strike until end of turn.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "DOUBLE_STRIKE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "others" : true
+  "name": "Goring Ceratops",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/3/8309f684-5912-4191-9f64-d573f1cc84c9.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DINOSAUR"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Double strike. Whenever Goring Ceratops attacks, other creatures you control gain double strike until end of turn.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "DOUBLE_STRIKE"
     },
-    "parameters" : [ "DOUBLE_STRIKE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "others": true
+      },
+      "parameters": [
+        "DOUBLE_STRIKE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

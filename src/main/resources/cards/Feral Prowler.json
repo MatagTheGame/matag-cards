@@ -1,28 +1,41 @@
 {
-  "name" : "Feral Prowler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/5/a59d92b0-5ad1-42a7-9c06-1cb31a63bd64.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CAT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Feral Prowler dies, draw a card.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Feral Prowler",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/5/a59d92b0-5ad1-42a7-9c06-1cb31a63bd64.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CAT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Feral Prowler dies, draw a card.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

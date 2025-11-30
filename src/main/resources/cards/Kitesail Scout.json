@@ -1,15 +1,26 @@
 {
-  "name" : "Kitesail Scout",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/8/68a07aad-4ed5-47ae-b04c-9b9919000f6c.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "KOR", "SCOUT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Kitesail Scout",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/8/68a07aad-4ed5-47ae-b04c-9b9919000f6c.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "KOR",
+    "SCOUT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

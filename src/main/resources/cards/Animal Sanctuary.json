@@ -1,28 +1,52 @@
 {
-  "name" : "Animal Sanctuary",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/0/b0ec7b76-4e97-4f47-b7af-ef9c2435b20e.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "RARE",
-  "ruleText" : "{T}: Add {C}. {2}, {T}: Put a +1/+1 counter on target Bird, Cat, Dog, Goat, Ox, or Snake.",
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "COLORLESS" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "BIRD", "CAT", "DOG", "GOAT", "OX", "SNAKE" ]
+  "name": "Animal Sanctuary",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/0/b0ec7b76-4e97-4f47-b7af-ef9c2435b20e.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "RARE",
+  "ruleText": "{T}: Add {C}. {2}, {T}: Put a +1/+1 counter on target Bird, Cat, Dog, Goat, Ox, or Snake.",
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "COLORLESS"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
       }
-    } ],
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "TAP" ]
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "ofSubtype": [
+              "BIRD",
+              "CAT",
+              "DOG",
+              "GOAT",
+              "OX",
+              "SNAKE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "TAP"
+        ]
+      }
     }
-  } ]
+  ]
 }

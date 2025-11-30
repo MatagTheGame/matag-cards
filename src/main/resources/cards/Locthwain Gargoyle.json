@@ -1,22 +1,39 @@
 {
-  "name" : "Locthwain Gargoyle",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/2/02551bee-335c-4bf7-b38e-67dd71d1d567.jpg",
-  "cost" : [ "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "GARGOYLE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{4}: Locthwain Gargoyle gets +2/+0 and gains flying until end of turn.",
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+2/+0", "FLYING" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "ANY", "ANY" ]
+  "name": "Locthwain Gargoyle",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/2/02551bee-335c-4bf7-b38e-67dd71d1d567.jpg",
+  "cost": [
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GARGOYLE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{4}: Locthwain Gargoyle gets +2/+0 and gains flying until end of turn.",
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+2/+0",
+        "FLYING"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

@@ -1,31 +1,53 @@
 {
-  "name" : "Spire Patrol ",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/d/1daaf494-70af-4a8d-836f-f6a9d6c1f080.jpg",
-  "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. When Spire Patrol enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",
-  "power" : 3,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Spire Patrol ",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/d/1daaf494-70af-4a8d-836f-f6a9d6c1f080.jpg",
+  "colors": [
+    "WHITE",
+    "BLUE"
+  ],
+  "cost": [
+    "WHITE",
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. When Spire Patrol enters the battlefield, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",
+  "power": 3,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED",
+        ":DOES_NOT_UNTAP_NEXT_TURN"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

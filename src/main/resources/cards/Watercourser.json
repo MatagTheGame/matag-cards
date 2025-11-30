@@ -1,24 +1,40 @@
 {
-  "name" : "Watercourser",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/4/f4f648fc-bf05-4e60-b399-0e0ca82e470c.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{U}: Watercourser gets +1/-1 until end of turn.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/-1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLUE" ]
+  "name": "Watercourser",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/4/f4f648fc-bf05-4e60-b399-0e0ca82e470c.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{U}: Watercourser gets +1/-1 until end of turn.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/-1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLUE"
+        ]
+      }
     }
-  } ]
+  ]
 }

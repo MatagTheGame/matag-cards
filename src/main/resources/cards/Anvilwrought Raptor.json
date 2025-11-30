@@ -1,16 +1,29 @@
 {
-  "name" : "Anvilwrought Raptor",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/a/aa6d7bbe-0418-4a58-a97b-13b50eb0b642.jpg",
-  "cost" : [ "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "BIRD" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. First strike",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "FIRST_STRIKE"
-  } ]
+  "name": "Anvilwrought Raptor",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/a/aa6d7bbe-0418-4a58-a97b-13b50eb0b642.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. First strike",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "FIRST_STRIKE"
+    }
+  ]
 }

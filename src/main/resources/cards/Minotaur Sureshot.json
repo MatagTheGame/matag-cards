@@ -1,26 +1,45 @@
 {
-  "name" : "Minotaur Sureshot",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/b/cbd65150-a698-4f23-836c-5cd0fb153eb3.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ARCHER", "MINOTAUR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Reach. {1}{R}: Minotaur Sureshot gets +1/+0 until end of turn.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "REACH"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Minotaur Sureshot",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/b/cbd65150-a698-4f23-836c-5cd0fb153eb3.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ARCHER",
+    "MINOTAUR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Reach. {1}{R}: Minotaur Sureshot gets +1/+0 until end of turn.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "REACH"
     },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

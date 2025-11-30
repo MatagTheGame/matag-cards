@@ -1,22 +1,40 @@
 {
-  "name" : "Command the Storm",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/4/c4144e98-957e-43ac-b107-8ccf450748df.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Command the Storm deals 5 damage to target creature.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Command the Storm",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/4/c4144e98-957e-43ac-b107-8ccf450748df.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Command the Storm deals 5 damage to target creature.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:5"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:5" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

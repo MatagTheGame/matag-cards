@@ -1,39 +1,61 @@
 {
-  "name" : "Cartouche of Knowledge",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/a/3a8b133b-6d70-4605-8dfb-5869bb9b6bd7.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA", "CARTOUCHE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Enchant creature you control. When Cartouche of Knowledge enters the battlefield, draw a card. Enchanted creature gets +1/+1 and has flying.",
-  "abilities" : [ {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Cartouche of Knowledge",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/a/3a8b133b-6d70-4605-8dfb-5869bb9b6bd7.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA",
+    "CARTOUCHE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Enchant creature you control. When Cartouche of Knowledge enters the battlefield, draw a card. Enchanted creature gets +1/+1 and has flying.",
+  "abilities": [
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+1",
+        "FLYING"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+1/+1", "FLYING" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
     },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

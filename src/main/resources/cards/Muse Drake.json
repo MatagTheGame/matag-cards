@@ -1,30 +1,46 @@
 {
-  "name" : "Muse Drake",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRAKE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. When Muse Drake enters the battlefield, draw a card.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Muse Drake",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/5/c5df7a96-6548-41c0-85a6-e0c4566e0fe6.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRAKE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. When Muse Drake enters the battlefield, draw a card.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

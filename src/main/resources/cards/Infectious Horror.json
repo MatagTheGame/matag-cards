@@ -1,28 +1,44 @@
 {
-  "name" : "Infectious Horror",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/1/d17aaa92-10ca-4f70-b45e-5a51e9192efb.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HORROR", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever Infectious Horror attacks, each opponent loses 2 life.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "LIFE:-2" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Infectious Horror",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/1/d17aaa92-10ca-4f70-b45e-5a51e9192efb.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HORROR",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever Infectious Horror attacks, each opponent loses 2 life.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-2"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

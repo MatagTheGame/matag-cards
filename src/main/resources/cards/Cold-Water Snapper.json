@@ -1,15 +1,30 @@
 {
-  "name" : "Cold-Water Snapper",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/f/cf339549-4325-40c6-adde-0cd31bb738e0.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "TURTLE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Hexproof",
-  "power" : 4,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "HEXPROOF"
-  } ]
+  "name": "Cold-Water Snapper",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/f/cf339549-4325-40c6-adde-0cd31bb738e0.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "TURTLE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Hexproof",
+  "power": 4,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "HEXPROOF"
+    }
+  ]
 }

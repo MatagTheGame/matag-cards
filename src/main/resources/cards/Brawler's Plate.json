@@ -1,25 +1,47 @@
 {
-  "name" : "Brawler's Plate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg",
-  "cost" : [ "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT" ],
-  "subtypes" : [ "EQUIPMENT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Equipped creature gets +2/+2 and has trample. Equip {4}",
-  "abilities" : [ {
-    "abilityType" : "EQUIP",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "+2/+2", "TRAMPLE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "ANY", "ANY" ]
-    },
-    "sorcerySpeed" : true
-  } ]
+  "name": "Brawler's Plate",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/a/da0a017e-eb8e-4f92-91f7-7d980461e284.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT"
+  ],
+  "subtypes": [
+    "EQUIPMENT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Equipped creature gets +2/+2 and has trample. Equip {4}",
+  "abilities": [
+    {
+      "abilityType": "EQUIP",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+2",
+        "TRAMPLE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      },
+      "sorcerySpeed": true
+    }
+  ]
 }

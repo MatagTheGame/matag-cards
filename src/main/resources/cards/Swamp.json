@@ -1,14 +1,23 @@
 {
-  "name" : "Swamp",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/5/45991831-1018-4f98-a4ad-0998a9577d97.jpg",
-  "types" : [ "BASIC", "LAND" ],
-  "subtypes" : [ "SWAMP" ],
-  "rarity" : "COMMON",
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLACK" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Swamp",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/5/45991831-1018-4f98-a4ad-0998a9577d97.jpg",
+  "types": [
+    "BASIC",
+    "LAND"
+  ],
+  "subtypes": [
+    "SWAMP"
+  ],
+  "rarity": "COMMON",
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLACK"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

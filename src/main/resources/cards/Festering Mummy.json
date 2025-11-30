@@ -1,31 +1,47 @@
 {
-  "name" : "Festering Mummy",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/0/906c4c95-5815-44c8-8d3c-b0fda9db55a1.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Festering Mummy dies, you may put a -1/-1 counter on target creature.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ "MINUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Festering Mummy",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/0/906c4c95-5815-44c8-8d3c-b0fda9db55a1.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Festering Mummy dies, you may put a -1/-1 counter on target creature.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          },
+          "optional": true
+        }
+      ],
+      "parameters": [
+        "MINUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

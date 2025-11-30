@@ -1,21 +1,36 @@
 {
-  "name" : "Inspired Charge",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/9/e9822b57-8e42-4158-981d-f0b0b0646fc9.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Creatures you control get +2/+1 until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+2/+1" ],
-    "trigger" : {
-      "type" : "CAST"
+  "name": "Inspired Charge",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/9/e9822b57-8e42-4158-981d-f0b0b0646fc9.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Creatures you control get +2/+1 until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+2/+1"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

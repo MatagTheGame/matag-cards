@@ -1,11 +1,22 @@
 {
-  "name" : "Looming Altisaur",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/0/d0aea3ad-a24b-4562-b7a3-18465a61c2bb.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DINOSAUR" ],
-  "rarity" : "COMMON",
-  "power" : 1,
-  "toughness" : 7
+  "name": "Looming Altisaur",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/0/d0aea3ad-a24b-4562-b7a3-18465a61c2bb.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DINOSAUR"
+  ],
+  "rarity": "COMMON",
+  "power": 1,
+  "toughness": 7
 }

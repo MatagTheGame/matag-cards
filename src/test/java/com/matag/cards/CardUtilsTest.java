@@ -16,21 +16,21 @@ import org.springframework.test.context.junit4.SpringRunner;
 @Import(CardsConfiguration.class)
 public class CardUtilsTest {
 
-  @Autowired
-  private Cards cards;
+    @Autowired
+    private Cards cards;
 
-  @Test
-  public void isColorless() {
-    assertThat(CardUtils.isColorless(cards.get("Bishop's Soldier"))).isFalse();
-    assertThat(CardUtils.isColorless(cards.get("Jousting Dummy"))).isTrue();
-  }
+    @Test
+    public void isColorless() {
+        assertThat(CardUtils.isColorless(cards.get("Bishop's Soldier"))).isFalse();
+        assertThat(CardUtils.isColorless(cards.get("Jousting Dummy"))).isTrue();
+    }
 
-  @Test
-  public void isOnlyAnyOfTheColors() {
-    assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Captain"), Set.of(WHITE, RED))).isTrue();
-    assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Fiery Finish"), Set.of(WHITE, RED))).isTrue();
-    assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Veteran"), Set.of(WHITE, RED))).isTrue();
-    assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Centaur Peacemaker"), Set.of(WHITE, RED))).isFalse();
-    assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Jousting Dummy"), Set.of(WHITE, RED))).isFalse();
-  }
+    @Test
+    public void isOnlyAnyOfTheColors() {
+        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Captain"), Set.of(WHITE, RED))).isTrue();
+        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Fiery Finish"), Set.of(WHITE, RED))).isTrue();
+        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Veteran"), Set.of(WHITE, RED))).isTrue();
+        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Centaur Peacemaker"), Set.of(WHITE, RED))).isFalse();
+        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Jousting Dummy"), Set.of(WHITE, RED))).isFalse();
+    }
 }

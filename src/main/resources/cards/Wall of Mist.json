@@ -1,14 +1,25 @@
 {
-  "name" : "Wall of Mist",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/2/62a37646-8f7c-40fc-851d-e3fdd205b012.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "WALL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Defender",
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "DEFENDER"
-  } ]
+  "name": "Wall of Mist",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/2/62a37646-8f7c-40fc-851d-e3fdd205b012.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "WALL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Defender",
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "DEFENDER"
+    }
+  ]
 }

@@ -1,26 +1,45 @@
 {
-  "name" : "Shriekdiver",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/a/0a1c3148-7a6f-4963-af0b-18d9a156bf22.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD", "WARRIOR", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. {1}: Shriekdiver gains haste until end of turn.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Shriekdiver",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/a/0a1c3148-7a6f-4963-af0b-18d9a156bf22.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD",
+    "WARRIOR",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. {1}: Shriekdiver gains haste until end of turn.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "HASTE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "HASTE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

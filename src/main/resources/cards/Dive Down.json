@@ -1,23 +1,38 @@
 {
-  "name" : "Dive Down",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/3/b33e493e-1aef-43b3-9716-52158b002430.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature you control gets +0/+3 and gains hexproof until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Dive Down",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/3/b33e493e-1aef-43b3-9716-52158b002430.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature you control gets +0/+3 and gains hexproof until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+0/+3",
+        "HEXPROOF"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+0/+3", "HEXPROOF" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

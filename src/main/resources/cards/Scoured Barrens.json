@@ -1,38 +1,53 @@
 {
-  "name" : "Scoured Barrens",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/e/feb3d45c-a28c-49d2-ab79-53ab42c7fdfd.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Scoured Barrens enters the battlefield tapped. When Scoured Barrens enters the battlefield, you gain 1 life. {T}: Add {W} or {B}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLACK" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Scoured Barrens",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/e/feb3d45c-a28c-49d2-ab79-53ab42c7fdfd.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Scoured Barrens enters the battlefield tapped. When Scoured Barrens enters the battlefield, you gain 1 life. {T}: Add {W} or {B}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
     },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLACK"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

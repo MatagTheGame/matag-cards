@@ -1,11 +1,21 @@
 {
-  "name" : "Sworn Guardian",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/4/6452ba94-6bb0-409c-99f7-71e6457c3f2a.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "MERFOLK", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "power" : 1,
-  "toughness" : 3
+  "name": "Sworn Guardian",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/4/6452ba94-6bb0-409c-99f7-71e6457c3f2a.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "MERFOLK",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "power": 1,
+  "toughness": 3
 }

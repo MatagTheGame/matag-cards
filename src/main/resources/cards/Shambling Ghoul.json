@@ -1,16 +1,29 @@
 {
-  "name" : "Shambling Ghoul",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/5/95a52cb8-e02f-477a-adb6-2bfb7836c704.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Shambling Ghoul enters the battlefield tapped.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  } ]
+  "name": "Shambling Ghoul",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/5/95a52cb8-e02f-477a-adb6-2bfb7836c704.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Shambling Ghoul enters the battlefield tapped.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    }
+  ]
 }

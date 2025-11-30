@@ -1,11 +1,22 @@
 {
-  "name" : "Ironclad Krovod",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/5/e5d57e98-e05a-4a89-900e-20fe675a62ef.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BEAST" ],
-  "rarity" : "COMMON",
-  "power" : 2,
-  "toughness" : 5
+  "name": "Ironclad Krovod",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/5/e5d57e98-e05a-4a89-900e-20fe675a62ef.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BEAST"
+  ],
+  "rarity": "COMMON",
+  "power": 2,
+  "toughness": 5
 }

@@ -1,22 +1,38 @@
 {
-  "name" : "Blur of Blades",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/8/883ae574-932e-4236-a7c4-25b66c4f8f15.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Put a -1/-1 counter on target creature. Blur of Blades deals 2 damage to that creature's controller.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Blur of Blades",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/8/883ae574-932e-4236-a7c4-25b66c4f8f15.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Put a -1/-1 counter on target creature. Blur of Blades deals 2 damage to that creature's controller.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "MINUS_1_COUNTERS:1",
+        "CONTROLLER_DAMAGE:2"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "MINUS_1_COUNTERS:1", "CONTROLLER_DAMAGE:2" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

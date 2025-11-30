@@ -1,29 +1,47 @@
 {
-  "name" : "Raging Regisaur",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/c/0c1632bd-30bc-40a2-963f-44be3b42efb3.jpg",
-  "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DINOSAUR" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever Raging Regisaur attacks, it deals 1 damage to any target.",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
-      }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Raging Regisaur",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/c/0c1632bd-30bc-40a2-963f-44be3b42efb3.jpg",
+  "colors": [
+    "RED",
+    "GREEN"
+  ],
+  "cost": [
+    "RED",
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DINOSAUR"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever Raging Regisaur attacks, it deals 1 damage to any target.",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

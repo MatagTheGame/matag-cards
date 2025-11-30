@@ -1,35 +1,52 @@
 {
-  "name" : "Skyline Cascade",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/9/29b0027d-c232-4cdd-89c4-75947687aa71.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Skyline Cascade enters the battlefield tapped. When Skyline Cascade enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step. {T}: Add {U}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "OPPONENT"
+  "name": "Skyline Cascade",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/9/29b0027d-c232-4cdd-89c4-75947687aa71.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Skyline Cascade enters the battlefield tapped. When Skyline Cascade enters the battlefield, target creature an opponent controls doesn't untap during its controller's next untap step. {T}: Add {U}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED",
+        ":DOES_NOT_UNTAP_NEXT_TURN"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
-    } ],
-    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
       }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

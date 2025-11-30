@@ -1,31 +1,55 @@
 {
-  "name" : "Adeliz, the Cinder Wind",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/3/b3c950e2-a43b-47f8-9ad6-1909ccc7acbf.jpg",
-  "colors" : [ "BLUE", "RED" ],
-  "cost" : [ "BLUE", "RED", "ANY" ],
-  "types" : [ "CREATURE", "LEGENDARY" ],
-  "subtypes" : [ "HUMAN", "WIZARD" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying, haste. Whenever you cast an instant or sorcery spell, Wizards you control get +1/+1 until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "WIZARD" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "INSTANT", "SORCERY" ],
-        "controllerType" : "PLAYER"
+  "name": "Adeliz, the Cinder Wind",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/3/b3c950e2-a43b-47f8-9ad6-1909ccc7acbf.jpg",
+  "colors": [
+    "BLUE",
+    "RED"
+  ],
+  "cost": [
+    "BLUE",
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "LEGENDARY"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "WIZARD"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying, haste. Whenever you cast an instant or sorcery spell, Wizards you control get +1/+1 until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "WIZARD"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "ofType": [
+            "INSTANT",
+            "SORCERY"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

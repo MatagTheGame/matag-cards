@@ -1,11 +1,23 @@
 {
-  "name" : "Colossapede",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/6/7642bfc5-ace8-419e-b57b-2b881bfe023e.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "INSECT" ],
-  "rarity" : "COMMON",
-  "power" : 5,
-  "toughness" : 5
+  "name": "Colossapede",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/6/7642bfc5-ace8-419e-b57b-2b881bfe023e.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "INSECT"
+  ],
+  "rarity": "COMMON",
+  "power": 5,
+  "toughness": 5
 }

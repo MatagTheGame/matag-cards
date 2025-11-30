@@ -1,26 +1,48 @@
 {
-  "name" : "Checkpoint Officer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{1}{W}, {T}: Tap target creature.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Checkpoint Officer",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/a/4a0e12f5-7b15-4a8c-b045-35bcbf1fbb90.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{1}{W}, {T}: Tap target creature.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY",
+          "TAP"
+        ]
       }
-    } ],
-    "parameters" : [ ":TAPPED" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY", "TAP" ]
     }
-  } ]
+  ]
 }

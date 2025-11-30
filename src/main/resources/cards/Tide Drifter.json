@@ -1,26 +1,41 @@
 {
-  "name" : "Tide Drifter",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/c/4c590579-e0ef-4839-8f67-f52813cd9fe7.jpg",
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRONE", "ELDRAZI" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Devoid. Other colorless creatures you control get +0/+1.",
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "DEVOID"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "colorless" : true,
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Tide Drifter",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/c/4c590579-e0ef-4839-8f67-f52813cd9fe7.jpg",
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRONE",
+    "ELDRAZI"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Devoid. Other colorless creatures you control get +0/+1.",
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "DEVOID"
     },
-    "parameters" : [ "+0/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "colorless": true,
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+0/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

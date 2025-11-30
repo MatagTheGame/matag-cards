@@ -1,22 +1,37 @@
 {
-  "name" : "Negate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/0/d0165d1f-6d9f-40e1-aaff-d587e4112220.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Counter target noncreature spell.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "notOfType" : [ "CREATURE" ]
+  "name": "Negate",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/0/d0165d1f-6d9f-40e1-aaff-d587e4112220.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Counter target noncreature spell.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "SPELL",
+            "notOfType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":CANCELLED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":CANCELLED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

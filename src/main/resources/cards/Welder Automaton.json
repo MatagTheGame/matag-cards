@@ -1,25 +1,44 @@
 {
-  "name" : "Welder Automaton",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/3/938066de-d111-4df2-87f0-9eb72aa4cdac.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CONSTRUCT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{3}{R}: Welder Automaton deals 1 damage to each opponent.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PLAYER",
-        "controllerType" : "OPPONENT"
+  "name": "Welder Automaton",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/3/938066de-d111-4df2-87f0-9eb72aa4cdac.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CONSTRUCT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{3}{R}: Welder Automaton deals 1 damage to each opponent.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PLAYER",
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY", "ANY", "ANY" ]
     }
-  } ]
+  ]
 }

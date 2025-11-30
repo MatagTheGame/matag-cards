@@ -1,11 +1,20 @@
 {
-  "name" : "Dune Beetle",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/8/a80605d5-4cb1-403c-94aa-8c25d782251f.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "INSECT" ],
-  "rarity" : "COMMON",
-  "power" : 1,
-  "toughness" : 4
+  "name": "Dune Beetle",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/8/a80605d5-4cb1-403c-94aa-8c25d782251f.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "INSECT"
+  ],
+  "rarity": "COMMON",
+  "power": 1,
+  "toughness": 4
 }

@@ -1,17 +1,32 @@
 {
-  "name" : "Skyknight Legionnaire",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/c/3c27f2ce-702a-4ec2-a470-982171a9ec73.jpg",
-  "colors" : [ "WHITE", "RED" ],
-  "cost" : [ "WHITE", "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying, haste",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "HASTE"
-  } ]
+  "name": "Skyknight Legionnaire",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/c/3c27f2ce-702a-4ec2-a470-982171a9ec73.jpg",
+  "colors": [
+    "WHITE",
+    "RED"
+  ],
+  "cost": [
+    "WHITE",
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying, haste",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "HASTE"
+    }
+  ]
 }

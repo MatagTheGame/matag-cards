@@ -1,11 +1,22 @@
 {
-  "name" : "Harrier Naga",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/c/bcdc68c9-f5f3-4c5b-80df-85508cf15f84.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "NAGA", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "power" : 3,
-  "toughness" : 3
+  "name": "Harrier Naga",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/c/bcdc68c9-f5f3-4c5b-80df-85508cf15f84.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "NAGA",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "power": 3,
+  "toughness": 3
 }

@@ -1,21 +1,39 @@
 {
-  "name" : "Sunblade Angel",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/2/9211c0e1-b314-495f-9c43-9a0e95c9efb9.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ANGEL" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying, first strike, vigilance, lifelink",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "FIRST_STRIKE"
-  }, {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "LIFELINK"
-  } ]
+  "name": "Sunblade Angel",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/2/9211c0e1-b314-495f-9c43-9a0e95c9efb9.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ANGEL"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying, first strike, vigilance, lifelink",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "FIRST_STRIKE"
+    },
+    {
+      "abilityType": "VIGILANCE"
+    },
+    {
+      "abilityType": "LIFELINK"
+    }
+  ]
 }

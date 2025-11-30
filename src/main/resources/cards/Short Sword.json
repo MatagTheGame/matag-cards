@@ -1,25 +1,41 @@
 {
-  "name" : "Short Sword",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/7/973c166e-3e93-4ed5-b4c5-84dc158a8e4f.jpg",
-  "cost" : [ "ANY" ],
-  "types" : [ "ARTIFACT" ],
-  "subtypes" : [ "EQUIPMENT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +1/+1. Equip {1}",
-  "abilities" : [ {
-    "abilityType" : "EQUIP",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY" ]
-    },
-    "sorcerySpeed" : true
-  } ]
+  "name": "Short Sword",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/7/973c166e-3e93-4ed5-b4c5-84dc158a8e4f.jpg",
+  "cost": [
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT"
+  ],
+  "subtypes": [
+    "EQUIPMENT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Equipped creature gets +1/+1. Equip {1}",
+  "abilities": [
+    {
+      "abilityType": "EQUIP",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY"
+        ]
+      },
+      "sorcerySpeed": true
+    }
+  ]
 }

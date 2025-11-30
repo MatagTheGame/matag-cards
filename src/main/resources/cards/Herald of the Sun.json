@@ -1,29 +1,56 @@
 {
-  "name" : "Herald of the Sun",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/c/9c62f724-7fb4-4498-b5c1-cf65d86d8e95.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ANGEL" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. {3}{W}: Put a +1/+1 counter on another target creature with flying.",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "withAbilityType" : "FLYING"
+  "name": "Herald of the Sun",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/c/9c62f724-7fb4-4498-b5c1-cf65d86d8e95.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ANGEL"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. {3}{W}: Put a +1/+1 counter on another target creature with flying.",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "withAbilityType": "FLYING"
+          }
+        }
+      ],
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY", "ANY", "ANY" ]
     }
-  } ]
+  ]
 }

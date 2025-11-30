@@ -1,22 +1,41 @@
 {
-  "name" : "Reclaiming Vines",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/8/88a864ef-bc44-4ec2-b88a-7f4a59a5c1bc.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "ANY", "ANY" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target artifact, enchantment, or land.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT", "ENCHANTMENT", "LAND" ]
+  "name": "Reclaiming Vines",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/8/88a864ef-bc44-4ec2-b88a-7f4a59a5c1bc.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target artifact, enchantment, or land.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT",
+              "ENCHANTMENT",
+              "LAND"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

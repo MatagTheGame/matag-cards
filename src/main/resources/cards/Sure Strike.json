@@ -1,22 +1,38 @@
 {
-  "name" : "Sure Strike",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/6/064a6f1c-a058-4cc8-b467-5dbecb5eeb99.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature gets +3/+0 and gains first strike until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Sure Strike",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/6/064a6f1c-a058-4cc8-b467-5dbecb5eeb99.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature gets +3/+0 and gains first strike until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+3/+0",
+        "FIRST_STRIKE"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+3/+0", "FIRST_STRIKE" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

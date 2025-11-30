@@ -1,19 +1,33 @@
 {
-  "name" : "Druid of the Cowl",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/6/76ceff1d-9e83-41cc-b54b-8bf90d985da9.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRUID", "ELF" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{T}: Add {G}.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Druid of the Cowl",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/6/76ceff1d-9e83-41cc-b54b-8bf90d985da9.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRUID",
+    "ELF"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{T}: Add {G}.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

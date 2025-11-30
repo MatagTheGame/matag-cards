@@ -1,24 +1,41 @@
 {
-  "name" : "Lavastep Raider",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/4/2428f13f-c445-4eb4-bab1-309f27cab208.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GOBLIN", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{2}{R}: Lavastep Raider gets +2/+0 until end of turn.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+2/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY", "ANY" ]
+  "name": "Lavastep Raider",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/4/2428f13f-c445-4eb4-bab1-309f27cab208.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOBLIN",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{2}{R}: Lavastep Raider gets +2/+0 until end of turn.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+2/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

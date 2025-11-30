@@ -1,31 +1,50 @@
 {
-  "name" : "Venerable Knight",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Venerable Knight dies, put a +1/+1 counter on target Knight you control.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "KNIGHT" ]
-      }
-    } ],
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Venerable Knight",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/0/0001f1ef-b957-4a55-b47f-14839cdbab6f.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Venerable Knight dies, put a +1/+1 counter on target Knight you control.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "ofSubtype": [
+              "KNIGHT"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,35 +1,54 @@
 {
-  "name" : "Void Grafter",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/c/6c2e37e2-a4bd-4f90-9191-3125784a3369.jpg",
-  "cost" : [ "BLUE", "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRONE", "ELDRAZI" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Devoid. Flash. When Void Grafter enters the battlefield, another target creature you control gains hexproof until end of turn.",
-  "power" : 2,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "DEVOID"
-  }, {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
-      }
-    } ],
-    "parameters" : [ "HEXPROOF" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Void Grafter",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/c/6c2e37e2-a4bd-4f90-9191-3125784a3369.jpg",
+  "cost": [
+    "BLUE",
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRONE",
+    "ELDRAZI"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Devoid. Flash. When Void Grafter enters the battlefield, another target creature you control gains hexproof until end of turn.",
+  "power": 2,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "DEVOID"
+    },
+    {
+      "abilityType": "FLASH"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER",
+            "others": true
+          }
+        }
+      ],
+      "parameters": [
+        "HEXPROOF"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,17 +1,33 @@
 {
-  "name" : "Ghostly Sentinel",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/e/de867066-df5c-4412-9d51-56626b6d0220.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "KOR", "SPIRIT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying, vigilance",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "VIGILANCE"
-  } ]
+  "name": "Ghostly Sentinel",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/e/de867066-df5c-4412-9d51-56626b6d0220.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "KOR",
+    "SPIRIT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying, vigilance",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "VIGILANCE"
+    }
+  ]
 }

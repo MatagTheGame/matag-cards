@@ -1,15 +1,30 @@
 {
-  "name" : "Brambleweft Behemoth",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/c/1c759e94-e437-4dda-af0f-6578c0a50619.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Trample",
-  "power" : 6,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  } ]
+  "name": "Brambleweft Behemoth",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/c/1c759e94-e437-4dda-af0f-6578c0a50619.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Trample",
+  "power": 6,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
+    }
+  ]
 }

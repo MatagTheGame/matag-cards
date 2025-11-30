@@ -1,15 +1,28 @@
 {
-  "name" : "Exultant Skymarcher",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/6/06da4cae-94ab-4268-9800-f4de06d03347.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SOLDIER", "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Exultant Skymarcher",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/6/06da4cae-94ab-4268-9800-f4de06d03347.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SOLDIER",
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

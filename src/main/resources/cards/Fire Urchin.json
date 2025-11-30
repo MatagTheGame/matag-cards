@@ -1,31 +1,48 @@
 {
-  "name" : "Fire Urchin",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Trample. Whenever you cast an instant or sorcery spell, Fire Urchin gets +1/+0 until end of turn.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Fire Urchin",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/3/b3a843ff-6bd0-42d5-9348-44b774d438b1.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Trample. Whenever you cast an instant or sorcery spell, Fire Urchin gets +1/+0 until end of turn.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
     },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "INSTANT", "SORCERY" ],
-        "controllerType" : "PLAYER"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "ofType": [
+            "INSTANT",
+            "SORCERY"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

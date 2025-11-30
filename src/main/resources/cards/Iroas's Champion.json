@@ -1,15 +1,29 @@
 {
-  "name" : "Iroas's Champion",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/2/627c63f5-4e33-49e1-8d0c-b42deec898d4.jpg",
-  "colors" : [ "WHITE", "RED" ],
-  "cost" : [ "WHITE", "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Double strike",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "DOUBLE_STRIKE"
-  } ]
+  "name": "Iroas's Champion",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/2/627c63f5-4e33-49e1-8d0c-b42deec898d4.jpg",
+  "colors": [
+    "WHITE",
+    "RED"
+  ],
+  "cost": [
+    "WHITE",
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Double strike",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    }
+  ]
 }

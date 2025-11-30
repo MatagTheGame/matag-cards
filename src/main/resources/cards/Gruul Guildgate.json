@@ -1,24 +1,38 @@
 {
-  "name" : "Gruul Guildgate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/f/8fffd445-de4f-45de-95b9-6e0855926a6a.jpg",
-  "types" : [ "LAND" ],
-  "subtypes" : [ "GATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Gruul Guildgate enters the battlefield tapped. {T}: Add {R} or {G}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Gruul Guildgate",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/f/8fffd445-de4f-45de-95b9-6e0855926a6a.jpg",
+  "types": [
+    "LAND"
+  ],
+  "subtypes": [
+    "GATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Gruul Guildgate enters the battlefield tapped. {T}: Add {R} or {G}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

@@ -1,24 +1,44 @@
 {
-  "name" : "Mystic Archaeologist",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/e/de19d2db-604b-4d5f-8184-9bb0a31c7405.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "WIZARD" ],
-  "rarity" : "RARE",
-  "ruleText" : "{3}{U}{U}: Draw two cards.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:2" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY" ]
+  "name": "Mystic Archaeologist",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/e/de19d2db-604b-4d5f-8184-9bb0a31c7405.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "WIZARD"
+  ],
+  "rarity": "RARE",
+  "ruleText": "{3}{U}{U}: Draw two cards.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:2"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLUE",
+          "BLUE",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

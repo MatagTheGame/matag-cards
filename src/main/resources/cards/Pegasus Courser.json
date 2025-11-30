@@ -1,32 +1,52 @@
 {
-  "name" : "Pegasus Courser",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/c/cca2ad42-884f-4898-a643-5abff536e946.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "PEGASUS" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. Whenever Pegasus Courser attacks, another target attacking creature gains flying until end of turn.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "statusTypes" : [ "ATTACKING" ],
-        "others" : true
-      }
-    } ],
-    "parameters" : [ "FLYING" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Pegasus Courser",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/c/cca2ad42-884f-4898-a643-5abff536e946.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "PEGASUS"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. Whenever Pegasus Courser attacks, another target attacking creature gains flying until end of turn.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "statusTypes": [
+              "ATTACKING"
+            ],
+            "others": true
+          }
+        }
+      ],
+      "parameters": [
+        "FLYING"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

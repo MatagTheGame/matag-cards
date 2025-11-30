@@ -1,32 +1,57 @@
 {
-  "name" : "Lyra Dawnbringer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/3/93be6799-7b9d-44d4-84dc-2961692b5a85.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE", "LEGENDARY" ],
-  "subtypes" : [ "ANGEL" ],
-  "rarity" : "MYTHIC",
-  "ruleText" : "Flying, first strike, lifelink. Other Angels you control get +1/+1 and have lifelink.",
-  "power" : 5,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "FIRST_STRIKE"
-  }, {
-    "abilityType" : "LIFELINK"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "ANGEL" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Lyra Dawnbringer",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/3/93be6799-7b9d-44d4-84dc-2961692b5a85.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "LEGENDARY"
+  ],
+  "subtypes": [
+    "ANGEL"
+  ],
+  "rarity": "MYTHIC",
+  "ruleText": "Flying, first strike, lifelink. Other Angels you control get +1/+1 and have lifelink.",
+  "power": 5,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "+1/+1", "LIFELINK" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "FIRST_STRIKE"
+    },
+    {
+      "abilityType": "LIFELINK"
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "ANGEL"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1",
+        "LIFELINK"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

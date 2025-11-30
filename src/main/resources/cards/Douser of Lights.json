@@ -1,11 +1,23 @@
 {
-  "name" : "Douser of Lights",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/c/7c554be7-6fd4-4642-aaa0-2781d9c388e4.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HORROR" ],
-  "rarity" : "COMMON",
-  "power" : 4,
-  "toughness" : 5
+  "name": "Douser of Lights",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/c/7c554be7-6fd4-4642-aaa0-2781d9c388e4.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HORROR"
+  ],
+  "rarity": "COMMON",
+  "power": 4,
+  "toughness": 5
 }

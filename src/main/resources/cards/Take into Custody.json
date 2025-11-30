@@ -1,22 +1,37 @@
 {
-  "name" : "Take into Custody",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/4/b412718a-7bc7-4b16-af60-1b955c820b0f.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Tap target creature. It doesn't untap during its controller's next untap step.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Take into Custody",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/4/b412718a-7bc7-4b16-af60-1b955c820b0f.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Tap target creature. It doesn't untap during its controller's next untap step.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED",
+        ":DOES_NOT_UNTAP_NEXT_TURN"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

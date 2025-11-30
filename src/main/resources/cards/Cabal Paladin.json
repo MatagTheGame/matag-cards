@@ -1,29 +1,45 @@
 {
-  "name" : "Cabal Paladin",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/c/2cff2cb9-f4e6-4fee-94ef-ad11e24525c1.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever you cast a historic spell, Cabal Paladin deals 2 damage to each opponent.",
-  "power" : 4,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "DAMAGE:2" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "controllerType" : "PLAYER",
-        "historic" : true
+  "name": "Cabal Paladin",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/c/2cff2cb9-f4e6-4fee-94ef-ad11e24525c1.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever you cast a historic spell, Cabal Paladin deals 2 damage to each opponent.",
+  "power": 4,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "DAMAGE:2"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "controllerType": "PLAYER",
+          "historic": true
+        }
       }
     }
-  } ]
+  ]
 }

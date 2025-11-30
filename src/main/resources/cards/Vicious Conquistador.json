@@ -1,28 +1,41 @@
 {
-  "name" : "Vicious Conquistador",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/a/2a4b6ced-e8d3-47e9-bd27-3e0cb644afe4.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SOLDIER", "VAMPIRE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever Vicious Conquistador attacks, each opponent loses 1 life.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Vicious Conquistador",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/a/2a4b6ced-e8d3-47e9-bd27-3e0cb644afe4.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SOLDIER",
+    "VAMPIRE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever Vicious Conquistador attacks, each opponent loses 1 life.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

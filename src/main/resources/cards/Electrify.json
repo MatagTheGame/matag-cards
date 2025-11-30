@@ -1,22 +1,39 @@
 {
-  "name" : "Electrify",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/0/60bee89d-d916-4095-830f-6270f8c4f0d8.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Electrify deals 4 damage to target creature.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Electrify",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/0/60bee89d-d916-4095-830f-6270f8c4f0d8.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Electrify deals 4 damage to target creature.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:4"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:4" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

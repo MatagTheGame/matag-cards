@@ -1,10 +1,18 @@
 {
-  "name" : "Field Creeper",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/1/e148c1bf-84a2-48cd-882e-ad0fd74b8f0f.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "SCARECROW" ],
-  "rarity" : "COMMON",
-  "power" : 2,
-  "toughness" : 1
+  "name": "Field Creeper",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/1/e148c1bf-84a2-48cd-882e-ad0fd74b8f0f.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SCARECROW"
+  ],
+  "rarity": "COMMON",
+  "power": 2,
+  "toughness": 1
 }

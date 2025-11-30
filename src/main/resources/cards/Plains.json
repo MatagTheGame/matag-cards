@@ -1,14 +1,23 @@
 {
-  "name" : "Plains",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/a/8a65b379-47a9-48f2-be6e-abb4e7868ad0.jpg",
-  "types" : [ "BASIC", "LAND" ],
-  "subtypes" : [ "PLAINS" ],
-  "rarity" : "COMMON",
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Plains",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/a/8a65b379-47a9-48f2-be6e-abb4e7868ad0.jpg",
+  "types": [
+    "BASIC",
+    "LAND"
+  ],
+  "subtypes": [
+    "PLAINS"
+  ],
+  "rarity": "COMMON",
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

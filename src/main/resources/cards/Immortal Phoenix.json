@@ -1,29 +1,48 @@
 {
-  "name" : "Immortal Phoenix",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/f/afcb9f15-be65-494c-9672-162d38c6f0a5.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "PHOENIX" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying. When Immortal Phoenix dies, return it to its owner's hand.",
-  "power" : 5,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
-      }
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Immortal Phoenix",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/f/afcb9f15-be65-494c-9672-162d38c6f0a5.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "PHOENIX"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying. When Immortal Phoenix dies, return it to its owner's hand.",
+  "power": 5,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        ":RETURN_TO_OWNER_HAND"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

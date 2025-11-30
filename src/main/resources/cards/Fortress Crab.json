@@ -1,11 +1,22 @@
 {
-  "name" : "Fortress Crab",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/2/324681da-a28e-47ec-9810-5678de53e494.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CRAB" ],
-  "rarity" : "COMMON",
-  "power" : 1,
-  "toughness" : 6
+  "name": "Fortress Crab",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/2/324681da-a28e-47ec-9810-5678de53e494.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CRAB"
+  ],
+  "rarity": "COMMON",
+  "power": 1,
+  "toughness": 6
 }

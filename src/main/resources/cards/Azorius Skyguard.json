@@ -1,28 +1,51 @@
 {
-  "name" : "Azorius Skyguard",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/2/c2fddecd-e660-43de-bccc-52f60a089052.jpg",
-  "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying, first strike. Creatures your opponents control get -1/-0.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "FIRST_STRIKE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "OPPONENT"
+  "name": "Azorius Skyguard",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/2/c2fddecd-e660-43de-bccc-52f60a089052.jpg",
+  "colors": [
+    "WHITE",
+    "BLUE"
+  ],
+  "cost": [
+    "WHITE",
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying, first strike. Creatures your opponents control get -1/-0.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "-1/+0" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "FIRST_STRIKE"
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "-1/+0"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

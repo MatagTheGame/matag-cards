@@ -1,45 +1,72 @@
 {
-  "name" : "Sanctum Seeker",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/2/72150779-0bb6-4d20-a898-cda93a66e7cd.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "KNIGHT", "VAMPIRE" ],
-  "rarity" : "RARE",
-  "ruleText" : "Whenever a Vampire you control attacks, each opponent loses 1 life and you gain 1 life.",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Sanctum Seeker",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/2/72150779-0bb6-4d20-a898-cda93a66e7cd.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "KNIGHT",
+    "VAMPIRE"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Whenever a Vampire you control attacks, each opponent loses 1 life and you gain 1 life.",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "VAMPIRE"
+          ]
+        }
+      }
     },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "VAMPIRE" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "VAMPIRE"
+          ]
+        }
       }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "VAMPIRE" ]
-      }
-    }
-  } ]
+  ]
 }

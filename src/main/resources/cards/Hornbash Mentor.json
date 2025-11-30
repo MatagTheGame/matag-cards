@@ -1,45 +1,76 @@
 {
-  "name" : "Hornbash Mentor",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/4/d47d2596-a321-44c0-a9f6-87bf80abc1c4.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "WARRIOR" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Hornbash Mentor enters the battlefield, put a trample counter on target non-Human creature you control. {2}{G}, {T}: Put a +1/+1 counter on each creature you control with trample.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "notOfSubtype" : [ "HUMAN" ],
-        "controllerType" : "PLAYER"
+  "name": "Hornbash Mentor",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/4/d47d2596-a321-44c0-a9f6-87bf80abc1c4.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "WARRIOR"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Hornbash Mentor enters the battlefield, put a trample counter on target non-Human creature you control. {2}{G}, {T}: Put a +1/+1 counter on each creature you control with trample.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "notOfSubtype": [
+              "HUMAN"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "KEYWORD_COUNTER:TRAMPLE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
-    } ],
-    "parameters" : [ "KEYWORD_COUNTER:TRAMPLE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
-      }
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "withAbilityType" : "TRAMPLE",
-      "controllerType" : "PLAYER"
     },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "ANY", "ANY", "TAP" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "withAbilityType": "TRAMPLE",
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "GREEN",
+          "ANY",
+          "ANY",
+          "TAP"
+        ]
+      }
     }
-  } ]
+  ]
 }

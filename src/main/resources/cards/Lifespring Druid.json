@@ -1,43 +1,70 @@
 {
-  "name" : "Lifespring Druid",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/1/01abad84-abb9-4c8e-94f8-12d2a6627188.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRUID", "ELF" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{T}: Add one mana of any color.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Lifespring Druid",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/1/01abad84-abb9-4c8e-94f8-12d2a6627188.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRUID",
+    "ELF"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{T}: Add one mana of any color.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLACK"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLACK" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

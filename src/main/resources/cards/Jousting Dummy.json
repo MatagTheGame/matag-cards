@@ -1,23 +1,40 @@
 {
-  "name" : "Jousting Dummy",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/d/3d0c95b0-7b63-40e8-92ad-5ae5ffd3c4c1.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "KNIGHT", "SCARECROW" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{3}: Jousting Dummy gets +1/+0 until end of turn.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "ANY" ]
+  "name": "Jousting Dummy",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/d/3d0c95b0-7b63-40e8-92ad-5ae5ffd3c4c1.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "KNIGHT",
+    "SCARECROW"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{3}: Jousting Dummy gets +1/+0 until end of turn.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

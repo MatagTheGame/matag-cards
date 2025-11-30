@@ -1,22 +1,37 @@
 {
-  "name" : "Titanic Growth",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/d/6da62557-9783-4e6c-9b5f-2b77dbf96909.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature gets +4/+4 until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Titanic Growth",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/d/6da62557-9783-4e6c-9b5f-2b77dbf96909.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature gets +4/+4 until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+4/+4"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+4/+4" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

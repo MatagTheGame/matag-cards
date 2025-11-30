@@ -1,29 +1,49 @@
 {
-  "name" : "Thunderclap Wyvern",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/4/64551550-6279-4f6e-a5b9-e1332e927421.jpg",
-  "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRAKE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flash. Flying. Other creatures you control with flying get +1/+1.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Thunderclap Wyvern",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/4/64551550-6279-4f6e-a5b9-e1332e927421.jpg",
+  "colors": [
+    "WHITE",
+    "BLUE"
+  ],
+  "cost": [
+    "WHITE",
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRAKE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flash. Flying. Other creatures you control with flying get +1/+1.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "FLASH"
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

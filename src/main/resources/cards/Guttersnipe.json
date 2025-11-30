@@ -1,29 +1,46 @@
 {
-  "name" : "Guttersnipe",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/d/6d5a14b4-e67c-4129-91dc-9e2fefbe27d2.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GOBLIN", "SHAMAN" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever you cast an instant or sorcery spell, Guttersnipe deals 2 damage to each opponent.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "DAMAGE:2" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "notOfType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Guttersnipe",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/d/6d5a14b4-e67c-4129-91dc-9e2fefbe27d2.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOBLIN",
+    "SHAMAN"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever you cast an instant or sorcery spell, Guttersnipe deals 2 damage to each opponent.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "DAMAGE:2"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "notOfType": [
+            "CREATURE"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

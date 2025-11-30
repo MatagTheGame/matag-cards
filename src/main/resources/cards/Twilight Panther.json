@@ -1,24 +1,39 @@
 {
-  "name" : "Twilight Panther",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/f/5fb149cc-74ca-4bc3-8efc-10ce872b59fb.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CAT", "SPIRIT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{B}: Twilight Panther gains deathtouch until end of turn.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "DEATHTOUCH" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK" ]
+  "name": "Twilight Panther",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/f/5fb149cc-74ca-4bc3-8efc-10ce872b59fb.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CAT",
+    "SPIRIT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{B}: Twilight Panther gains deathtouch until end of turn.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "DEATHTOUCH"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK"
+        ]
+      }
     }
-  } ]
+  ]
 }

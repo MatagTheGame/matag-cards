@@ -1,11 +1,22 @@
 {
-  "name" : "Naga Eternal",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/f/0f244233-f2e8-48f8-9106-e7cd186efd51.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "NAGA", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "power" : 3,
-  "toughness" : 2
+  "name": "Naga Eternal",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/f/0f244233-f2e8-48f8-9106-e7cd186efd51.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "NAGA",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "power": 3,
+  "toughness": 2
 }

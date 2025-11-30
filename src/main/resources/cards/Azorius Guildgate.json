@@ -1,24 +1,38 @@
 {
-  "name" : "Azorius Guildgate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/5/e52013ba-9b17-497b-a844-1e7eb5607019.jpg",
-  "types" : [ "LAND" ],
-  "subtypes" : [ "GATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Azorius Guildgate enters the battlefield tapped. {T}: Add {W} or {U}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Azorius Guildgate",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/5/e52013ba-9b17-497b-a844-1e7eb5607019.jpg",
+  "types": [
+    "LAND"
+  ],
+  "subtypes": [
+    "GATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Azorius Guildgate enters the battlefield tapped. {T}: Add {W} or {U}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

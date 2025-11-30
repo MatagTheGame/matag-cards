@@ -1,23 +1,41 @@
 {
-  "name" : "Oakenform",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/1/d1ca08a0-c58d-4c13-bf63-0401d89839b4.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Enchant creature. Enchanted creature gets +3/+3.",
-  "abilities" : [ {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Oakenform",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/1/d1ca08a0-c58d-4c13-bf63-0401d89839b4.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Enchant creature. Enchanted creature gets +3/+3.",
+  "abilities": [
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+3/+3"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+3/+3" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

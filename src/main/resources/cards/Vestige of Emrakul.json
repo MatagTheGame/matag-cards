@@ -1,16 +1,29 @@
 {
-  "name" : "Vestige of Emrakul",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/5/a5d84986-64a1-4bd1-a4f6-3eb147aca357.jpg",
-  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRONE", "ELDRAZI" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Devoid. Trample",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "DEVOID"
-  }, {
-    "abilityType" : "TRAMPLE"
-  } ]
+  "name": "Vestige of Emrakul",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/5/a5d84986-64a1-4bd1-a4f6-3eb147aca357.jpg",
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRONE",
+    "ELDRAZI"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Devoid. Trample",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "DEVOID"
+    },
+    {
+      "abilityType": "TRAMPLE"
+    }
+  ]
 }

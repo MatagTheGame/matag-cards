@@ -11,10 +11,11 @@ import lombok.Value;
 @JsonDeserialize(builder = Target.TargetBuilder.class)
 @Builder
 public class Target {
-  MagicInstanceSelector magicInstanceSelector;
-  boolean optional;
-  boolean other;
+    MagicInstanceSelector magicInstanceSelector;
+    boolean optional;
+    boolean other;
 
-  @JsonPOJOBuilder(withPrefix = "")
-  public static class TargetBuilder {}
+    @JsonPOJOBuilder(withPrefix = "")
+    public static class TargetBuilder {
+    }
 }

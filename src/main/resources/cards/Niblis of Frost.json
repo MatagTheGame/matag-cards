@@ -1,36 +1,61 @@
 {
-  "name" : "Niblis of Frost",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/f/4/f4a3d06c-8059-4f73-8f7e-29aa004cd3d5.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SPIRIT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying. Prowess. Whenever you cast an instant or sorcery spell, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "PROWESS"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "INSTANT", "SORCERY" ],
-        "controllerType" : "PLAYER"
+  "name": "Niblis of Frost",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/f/4/f4a3d06c-8059-4f73-8f7e-29aa004cd3d5.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SPIRIT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying. Prowess. Whenever you cast an instant or sorcery spell, tap target creature an opponent controls. That creature doesn't untap during its controller's next untap step.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "PROWESS"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED",
+        ":DOES_NOT_UNTAP_NEXT_TURN"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "ofType": [
+            "INSTANT",
+            "SORCERY"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

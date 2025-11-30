@@ -1,24 +1,38 @@
 {
-  "name" : "Selesnya Guildgate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/e/ee1db693-5dd9-48de-8520-014d9ad5b596.jpg",
-  "types" : [ "LAND" ],
-  "subtypes" : [ "GATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Selesnya Guildgate enters the battlefield tapped. {T}: Add {G} or {W}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Selesnya Guildgate",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/e/ee1db693-5dd9-48de-8520-014d9ad5b596.jpg",
+  "types": [
+    "LAND"
+  ],
+  "subtypes": [
+    "GATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Selesnya Guildgate enters the battlefield tapped. {T}: Add {G} or {W}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

@@ -1,11 +1,23 @@
 {
-  "name" : "Catacomb Slug",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/4/245869a6-e418-423d-a83d-29bd2e591e8c.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SLUG" ],
-  "rarity" : "COMMON",
-  "power" : 2,
-  "toughness" : 6
+  "name": "Catacomb Slug",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/4/245869a6-e418-423d-a83d-29bd2e591e8c.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SLUG"
+  ],
+  "rarity": "COMMON",
+  "power": 2,
+  "toughness": 6
 }

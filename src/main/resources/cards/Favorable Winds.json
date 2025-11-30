@@ -1,22 +1,35 @@
 {
-  "name" : "Favorable Winds",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/d/1de89026-13a6-4ae3-9059-460bdd657285.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Creatures you control with flying get +1/+1.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "withAbilityType" : "FLYING",
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+  "name": "Favorable Winds",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/d/1de89026-13a6-4ae3-9059-460bdd657285.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Creatures you control with flying get +1/+1.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "withAbilityType": "FLYING",
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

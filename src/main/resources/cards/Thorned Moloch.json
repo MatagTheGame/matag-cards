@@ -1,26 +1,43 @@
 {
-  "name" : "Thorned Moloch",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/1/01ab2615-5a02-4b59-b8bd-577b91a1a0e3.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "LIZARD" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Prowess. Thorned Moloch has first strike as long as it's attacking.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "PROWESS"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "statusTypes" : [ "ATTACKING" ],
-      "itself" : true
+  "name": "Thorned Moloch",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/1/01ab2615-5a02-4b59-b8bd-577b91a1a0e3.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "LIZARD"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Prowess. Thorned Moloch has first strike as long as it's attacking.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "PROWESS"
     },
-    "parameters" : [ "FIRST_STRIKE" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "statusTypes": [
+          "ATTACKING"
+        ],
+        "itself": true
+      },
+      "parameters": [
+        "FIRST_STRIKE"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

@@ -1,30 +1,45 @@
 {
-  "name" : "Rot Shambler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/a/1a403b28-f91a-4637-af72-d6fc86c3bb9a.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "FUNGUS" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever another creature you control dies, put a +1/+1 counter on Rot Shambler.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
+  "name": "Rot Shambler",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/a/1a403b28-f91a-4637-af72-d6fc86c3bb9a.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "FUNGUS"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever another creature you control dies, put a +1/+1 counter on Rot Shambler.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "controllerType": "PLAYER",
+          "others": true
+        }
       }
     }
-  } ]
+  ]
 }

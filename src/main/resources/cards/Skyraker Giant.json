@@ -1,15 +1,28 @@
 {
-  "name" : "Skyraker Giant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/5/c5f0d87a-8f37-4598-9106-c3545dadf6fd.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GIANT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Reach",
-  "power" : 4,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "REACH"
-  } ]
+  "name": "Skyraker Giant",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/5/c5f0d87a-8f37-4598-9106-c3545dadf6fd.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GIANT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Reach",
+  "power": 4,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "REACH"
+    }
+  ]
 }

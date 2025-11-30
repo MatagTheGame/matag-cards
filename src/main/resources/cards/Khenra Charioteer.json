@@ -1,27 +1,46 @@
 {
-  "name" : "Khenra Charioteer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/a/8ab1454e-3c69-4450-bd4c-934af2ff2bcb.jpg",
-  "colors" : [ "RED", "GREEN" ],
-  "cost" : [ "RED", "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "JACKAL", "WARRIOR" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Trample. Other creatures you control have trample.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Khenra Charioteer",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/a/8ab1454e-3c69-4450-bd4c-934af2ff2bcb.jpg",
+  "colors": [
+    "RED",
+    "GREEN"
+  ],
+  "cost": [
+    "RED",
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "JACKAL",
+    "WARRIOR"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Trample. Other creatures you control have trample.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
     },
-    "parameters" : [ "TRAMPLE" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "TRAMPLE"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

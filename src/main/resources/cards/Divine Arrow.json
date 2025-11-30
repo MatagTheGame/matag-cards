@@ -1,23 +1,41 @@
 {
-  "name" : "Divine Arrow",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/5/352c4997-2b96-45da-a4e1-70a86453c6fa.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Divine Arrow deals 4 damage to target attacking or blocking creature.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "statusTypes" : [ "ATTACKING", "BLOCKING" ]
+  "name": "Divine Arrow",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/5/352c4997-2b96-45da-a4e1-70a86453c6fa.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Divine Arrow deals 4 damage to target attacking or blocking creature.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "statusTypes": [
+              "ATTACKING",
+              "BLOCKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:4"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:4" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

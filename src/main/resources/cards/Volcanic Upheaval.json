@@ -1,22 +1,39 @@
 {
-  "name" : "Volcanic Upheaval",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/d/8d90bd68-0521-4db3-b590-a4e007da9f2e.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target land.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "LAND" ]
+  "name": "Volcanic Upheaval",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/d/8d90bd68-0521-4db3-b590-a4e007da9f2e.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target land.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "LAND"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

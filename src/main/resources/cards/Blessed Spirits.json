@@ -1,29 +1,45 @@
 {
-  "name" : "Blessed Spirits",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/f/2f060a74-dd75-4625-8842-27cb13a279e6.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SPIRIT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. Whenever you cast an enchantment spell, put a +1/+1 counter on Blessed Spirits.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "ENCHANTMENT" ],
-        "controllerType" : "PLAYER"
+  "name": "Blessed Spirits",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/f/2f060a74-dd75-4625-8842-27cb13a279e6.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SPIRIT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. Whenever you cast an enchantment spell, put a +1/+1 counter on Blessed Spirits.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "ofType": [
+            "ENCHANTMENT"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

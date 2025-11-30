@@ -1,30 +1,51 @@
 {
-  "name" : "Meteor Golem",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/9/a9a086bf-19d2-4827-af2c-a6f57d640782.jpg",
-  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "GOLEM" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Meteor Golem enters the battlefield, destroy target nonland permanent an opponent controls.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "notOfType" : [ "LAND" ],
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Meteor Golem",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/9/a9a086bf-19d2-4827-af2c-a6f57d640782.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOLEM"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Meteor Golem enters the battlefield, destroy target nonland permanent an opponent controls.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "notOfType": [
+              "LAND"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

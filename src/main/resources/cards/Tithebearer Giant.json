@@ -1,28 +1,47 @@
 {
-  "name" : "Tithebearer Giant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/4/e49bddc9-0b0b-4d6d-a708-019356f9649e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GIANT", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Tithebearer Giant enters the battlefield, you draw a card and you lose 1 life.",
-  "power" : 4,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1", "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Tithebearer Giant",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/4/e49bddc9-0b0b-4d6d-a708-019356f9649e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GIANT",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Tithebearer Giant enters the battlefield, you draw a card and you lose 1 life.",
+  "power": 4,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1",
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

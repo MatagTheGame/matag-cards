@@ -1,31 +1,48 @@
 {
-  "name" : "Mummy Paramount",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/8/e8b1a3e5-cf77-439d-8e0d-cf6571f6891c.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever another Zombie enters the battlefield under your control, Mummy Paramount gets +1/+1 until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
+  "name": "Mummy Paramount",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/8/e8b1a3e5-cf77-439d-8e0d-cf6571f6891c.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever another Zombie enters the battlefield under your control, Mummy Paramount gets +1/+1 until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "ZOMBIE"
+          ],
+          "controllerType": "PLAYER",
+          "others": true
+        }
       }
     }
-  } ]
+  ]
 }

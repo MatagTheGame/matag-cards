@@ -1,15 +1,26 @@
 {
-  "name" : "Moat Piranhas",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/4/543b3f69-19be-494b-928f-e16b92560e35.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "FISH" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Defender",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "DEFENDER"
-  } ]
+  "name": "Moat Piranhas",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/4/543b3f69-19be-494b-928f-e16b92560e35.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "FISH"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Defender",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "DEFENDER"
+    }
+  ]
 }

@@ -1,29 +1,46 @@
 {
-  "name" : "Rising Populace",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/d/edcacc28-aacf-4d40-b8cc-f8c028380340.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever another creature or planeswalker you control dies, put a +1/+1 counter on Rising Populace.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE", "PLANESWALKER" ],
-        "others" : true
+  "name": "Rising Populace",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/d/edcacc28-aacf-4d40-b8cc-f8c028380340.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever another creature or planeswalker you control dies, put a +1/+1 counter on Rising Populace.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE",
+            "PLANESWALKER"
+          ],
+          "others": true
+        }
       }
     }
-  } ]
+  ]
 }

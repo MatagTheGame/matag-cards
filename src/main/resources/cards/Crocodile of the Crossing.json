@@ -1,33 +1,53 @@
 {
-  "name" : "Crocodile of the Crossing",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/f/2f64ca9c-99c4-45d4-bd21-3ede61702250.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CROCODILE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Haste. When Crocodile of the Crossing enters the battlefield, put a -1/-1 counter on target creature you control.",
-  "power" : 5,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "HASTE"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "MINUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Crocodile of the Crossing",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/f/2f64ca9c-99c4-45d4-bd21-3ede61702250.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CROCODILE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Haste. When Crocodile of the Crossing enters the battlefield, put a -1/-1 counter on target creature you control.",
+  "power": 5,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "HASTE"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "MINUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

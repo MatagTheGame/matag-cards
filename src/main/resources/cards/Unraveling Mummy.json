@@ -1,43 +1,83 @@
 {
-  "name" : "Unraveling Mummy",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg",
-  "colors" : [ "WHITE", "BLACK" ],
-  "cost" : [ "WHITE", "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "{1}{W}: Target attacking Zombie gains lifelink until end of turn. {1}{B}: Target attacking Zombie gains deathtouch until end of turn.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ],
-        "statusTypes" : [ "ATTACKING" ]
+  "name": "Unraveling Mummy",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/e/fe3802f3-feb3-4dcd-a5ba-f493baf3d447.jpg",
+  "colors": [
+    "WHITE",
+    "BLACK"
+  ],
+  "cost": [
+    "WHITE",
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "{1}{W}: Target attacking Zombie gains lifelink until end of turn. {1}{B}: Target attacking Zombie gains deathtouch until end of turn.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "ofSubtype": [
+              "ZOMBIE"
+            ],
+            "statusTypes": [
+              "ATTACKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "LIFELINK"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "LIFELINK" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY" ]
-    }
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ],
-        "statusTypes" : [ "ATTACKING" ]
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "ofSubtype": [
+              "ZOMBIE"
+            ],
+            "statusTypes": [
+              "ATTACKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DEATHTOUCH"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "DEATHTOUCH" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "ANY" ]
     }
-  } ]
+  ]
 }

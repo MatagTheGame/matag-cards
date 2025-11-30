@@ -1,17 +1,34 @@
 {
-  "name" : "Plated Crusher",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/5/a5f38436-9edf-42a1-83ba-0f5210b2cb86.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "GREEN", "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BEAST" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Trample. Hexproof",
-  "power" : 7,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  }, {
-    "abilityType" : "HEXPROOF"
-  } ]
+  "name": "Plated Crusher",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/5/a5f38436-9edf-42a1-83ba-0f5210b2cb86.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "GREEN",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BEAST"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Trample. Hexproof",
+  "power": 7,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
+    },
+    {
+      "abilityType": "HEXPROOF"
+    }
+  ]
 }

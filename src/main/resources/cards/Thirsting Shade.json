@@ -1,26 +1,43 @@
 {
-  "name" : "Thirsting Shade",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/9/a920c2e6-4a1f-487c-ad3f-b772443f0633.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SHADE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Lifelink. {2}{B}: Thirsting Shade gets +1/+1 until end of turn.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "LIFELINK"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Thirsting Shade",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/9/a920c2e6-4a1f-487c-ad3f-b772443f0633.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SHADE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Lifelink. {2}{B}: Thirsting Shade gets +1/+1 until end of turn.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "LIFELINK"
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "ANY", "ANY" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

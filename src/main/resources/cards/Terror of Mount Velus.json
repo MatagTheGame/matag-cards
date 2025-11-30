@@ -1,33 +1,55 @@
 {
-  "name" : "Terror of Mount Velus",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/3/332dc6c3-7802-4bde-aa4e-0feab70c216f.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRAGON" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying, double strike. When Terror of Mount Velus enters the battlefield, creatures you control gain double strike until end of turn.",
-  "power" : 5,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "DOUBLE_STRIKE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
+  "name": "Terror of Mount Velus",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/3/332dc6c3-7802-4bde-aa4e-0feab70c216f.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRAGON"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying, double strike. When Terror of Mount Velus enters the battlefield, creatures you control gain double strike until end of turn.",
+  "power": 5,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "DOUBLE_STRIKE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    },
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "DOUBLE_STRIKE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

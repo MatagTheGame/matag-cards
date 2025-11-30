@@ -1,33 +1,54 @@
 {
-  "name" : "Hellkite Whelp",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/5/65e902e8-bbd5-40fe-a655-45d3d3bc9fde.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRAGON" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. Whenever Hellkite Whelp attacks, it deals 1 damage to target creature defending player controls.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Hellkite Whelp",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/5/65e902e8-bbd5-40fe-a655-45d3d3bc9fde.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRAGON"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. Whenever Hellkite Whelp attacks, it deals 1 damage to target creature defending player controls.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

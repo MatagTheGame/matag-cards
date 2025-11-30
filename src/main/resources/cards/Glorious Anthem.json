@@ -1,21 +1,35 @@
 {
-  "name" : "Glorious Anthem",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/3/a3ba79d6-7da0-46ba-a26a-dc484bdae41d.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Creatures you control get +1/+1.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+  "name": "Glorious Anthem",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/3/a3ba79d6-7da0-46ba-a26a-dc484bdae41d.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Creatures you control get +1/+1.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

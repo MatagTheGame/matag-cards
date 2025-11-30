@@ -1,14 +1,23 @@
 {
-  "name" : "Island",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/e/be169f8c-6472-40ec-9b4a-0edcb63e9e2f.jpg",
-  "types" : [ "BASIC", "LAND" ],
-  "subtypes" : [ "ISLAND" ],
-  "rarity" : "COMMON",
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Island",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/e/be169f8c-6472-40ec-9b4a-0edcb63e9e2f.jpg",
+  "types": [
+    "BASIC",
+    "LAND"
+  ],
+  "subtypes": [
+    "ISLAND"
+  ],
+  "rarity": "COMMON",
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

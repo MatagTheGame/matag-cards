@@ -1,23 +1,41 @@
 {
-  "name" : "Boon of Emrakul",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/e/4/e4c84a8c-9fd3-4a63-b322-809a748b5ecb.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Enchant creature. Enchanted creature gets +3/-3.",
-  "abilities" : [ {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Boon of Emrakul",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/e/4/e4c84a8c-9fd3-4a63-b322-809a748b5ecb.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Enchant creature. Enchanted creature gets +3/-3.",
+  "abilities": [
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+3/-3"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+3/-3" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

@@ -1,22 +1,38 @@
 {
-  "name" : "Smash to Smithereens",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/1/815dd60c-989b-4ace-9f47-44e3405a0065.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target artifact. Smash to Smithereens deals 3 damage to that artifact's controller.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT" ]
+  "name": "Smash to Smithereens",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/1/815dd60c-989b-4ace-9f47-44e3405a0065.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target artifact. Smash to Smithereens deals 3 damage to that artifact's controller.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED",
+        "CONTROLLER_DAMAGE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED", "CONTROLLER_DAMAGE:3" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

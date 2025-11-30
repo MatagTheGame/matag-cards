@@ -1,23 +1,46 @@
 {
-  "name" : "Zetalpa, Primal Dawn",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/d/8d5b29be-2b1a-4ba5-8958-60eee4e3bac1.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE", "LEGENDARY" ],
-  "subtypes" : [ "DINOSAUR", "ELDER" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying, double strike, vigilance, trample, indestructible",
-  "power" : 4,
-  "toughness" : 8,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "DOUBLE_STRIKE"
-  }, {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "TRAMPLE"
-  }, {
-    "abilityType" : "INDESTRUCTIBLE"
-  } ]
+  "name": "Zetalpa, Primal Dawn",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/d/8d5b29be-2b1a-4ba5-8958-60eee4e3bac1.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "LEGENDARY"
+  ],
+  "subtypes": [
+    "DINOSAUR",
+    "ELDER"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying, double strike, vigilance, trample, indestructible",
+  "power": 4,
+  "toughness": 8,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    },
+    {
+      "abilityType": "VIGILANCE"
+    },
+    {
+      "abilityType": "TRAMPLE"
+    },
+    {
+      "abilityType": "INDESTRUCTIBLE"
+    }
+  ]
 }

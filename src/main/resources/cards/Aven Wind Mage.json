@@ -1,31 +1,50 @@
 {
-  "name" : "Aven Wind Mage",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/8/28911e7b-0435-4393-a651-dc6eb53c7d98.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD", "WIZARD" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. Whenever you cast an instant or sorcery spell, Aven Wind Mage gets +1/+1 until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Aven Wind Mage",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/8/28911e7b-0435-4393-a651-dc6eb53c7d98.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD",
+    "WIZARD"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. Whenever you cast an instant or sorcery spell, Aven Wind Mage gets +1/+1 until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "INSTANT", "SORCERY" ],
-        "controllerType" : "PLAYER"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "ofType": [
+            "INSTANT",
+            "SORCERY"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

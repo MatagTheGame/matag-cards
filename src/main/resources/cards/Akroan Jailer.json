@@ -1,26 +1,48 @@
 {
-  "name" : "Akroan Jailer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/d/8d96bc2b-2e31-4654-b192-c3f023d9fde6.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{2}{W}, {T}: Tap target creature.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Akroan Jailer",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/d/8d96bc2b-2e31-4654-b192-c3f023d9fde6.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{2}{W}, {T}: Tap target creature.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":TAPPED"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY",
+          "ANY",
+          "TAP"
+        ]
       }
-    } ],
-    "parameters" : [ ":TAPPED" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY", "ANY", "TAP" ]
     }
-  } ]
+  ]
 }

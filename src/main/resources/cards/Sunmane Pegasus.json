@@ -1,26 +1,46 @@
 {
-  "name" : "Sunmane Pegasus",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/2/52e28f5a-55ee-4fcc-bc16-e59944592fcd.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "PEGASUS" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. {1}{W}: Sunmane Pegasus gains vigilance and lifelink until end of turn.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Sunmane Pegasus",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/2/52e28f5a-55ee-4fcc-bc16-e59944592fcd.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "PEGASUS"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. {1}{W}: Sunmane Pegasus gains vigilance and lifelink until end of turn.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "VIGILANCE", "LIFELINK" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "VIGILANCE",
+        "LIFELINK"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

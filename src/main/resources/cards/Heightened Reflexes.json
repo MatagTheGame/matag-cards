@@ -1,22 +1,37 @@
 {
-  "name" : "Heightened Reflexes",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/f/4f7cc8e7-3002-4ee0-869f-931438d8362d.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature gets +1/+0 until end of turn. Put a first strike counter on it.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Heightened Reflexes",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/f/4f7cc8e7-3002-4ee0-869f-931438d8362d.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature gets +1/+0 until end of turn. Put a first strike counter on it.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+0",
+        "KEYWORD_COUNTER:FIRST_STRIKE"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+1/+0", "KEYWORD_COUNTER:FIRST_STRIKE" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

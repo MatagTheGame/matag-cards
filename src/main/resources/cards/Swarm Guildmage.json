@@ -1,36 +1,68 @@
 {
-  "name" : "Swarm Guildmage",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/5/7599adc7-72b2-4079-ac0a-1a821f9de925.jpg",
-  "colors" : [ "BLACK", "GREEN" ],
-  "cost" : [ "BLACK", "GREEN" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELF", "SHAMAN" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "{4}{B}, {T}: Creatures you control get +1/+0 and gain menace until end of turn. {1}{G}, {T}: You gain 2 life.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
+  "name": "Swarm Guildmage",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/5/7599adc7-72b2-4079-ac0a-1a821f9de925.jpg",
+  "colors": [
+    "BLACK",
+    "GREEN"
+  ],
+  "cost": [
+    "BLACK",
+    "GREEN"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELF",
+    "SHAMAN"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "{4}{B}, {T}: Creatures you control get +1/+0 and gain menace until end of turn. {1}{G}, {T}: You gain 2 life.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+0",
+        "MENACE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK",
+          "ANY",
+          "ANY",
+          "ANY",
+          "ANY",
+          "TAP"
+        ]
+      }
     },
-    "parameters" : [ "+1/+0", "MENACE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY", "TAP" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:2"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "GREEN",
+          "ANY",
+          "TAP"
+        ]
+      }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:2" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "ANY", "TAP" ]
-    }
-  } ]
+  ]
 }

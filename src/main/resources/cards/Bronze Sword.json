@@ -1,25 +1,43 @@
 {
-  "name" : "Bronze Sword",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/b/0b33162d-8d8f-4312-b31e-04ce86e3b914.jpg",
-  "cost" : [ "ANY" ],
-  "types" : [ "ARTIFACT" ],
-  "subtypes" : [ "EQUIPMENT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +2/+0. Equip {3}",
-  "abilities" : [ {
-    "abilityType" : "EQUIP",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "+2/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "ANY" ]
-    },
-    "sorcerySpeed" : true
-  } ]
+  "name": "Bronze Sword",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/b/0b33162d-8d8f-4312-b31e-04ce86e3b914.jpg",
+  "cost": [
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT"
+  ],
+  "subtypes": [
+    "EQUIPMENT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Equipped creature gets +2/+0. Equip {3}",
+  "abilities": [
+    {
+      "abilityType": "EQUIP",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      },
+      "sorcerySpeed": true
+    }
+  ]
 }

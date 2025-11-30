@@ -1,28 +1,52 @@
 {
-  "name" : "Crossroads Consecrator",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/8/5/85cc1e74-df2f-4fae-b8cf-4ca254518c43.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CLERIC", "HUMAN" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{G}, {T}: Target attacking Human gets +1/+1 until end of turn.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "HUMAN" ],
-        "statusTypes" : [ "ATTACKING" ]
+  "name": "Crossroads Consecrator",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/8/5/85cc1e74-df2f-4fae-b8cf-4ca254518c43.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CLERIC",
+    "HUMAN"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{G}, {T}: Target attacking Human gets +1/+1 until end of turn.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "ofSubtype": [
+              "HUMAN"
+            ],
+            "statusTypes": [
+              "ATTACKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "GREEN",
+          "TAP"
+        ]
       }
-    } ],
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "TAP" ]
     }
-  } ]
+  ]
 }

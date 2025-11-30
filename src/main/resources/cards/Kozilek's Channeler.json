@@ -1,18 +1,33 @@
 {
-  "name" : "Kozilek's Channeler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/5/c550d179-32ec-4ad8-91c2-d79320a21cba.jpg",
-  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELDRAZI" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{T}: Add {C}{C}.",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "COLORLESS", "COLORLESS" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Kozilek's Channeler",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/5/c550d179-32ec-4ad8-91c2-d79320a21cba.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELDRAZI"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{T}: Add {C}{C}.",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "COLORLESS",
+        "COLORLESS"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

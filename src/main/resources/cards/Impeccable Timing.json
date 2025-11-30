@@ -1,23 +1,41 @@
 {
-  "name" : "Impeccable Timing",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/9/a98cee1e-64d8-4662-a911-009b031dc888.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Impeccable Timing deals 3 damage to target attacking or blocking creature.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "statusTypes" : [ "ATTACKING", "BLOCKING" ]
+  "name": "Impeccable Timing",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/9/a98cee1e-64d8-4662-a911-009b031dc888.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Impeccable Timing deals 3 damage to target attacking or blocking creature.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "statusTypes": [
+              "ATTACKING",
+              "BLOCKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:3" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

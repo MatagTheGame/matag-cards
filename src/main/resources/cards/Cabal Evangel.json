@@ -1,11 +1,21 @@
 {
-  "name" : "Cabal Evangel",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/2/d218d2a2-bb5d-4ea8-a131-341c574410b2.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CLERIC", "HUMAN" ],
-  "rarity" : "COMMON",
-  "power" : 2,
-  "toughness" : 2
+  "name": "Cabal Evangel",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/2/d218d2a2-bb5d-4ea8-a131-341c574410b2.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CLERIC",
+    "HUMAN"
+  ],
+  "rarity": "COMMON",
+  "power": 2,
+  "toughness": 2
 }

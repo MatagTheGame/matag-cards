@@ -1,26 +1,38 @@
 {
-  "name" : "Runed Servitor",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/f/efedf97b-8901-4558-8bd0-3f488097f686.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CONSTRUCT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Runed Servitor dies, each player draws a card.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER"
-    },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Runed Servitor",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/f/efedf97b-8901-4558-8bd0-3f488097f686.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CONSTRUCT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Runed Servitor dies, each player draws a card.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER"
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

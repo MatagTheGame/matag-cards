@@ -1,33 +1,56 @@
 {
-  "name" : "Voracious Vampire",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/6/d66a9f1b-31c8-4557-888b-a927922d37af.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "KNIGHT", "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Menace. When Voracious Vampire enters the battlefield, target Vampire you control gets +1/+1 and gains menace until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "MENACE"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "VAMPIRE" ]
-      }
-    } ],
-    "parameters" : [ "+1/+1", "MENACE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Voracious Vampire",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/6/d66a9f1b-31c8-4557-888b-a927922d37af.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "KNIGHT",
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Menace. When Voracious Vampire enters the battlefield, target Vampire you control gets +1/+1 and gains menace until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "MENACE"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "ofSubtype": [
+              "VAMPIRE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+1",
+        "MENACE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

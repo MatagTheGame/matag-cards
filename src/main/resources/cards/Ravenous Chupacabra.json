@@ -1,31 +1,51 @@
 {
-  "name" : "Ravenous Chupacabra",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/0/40d3e58e-f989-4169-9e2c-a66a23170dcf.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BEAST", "HORROR" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Ravenous Chupacabra enters the battlefield, destroy target creature an opponent controls.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "OPPONENT"
-      }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Ravenous Chupacabra",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/0/40d3e58e-f989-4169-9e2c-a66a23170dcf.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BEAST",
+    "HORROR"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Ravenous Chupacabra enters the battlefield, destroy target creature an opponent controls.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "OPPONENT"
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

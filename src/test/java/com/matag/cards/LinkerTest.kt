@@ -44,16 +44,16 @@ class LinkerTest {
             val card: Card = cardsToLink.get(i)
             val cardScryFallLinker = CardScryFallLinker(card)
             val updatedCard = card.copy(
-                    imageUrl = cardScryFallLinker.getImage(),
-                    types = cardScryFallLinker.getTypes(),
-                    subtypes = cardScryFallLinker.getSubtypes(),
-                    power = cardScryFallLinker.getPower(),
-                    toughness = cardScryFallLinker.getToughness(),
-                    rarity = cardScryFallLinker.getRarity(),
-                    ruleText = cardScryFallLinker.getOracleText(),
-                    colors = cardScryFallLinker.getColors(),
-                    cost = cardScryFallLinker.getManaCost()
-                )
+                imageUrl = cardScryFallLinker.getImage(),
+                types = cardScryFallLinker.getTypes(),
+                subtypes = cardScryFallLinker.getSubtypes(),
+                power = cardScryFallLinker.getPower(),
+                toughness = cardScryFallLinker.getToughness(),
+                rarity = cardScryFallLinker.getRarity(),
+                ruleText = cardScryFallLinker.getOracleText(),
+                colors = cardScryFallLinker.getColors(),
+                cost = cardScryFallLinker.getManaCost()
+            )
             val cardJson = cardsObjectMapper.writeValueAsString(updatedCard)
             Files.writeString(
                 Paths.get(CardsConfiguration.getResourcesPath() + "/cards/" + card.name + ".json"),

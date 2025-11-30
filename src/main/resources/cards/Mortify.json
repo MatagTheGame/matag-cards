@@ -1,22 +1,40 @@
 {
-  "name" : "Mortify",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/d/8d29e7a2-bcb3-41d0-b467-2a6263bf5223.jpg",
-  "colors" : [ "WHITE", "BLACK" ],
-  "cost" : [ "WHITE", "BLACK", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Destroy target creature or enchantment.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE", "ENCHANTMENT" ]
+  "name": "Mortify",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/d/8d29e7a2-bcb3-41d0-b467-2a6263bf5223.jpg",
+  "colors": [
+    "WHITE",
+    "BLACK"
+  ],
+  "cost": [
+    "WHITE",
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Destroy target creature or enchantment.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE",
+              "ENCHANTMENT"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

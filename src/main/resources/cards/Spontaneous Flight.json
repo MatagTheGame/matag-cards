@@ -1,22 +1,39 @@
 {
-  "name" : "Spontaneous Flight",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/d/3dc24dd4-d259-4687-8247-f56aa7abb5b9.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature gets +2/+2 until end of turn. Put a flying counter on it.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Spontaneous Flight",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/d/3dc24dd4-d259-4687-8247-f56aa7abb5b9.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature gets +2/+2 until end of turn. Put a flying counter on it.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+2",
+        "KEYWORD_COUNTER:FLYING"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+2/+2", "KEYWORD_COUNTER:FLYING" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

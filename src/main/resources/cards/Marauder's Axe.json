@@ -1,25 +1,43 @@
 {
-  "name" : "Marauder's Axe",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/9/49d8aa8a-3e87-42ac-9c79-2baec771c1ef.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT" ],
-  "subtypes" : [ "EQUIPMENT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +2/+0. Equip {2}",
-  "abilities" : [ {
-    "abilityType" : "EQUIP",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "+2/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY" ]
-    },
-    "sorcerySpeed" : true
-  } ]
+  "name": "Marauder's Axe",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/9/49d8aa8a-3e87-42ac-9c79-2baec771c1ef.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT"
+  ],
+  "subtypes": [
+    "EQUIPMENT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Equipped creature gets +2/+0. Equip {2}",
+  "abilities": [
+    {
+      "abilityType": "EQUIP",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY"
+        ]
+      },
+      "sorcerySpeed": true
+    }
+  ]
 }

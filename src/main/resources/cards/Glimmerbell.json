@@ -1,24 +1,41 @@
 {
-  "name" : "Glimmerbell",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/4/54f71f8a-546a-465e-a254-09a3ae873ef4.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL", "JELLYFISH" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. {1}{U}: Untap Glimmerbell.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ ":UNTAPPED" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLUE", "ANY" ]
+  "name": "Glimmerbell",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/4/54f71f8a-546a-465e-a254-09a3ae873ef4.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL",
+    "JELLYFISH"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. {1}{U}: Untap Glimmerbell.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        ":UNTAPPED"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLUE",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

@@ -1,26 +1,47 @@
 {
-  "name" : "Hellkite Punisher",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/b/7bf663d3-850b-4a24-8e4b-08311adf4ed0.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "RED", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRAGON" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. {R}: Hellkite Punisher gets +1/+0 until end of turn.",
-  "power" : 6,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Hellkite Punisher",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/b/7bf663d3-850b-4a24-8e4b-08311adf4ed0.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRAGON"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. {R}: Hellkite Punisher gets +1/+0 until end of turn.",
+  "power": 6,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED"
+        ]
+      }
     }
-  } ]
+  ]
 }

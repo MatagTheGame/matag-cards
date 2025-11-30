@@ -1,29 +1,47 @@
 {
-  "name" : "Skeleton Archer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/c/fcb8d414-7f80-4a61-a0f2-0f16bf53e1b9.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ARCHER", "SKELETON" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Skeleton Archer enters the battlefield, it deals 1 damage to any target.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
-      }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Skeleton Archer",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/c/fcb8d414-7f80-4a61-a0f2-0f16bf53e1b9.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ARCHER",
+    "SKELETON"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Skeleton Archer enters the battlefield, it deals 1 damage to any target.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

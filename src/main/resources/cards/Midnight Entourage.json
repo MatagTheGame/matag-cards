@@ -1,40 +1,66 @@
 {
-  "name" : "Midnight Entourage",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/8/2838c6dd-d816-4363-a861-f2f8052d1430.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "AETHERBORN", "ROGUE" ],
-  "rarity" : "RARE",
-  "ruleText" : "Other Aetherborn you control get +1/+1. Whenever Midnight Entourage or another Aetherborn you control dies, you draw a card and you lose 1 life.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofSubtype" : [ "AETHERBORN" ],
-      "others" : true
+  "name": "Midnight Entourage",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/8/2838c6dd-d816-4363-a861-f2f8052d1430.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "AETHERBORN",
+    "ROGUE"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Other Aetherborn you control get +1/+1. Whenever Midnight Entourage or another Aetherborn you control dies, you draw a card and you lose 1 life.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofSubtype": [
+          "AETHERBORN"
+        ],
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:-1", "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "AETHERBORN" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:-1",
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "AETHERBORN"
+          ]
+        }
       }
     }
-  } ]
+  ]
 }

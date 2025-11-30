@@ -1,15 +1,27 @@
 {
-  "name" : "Nimble-Blade Khenra",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/0/f066e3b8-c16f-4e94-9ec0-14be98828bbf.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "JACKAL", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Prowess",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "PROWESS"
-  } ]
+  "name": "Nimble-Blade Khenra",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/0/f066e3b8-c16f-4e94-9ec0-14be98828bbf.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "JACKAL",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Prowess",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "PROWESS"
+    }
+  ]
 }

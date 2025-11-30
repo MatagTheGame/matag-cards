@@ -1,11 +1,23 @@
 {
-  "name" : "Canal Monitor",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/8/78226edc-87dd-4c38-987c-52aefe0f9531.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "LIZARD" ],
-  "rarity" : "COMMON",
-  "power" : 5,
-  "toughness" : 3
+  "name": "Canal Monitor",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/8/78226edc-87dd-4c38-987c-52aefe0f9531.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "LIZARD"
+  ],
+  "rarity": "COMMON",
+  "power": 5,
+  "toughness": 3
 }

@@ -1,11 +1,21 @@
 {
-  "name" : "Barony Vampire",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/0/b0130d04-05f2-44f5-bd6c-8b11f798b69e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "power" : 3,
-  "toughness" : 2
+  "name": "Barony Vampire",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/0/b0130d04-05f2-44f5-bd6c-8b11f798b69e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "power": 3,
+  "toughness": 2
 }

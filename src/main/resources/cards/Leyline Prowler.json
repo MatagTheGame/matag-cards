@@ -1,47 +1,77 @@
 {
-  "name" : "Leyline Prowler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/5/c56b4e8f-d48e-4bb0-883d-29f978033f65.jpg",
-  "colors" : [ "BLACK", "GREEN" ],
-  "cost" : [ "BLACK", "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BEAST", "NIGHTMARE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Deathtouch, lifelink. {T}: Add one mana of any color.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "DEATHTOUCH"
-  }, {
-    "abilityType" : "LIFELINK"
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Leyline Prowler",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/5/c56b4e8f-d48e-4bb0-883d-29f978033f65.jpg",
+  "colors": [
+    "BLACK",
+    "GREEN"
+  ],
+  "cost": [
+    "BLACK",
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BEAST",
+    "NIGHTMARE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Deathtouch, lifelink. {T}: Add one mana of any color.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "DEATHTOUCH"
+    },
+    {
+      "abilityType": "LIFELINK"
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLACK"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLACK" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

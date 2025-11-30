@@ -1,49 +1,74 @@
 {
-  "name" : "Wayward Servant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/9/e9e00112-8c6c-4551-ad68-389e315fe148.jpg",
-  "colors" : [ "WHITE", "BLACK" ],
-  "cost" : [ "WHITE", "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever another Zombie enters the battlefield under your control, each opponent loses 1 life and you gain 1 life.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Wayward Servant",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/9/e9e00112-8c6c-4551-ad68-389e315fe148.jpg",
+  "colors": [
+    "WHITE",
+    "BLACK"
+  ],
+  "cost": [
+    "WHITE",
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever another Zombie enters the battlefield under your control, each opponent loses 1 life and you gain 1 life.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "ZOMBIE"
+          ],
+          "controllerType": "PLAYER",
+          "others": true
+        }
+      }
     },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "ZOMBIE"
+          ],
+          "controllerType": "PLAYER",
+          "others": true
+        }
       }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
-      }
-    }
-  } ]
+  ]
 }

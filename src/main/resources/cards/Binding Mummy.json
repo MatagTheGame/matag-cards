@@ -1,34 +1,56 @@
 {
-  "name" : "Binding Mummy",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/a/fae54072-ae27-4aae-a2b7-71f4551934f6.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever another Zombie enters the battlefield under your control, you may tap target artifact or creature.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT", "CREATURE" ]
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ ":TAPPED" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "ofSubtype" : [ "ZOMBIE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
+  "name": "Binding Mummy",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/a/fae54072-ae27-4aae-a2b7-71f4551934f6.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever another Zombie enters the battlefield under your control, you may tap target artifact or creature.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT",
+              "CREATURE"
+            ]
+          },
+          "optional": true
+        }
+      ],
+      "parameters": [
+        ":TAPPED"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "ofSubtype": [
+            "ZOMBIE"
+          ],
+          "controllerType": "PLAYER",
+          "others": true
+        }
       }
     }
-  } ]
+  ]
 }

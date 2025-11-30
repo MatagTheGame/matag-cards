@@ -1,15 +1,28 @@
 {
-  "name" : "Wildwood Patrol",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/c/cceaf927-261e-4d61-9fac-eb8abbe87593.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CENTAUR", "SCOUT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Trample",
-  "power" : 4,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  } ]
+  "name": "Wildwood Patrol",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/c/cceaf927-261e-4d61-9fac-eb8abbe87593.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CENTAUR",
+    "SCOUT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Trample",
+  "power": 4,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
+    }
+  ]
 }

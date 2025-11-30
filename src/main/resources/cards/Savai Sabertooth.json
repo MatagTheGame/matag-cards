@@ -1,11 +1,20 @@
 {
-  "name" : "Savai Sabertooth",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/4/d46702b0-7e10-462a-9aac-7564efe91804.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CAT" ],
-  "rarity" : "COMMON",
-  "power" : 3,
-  "toughness" : 1
+  "name": "Savai Sabertooth",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/4/d46702b0-7e10-462a-9aac-7564efe91804.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CAT"
+  ],
+  "rarity": "COMMON",
+  "power": 3,
+  "toughness": 1
 }

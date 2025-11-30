@@ -1,31 +1,50 @@
 {
-  "name" : "Hydrolash",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/d/5d219ee8-ca60-4850-9652-a7274eb4c443.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Attacking creatures get -2/-0 until end of turn. Draw a card.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "statusTypes" : [ "ATTACKING" ]
+  "name": "Hydrolash",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/d/5d219ee8-ca60-4850-9652-a7274eb4c443.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Attacking creatures get -2/-0 until end of turn. Draw a card.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "statusTypes": [
+          "ATTACKING"
+        ]
+      },
+      "parameters": [
+        "-2/-0"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     },
-    "parameters" : [ "-2/-0" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  } ]
+  ]
 }

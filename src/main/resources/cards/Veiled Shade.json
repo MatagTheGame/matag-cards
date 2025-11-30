@@ -1,24 +1,41 @@
 {
-  "name" : "Veiled Shade",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/5/35cb18ae-0229-40a1-8838-ffb678ab2ed9.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SHADE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{1}{B}: Veiled Shade gets +1/+1 until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY" ]
+  "name": "Veiled Shade",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/5/35cb18ae-0229-40a1-8838-ffb678ab2ed9.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SHADE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{1}{B}: Veiled Shade gets +1/+1 until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

@@ -9,15 +9,15 @@ import lombok.SneakyThrows;
 @Component
 public class ResourceLoader {
 
-  @SneakyThrows
-  public Resource[] getCardsFileNames() {
-    return new PathMatchingResourcePatternResolver(this.getClass().getClassLoader())
-        .getResources("/cards/*");
-  }
+    @SneakyThrows
+    public Resource[] getCardsFileNames() {
+        return new PathMatchingResourcePatternResolver(this.getClass().getClassLoader())
+                .getResources("/cards/*");
+    }
 
-  @SneakyThrows
-  public Resource[] getSetsFileNames() {
-    return new PathMatchingResourcePatternResolver(this.getClass().getClassLoader())
-        .getResources("/sets/*");
-  }
+    @SneakyThrows
+    public Resource[] getSetsFileNames() {
+        return new PathMatchingResourcePatternResolver(this.getClass().getClassLoader())
+                .getResources("/sets/*");
+    }
 }

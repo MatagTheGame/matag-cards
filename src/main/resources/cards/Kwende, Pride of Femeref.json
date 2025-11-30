@@ -1,27 +1,47 @@
 {
-  "name" : "Kwende, Pride of Femeref",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/4/b4d3b6a8-3e4a-4e2b-900a-9a21fa0ced4c.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE", "LEGENDARY" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Double strike. Creatures you control with first strike have double strike.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "DOUBLE_STRIKE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "withAbilityType" : "FIRST_STRIKE",
-      "controllerType" : "PLAYER"
+  "name": "Kwende, Pride of Femeref",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/4/b4d3b6a8-3e4a-4e2b-900a-9a21fa0ced4c.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE",
+    "LEGENDARY"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Double strike. Creatures you control with first strike have double strike.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "DOUBLE_STRIKE"
     },
-    "parameters" : [ "DOUBLE_STRIKE" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "withAbilityType": "FIRST_STRIKE",
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "DOUBLE_STRIKE"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

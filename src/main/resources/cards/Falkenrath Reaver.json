@@ -1,11 +1,20 @@
 {
-  "name" : "Falkenrath Reaver",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/d/d/dda06653-a7a0-45ac-9678-4d23406e2260.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "power" : 2,
-  "toughness" : 2
+  "name": "Falkenrath Reaver",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/d/d/dda06653-a7a0-45ac-9678-4d23406e2260.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "power": 2,
+  "toughness": 2
 }

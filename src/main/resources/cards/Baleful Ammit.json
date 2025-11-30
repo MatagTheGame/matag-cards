@@ -1,33 +1,53 @@
 {
-  "name" : "Baleful Ammit",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/a/5a2fbc6e-1c5f-45db-82c7-b8f26e67ef0f.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CROCODILE", "DEMON" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Lifelink. When Baleful Ammit enters the battlefield, put a -1/-1 counter on target creature you control.",
-  "power" : 4,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "LIFELINK"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "MINUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Baleful Ammit",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/a/5a2fbc6e-1c5f-45db-82c7-b8f26e67ef0f.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CROCODILE",
+    "DEMON"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Lifelink. When Baleful Ammit enters the battlefield, put a -1/-1 counter on target creature you control.",
+  "power": 4,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "LIFELINK"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "MINUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,26 +1,51 @@
 {
-  "name" : "Devotee of Strength",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/7/977698ab-3b64-41f2-a214-ac95e04c9956.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "NAGA", "WIZARD" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "{4}{G}: Target creature gets +2/+2 until end of turn.",
-  "power" : 3,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Devotee of Strength",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/7/977698ab-3b64-41f2-a214-ac95e04c9956.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "NAGA",
+    "WIZARD"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "{4}{G}: Target creature gets +2/+2 until end of turn.",
+  "power": 3,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+2"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "GREEN",
+          "ANY",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "+2/+2" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ]
     }
-  } ]
+  ]
 }

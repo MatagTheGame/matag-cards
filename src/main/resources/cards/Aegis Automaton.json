@@ -1,26 +1,48 @@
 {
-  "name" : "Aegis Automaton",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/5/e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CONSTRUCT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{4}{W}: Return another target creature you control to its owner's hand.",
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
+  "name": "Aegis Automaton",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/5/e5f9fa2d-4bf4-4fcb-9b76-fd4a9ff5a58c.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CONSTRUCT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{4}{W}: Return another target creature you control to its owner's hand.",
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER",
+            "others": true
+          }
+        }
+      ],
+      "parameters": [
+        ":RETURN_TO_OWNER_HAND"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ]
     }
-  } ]
+  ]
 }

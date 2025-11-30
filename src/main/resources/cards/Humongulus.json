@@ -1,15 +1,29 @@
 {
-  "name" : "Humongulus",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/2/12b80760-88b9-4bf2-97ce-7dc771bc0af3.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HOMUNCULUS" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Hexproof",
-  "power" : 2,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "HEXPROOF"
-  } ]
+  "name": "Humongulus",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/2/12b80760-88b9-4bf2-97ce-7dc771bc0af3.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HOMUNCULUS"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Hexproof",
+  "power": 2,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "HEXPROOF"
+    }
+  ]
 }

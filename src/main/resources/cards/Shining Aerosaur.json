@@ -1,15 +1,29 @@
 {
-  "name" : "Shining Aerosaur",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/e/9e214072-551f-48fa-b207-8f6303646941.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DINOSAUR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Shining Aerosaur",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/e/9e214072-551f-48fa-b207-8f6303646941.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DINOSAUR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

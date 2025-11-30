@@ -1,32 +1,51 @@
 {
-  "name" : "Yaroks Wavecrasher",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/8/c86a8974-df86-43ee-b07f-fd2837c08a6a.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "When Yarok's Wavecrasher enters the battlefield, return another creature you control to its owner's hand.",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER",
-        "others" : true
-      }
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Yaroks Wavecrasher",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/8/c86a8974-df86-43ee-b07f-fd2837c08a6a.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "When Yarok's Wavecrasher enters the battlefield, return another creature you control to its owner's hand.",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER",
+            "others": true
+          }
+        }
+      ],
+      "parameters": [
+        ":RETURN_TO_OWNER_HAND"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

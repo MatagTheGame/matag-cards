@@ -1,19 +1,34 @@
 {
-  "name" : "Swiftblade Vindicator",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/8/285c4d9e-0f22-49a8-b68c-150fd0d4b617.jpg",
-  "colors" : [ "WHITE", "RED" ],
-  "cost" : [ "WHITE", "RED" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "RARE",
-  "ruleText" : "Double strike, vigilance, trample",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "DOUBLE_STRIKE"
-  }, {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "TRAMPLE"
-  } ]
+  "name": "Swiftblade Vindicator",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/8/285c4d9e-0f22-49a8-b68c-150fd0d4b617.jpg",
+  "colors": [
+    "WHITE",
+    "RED"
+  ],
+  "cost": [
+    "WHITE",
+    "RED"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Double strike, vigilance, trample",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    },
+    {
+      "abilityType": "VIGILANCE"
+    },
+    {
+      "abilityType": "TRAMPLE"
+    }
+  ]
 }

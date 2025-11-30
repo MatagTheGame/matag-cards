@@ -1,15 +1,28 @@
 {
-  "name" : "Giant Spider",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/f/8f3fc9a4-3e98-4a50-8f34-07c7b14dbc5c.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SPIDER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Reach",
-  "power" : 2,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "REACH"
-  } ]
+  "name": "Giant Spider",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/f/8f3fc9a4-3e98-4a50-8f34-07c7b14dbc5c.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SPIDER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Reach",
+  "power": 2,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "REACH"
+    }
+  ]
 }

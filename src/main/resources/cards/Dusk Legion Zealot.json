@@ -1,28 +1,43 @@
 {
-  "name" : "Dusk Legion Zealot",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/9/1908d03c-e8ed-43c7-bcae-194d826a152b.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SOLDIER", "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Dusk Legion Zealot enters the battlefield, you draw a card and you lose 1 life.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1", "LIFE:-1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Dusk Legion Zealot",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/9/1908d03c-e8ed-43c7-bcae-194d826a152b.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SOLDIER",
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Dusk Legion Zealot enters the battlefield, you draw a card and you lose 1 life.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1",
+        "LIFE:-1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

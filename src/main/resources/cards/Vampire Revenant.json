@@ -1,15 +1,29 @@
 {
-  "name" : "Vampire Revenant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/b/2bd3a6c6-33b8-4530-9d80-c488898afd6e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SPIRIT", "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying",
-  "power" : 3,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Vampire Revenant",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/b/2bd3a6c6-33b8-4530-9d80-c488898afd6e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SPIRIT",
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying",
+  "power": 3,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

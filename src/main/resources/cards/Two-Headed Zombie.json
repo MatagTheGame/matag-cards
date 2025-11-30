@@ -1,15 +1,28 @@
 {
-  "name" : "Two-Headed Zombie",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/c/2cc5760e-8b27-4d37-9772-c9eda90b1d95.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Menace",
-  "power" : 4,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "MENACE"
-  } ]
+  "name": "Two-Headed Zombie",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/c/2cc5760e-8b27-4d37-9772-c9eda90b1d95.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Menace",
+  "power": 4,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "MENACE"
+    }
+  ]
 }

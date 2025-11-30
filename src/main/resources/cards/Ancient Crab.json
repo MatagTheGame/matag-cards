@@ -1,11 +1,21 @@
 {
-  "name" : "Ancient Crab",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/c/7c2ca68b-15fb-4691-b549-268df92ca413.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CRAB" ],
-  "rarity" : "COMMON",
-  "power" : 1,
-  "toughness" : 5
+  "name": "Ancient Crab",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/c/7c2ca68b-15fb-4691-b549-268df92ca413.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CRAB"
+  ],
+  "rarity": "COMMON",
+  "power": 1,
+  "toughness": 5
 }

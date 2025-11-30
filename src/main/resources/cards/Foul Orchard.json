@@ -1,23 +1,35 @@
 {
-  "name" : "Foul Orchard",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/b/7b6ead34-e2c3-40c5-9d33-c653a6daae32.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Foul Orchard enters the battlefield tapped. {T}: Add {B} or {G}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLACK" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Foul Orchard",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/b/7b6ead34-e2c3-40c5-9d33-c653a6daae32.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Foul Orchard enters the battlefield tapped. {T}: Add {B} or {G}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLACK"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

@@ -1,28 +1,49 @@
 {
-  "name" : "Decision Paralysis",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/4/e46c7d04-977a-449b-9088-38e07bf62314.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Decision Paralysis",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/4/e46c7d04-977a-449b-9088-38e07bf62314.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        },
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          },
+          "optional": true
+        }
+      ],
+      "parameters": [
+        ":TAPPED",
+        ":DOES_NOT_UNTAP_NEXT_TURN"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    }, {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
-      },
-      "optional" : true
-    } ],
-    "parameters" : [ ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

@@ -1,23 +1,41 @@
 {
-  "name" : "Gideon's Reproach",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/b/7b771f44-ce32-41a2-b219-738924b7f42d.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Gideon's Reproach deals 4 damage to target attacking or blocking creature.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "statusTypes" : [ "ATTACKING", "BLOCKING" ]
+  "name": "Gideon's Reproach",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/b/7b771f44-ce32-41a2-b219-738924b7f42d.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Gideon's Reproach deals 4 damage to target attacking or blocking creature.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "statusTypes": [
+              "ATTACKING",
+              "BLOCKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:4"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:4" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

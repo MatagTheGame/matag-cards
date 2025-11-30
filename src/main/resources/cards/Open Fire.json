@@ -1,21 +1,35 @@
 {
-  "name" : "Open Fire",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/4/448f9fb5-ffb5-4325-9f81-ce8782e5f9e9.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Open Fire deals 3 damage to any target.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
+  "name": "Open Fire",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/4/448f9fb5-ffb5-4325-9f81-ce8782e5f9e9.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Open Fire deals 3 damage to any target.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "DAMAGE:3" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

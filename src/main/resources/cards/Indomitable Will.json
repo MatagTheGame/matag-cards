@@ -1,25 +1,43 @@
 {
-  "name" : "Indomitable Will",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/5/f5ba5d4b-5dbb-43d6-8f44-a2f80944df98.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "subtypes" : [ "AURA" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flash. Enchant creature. Enchanted creature gets +1/+2.",
-  "abilities" : [ {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "ENCHANT",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Indomitable Will",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/5/f5ba5d4b-5dbb-43d6-8f44-a2f80944df98.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "subtypes": [
+    "AURA"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flash. Enchant creature. Enchanted creature gets +1/+2.",
+  "abilities": [
+    {
+      "abilityType": "FLASH"
+    },
+    {
+      "abilityType": "ENCHANT",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+2"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+1/+2" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

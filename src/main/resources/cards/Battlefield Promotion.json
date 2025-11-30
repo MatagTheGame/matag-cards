@@ -1,22 +1,38 @@
 {
-  "name" : "Battlefield Promotion",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/7/c7bac081-a946-4278-90f0-c0f262b7abf2.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Put a +1/+1 counter on target creature. That creature gains first strike until end of turn. You gain 2 life.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Battlefield Promotion",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/7/c7bac081-a946-4278-90f0-c0f262b7abf2.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Put a +1/+1 counter on target creature. That creature gains first strike until end of turn. You gain 2 life.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "FIRST_STRIKE",
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "FIRST_STRIKE", "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

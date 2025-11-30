@@ -1,19 +1,35 @@
 {
-  "name" : "Nightveil Predator",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/9/193289c9-837d-4d18-9ef1-720e8e335e62.jpg",
-  "colors" : [ "BLUE", "BLACK" ],
-  "cost" : [ "BLUE", "BLUE", "BLACK", "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "VAMPIRE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying, deathtouch. Hexproof",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "DEATHTOUCH"
-  }, {
-    "abilityType" : "HEXPROOF"
-  } ]
+  "name": "Nightveil Predator",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/9/193289c9-837d-4d18-9ef1-720e8e335e62.jpg",
+  "colors": [
+    "BLUE",
+    "BLACK"
+  ],
+  "cost": [
+    "BLUE",
+    "BLUE",
+    "BLACK",
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "VAMPIRE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying, deathtouch. Hexproof",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "DEATHTOUCH"
+    },
+    {
+      "abilityType": "HEXPROOF"
+    }
+  ]
 }

@@ -1,17 +1,28 @@
 {
-  "name" : "Healer's Hawk",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/d/dd39dd28-1dc2-46a5-a3cf-9b5d267e16d6.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying, lifelink",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "LIFELINK"
-  } ]
+  "name": "Healer's Hawk",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/d/dd39dd28-1dc2-46a5-a3cf-9b5d267e16d6.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying, lifelink",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "LIFELINK"
+    }
+  ]
 }

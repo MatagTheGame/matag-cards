@@ -1,15 +1,28 @@
 {
-  "name" : "Crystacean",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/2/32afec8a-dbae-446e-919a-3efb556f5cb1.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CRAB" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flash",
-  "power" : 1,
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "FLASH"
-  } ]
+  "name": "Crystacean",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/2/32afec8a-dbae-446e-919a-3efb556f5cb1.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CRAB"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flash",
+  "power": 1,
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "FLASH"
+    }
+  ]
 }

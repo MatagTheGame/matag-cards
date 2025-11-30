@@ -1,24 +1,38 @@
 {
-  "name" : "Izzet Guildgate",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/6/c60c576b-a1ea-41d2-a1d8-4417c11ed48e.jpg",
-  "types" : [ "LAND" ],
-  "subtypes" : [ "GATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Izzet Guildgate enters the battlefield tapped. {T}: Add {U} or {R}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "BLUE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Izzet Guildgate",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/6/c60c576b-a1ea-41d2-a1d8-4417c11ed48e.jpg",
+  "types": [
+    "LAND"
+  ],
+  "subtypes": [
+    "GATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Izzet Guildgate enters the battlefield tapped. {T}: Add {U} or {R}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "BLUE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

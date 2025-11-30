@@ -1,15 +1,29 @@
 {
-  "name" : "Scrounger of Souls",
-  "imageUrl" : "https://cards.scryfall.io/large/front/2/3/23f9e014-7176-4e9c-9b23-1dc7cb70749e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HORROR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Lifelink",
-  "power" : 3,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "LIFELINK"
-  } ]
+  "name": "Scrounger of Souls",
+  "imageUrl": "https://cards.scryfall.io/large/front/2/3/23f9e014-7176-4e9c-9b23-1dc7cb70749e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HORROR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Lifelink",
+  "power": 3,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "LIFELINK"
+    }
+  ]
 }

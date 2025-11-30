@@ -1,10 +1,18 @@
 {
-  "name" : "Yoked Ox",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/7/a73f186b-c897-4a98-bc25-8e4aa348d8c9.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "OX" ],
-  "rarity" : "COMMON",
-  "toughness" : 4
+  "name": "Yoked Ox",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/7/a73f186b-c897-4a98-bc25-8e4aa348d8c9.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "OX"
+  ],
+  "rarity": "COMMON",
+  "toughness": 4
 }

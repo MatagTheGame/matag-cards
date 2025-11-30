@@ -1,31 +1,49 @@
 {
-  "name" : "Absorb",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/e/1e8a43c1-42d1-45ef-8a63-4b87775a6e88.jpg",
-  "colors": [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "BLUE" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Counter target spell. You gain 3 life.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL"
+  "name": "Absorb",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/e/1e8a43c1-42d1-45ef-8a63-4b87775a6e88.jpg",
+  "colors": [
+    "WHITE",
+    "BLUE"
+  ],
+  "cost": [
+    "WHITE",
+    "BLUE",
+    "BLUE"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Counter target spell. You gain 3 life.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "SPELL"
+          }
+        }
+      ],
+      "parameters": [
+        ":CANCELLED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":CANCELLED" ],
-    "trigger" : {
-      "type" : "CAST"
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
     },
-    "parameters" : [ "LIFE:3" ],
-    "trigger" : {
-      "type" : "CAST"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:3"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

@@ -1,17 +1,33 @@
 {
-  "name" : "Bitterbow Sharpshooters",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/5/753d2393-ce5a-422f-858c-25e3f61d52bd.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ARCHER", "JACKAL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Vigilance, reach",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "REACH"
-  } ]
+  "name": "Bitterbow Sharpshooters",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/5/753d2393-ce5a-422f-858c-25e3f61d52bd.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ARCHER",
+    "JACKAL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Vigilance, reach",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "VIGILANCE"
+    },
+    {
+      "abilityType": "REACH"
+    }
+  ]
 }

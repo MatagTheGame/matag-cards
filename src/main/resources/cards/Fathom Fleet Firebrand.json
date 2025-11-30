@@ -1,24 +1,41 @@
 {
-  "name" : "Fathom Fleet Firebrand",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/2/52280963-ba5b-4735-b5cb-67866f8624c9.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "PIRATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{1}{R}: Fathom Fleet Firebrand gets +1/+0 until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY" ]
+  "name": "Fathom Fleet Firebrand",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/2/52280963-ba5b-4735-b5cb-67866f8624c9.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "PIRATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{1}{R}: Fathom Fleet Firebrand gets +1/+0 until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

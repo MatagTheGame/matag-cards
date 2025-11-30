@@ -1,26 +1,44 @@
 {
-  "name" : "Senate Courier",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/a/da8dc5c8-4eb7-4e41-8431-b41251f7814e.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. {1}{W}: Senate Courier gains vigilance until end of turn.",
-  "power" : 1,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Senate Courier",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/a/da8dc5c8-4eb7-4e41-8431-b41251f7814e.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. {1}{W}: Senate Courier gains vigilance until end of turn.",
+  "power": 1,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "VIGILANCE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "ANY" ]
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "VIGILANCE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

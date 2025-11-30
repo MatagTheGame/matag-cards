@@ -1,14 +1,25 @@
 {
-  "name" : "Fortified Rampart",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/0/5095e2ab-a7f5-45bc-8b2f-31198ea27bba.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "WALL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Defender",
-  "toughness" : 6,
-  "abilities" : [ {
-    "abilityType" : "DEFENDER"
-  } ]
+  "name": "Fortified Rampart",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/0/5095e2ab-a7f5-45bc-8b2f-31198ea27bba.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "WALL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Defender",
+  "toughness": 6,
+  "abilities": [
+    {
+      "abilityType": "DEFENDER"
+    }
+  ]
 }

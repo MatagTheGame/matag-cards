@@ -1,15 +1,27 @@
 {
-  "name" : "Goblin Trailblazer",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/5/152b2d16-bdf5-4249-9dc1-bb51498aa33b.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GOBLIN", "PIRATE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Menace",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "MENACE"
-  } ]
+  "name": "Goblin Trailblazer",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/5/152b2d16-bdf5-4249-9dc1-bb51498aa33b.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOBLIN",
+    "PIRATE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Menace",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "MENACE"
+    }
+  ]
 }

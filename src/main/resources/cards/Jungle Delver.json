@@ -1,24 +1,41 @@
 {
-  "name" : "Jungle Delver",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/1/51ab0316-c0c2-44c8-b841-4f796e347b74.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "MERFOLK", "WARRIOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{3}{G}: Put a +1/+1 counter on Jungle Delver.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "ANY" ]
+  "name": "Jungle Delver",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/1/51ab0316-c0c2-44c8-b841-4f796e347b74.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "MERFOLK",
+    "WARRIOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{3}{G}: Put a +1/+1 counter on Jungle Delver.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

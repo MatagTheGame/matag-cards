@@ -1,25 +1,44 @@
 {
-  "name" : "Cultist's Staff",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/8/d/8da8c523-44e8-43e7-8431-28dbed1015ac.jpg",
-  "cost" : [ "ANY", "ANY" ],
-  "types" : [ "ARTIFACT" ],
-  "subtypes" : [ "EQUIPMENT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +2/+2. Equip {3}",
-  "abilities" : [ {
-    "abilityType" : "EQUIP",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "+2/+2" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY", "ANY", "ANY" ]
-    },
-    "sorcerySpeed" : true
-  } ]
+  "name": "Cultist's Staff",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/8/d/8da8c523-44e8-43e7-8431-28dbed1015ac.jpg",
+  "cost": [
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT"
+  ],
+  "subtypes": [
+    "EQUIPMENT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Equipped creature gets +2/+2. Equip {3}",
+  "abilities": [
+    {
+      "abilityType": "EQUIP",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+2/+2"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      },
+      "sorcerySpeed": true
+    }
+  ]
 }

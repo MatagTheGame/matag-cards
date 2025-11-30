@@ -1,20 +1,33 @@
 {
-  "name" : "Succumb to Temptation",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/2/9/2974e18b-be17-4059-9f29-7afe1d1a51eb.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "BLACK", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "You draw two cards and you lose 2 life.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:2", "LIFE:-2" ],
-    "trigger" : {
-      "type" : "CAST"
+  "name": "Succumb to Temptation",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/2/9/2974e18b-be17-4059-9f29-7afe1d1a51eb.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "You draw two cards and you lose 2 life.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:2",
+        "LIFE:-2"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

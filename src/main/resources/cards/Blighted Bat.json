@@ -1,28 +1,48 @@
 {
-  "name" : "Blighted Bat",
-  "imageUrl" : "https://cards.scryfall.io/large/front/6/c/6c0cc3d9-85f1-49ed-bf8a-81fc6c60bd2a.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BAT", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. {1}: Blighted Bat gains haste until end of turn.",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Blighted Bat",
+  "imageUrl": "https://cards.scryfall.io/large/front/6/c/6c0cc3d9-85f1-49ed-bf8a-81fc6c60bd2a.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BAT",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. {1}: Blighted Bat gains haste until end of turn.",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "itself": true
+          }
+        }
+      ],
+      "parameters": [
+        "HASTE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "HASTE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY" ]
     }
-  } ]
+  ]
 }

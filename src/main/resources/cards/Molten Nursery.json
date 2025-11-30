@@ -1,28 +1,41 @@
 {
-  "name" : "Molten Nursery",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/d/3db8aaf5-e2bf-40ea-bd5d-663017cfd4a6.jpg",
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Devoid. Whenever you cast a colorless spell, Molten Nursery deals 1 damage to any target.",
-  "abilities" : [ {
-    "abilityType" : "DEVOID"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "ANY"
-      }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "colorless" : true,
-        "controllerType" : "PLAYER"
+  "name": "Molten Nursery",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/d/3db8aaf5-e2bf-40ea-bd5d-663017cfd4a6.jpg",
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Devoid. Whenever you cast a colorless spell, Molten Nursery deals 1 damage to any target.",
+  "abilities": [
+    {
+      "abilityType": "DEVOID"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "ANY"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "colorless": true,
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

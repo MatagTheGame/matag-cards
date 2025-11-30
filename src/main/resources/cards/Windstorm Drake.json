@@ -1,28 +1,47 @@
 {
-  "name" : "Windstorm Drake",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/2/82ff4bd1-2b61-46be-b547-38916ea08298.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRAKE" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. Other creatures you control with flying get +1/+0.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "withAbilityType" : "FLYING",
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Windstorm Drake",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/2/82ff4bd1-2b61-46be-b547-38916ea08298.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRAKE"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. Other creatures you control with flying get +1/+0.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "+1/+0" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "withAbilityType": "FLYING",
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+0"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

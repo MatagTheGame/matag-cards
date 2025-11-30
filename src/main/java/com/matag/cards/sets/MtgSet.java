@@ -12,10 +12,11 @@ import lombok.Value;
 @JsonDeserialize(builder = MtgSet.MtgSetBuilder.class)
 @Builder
 public class MtgSet {
-  String code;
-  String name;
-  TreeSet<String> cards;
+    String code;
+    String name;
+    TreeSet<String> cards;
 
-  @JsonPOJOBuilder(withPrefix = "")
-  public static class MtgSetBuilder {}
+    @JsonPOJOBuilder(withPrefix = "")
+    public static class MtgSetBuilder {
+    }
 }

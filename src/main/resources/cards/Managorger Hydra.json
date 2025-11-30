@@ -1,29 +1,44 @@
 {
-  "name" : "Managorger Hydra",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/2/f2e4ab33-150e-4004-a346-4842f4e701cc.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HYDRA" ],
-  "rarity" : "RARE",
-  "ruleText" : "Trample. Whenever a player casts a spell, put a +1/+1 counter on Managorger Hydra.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "TRAMPLE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+  "name": "Managorger Hydra",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/2/f2e4ab33-150e-4004-a346-4842f4e701cc.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HYDRA"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Trample. Whenever a player casts a spell, put a +1/+1 counter on Managorger Hydra.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "TRAMPLE"
     },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL"
+        }
       }
     }
-  } ]
+  ]
 }

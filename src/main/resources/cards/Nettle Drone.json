@@ -1,41 +1,60 @@
 {
-  "name" : "Nettle Drone",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/6/e633833a-cc4b-4c8c-a0d3-cd263e09df81.jpg",
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DRONE", "ELDRAZI" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Devoid. {T}: Nettle Drone deals 1 damage to each opponent. Whenever you cast a colorless spell, untap Nettle Drone.",
-  "power" : 3,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "DEVOID"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
+  "name": "Nettle Drone",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/6/e633833a-cc4b-4c8c-a0d3-cd263e09df81.jpg",
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DRONE",
+    "ELDRAZI"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Devoid. {T}: Nettle Drone deals 1 damage to each opponent. Whenever you cast a colorless spell, untap Nettle Drone.",
+  "power": 3,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "DEVOID"
     },
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "TAP" ]
-    }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "TAP"
+        ]
+      }
     },
-    "parameters" : [ ":UNTAPPED" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "colorless" : true,
-        "controllerType" : "PLAYER"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        ":UNTAPPED"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "colorless": true,
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

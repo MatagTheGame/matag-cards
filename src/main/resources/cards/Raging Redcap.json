@@ -1,15 +1,28 @@
 {
-  "name" : "Raging Redcap",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/9/d9325398-41c3-4177-a64d-ea38cb7a8737.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "GOBLIN", "KNIGHT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Double strike",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "DOUBLE_STRIKE"
-  } ]
+  "name": "Raging Redcap",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/9/d9325398-41c3-4177-a64d-ea38cb7a8737.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOBLIN",
+    "KNIGHT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Double strike",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    }
+  ]
 }

@@ -1,31 +1,45 @@
 {
-  "name" : "Elemental Bond",
-  "imageUrl" : "https://cards.scryfall.io/large/front/5/1/516ebdba-0f25-459a-a26b-f6fa928b96e6.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "ENCHANTMENT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever a creature with power 3 or greater enters the battlefield under your control, draw a card.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "DRAW:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "powerToughnessConstraint" : {
-          "powerOrToughness" : "POWER",
-          "powerToughnessConstraintType" : "GREATER_OR_EQUAL",
-          "value" : 3
-        },
-        "controllerType" : "PLAYER"
+  "name": "Elemental Bond",
+  "imageUrl": "https://cards.scryfall.io/large/front/5/1/516ebdba-0f25-459a-a26b-f6fa928b96e6.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ENCHANTMENT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever a creature with power 3 or greater enters the battlefield under your control, draw a card.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "powerToughnessConstraint": {
+            "powerOrToughness": "POWER",
+            "powerToughnessConstraintType": "GREATER_OR_EQUAL",
+            "value": 3
+          },
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

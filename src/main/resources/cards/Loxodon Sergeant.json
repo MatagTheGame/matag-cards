@@ -1,32 +1,51 @@
 {
-  "name" : "Loxodon Sergeant",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/5/c57f873b-5fb2-4638-b66c-f6d1aec156ba.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEPHANT", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Vigilance. When Loxodon Sergeant enters the battlefield, other creatures you control gain vigilance until end of turn.",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "VIGILANCE"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Loxodon Sergeant",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/5/c57f873b-5fb2-4638-b66c-f6d1aec156ba.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEPHANT",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Vigilance. When Loxodon Sergeant enters the battlefield, other creatures you control gain vigilance until end of turn.",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "VIGILANCE"
     },
-    "parameters" : [ "VIGILANCE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "VIGILANCE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

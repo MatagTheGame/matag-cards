@@ -1,26 +1,46 @@
 {
-  "name" : "Crystal Slipper",
-  "imageUrl" : "https://cards.scryfall.io/large/front/9/f/9f738ca6-5254-4dbc-9f59-854e81c8dac2.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY" ],
-  "types" : [ "ARTIFACT" ],
-  "subtypes" : [ "EQUIPMENT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Equipped creature gets +1/+0 and has haste. Equip {1}",
-  "abilities" : [ {
-    "abilityType" : "EQUIP",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
-      }
-    } ],
-    "parameters" : [ "+1/+0", "HASTE" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "ANY" ]
-    },
-    "sorcerySpeed" : true
-  } ]
+  "name": "Crystal Slipper",
+  "imageUrl": "https://cards.scryfall.io/large/front/9/f/9f738ca6-5254-4dbc-9f59-854e81c8dac2.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT"
+  ],
+  "subtypes": [
+    "EQUIPMENT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Equipped creature gets +1/+0 and has haste. Equip {1}",
+  "abilities": [
+    {
+      "abilityType": "EQUIP",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+0",
+        "HASTE"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "ANY"
+        ]
+      },
+      "sorcerySpeed": true
+    }
+  ]
 }

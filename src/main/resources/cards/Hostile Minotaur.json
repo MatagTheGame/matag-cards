@@ -1,15 +1,28 @@
 {
-  "name" : "Hostile Minotaur",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/e/0e1263ea-adc9-442b-b13e-9afb69596372.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "MINOTAUR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Haste",
-  "power" : 3,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "HASTE"
-  } ]
+  "name": "Hostile Minotaur",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/e/0e1263ea-adc9-442b-b13e-9afb69596372.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "MINOTAUR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Haste",
+  "power": 3,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "HASTE"
+    }
+  ]
 }

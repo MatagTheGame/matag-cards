@@ -1,29 +1,46 @@
 {
-  "name" : "Gavony Unhallowed",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/1/8/186ed5a8-12d4-4b47-aa7f-5c6c86543008.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Whenever another creature you control dies, put a +1/+1 counter on Gavony Unhallowed.",
-  "power" : 2,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "PLUS_1_COUNTERS:1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "others" : true
+  "name": "Gavony Unhallowed",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/1/8/186ed5a8-12d4-4b47-aa7f-5c6c86543008.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Whenever another creature you control dies, put a +1/+1 counter on Gavony Unhallowed.",
+  "power": 2,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "PLUS_1_COUNTERS:1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "others": true
+        }
       }
     }
-  } ]
+  ]
 }

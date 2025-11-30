@@ -1,11 +1,23 @@
 {
-  "name" : "Imperial Outrider",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/d/0dd3aca5-516f-4500-9d7f-95630401d3ae.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "KNIGHT" ],
-  "rarity" : "COMMON",
-  "power" : 1,
-  "toughness" : 5
+  "name": "Imperial Outrider",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/d/0dd3aca5-516f-4500-9d7f-95630401d3ae.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "KNIGHT"
+  ],
+  "rarity": "COMMON",
+  "power": 1,
+  "toughness": 5
 }

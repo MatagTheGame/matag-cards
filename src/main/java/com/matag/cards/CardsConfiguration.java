@@ -12,12 +12,12 @@ import static com.fasterxml.jackson.module.kotlin.ExtensionsKt.jacksonObjectMapp
 @Configuration
 @ComponentScan(basePackageClasses = {CardsConfiguration.class})
 public class CardsConfiguration {
-  public static String getResourcesPath() {
-    return new File("src/main/resources").getAbsolutePath();
-  }
+    public static String getResourcesPath() {
+        return new File("src/main/resources").getAbsolutePath();
+    }
 
-  @Bean
-  public ObjectMapper cardsObjectMapper() {
-    return jacksonObjectMapper();
-  }
+    @Bean
+    public ObjectMapper cardsObjectMapper() {
+        return jacksonObjectMapper();
+    }
 }

@@ -1,28 +1,47 @@
 {
-  "name" : "Empyrean Eagle",
-  "imageUrl" : "https://cards.scryfall.io/large/front/a/c/ac555709-c7cc-4c64-8a6f-8fe2bc149fcd.jpg",
-  "colors" : [ "WHITE", "BLUE" ],
-  "cost" : [ "WHITE", "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD", "SPIRIT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. Other creatures you control with flying get +1/+1.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "withAbilityType" : "FLYING",
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Empyrean Eagle",
+  "imageUrl": "https://cards.scryfall.io/large/front/a/c/ac555709-c7cc-4c64-8a6f-8fe2bc149fcd.jpg",
+  "colors": [
+    "WHITE",
+    "BLUE"
+  ],
+  "cost": [
+    "WHITE",
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD",
+    "SPIRIT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. Other creatures you control with flying get +1/+1.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "withAbilityType": "FLYING",
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

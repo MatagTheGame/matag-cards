@@ -1,23 +1,38 @@
 {
-  "name" : "Stern Dismissal",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/a/0aec4d0f-ba1e-45f8-9764-9bcc3fa50e51.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Return target creature or enchantment an opponent controls to its owner's hand.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE", "ENCHANTMENT" ],
-        "controllerType" : "PLAYER"
+  "name": "Stern Dismissal",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/a/0aec4d0f-ba1e-45f8-9764-9bcc3fa50e51.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Return target creature or enchantment an opponent controls to its owner's hand.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE",
+              "ENCHANTMENT"
+            ],
+            "controllerType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        ":RETURN_TO_OWNER_HAND"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":RETURN_TO_OWNER_HAND" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

@@ -1,24 +1,41 @@
 {
-  "name" : "Almighty Brushwagg",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/1/71f2b7ac-8742-468d-b6a3-87881cb522ff.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BRUSHWAGG" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Trample. {3}{G}: Almighty Brushwagg gets +3/+3 until end of turn.",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "+3/+3" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "GREEN", "ANY", "ANY", "ANY" ]
+  "name": "Almighty Brushwagg",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/1/71f2b7ac-8742-468d-b6a3-87881cb522ff.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BRUSHWAGG"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Trample. {3}{G}: Almighty Brushwagg gets +3/+3 until end of turn.",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "+3/+3"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "GREEN",
+          "ANY",
+          "ANY",
+          "ANY"
+        ]
+      }
     }
-  } ]
+  ]
 }

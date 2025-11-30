@@ -1,15 +1,29 @@
 {
-  "name" : "Forgotten Sentinel",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/b/3bd39a06-c53a-42c2-b2df-028358f03406.jpg",
-  "cost" : [ "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "GOLEM" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Forgotten Sentinel enters the battlefield tapped.",
-  "power" : 4,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  } ]
+  "name": "Forgotten Sentinel",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/b/3bd39a06-c53a-42c2-b2df-028358f03406.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "GOLEM"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Forgotten Sentinel enters the battlefield tapped.",
+  "power": 4,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    }
+  ]
 }

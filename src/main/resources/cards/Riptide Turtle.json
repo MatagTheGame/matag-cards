@@ -1,16 +1,28 @@
 {
-  "name" : "Riptide Turtle",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/c/cc4ba296-950c-4e39-ab5e-06be07e4a190.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "TURTLE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flash. Defender",
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "DEFENDER"
-  }, {
-    "abilityType" : "FLASH"
-  } ]
+  "name": "Riptide Turtle",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/c/cc4ba296-950c-4e39-ab5e-06be07e4a190.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "TURTLE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flash. Defender",
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "DEFENDER"
+    },
+    {
+      "abilityType": "FLASH"
+    }
+  ]
 }

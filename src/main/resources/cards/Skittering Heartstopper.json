@@ -1,24 +1,38 @@
 {
-  "name" : "Skittering Heartstopper",
-  "imageUrl" : "https://cards.scryfall.io/large/front/0/7/0722fbdf-c092-4e80-913f-29390177cdcb.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "INSECT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{B}: Skittering Heartstopper gains deathtouch until end of turn.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "itself" : true
-    },
-    "parameters" : [ "DEATHTOUCH" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "BLACK" ]
+  "name": "Skittering Heartstopper",
+  "imageUrl": "https://cards.scryfall.io/large/front/0/7/0722fbdf-c092-4e80-913f-29390177cdcb.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "INSECT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{B}: Skittering Heartstopper gains deathtouch until end of turn.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "itself": true
+      },
+      "parameters": [
+        "DEATHTOUCH"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "BLACK"
+        ]
+      }
     }
-  } ]
+  ]
 }

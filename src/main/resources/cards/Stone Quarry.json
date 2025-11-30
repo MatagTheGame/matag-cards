@@ -1,23 +1,35 @@
 {
-  "name" : "Stone Quarry",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/c/3c64d130-2864-4e1e-9024-58821eec3be5.jpg",
-  "types" : [ "LAND" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Stone Quarry enters the battlefield tapped. {T}: Add {R} or {W}.",
-  "abilities" : [ {
-    "abilityType" : "ENTERS_THE_BATTLEFIELD_WITH",
-    "parameters" : [ ":TAPPED" ]
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "RED" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Stone Quarry",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/c/3c64d130-2864-4e1e-9024-58821eec3be5.jpg",
+  "types": [
+    "LAND"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Stone Quarry enters the battlefield tapped. {T}: Add {R} or {W}.",
+  "abilities": [
+    {
+      "abilityType": "ENTERS_THE_BATTLEFIELD_WITH",
+      "parameters": [
+        ":TAPPED"
+      ]
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "RED"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
+    },
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "WHITE"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  }, {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "WHITE" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
-    }
-  } ]
+  ]
 }

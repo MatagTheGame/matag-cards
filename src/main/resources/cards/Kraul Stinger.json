@@ -1,15 +1,28 @@
 {
-  "name" : "Kraul Stinger",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/6/46b88fe9-2450-47ee-ac1e-bbbccbf5684f.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ASSASSIN", "INSECT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Deathtouch",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "DEATHTOUCH"
-  } ]
+  "name": "Kraul Stinger",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/6/46b88fe9-2450-47ee-ac1e-bbbccbf5684f.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ASSASSIN",
+    "INSECT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Deathtouch",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "DEATHTOUCH"
+    }
+  ]
 }

@@ -1,27 +1,42 @@
 {
-  "name" : "Reave Soul",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/e/ce7ff657-aa44-4336-895a-87518159cef6.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "SORCERY" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target creature with power 3 or less.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "powerToughnessConstraint" : {
-          "powerOrToughness" : "POWER",
-          "powerToughnessConstraintType" : "LESS_OR_EQUAL",
-          "value" : 3
+  "name": "Reave Soul",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/e/ce7ff657-aa44-4336-895a-87518159cef6.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "SORCERY"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target creature with power 3 or less.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "powerToughnessConstraint": {
+              "powerOrToughness": "POWER",
+              "powerToughnessConstraintType": "LESS_OR_EQUAL",
+              "value": 3
+            }
+          }
         }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

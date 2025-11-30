@@ -1,22 +1,37 @@
 {
-  "name" : "Essence Scatter",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/c/3c102e4d-fa22-4e05-a2af-9014de929e64.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Counter target creature spell.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "CREATURE" ]
+  "name": "Essence Scatter",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/c/3c102e4d-fa22-4e05-a2af-9014de929e64.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Counter target creature spell.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "SPELL",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":CANCELLED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":CANCELLED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

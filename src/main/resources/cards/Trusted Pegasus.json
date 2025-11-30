@@ -1,34 +1,55 @@
 {
-  "name" : "Trusted Pegasus",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/0/70e3a90c-1e5c-4646-b3d5-ff46d3fa7b35.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "PEGASUS" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying. Whenever Trusted Pegasus attacks, target attacking creature without flying gains flying until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "withoutAbilityType" : "FLYING",
-        "statusTypes" : [ "ATTACKING" ]
-      }
-    } ],
-    "parameters" : [ "FLYING" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Trusted Pegasus",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/0/70e3a90c-1e5c-4646-b3d5-ff46d3fa7b35.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "PEGASUS"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying. Whenever Trusted Pegasus attacks, target attacking creature without flying gains flying until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "withoutAbilityType": "FLYING",
+            "statusTypes": [
+              "ATTACKING"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "FLYING"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

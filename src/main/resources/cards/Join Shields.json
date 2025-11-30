@@ -1,21 +1,40 @@
 {
-  "name" : "Join Shields",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/3/d3a5c2e5-7914-4edc-960a-75f3dfb5afc4.jpg",
-  "colors" : [ "WHITE", "GREEN" ],
-  "cost" : [ "WHITE", "GREEN", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Untap all creatures you control. They gain hexproof and indestructible until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ ":UNTAPPED", "HEXPROOF", "INDESTRUCTIBLE" ],
-    "trigger" : {
-      "type" : "CAST"
+  "name": "Join Shields",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/3/d3a5c2e5-7914-4edc-960a-75f3dfb5afc4.jpg",
+  "colors": [
+    "WHITE",
+    "GREEN"
+  ],
+  "cost": [
+    "WHITE",
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Untap all creatures you control. They gain hexproof and indestructible until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        ":UNTAPPED",
+        "HEXPROOF",
+        "INDESTRUCTIBLE"
+      ],
+      "trigger": {
+        "type": "CAST"
+      }
     }
-  } ]
+  ]
 }

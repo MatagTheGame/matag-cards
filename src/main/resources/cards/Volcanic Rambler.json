@@ -1,25 +1,48 @@
 {
-  "name" : "Volcanic Rambler",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/f/7fc075ee-16e9-4cf5-bbb0-7b3b4b9eb3f4.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{2}{R}: Volcanic Rambler deals 1 damage to target player or planeswalker.",
-  "power" : 6,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PLAYER"
+  "name": "Volcanic Rambler",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/f/7fc075ee-16e9-4cf5-bbb0-7b3b4b9eb3f4.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{2}{R}: Volcanic Rambler deals 1 damage to target player or planeswalker.",
+  "power": 6,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PLAYER"
+          }
+        }
+      ],
+      "parameters": [
+        "DAMAGE:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "RED",
+          "ANY",
+          "ANY"
+        ]
       }
-    } ],
-    "parameters" : [ "DAMAGE:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "RED", "ANY", "ANY" ]
     }
-  } ]
+  ]
 }

@@ -1,22 +1,37 @@
 {
-  "name" : "Precise Strike",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/c/3cd2e7ab-b63e-48e8-a32a-6ff8673241d9.jpg",
-  "colors" : [ "RED" ],
-  "cost" : [ "RED" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Target creature gets +1/+0 and gains first strike until end of turn.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ]
+  "name": "Precise Strike",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/c/3cd2e7ab-b63e-48e8-a32a-6ff8673241d9.jpg",
+  "colors": [
+    "RED"
+  ],
+  "cost": [
+    "RED"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Target creature gets +1/+0 and gains first strike until end of turn.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        "+1/+0",
+        "FIRST_STRIKE"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ "+1/+0", "FIRST_STRIKE" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

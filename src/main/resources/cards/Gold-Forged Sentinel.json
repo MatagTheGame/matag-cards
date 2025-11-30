@@ -1,14 +1,28 @@
 {
-  "name" : "Gold-Forged Sentinel",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/a/ca1bcaee-52bf-4000-8ffa-ee5e04703de6.jpg",
-  "cost" : [ "ANY", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CHIMERA" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying",
-  "power" : 4,
-  "toughness" : 4,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Gold-Forged Sentinel",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/a/ca1bcaee-52bf-4000-8ffa-ee5e04703de6.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CHIMERA"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying",
+  "power": 4,
+  "toughness": 4,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

@@ -1,14 +1,23 @@
 {
-  "name" : "Forest",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/7/f7cf3bbf-acc0-4fe7-a631-aca698190ce2.jpg",
-  "types" : [ "BASIC", "LAND" ],
-  "subtypes" : [ "FOREST" ],
-  "rarity" : "COMMON",
-  "abilities" : [ {
-    "abilityType" : "TAP_ADD_MANA",
-    "parameters" : [ "GREEN" ],
-    "trigger" : {
-      "type" : "MANA_ABILITY"
+  "name": "Forest",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/7/f7cf3bbf-acc0-4fe7-a631-aca698190ce2.jpg",
+  "types": [
+    "BASIC",
+    "LAND"
+  ],
+  "subtypes": [
+    "FOREST"
+  ],
+  "rarity": "COMMON",
+  "abilities": [
+    {
+      "abilityType": "TAP_ADD_MANA",
+      "parameters": [
+        "GREEN"
+      ],
+      "trigger": {
+        "type": "MANA_ABILITY"
+      }
     }
-  } ]
+  ]
 }

@@ -1,11 +1,24 @@
 {
-  "name" : "Vastwood Gorger",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/f/df9547f7-2789-4cac-bf61-78e4047a95fb.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "WURM" ],
-  "rarity" : "COMMON",
-  "power" : 5,
-  "toughness" : 6
+  "name": "Vastwood Gorger",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/f/df9547f7-2789-4cac-bf61-78e4047a95fb.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "WURM"
+  ],
+  "rarity": "COMMON",
+  "power": 5,
+  "toughness": 6
 }

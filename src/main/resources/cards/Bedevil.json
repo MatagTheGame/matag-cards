@@ -1,22 +1,41 @@
 {
-  "name" : "Bedevil",
-  "imageUrl" : "https://cards.scryfall.io/large/front/8/1/81e2b96b-ecf2-4dd9-bc9d-3c46ee8c59e6.jpg",
-  "colors" : [ "BLACK", "RED" ],
-  "cost" : [ "BLACK", "BLACK", "RED" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Destroy target artifact, creature, or planeswalker.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "ARTIFACT", "CREATURE", "PLANESWALKER" ]
+  "name": "Bedevil",
+  "imageUrl": "https://cards.scryfall.io/large/front/8/1/81e2b96b-ecf2-4dd9-bc9d-3c46ee8c59e6.jpg",
+  "colors": [
+    "BLACK",
+    "RED"
+  ],
+  "cost": [
+    "BLACK",
+    "BLACK",
+    "RED"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Destroy target artifact, creature, or planeswalker.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "ARTIFACT",
+              "CREATURE",
+              "PLANESWALKER"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

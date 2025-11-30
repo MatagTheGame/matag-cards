@@ -1,28 +1,42 @@
 {
-  "name" : "Tattered Mummy",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/c/4c006ad5-db2b-42c6-8018-660e08f18f50.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "JACKAL", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "When Tattered Mummy dies, each opponent loses 2 life.",
-  "power" : 1,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "controllerType" : "OPPONENT"
-    },
-    "parameters" : [ "LIFE:-2" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_DIE",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+  "name": "Tattered Mummy",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/c/4c006ad5-db2b-42c6-8018-660e08f18f50.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "JACKAL",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "When Tattered Mummy dies, each opponent loses 2 life.",
+  "power": 1,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "controllerType": "OPPONENT"
+      },
+      "parameters": [
+        "LIFE:-2"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_DIE",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

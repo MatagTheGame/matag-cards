@@ -1,17 +1,31 @@
 {
-  "name" : "Lightning Stormkin",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/3/43c6db4e-cc37-4473-b0f5-48d8a0b82f33.jpg",
-  "colors" : [ "BLUE", "RED" ],
-  "cost" : [ "BLUE", "RED" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ELEMENTAL", "WIZARD" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flying. Haste",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "HASTE"
-  } ]
+  "name": "Lightning Stormkin",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/3/43c6db4e-cc37-4473-b0f5-48d8a0b82f33.jpg",
+  "colors": [
+    "BLUE",
+    "RED"
+  ],
+  "cost": [
+    "BLUE",
+    "RED"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ELEMENTAL",
+    "WIZARD"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flying. Haste",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    },
+    {
+      "abilityType": "HASTE"
+    }
+  ]
 }

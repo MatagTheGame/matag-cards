@@ -1,32 +1,50 @@
 {
-  "name" : "Drogskol Shieldmate",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/1/5/156b4bca-4145-472b-bf80-13edb0bef561.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SOLDIER", "SPIRIT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Flash. When Drogskol Shieldmate enters the battlefield, other creatures you control get +0/+1 until end of turn.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "FLASH"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
+  "name": "Drogskol Shieldmate",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/1/5/156b4bca-4145-472b-bf80-13edb0bef561.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SOLDIER",
+    "SPIRIT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Flash. When Drogskol Shieldmate enters the battlefield, other creatures you control get +0/+1 until end of turn.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "FLASH"
     },
-    "parameters" : [ "+0/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+0/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  } ]
+  ]
 }

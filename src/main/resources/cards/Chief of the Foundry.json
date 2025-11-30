@@ -1,24 +1,40 @@
 {
-  "name" : "Chief of the Foundry",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/4/145ae70d-8d0d-4bf2-b50c-af75b6874899.jpg",
-  "cost" : [ "ANY", "ANY", "ANY" ],
-  "types" : [ "ARTIFACT", "CREATURE" ],
-  "subtypes" : [ "CONSTRUCT" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Other artifact creatures you control get +1/+1.",
-  "power" : 2,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofAllTypes" : [ "ARTIFACT", "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "others" : true
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "STATIC"
+  "name": "Chief of the Foundry",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/4/145ae70d-8d0d-4bf2-b50c-af75b6874899.jpg",
+  "cost": [
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "ARTIFACT",
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CONSTRUCT"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Other artifact creatures you control get +1/+1.",
+  "power": 2,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofAllTypes": [
+          "ARTIFACT",
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "others": true
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "STATIC"
+      }
     }
-  } ]
+  ]
 }

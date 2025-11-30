@@ -1,33 +1,57 @@
 {
-  "name" : "Angelic Guardian",
-  "imageUrl" : "https://cards.scryfall.io/large/front/e/0/e058dc51-b200-42ee-a345-a63cfaa397fe.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "WHITE", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "ANGEL" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying. Whenever one or more creatures you control attack, they gain indestructible until end of turn.",
-  "power" : 5,
-  "toughness" : 5,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER",
-      "statusTypes" : [ "ATTACKING" ]
+  "name": "Angelic Guardian",
+  "imageUrl": "https://cards.scryfall.io/large/front/e/0/e058dc51-b200-42ee-a345-a63cfaa397fe.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "ANGEL"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying. Whenever one or more creatures you control attack, they gain indestructible until end of turn.",
+  "power": 5,
+  "toughness": 5,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "INDESTRUCTIBLE" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER",
+        "statusTypes": [
+          "ATTACKING"
+        ]
+      },
+      "parameters": [
+        "INDESTRUCTIBLE"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

@@ -1,32 +1,53 @@
 {
-  "name" : "Windreader Sphinx",
-  "imageUrl" : "https://cards.scryfall.io/large/front/d/0/d0346326-6bdf-4385-ab41-7b06e9f66ffd.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "SPHINX" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying. Whenever a creature with flying attacks, you may draw a card.",
-  "power" : 3,
-  "toughness" : 7,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
+  "name": "Windreader Sphinx",
+  "imageUrl": "https://cards.scryfall.io/large/front/d/0/d0346326-6bdf-4385-ab41-7b06e9f66ffd.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "SPHINX"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying. Whenever a creature with flying attacks, you may draw a card.",
+  "power": 3,
+  "toughness": 7,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
     },
-    "parameters" : [ "DRAW:1" ],
-    "optional" : true,
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "withAbilityType" : "FLYING"
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "DRAW:1"
+      ],
+      "optional": true,
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "ofType": [
+            "CREATURE"
+          ],
+          "withAbilityType": "FLYING"
+        }
       }
     }
-  } ]
+  ]
 }

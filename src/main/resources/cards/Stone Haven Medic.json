@@ -1,24 +1,41 @@
 {
-  "name" : "Stone Haven Medic",
-  "imageUrl" : "https://cards.scryfall.io/large/front/1/d/1dc063ea-15e9-4ac3-b9a3-32aaa8bc4f55.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "CLERIC", "KOR" ],
-  "rarity" : "COMMON",
-  "ruleText" : "{W}, {T}: You gain 1 life.",
-  "power" : 1,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PLAYER",
-      "itself" : true
-    },
-    "parameters" : [ "LIFE:1" ],
-    "trigger" : {
-      "type" : "ACTIVATED_ABILITY",
-      "cost" : [ "WHITE", "TAP" ]
+  "name": "Stone Haven Medic",
+  "imageUrl": "https://cards.scryfall.io/large/front/1/d/1dc063ea-15e9-4ac3-b9a3-32aaa8bc4f55.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "CLERIC",
+    "KOR"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "{W}, {T}: You gain 1 life.",
+  "power": 1,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PLAYER",
+        "itself": true
+      },
+      "parameters": [
+        "LIFE:1"
+      ],
+      "trigger": {
+        "type": "ACTIVATED_ABILITY",
+        "cost": [
+          "WHITE",
+          "TAP"
+        ]
+      }
     }
-  } ]
+  ]
 }

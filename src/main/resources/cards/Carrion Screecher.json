@@ -1,15 +1,29 @@
 {
-  "name" : "Carrion Screecher",
-  "imageUrl" : "https://cards.scryfall.io/large/front/4/5/45a4010d-6a27-4ab5-aff6-e658b39f44b1.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "BIRD", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Flying",
-  "power" : 3,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "FLYING"
-  } ]
+  "name": "Carrion Screecher",
+  "imageUrl": "https://cards.scryfall.io/large/front/4/5/45a4010d-6a27-4ab5-aff6-e658b39f44b1.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "BIRD",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Flying",
+  "power": 3,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "FLYING"
+    }
+  ]
 }

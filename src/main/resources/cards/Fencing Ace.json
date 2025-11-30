@@ -1,15 +1,27 @@
 {
-  "name" : "Fencing Ace",
-  "imageUrl" : "https://cards.scryfall.io/large/front/c/2/c2452306-1bd8-442e-a482-b0e3b61eb530.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "SOLDIER" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Double strike",
-  "power" : 1,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "DOUBLE_STRIKE"
-  } ]
+  "name": "Fencing Ace",
+  "imageUrl": "https://cards.scryfall.io/large/front/c/2/c2452306-1bd8-442e-a482-b0e3b61eb530.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "SOLDIER"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Double strike",
+  "power": 1,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "DOUBLE_STRIKE"
+    }
+  ]
 }

@@ -52,7 +52,6 @@ public class MtgSetsTest {
     }
 
 
-
     private Map<String, Integer> countCardsBySet(Map<String, MtgSet> sets) {
         var countCardsBySet = new HashMap<String, Integer>();
 

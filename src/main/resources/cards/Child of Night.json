@@ -1,15 +1,26 @@
 {
-  "name" : "Child of Night",
-  "imageUrl" : "https://cards.scryfall.io/large/front/3/8/3887af00-a87d-4396-b82b-38b88c084e8e.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "VAMPIRE" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Lifelink",
-  "power" : 2,
-  "toughness" : 1,
-  "abilities" : [ {
-    "abilityType" : "LIFELINK"
-  } ]
+  "name": "Child of Night",
+  "imageUrl": "https://cards.scryfall.io/large/front/3/8/3887af00-a87d-4396-b82b-38b88c084e8e.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "VAMPIRE"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Lifelink",
+  "power": 2,
+  "toughness": 1,
+  "abilities": [
+    {
+      "abilityType": "LIFELINK"
+    }
+  ]
 }

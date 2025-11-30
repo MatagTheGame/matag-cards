@@ -1,47 +1,72 @@
 {
-  "name" : "Hamlet Captain",
-  "imageUrl" : "https://c1.scryfall.com/file/scryfall-cards/large/front/f/d/fd8f9cd1-1c43-4778-b8e9-ce51b81984d3.jpg",
-  "colors" : [ "GREEN" ],
-  "cost" : [ "GREEN", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HUMAN", "WARRIOR" ],
-  "rarity" : "UNCOMMON",
-  "ruleText" : "Whenever Hamlet Captain attacks or blocks, other Humans you control get +1/+1 until end of turn.",
-  "power" : 2,
-  "toughness" : 2,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "HUMAN" ],
-      "others" : true
+  "name": "Hamlet Captain",
+  "imageUrl": "https://c1.scryfall.com/file/scryfall-cards/large/front/f/d/fd8f9cd1-1c43-4778-b8e9-ce51b81984d3.jpg",
+  "colors": [
+    "GREEN"
+  ],
+  "cost": [
+    "GREEN",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HUMAN",
+    "WARRIOR"
+  ],
+  "rarity": "UNCOMMON",
+  "ruleText": "Whenever Hamlet Captain attacks or blocks, other Humans you control get +1/+1 until end of turn.",
+  "power": 2,
+  "toughness": 2,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "HUMAN"
+        ],
+        "others": true
+      },
+      "parameters": [
+        "+3/+3"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_ATTACK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
+      }
     },
-    "parameters" : [ "+3/+3" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_ATTACK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "ofSubtype": [
+          "HUMAN"
+        ],
+        "others": true
+      },
+      "parameters": [
+        "+3/+3"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_BLOCK",
+        "magicInstanceSelector": {
+          "selectorType": "PERMANENT",
+          "itself": true
+        }
       }
     }
-  }, {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "ofSubtype" : [ "HUMAN" ],
-      "others" : true
-    },
-    "parameters" : [ "+3/+3" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_BLOCK",
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "itself" : true
-      }
-    }
-  } ]
+  ]
 }

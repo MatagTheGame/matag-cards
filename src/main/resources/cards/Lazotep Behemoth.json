@@ -1,11 +1,24 @@
 {
-  "name" : "Lazotep Behemoth",
-  "imageUrl" : "https://cards.scryfall.io/large/front/b/0/b0d90056-a3a7-48df-90c3-bf15de48c667.jpg",
-  "colors" : [ "BLACK" ],
-  "cost" : [ "BLACK", "ANY", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "HIPPO", "ZOMBIE" ],
-  "rarity" : "COMMON",
-  "power" : 5,
-  "toughness" : 4
+  "name": "Lazotep Behemoth",
+  "imageUrl": "https://cards.scryfall.io/large/front/b/0/b0d90056-a3a7-48df-90c3-bf15de48c667.jpg",
+  "colors": [
+    "BLACK"
+  ],
+  "cost": [
+    "BLACK",
+    "ANY",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "HIPPO",
+    "ZOMBIE"
+  ],
+  "rarity": "COMMON",
+  "power": 5,
+  "toughness": 4
 }

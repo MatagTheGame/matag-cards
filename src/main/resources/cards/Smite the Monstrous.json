@@ -1,27 +1,44 @@
 {
-  "name" : "Smite the Monstrous",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/6/766aad27-e987-45ab-82aa-e5f44fcc34ef.jpg",
-  "colors" : [ "WHITE" ],
-  "cost" : [ "WHITE", "ANY", "ANY", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "COMMON",
-  "ruleText" : "Destroy target creature with power 4 or greater.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "PERMANENT",
-        "ofType" : [ "CREATURE" ],
-        "powerToughnessConstraint" : {
-          "powerOrToughness" : "TOUGHNESS",
-          "powerToughnessConstraintType" : "GREATER_OR_EQUAL",
-          "value" : 4
+  "name": "Smite the Monstrous",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/6/766aad27-e987-45ab-82aa-e5f44fcc34ef.jpg",
+  "colors": [
+    "WHITE"
+  ],
+  "cost": [
+    "WHITE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "COMMON",
+  "ruleText": "Destroy target creature with power 4 or greater.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "PERMANENT",
+            "ofType": [
+              "CREATURE"
+            ],
+            "powerToughnessConstraint": {
+              "powerOrToughness": "TOUGHNESS",
+              "powerToughnessConstraintType": "GREATER_OR_EQUAL",
+              "value": 4
+            }
+          }
         }
+      ],
+      "parameters": [
+        ":DESTROYED"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":DESTROYED" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }

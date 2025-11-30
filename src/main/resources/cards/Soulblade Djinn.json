@@ -1,30 +1,50 @@
 {
-  "name" : "Soulblade Djinn",
-  "imageUrl" : "https://cards.scryfall.io/large/front/7/b/7b891276-1645-4e96-b774-647b82bf0e60.jpg",
-  "colors" : [ "BLUE" ],
-  "cost" : [ "BLUE", "BLUE", "ANY", "ANY", "ANY" ],
-  "types" : [ "CREATURE" ],
-  "subtypes" : [ "DJINN" ],
-  "rarity" : "RARE",
-  "ruleText" : "Flying. Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn.",
-  "power" : 4,
-  "toughness" : 3,
-  "abilities" : [ {
-    "abilityType" : "SELECTED_PERMANENTS_GET",
-    "magicInstanceSelector" : {
-      "selectorType" : "PERMANENT",
-      "ofType" : [ "CREATURE" ],
-      "controllerType" : "PLAYER"
-    },
-    "parameters" : [ "+1/+1" ],
-    "trigger" : {
-      "type" : "TRIGGERED_ABILITY",
-      "subtype" : "WHEN_CAST",
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "notOfType" : [ "CREATURE" ],
-        "controllerType" : "PLAYER"
+  "name": "Soulblade Djinn",
+  "imageUrl": "https://cards.scryfall.io/large/front/7/b/7b891276-1645-4e96-b774-647b82bf0e60.jpg",
+  "colors": [
+    "BLUE"
+  ],
+  "cost": [
+    "BLUE",
+    "BLUE",
+    "ANY",
+    "ANY",
+    "ANY"
+  ],
+  "types": [
+    "CREATURE"
+  ],
+  "subtypes": [
+    "DJINN"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Flying. Whenever you cast a noncreature spell, creatures you control get +1/+1 until end of turn.",
+  "power": 4,
+  "toughness": 3,
+  "abilities": [
+    {
+      "abilityType": "SELECTED_PERMANENTS_GET",
+      "magicInstanceSelector": {
+        "selectorType": "PERMANENT",
+        "ofType": [
+          "CREATURE"
+        ],
+        "controllerType": "PLAYER"
+      },
+      "parameters": [
+        "+1/+1"
+      ],
+      "trigger": {
+        "type": "TRIGGERED_ABILITY",
+        "subtype": "WHEN_CAST",
+        "magicInstanceSelector": {
+          "selectorType": "SPELL",
+          "notOfType": [
+            "CREATURE"
+          ],
+          "controllerType": "PLAYER"
+        }
       }
     }
-  } ]
+  ]
 }

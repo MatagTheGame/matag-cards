@@ -1,22 +1,40 @@
 {
-  "name" : "Ionize",
-  "imageUrl" : "https://cards.scryfall.io/large/front/f/1/f161f7d2-eaa1-4931-93f9-befa8b5df821.jpg",
-  "colors" : [ "BLUE", "RED" ],
-  "cost" : [ "BLUE", "RED", "ANY" ],
-  "types" : [ "INSTANT" ],
-  "rarity" : "RARE",
-  "ruleText" : "Counter target spell. Ionize deals 2 damage to that spell's controller.",
-  "abilities" : [ {
-    "abilityType" : "THAT_TARGETS_GET",
-    "targets" : [ {
-      "magicInstanceSelector" : {
-        "selectorType" : "SPELL",
-        "ofType" : [ "CREATURE" ]
+  "name": "Ionize",
+  "imageUrl": "https://cards.scryfall.io/large/front/f/1/f161f7d2-eaa1-4931-93f9-befa8b5df821.jpg",
+  "colors": [
+    "BLUE",
+    "RED"
+  ],
+  "cost": [
+    "BLUE",
+    "RED",
+    "ANY"
+  ],
+  "types": [
+    "INSTANT"
+  ],
+  "rarity": "RARE",
+  "ruleText": "Counter target spell. Ionize deals 2 damage to that spell's controller.",
+  "abilities": [
+    {
+      "abilityType": "THAT_TARGETS_GET",
+      "targets": [
+        {
+          "magicInstanceSelector": {
+            "selectorType": "SPELL",
+            "ofType": [
+              "CREATURE"
+            ]
+          }
+        }
+      ],
+      "parameters": [
+        ":CANCELLED",
+        "CONTROLLER_DAMAGE:2"
+      ],
+      "trigger": {
+        "type": "CAST"
       }
-    } ],
-    "parameters" : [ ":CANCELLED", "CONTROLLER_DAMAGE:2" ],
-    "trigger" : {
-      "type" : "CAST"
     }
-  } ]
+  ]
 }
