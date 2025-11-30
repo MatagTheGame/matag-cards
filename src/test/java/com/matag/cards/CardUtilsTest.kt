@@ -1,36 +1,59 @@
-package com.matag.cards;
+package com.matag.cards
 
-import static com.matag.cards.properties.Color.RED;
-import static com.matag.cards.properties.Color.WHITE;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.CardUtils.isColorless
+import com.matag.cards.CardUtils.isOfOnlyAnyOfTheColors
+import com.matag.cards.properties.Color
+import org.assertj.core.api.Assertions
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.context.annotation.Import
+import org.springframework.test.context.junit4.SpringRunner
+import java.util.Set
 
-import java.util.Set;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
-
-@RunWith(SpringRunner.class)
-@Import(CardsConfiguration.class)
-public class CardUtilsTest {
-
+@RunWith(SpringRunner::class)
+@Import(CardsConfiguration::class)
+class CardUtilsTest {
     @Autowired
-    private Cards cards;
+    private val cards: Cards? = null
 
     @Test
-    public void isColorless() {
-        assertThat(CardUtils.isColorless(cards.get("Bishop's Soldier"))).isFalse();
-        assertThat(CardUtils.isColorless(cards.get("Jousting Dummy"))).isTrue();
+    fun isColorless() {
+        Assertions.assertThat(isColorless(cards!!.get("Bishop's Soldier"))).isFalse()
+        Assertions.assertThat(isColorless(cards.get("Jousting Dummy"))).isTrue()
     }
 
     @Test
-    public void isOnlyAnyOfTheColors() {
-        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Captain"), Set.of(WHITE, RED))).isTrue();
-        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Fiery Finish"), Set.of(WHITE, RED))).isTrue();
-        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Inspiring Veteran"), Set.of(WHITE, RED))).isTrue();
-        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Centaur Peacemaker"), Set.of(WHITE, RED))).isFalse();
-        assertThat(CardUtils.isOfOnlyAnyOfTheColors(cards.get("Jousting Dummy"), Set.of(WHITE, RED))).isFalse();
+    fun isOnlyAnyOfTheColors() {
+        Assertions.assertThat(
+            isOfOnlyAnyOfTheColors(
+                cards!!.get("Inspiring Captain"),
+                Set.of<Color?>(Color.WHITE, Color.RED)
+            )
+        ).isTrue()
+        Assertions.assertThat(
+            isOfOnlyAnyOfTheColors(
+                cards.get("Fiery Finish"),
+                Set.of<Color?>(Color.WHITE, Color.RED)
+            )
+        ).isTrue()
+        Assertions.assertThat(
+            isOfOnlyAnyOfTheColors(
+                cards.get("Inspiring Veteran"),
+                Set.of<Color?>(Color.WHITE, Color.RED)
+            )
+        ).isTrue()
+        Assertions.assertThat(
+            isOfOnlyAnyOfTheColors(
+                cards.get("Centaur Peacemaker"),
+                Set.of<Color?>(Color.WHITE, Color.RED)
+            )
+        ).isFalse()
+        Assertions.assertThat(
+            isOfOnlyAnyOfTheColors(
+                cards.get("Jousting Dummy"),
+                Set.of<Color?>(Color.WHITE, Color.RED)
+            )
+        ).isFalse()
     }
 }

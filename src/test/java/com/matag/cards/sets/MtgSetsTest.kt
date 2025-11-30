@@ -1,64 +1,58 @@
-package com.matag.cards.sets;
+package com.matag.cards.sets
 
-import static java.util.stream.Collectors.counting;
-import static java.util.stream.Collectors.groupingBy;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.Cards
+import com.matag.cards.CardsConfiguration
+import org.assertj.core.api.Assertions
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.context.annotation.Import
+import org.springframework.test.context.junit4.SpringRunner
 
-import java.util.HashMap;
-import java.util.Map;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import com.matag.cards.Card;
-import com.matag.cards.Cards;
-import com.matag.cards.CardsConfiguration;
-
-@RunWith(SpringRunner.class)
-@Import(CardsConfiguration.class)
-public class MtgSetsTest {
-    private static final Logger LOGGER = LoggerFactory.getLogger(MtgSetsTest.class);
+@RunWith(SpringRunner::class)
+@Import(CardsConfiguration::class)
+class MtgSetsTest {
+    @Autowired
+    private val cards: Cards? = null
 
     @Autowired
-    private Cards cards;
-
-    @Autowired
-    private MtgSets mtgSets;
+    private val mtgSets: MtgSets? = null
 
     @Test
-    public void shouldLoadAllSets() {
-        assertThat(mtgSets.getSets()).isNotEmpty();
+    fun shouldLoadAllSets() {
+        Assertions.assertThat(mtgSets!!.sets).isNotEmpty()
     }
 
     @Test
-    public void shouldLoadASet() {
-        var m20 = mtgSets.getSet("M20");
-        assertThat(m20.getCode()).isEqualTo("M20");
-        assertThat(m20.getName()).isEqualTo("Core Set 2020");
-        assertThat(m20.getCards()).contains("Bladebrand");
+    fun shouldLoadASet() {
+        val m20 = mtgSets!!.getSet("M20")
+        Assertions.assertThat(m20.code).isEqualTo("M20")
+        Assertions.assertThat(m20.name).isEqualTo("Core Set 2020")
+        Assertions.assertThat(m20.cards).contains("Bladebrand")
     }
 
-    public void countCards() {
-        LOGGER.info("Num of Cards: " + cards.getAll().size());
-        LOGGER.info("Cards by Colors: " + cards.getAll().stream().collect(groupingBy(Card::getColors, counting())));
-        LOGGER.info("Cards by Types: " + cards.getAll().stream().collect(groupingBy(Card::getTypes, counting())));
-        LOGGER.info("Cards by Rarity: " + cards.getAll().stream().collect(groupingBy(Card::getRarity, counting())));
-        LOGGER.info("Cards by Set: " + countCardsBySet(mtgSets.getSets()));
+    @Test
+    fun countCards() {
+        LOGGER.info("Num of Cards: " + cards!!.all.size)
+        LOGGER.info("Cards by Colors: " + cards.all.groupingBy { it.colors }.eachCount())
+        LOGGER.info("Cards by Types: " + cards.all.groupingBy { it.types }.eachCount())
+        LOGGER.info("Cards by Rarity: " + cards.all.groupingBy { it.rarity }.eachCount())
+        LOGGER.info("Cards by Set: " + countCardsBySet(mtgSets!!.sets))
     }
 
+    private fun countCardsBySet(sets: MutableMap<String?, MtgSet?>): MutableMap<String?, Int?> {
+        val countCardsBySet = HashMap<String?, Int?>()
 
-    private Map<String, Integer> countCardsBySet(Map<String, MtgSet> sets) {
-        var countCardsBySet = new HashMap<String, Integer>();
-
-        for (String setName : sets.keySet()) {
-            countCardsBySet.put(setName, sets.get(setName).getCards().size());
+        for (setName in sets.keys) {
+            countCardsBySet[setName] = sets[setName]!!.cards.size
         }
 
-        return countCardsBySet;
+        return countCardsBySet
+    }
+
+    companion object {
+        private val LOGGER: Logger = LoggerFactory.getLogger(MtgSetsTest::class.java)
     }
 }

@@ -1,28 +1,27 @@
-package com.matag.language;
+package com.matag.language
 
-import static com.matag.language.Plural.plural;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.language.Plural.plural
+import org.assertj.core.api.Assertions
+import org.junit.Test
 
-import org.junit.Test;
-
-public class PluralTest {
+class PluralTest {
     @Test
-    public void pluralOfNormalWord() {
-        assertThat(plural("WIZARD")).isEqualTo("WIZARDS");
+    fun pluralOfNormalWord() {
+        Assertions.assertThat(plural("WIZARD")).isEqualTo("WIZARDS")
     }
 
     @Test
-    public void pluralOfWordsThatNeedEs() {
-        assertThat(plural("JELLYFISH")).isEqualTo("JELLYFISHES");
+    fun pluralOfWordsThatNeedEs() {
+        Assertions.assertThat(plural("JELLYFISH")).isEqualTo("JELLYFISHES")
     }
 
     @Test
-    public void pluralOfWordEndingWithF() {
-        assertThat(plural("ELF")).isEqualTo("ELVES");
+    fun pluralOfWordEndingWithF() {
+        Assertions.assertThat(plural("ELF")).isEqualTo("ELVES")
     }
 
     @Test
-    public void pluralOfIrregularWords() {
-        assertThat(plural("CYCLOPS")).isEqualTo("CYCLOPES");
+    fun pluralOfIrregularWords() {
+        Assertions.assertThat(plural("CYCLOPS")).isEqualTo("CYCLOPES")
     }
 }

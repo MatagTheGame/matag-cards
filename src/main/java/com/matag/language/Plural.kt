@@ -1,29 +1,24 @@
-package com.matag.language;
+package com.matag.language
 
-import java.util.Map;
+import com.matag.language.StringUtils.replaceLast
+import java.util.Map
 
-public class Plural {
-    private static final Map<String, String> IRREGULARS = Map.of(
-            "CYCLOPS", "CYCLOPES"
-    );
+object Plural {
+    private val IRREGULARS: MutableMap<String?, String?> = Map.of<String?, String?>(
+        "CYCLOPS", "CYCLOPES"
+    )
 
-    public static String plural(String word) {
+    @JvmStatic
+    fun plural(word: String): String? {
         if (IRREGULARS.containsKey(word)) {
-            return IRREGULARS.get(word);
-
+            return IRREGULARS.get(word)
         }
         if (word.endsWith("S") || word.endsWith("SH") || word.endsWith("CH") || word.endsWith("X") || word.endsWith("Z")) {
-            return word + "ES";
-
+            return word + "ES"
         } else if (word.endsWith("F")) {
-            return replaceLast(word, "F", "VES");
-
+            return replaceLast(word, "F", "VES")
         } else {
-            return word + "S";
+            return word + "S"
         }
-    }
-
-    private static String replaceLast(String text, String substring, String replacement) {
-        return text.replaceFirst("(?s)" + substring + "(?!.*?" + substring + ")", replacement);
     }
 }
