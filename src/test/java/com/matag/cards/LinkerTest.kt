@@ -61,7 +61,7 @@ class LinkerTest {
             )
             println("Downloaded " + (i + 1) + " of " + cardsToLink.size + " -> " + card.name)
 
-            if (!card.types.contains(Type.BASIC)) {
+            if (!card.types!!.contains(Type.BASIC)) {
                 for (scryFallSet in cardScryFallLinker.getSets()) {
                     if (sets.containsKey(scryFallSet)) {
                         sets.get(scryFallSet)!!.getCards().add(card.name)

@@ -1,50 +1,56 @@
-package com.matag.cards;
+package com.matag.cards
 
-import java.util.Set;
+import com.matag.cards.properties.Color
+import com.matag.cards.properties.Subtype
+import com.matag.cards.properties.Type
 
-import com.matag.cards.properties.Color;
-import com.matag.cards.properties.Subtype;
-import com.matag.cards.properties.Type;
-
-public class CardUtils {
-  public static boolean isOfType(Card card, Type type) {
-    return card.getTypes().contains(type);
-  }
-
-  public static boolean isNotOfType(Card card, Type type) {
-    return !isOfType(card, type);
-  }
-
-  public static boolean isOfSubtype(Card card, Subtype subtype) {
-    return card.getSubtypes().contains(subtype);
-  }
-
-  public static boolean isNotOfSubtype(Card card, Subtype subtype) {
-    return !isOfSubtype(card, subtype);
-  }
-
-  public static boolean isColorless(Card card) {
-    return card.getColors().isEmpty();
-  }
-
-  public static boolean isMulticolor(Card card) {
-    return card.getColors().size() > 1;
-  }
-
-  public static boolean isOfColor(Card card, Color color) {
-    return card.getColors().contains(color);
-  }
-
-  public static boolean isOfOnlyAnyOfTheColors(Card card, Set<Color> colors) {
-    if (card.getColors().isEmpty()) {
-      return false;
+object CardUtils {
+    @JvmStatic
+    fun isOfType(card: Card, type: Type?): Boolean {
+        return card.types!!.contains(type!!)
     }
 
-    for (Color color : card.getColors()) {
-      if (!colors.contains(color)) {
-        return false;
-      }
+    @JvmStatic
+    fun isNotOfType(card: Card, type: Type?): Boolean {
+        return !isOfType(card, type)
     }
-    return true;
-  }
+
+    @JvmStatic
+    fun isOfSubtype(card: Card, subtype: Subtype?): Boolean {
+        return card.subtypes!!.contains(subtype!!)
+    }
+
+    @JvmStatic
+    fun isNotOfSubtype(card: Card, subtype: Subtype?): Boolean {
+        return !isOfSubtype(card, subtype)
+    }
+
+    @JvmStatic
+    fun isColorless(card: Card): Boolean {
+        return card.colors().isEmpty()
+    }
+
+    @JvmStatic
+    fun isMulticolor(card: Card): Boolean {
+        return card.colors().size > 1
+    }
+
+    @JvmStatic
+    fun isOfColor(card: Card, color: Color?): Boolean {
+        return card.colors().contains(color)
+    }
+
+    @JvmStatic
+    fun isOfOnlyAnyOfTheColors(card: Card, colors: MutableSet<Color?>): Boolean {
+        if (card.colors().isEmpty()) {
+            return false
+        }
+
+        for (color in card.colors()) {
+            if (!colors.contains(color)) {
+                return false
+            }
+        }
+        return true
+    }
 }

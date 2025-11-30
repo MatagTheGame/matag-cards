@@ -69,8 +69,8 @@ public class CardsTest {
     assertThat(card.getSubtypes()).isNullOrEmpty();
     assertThat(card.getRarity()).isEqualTo(Rarity.COMMON);
     assertThat(card.getRuleText()).isEqualTo("Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.");
-    assertThat(card.getPower()).isEqualTo(0);
-    assertThat(card.getToughness()).isEqualTo(0);
+    assertThat(card.getPower()).isNull();
+    assertThat(card.getToughness()).isNull();
     assertThat(card.getAbilities()).hasSize(1);
     assertThat(card.getAbilities().get(0)).isEqualTo(
       Ability.builder()
@@ -97,25 +97,27 @@ public class CardsTest {
       throw new RuntimeException("Card '" + name + "' does not have a type. Remove the image and run cardImageLinker");
     }
 
-    card.getAbilities().stream()
-        .filter(ability -> ability.getAbilityType().equals(THAT_TARGETS_GET))
-        .forEach(ability -> {
-          if (ability.getTargets().isEmpty()) {
-            throw new RuntimeException("Card '" + name + "' is missing targets");
-          }
+    if (card.getAbilities() != null) {
+        card.getAbilities().stream()
+                .filter(ability -> ability.getAbilityType().equals(THAT_TARGETS_GET))
+                .forEach(ability -> {
+                    if (ability.getTargets().isEmpty()) {
+                        throw new RuntimeException("Card '" + name + "' is missing targets");
+                    }
 
-          validateParameters(name, ability.getParameters());
-        });
+                    validateParameters(name, ability.getParameters());
+                });
 
-    card.getAbilities().stream()
-        .filter(ability -> ability.getAbilityType().equals(SELECTED_PERMANENTS_GET))
-        .forEach(ability -> {
-          if (ability.getMagicInstanceSelector() == null) {
-            throw new RuntimeException("Card '" + name + "' is missing magicInstanceSelector");
-          }
+        card.getAbilities().stream()
+                .filter(ability -> ability.getAbilityType().equals(SELECTED_PERMANENTS_GET))
+                .forEach(ability -> {
+                    if (ability.getMagicInstanceSelector() == null) {
+                        throw new RuntimeException("Card '" + name + "' is missing magicInstanceSelector");
+                    }
 
-          validateParameters(name, ability.getParameters());
-        });
+                    validateParameters(name, ability.getParameters());
+                });
+    }
   }
 
   private void validateParameters(String name, List<String> parameters) {
