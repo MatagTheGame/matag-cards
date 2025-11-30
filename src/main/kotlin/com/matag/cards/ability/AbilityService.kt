@@ -9,16 +9,16 @@ import java.util.stream.Collectors
 
 @Component
 class AbilityService {
-    fun powerToughnessFromParameters(parameters: MutableList<String?>): PowerToughness {
-        return parameters.stream()
-            .filter { parameter: String? -> parameter!!.contains("/") }
-            .map<PowerToughness> { powerToughnessString: String? -> PowerToughness.powerToughness(powerToughnessString!!) }
-            .findFirst()
-            .orElse(PowerToughness.powerToughness("0/0"))
+    fun powerToughnessFromParameters(parameters: List<String>): PowerToughness {
+        return parameters
+            .filter { it.contains("/") }
+            .map { it.split("/") }
+            .map { PowerToughness(it[0].toInt(), it[1].toInt()) }
+            .firstOrNull() ?: PowerToughness(0, 0)
     }
 
-    fun powerToughnessFromParameter(parameter: String?): PowerToughness {
-        return powerToughnessFromParameters(mutableListOf<String?>(parameter))
+    fun powerToughnessFromParameter(parameter: String): PowerToughness {
+        return powerToughnessFromParameters(listOf(parameter))
     }
 
     fun damageFromParameter(parameter: String): Int {
