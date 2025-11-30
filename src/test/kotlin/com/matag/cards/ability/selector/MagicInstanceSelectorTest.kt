@@ -29,6 +29,16 @@ class MagicInstanceSelectorTest {
     }
 
     @Test
+    fun creaturesAndArtifactYouControlGetText() {
+        val magicInstanceSelector = MagicInstanceSelector(
+            selectorType = SelectorType.PERMANENT,
+            ofType = listOf(Type.CREATURE, Type.ARTIFACT),
+            controllerType = PlayerType.PLAYER
+        )
+        assertThat(magicInstanceSelector.text()).isEqualTo("Creatures and artifacts you control get")
+    }
+
+    @Test
     fun zombiesYouControlGetText() {
         val magicInstanceSelector = MagicInstanceSelector(
             selectorType = SelectorType.PERMANENT,
@@ -37,6 +47,17 @@ class MagicInstanceSelectorTest {
             controllerType = PlayerType.PLAYER
         )
         assertThat(magicInstanceSelector.text()).isEqualTo("Zombies you control get")
+    }
+
+    @Test
+    fun zombiesAndAngelsYouControlGetText() {
+        val magicInstanceSelector = MagicInstanceSelector(
+            selectorType = SelectorType.PERMANENT,
+            ofType = listOf(Type.CREATURE),
+            ofSubtype = listOf(Subtype.ANGEL, Subtype.ZOMBIE),
+            controllerType = PlayerType.PLAYER
+        )
+        assertThat(magicInstanceSelector.text()).isEqualTo("Angels and zombies you control get")
     }
 
     @Test
