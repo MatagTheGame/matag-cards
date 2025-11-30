@@ -5,7 +5,7 @@ import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.properties.Color
 import com.matag.cards.properties.Subtype
 import com.matag.cards.properties.Type
-import com.matag.language.Plural.plural
+import com.matag.language.plural
 import com.matag.player.PlayerType
 
 data class MagicInstanceSelector(
@@ -78,7 +78,7 @@ data class MagicInstanceSelector(
 
     private fun allTypes(list: List<Any>): String =
         list
-            .map { plural(it.toString()).lowercase() }
+            .map { it.toString().plural().lowercase() }
             .joinToString("and ") { "$it " }
 
     private fun playerText(): String {

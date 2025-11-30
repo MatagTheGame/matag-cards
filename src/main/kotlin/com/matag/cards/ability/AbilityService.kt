@@ -2,11 +2,9 @@ package com.matag.cards.ability
 
 import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.properties.PowerToughness
-import com.matag.language.StringUtils.replaceLast
-import org.springframework.expression.common.ExpressionUtils.toInt
+import com.matag.language.replaceLast
 import org.springframework.stereotype.Component
 import java.util.*
-import java.util.function.Function
 import java.util.stream.Collectors
 
 @Component
@@ -86,7 +84,7 @@ class AbilityService {
     fun parametersAsString(parameters: MutableList<String?>): String {
         val text = parameters.stream().map<String?> { parameter: String? -> this.safeParameterAsString(parameter!!) }
             .collect(Collectors.joining(", "))
-        return replaceLast(text, ",", " and")
+        return text.replaceLast(",", " and")
     }
 
     fun safeParameterAsString(parameter: String): String {
