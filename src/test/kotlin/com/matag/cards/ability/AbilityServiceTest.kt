@@ -33,7 +33,10 @@ class AbilityServiceTest {
             // Then
             assertThat(powerToughness).isEqualTo(PowerToughness(0, 0))
         }
+    }
 
+    @Nested
+    inner class PowerToughnessFromParameters {
         @Test
         fun `get value from list`() {
             // Given
@@ -44,6 +47,18 @@ class AbilityServiceTest {
 
             // Then
             assertThat(powerToughness).isEqualTo(PowerToughness(2, 2))
+        }
+
+        @Test
+        fun `absent value`() {
+            // Given
+            val parameters = listOf("TRAMPLE", "HASTE")
+
+            // When
+            val powerToughness = AbilityService().powerToughnessFromParameters(parameters)
+
+            // Then
+            assertThat(powerToughness).isEqualTo(PowerToughness(0, 0))
         }
     }
 
@@ -156,6 +171,18 @@ class AbilityServiceTest {
     }
 
     @Test
+    fun testCancelledFromParameter() {
+        // Given
+        val parameter = ":CANCELLED"
+
+        // When
+        val controlled = AbilityService().cancelledFromParameter(parameter)
+
+        // Then
+        assertThat(controlled).isTrue()
+    }
+
+    @Test
     fun testPlus1CountersFromParameter() {
         // Given
         val parameter = "PLUS_1_COUNTERS:2"
@@ -227,23 +254,40 @@ class AbilityServiceTest {
         assertThat(life).isEqualTo(3)
     }
 
+    @Test
+    fun testScryFromParameter() {
+        // Given
+        val parameter = "SCRY:2"
+
+        // When
+        val scry = AbilityService().scryFromParameter(parameter)
+
+        // Then
+        assertThat(scry).isEqualTo(2)
+    }
+
     @Nested
     inner class ParametersAsString {
         @Test
         fun testPermanentParametersAsString() {
             // Given
-            val parameters = mutableListOf<String?>(
+            val parameters = listOf(
                 "+2/+2",
                 "TRAMPLE",
                 "DAMAGE:2",
                 "HASTE",
                 "CONTROLLER_DAMAGE:3",
                 ":TAPPED",
+                ":UNTAPPED",
                 ":DOES_NOT_UNTAP_NEXT_TURN",
                 ":DESTROYED",
                 ":RETURN_TO_OWNER_HAND",
+                ":CONTROLLED",
+                ":CANCELLED",
                 "PLUS_1_COUNTERS:2",
-                "KEYWORD_COUNTER:MENACE"
+                "MINUS_1_COUNTERS:3",
+                "KEYWORD_COUNTER:MENACE",
+                "SCRY:5"
             )
 
             // When
@@ -251,13 +295,13 @@ class AbilityServiceTest {
 
             // Then
             assertThat(parametersAsString)
-                .isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter")
+                .isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, untapped, doesn't untap next turn, destroyed, returned to its owner's hand, controlled, cancelled, 2 +1/+1 counters, 3 -1/-1 counters, a menace counter and scry 5")
         }
 
         @Test
         fun testPlayerParametersAsString() {
             // Given
-            val parameters = mutableListOf<String?>("LIFE:2", "LIFE:-3", "DRAW:1", "DRAW:2")
+            val parameters = listOf("LIFE:2", "LIFE:-3", "DRAW:1", "DRAW:2")
 
             // When
             val parametersAsString = AbilityService().parametersAsString(parameters)

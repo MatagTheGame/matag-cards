@@ -5,98 +5,71 @@ import com.matag.cards.properties.PowerToughness
 import com.matag.language.replaceLast
 import org.springframework.stereotype.Component
 import java.util.*
-import java.util.stream.Collectors
+import kotlin.math.abs
 
 @Component
 class AbilityService {
-    fun powerToughnessFromParameters(parameters: List<String>): PowerToughness {
-        return parameters
+
+    fun powerToughnessFromParameters(parameters: List<String>) =
+        parameters
             .filter { it.contains("/") }
             .map { it.split("/") }
             .map { PowerToughness(it[0].toInt(), it[1].toInt()) }
             .firstOrNull() ?: PowerToughness(0, 0)
-    }
 
-    fun powerToughnessFromParameter(parameter: String): PowerToughness {
-        return powerToughnessFromParameters(listOf(parameter))
-    }
+    fun powerToughnessFromParameter(parameter: String) =
+        powerToughnessFromParameters(listOf(parameter))
 
-    fun damageFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, DAMAGE)
-    }
+    fun damageFromParameter(parameter: String) =
+        getParameterIntValue(parameter, DAMAGE)
 
-    fun controllerDamageFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, CONTROLLER_DAMAGE)
-    }
+    fun controllerDamageFromParameter(parameter: String) =
+        getParameterIntValue(parameter, CONTROLLER_DAMAGE)
 
-    fun tappedFromParameter(parameter: String): Boolean {
-        return parameter == TAPPED
-    }
+    fun tappedFromParameter(parameter: String) =
+        parameter == TAPPED
 
-    fun untappedFromParameter(parameter: String): Boolean {
-        return parameter == UNTAPPED
-    }
+    fun untappedFromParameter(parameter: String) =
+        parameter == UNTAPPED
 
-    fun doesNotUntapNextTurnFromParameter(parameter: String): Boolean {
-        return parameter == DOES_NOT_UNTAP_NEXT_TURN
-    }
+    fun doesNotUntapNextTurnFromParameter(parameter: String) =
+        parameter == DOES_NOT_UNTAP_NEXT_TURN
 
-    fun destroyedFromParameter(parameter: String): Boolean {
-        return parameter == DESTROYED
-    }
+    fun destroyedFromParameter(parameter: String) =
+        parameter == DESTROYED
 
-    fun returnToOwnerHandFromParameter(parameter: String): Boolean {
-        return parameter == RETURN_TO_OWNER_HAND
-    }
+    fun returnToOwnerHandFromParameter(parameter: String) =
+        parameter == RETURN_TO_OWNER_HAND
 
-    fun controlledFromParameter(parameter: String): Boolean {
-        return parameter == CONTROLLED
-    }
+    fun controlledFromParameter(parameter: String) =
+        parameter == CONTROLLED
 
-    fun cancelledFromParameter(parameter: String): Boolean {
-        return parameter == CANCELLED
-    }
+    fun cancelledFromParameter(parameter: String) =
+        parameter == CANCELLED
 
-    fun plus1CountersFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, PLUS_1_COUNTERS)
-    }
+    fun plus1CountersFromParameter(parameter: String) =
+        getParameterIntValue(parameter, PLUS_1_COUNTERS)
 
-    fun minus1CountersFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, MINUS_1_COUNTERS)
-    }
+    fun minus1CountersFromParameter(parameter: String) =
+        getParameterIntValue(parameter, MINUS_1_COUNTERS)
 
-    fun keywordCounterFromParameter(parameter: String): AbilityType? {
-        return AbilityType.abilityType(getParameterValue(parameter, KEYWORD_COUNTER))
-    }
+    fun keywordCounterFromParameter(parameter: String) =
+        AbilityType.abilityType(getParameterValue(parameter, KEYWORD_COUNTER))
 
-    fun drawFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, DRAW)
-    }
+    fun drawFromParameter(parameter: String) =
+        getParameterIntValue(parameter, DRAW)
 
-    fun lifeFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, LIFE)
-    }
+    fun lifeFromParameter(parameter: String) =
+        getParameterIntValue(parameter, LIFE)
 
-    fun scryFromParameter(parameter: String): Int {
-        return getParameterIntValue(parameter, SCRY)
-    }
+    fun scryFromParameter(parameter: String) =
+        getParameterIntValue(parameter, SCRY)
 
-    fun parametersAsString(parameters: MutableList<String?>): String {
-        val text = parameters.stream().map<String?> { parameter: String? -> this.safeParameterAsString(parameter!!) }
-            .collect(Collectors.joining(", "))
-        return text.replaceLast(",", " and")
-    }
+    fun parametersAsString(parameters: List<String>) =
+        parameters.joinToString(", ") { parameterAsString(it) }
+            .replaceLast(",", " and")
 
-    fun safeParameterAsString(parameter: String): String {
-        try {
-            return parameterAsString(parameter)
-        } catch (e: Exception) {
-            return parameter.lowercase(Locale.getDefault())
-        }
-    }
-
-    @Throws(RuntimeException::class)
-    fun parameterAsString(parameter: String): String {
+    private fun parameterAsString(parameter: String): String {
         if (parameter.contains("/")) {
             return parameter
         } else if (parameter.startsWith("DAMAGE:")) {
@@ -125,32 +98,29 @@ class AbilityService {
             return "a " + abilityParameterAsString(keywordCounterFromParameter(parameter)!!) + " counter"
         } else if (parameter.startsWith("LIFE:")) {
             val life = lifeFromParameter(parameter)
-            return (if (life > 0) "gain " + life else "lose " + (-life)) + " life"
+            return (if (life > 0) "gain" else "lose") + " ${abs(life)} life"
         } else if (parameter.startsWith("DRAW:")) {
             val draw = drawFromParameter(parameter)
             return "draw " + draw + " card" + (if (draw > 1) "s" else "")
         } else if (parameter.startsWith("SCRY:")) {
-            val scry = scryFromParameter(parameter)
-            return "scry " + scry
+            return "scry ${scryFromParameter(parameter)}"
         } else {
             return abilityParameterAsString(AbilityType.valueOf(parameter))
         }
     }
 
-    private fun abilityParameterAsString(abilityType: AbilityType): String {
-        return abilityType.text.substring(0, abilityType.text.length - 1).lowercase(Locale.getDefault())
-    }
+    private fun abilityParameterAsString(abilityType: AbilityType) =
+        abilityType.text.substring(0, abilityType.text.length - 1).lowercase(Locale.getDefault())
 
-    private fun getParameterValue(parameter: String, parameterType: String): String? {
+    private fun getParameterValue(parameter: String, parameterType: String) =
         if (parameter.startsWith(parameterType)) {
-            return parameter.replace(parameterType, "")
+            parameter.replace(parameterType, "")
+        } else {
+            null
         }
-        return null
-    }
 
-    private fun getParameterIntValue(parameter: String, parameterType: String): Int {
-        return getParameterValue(parameter, parameterType)?.toInt() ?: 0
-    }
+    private fun getParameterIntValue(parameter: String, parameterType: String) =
+        getParameterValue(parameter, parameterType)?.toInt() ?: 0
 
     companion object {
         private const val DAMAGE = "DAMAGE:"

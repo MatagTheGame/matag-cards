@@ -14,7 +14,6 @@ import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Import
 import org.springframework.test.context.junit.jupiter.SpringExtension
-import java.util.function.Consumer
 
 @ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
@@ -65,8 +64,8 @@ class CardsTest {
         Assertions.assertThat<Ability>(card.abilities!!.get(0)).isEqualTo(
             Ability(
                 abilityType = AbilityType.THAT_TARGETS_GET,
-                targets = mutableListOf<Target?>(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf<Type>(Type.CREATURE)))),
-                parameters = mutableListOf<String?>(":CONTROLLED", ":UNTAPPED", "HASTE"),
+                targets = listOf(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf<Type>(Type.CREATURE)))),
+                parameters = listOf(":CONTROLLED", ":UNTAPPED", "HASTE"),
                 trigger = Trigger.castTrigger()
             )
         )
@@ -103,13 +102,13 @@ class CardsTest {
         }
     }
 
-    private fun validateParameters(name: String?, parameters: MutableList<String?>) {
+    private fun validateParameters(name: String?, parameters: List<String>) {
         if (parameters.isEmpty()) {
             throw RuntimeException("Card '" + name + "' is missing parameters")
         }
 
         try {
-            parameters.forEach(Consumer { parameter: String? -> abilityService!!.parameterAsString(parameter!!) })
+            abilityService?.parametersAsString(parameters)
         } catch (e: Exception) {
             throw RuntimeException("Card '" + name + "' has invalid parameters: " + parameters, e)
         }

@@ -7,9 +7,9 @@ import com.matag.cards.ability.type.AbilityType
 
 data class Ability(
     var abilityType: AbilityType? = null,
-    var targets: MutableList<Target?>? = null,
+    var targets: List<Target>? = null,
     var magicInstanceSelector: MagicInstanceSelector? = null,
-    var parameters: MutableList<String?>? = null,
+    var parameters: List<String>? = null,
     var trigger: Trigger? = null,
     var ability: Ability? = null,
     var sorcerySpeed: Boolean? = null,
