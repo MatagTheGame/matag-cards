@@ -1,5 +1,5 @@
-package com.matag.cards.ability.selector;
+package com.matag.cards.ability.selector
 
-public enum PowerToughnessConstraintType {
+enum class PowerToughnessConstraintType {
     EQUAL, GREATER, GREATER_OR_EQUAL, LESS, LESS_OR_EQUAL
 }

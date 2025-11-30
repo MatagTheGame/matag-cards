@@ -11,62 +11,85 @@ class MagicInstanceSelectorTest {
     @Test
     fun creaturesYouControlGetText() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PERMANENT)
-                .ofType(mutableListOf<Type?>(Type.CREATURE)).controllerType(PlayerType.PLAYER).build().getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PERMANENT,
+                ofType = mutableListOf(Type.CREATURE),
+                controllerType = PlayerType.PLAYER
+            ).text
         ).isEqualTo("Creatures you control get")
     }
 
     @Test
     fun zombiesYouControlGetText() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PERMANENT)
-                .ofType(mutableListOf<Type?>(Type.CREATURE)).ofSubtype(List.of<Subtype?>(Subtype.ZOMBIE))
-                .controllerType(PlayerType.PLAYER).build().getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PERMANENT,
+                ofType = mutableListOf<Type?>(Type.CREATURE),
+                ofSubtype = List.of<Subtype?>(Subtype.ZOMBIE),
+                controllerType = PlayerType.PLAYER
+            ).text
         ).isEqualTo("Zombies you control get")
     }
 
     @Test
     fun otherCreaturesYouControlGetText() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PERMANENT)
-                .ofType(mutableListOf<Type?>(Type.CREATURE)).controllerType(PlayerType.PLAYER).others(true).build()
-                .getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PERMANENT,
+                ofType = mutableListOf(Type.CREATURE),
+                controllerType = PlayerType.PLAYER,
+                others = true
+            ).text
         ).isEqualTo("Other creatures you control get")
     }
 
     @Test
     fun allOtherCreaturesGetText() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PERMANENT)
-                .ofType(mutableListOf<Type?>(Type.CREATURE)).others(true).build().getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PERMANENT,
+                ofType = mutableListOf(Type.CREATURE),
+                others = true
+            ).text
         ).isEqualTo("Other creatures get")
     }
 
     @Test
     fun itGetsText() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PERMANENT).itself(true).build().getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PERMANENT,
+                itself = true
+            ).text
         ).isEqualTo("Gets")
     }
 
     @Test
     fun playerYou() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PLAYER).itself(true).build().getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PLAYER,
+                itself = true
+            ).text
         ).isEqualTo("You")
     }
 
     @Test
     fun playerEachPlayer() {
-        Assertions.assertThat(MagicInstanceSelector.builder().selectorType(SelectorType.PLAYER).build().getText())
-            .isEqualTo("Each player")
+        Assertions.assertThat(
+            MagicInstanceSelector(
+                selectorType = SelectorType.PLAYER
+            ).text
+        ).isEqualTo("Each player")
     }
 
     @Test
     fun playerEachOpponent() {
         Assertions.assertThat(
-            MagicInstanceSelector.builder().selectorType(SelectorType.PLAYER).controllerType(PlayerType.OPPONENT)
-                .build().getText()
+            MagicInstanceSelector(
+                selectorType = SelectorType.PLAYER,
+                controllerType = PlayerType.OPPONENT
+            ).text
         ).isEqualTo("Each opponent")
     }
 }

@@ -34,25 +34,25 @@ class LinkerTest {
         val cardsObjectMapper = createCardsObjectMapper()
         val setsObjectMapper = createSetsObjectMapper()
 
-        val sets = mtgSets!!.getSets()
+        val sets = mtgSets!!.sets
 
-        val cardsToLink = cards!!.getAll().stream()
+        val cardsToLink = cards!!.all.stream()
             .filter { card: Card? -> StringUtils.isBlank(card!!.imageUrl) }
             .toList()
 
         for (i in cardsToLink.indices) {
-            val card: Card = cardsToLink.get(i)
+            val card: Card = cardsToLink.get(i)!!
             val cardScryFallLinker = CardScryFallLinker(card)
             val updatedCard = card.copy(
-                imageUrl = cardScryFallLinker.getImage(),
-                types = cardScryFallLinker.getTypes(),
-                subtypes = cardScryFallLinker.getSubtypes(),
-                power = cardScryFallLinker.getPower(),
-                toughness = cardScryFallLinker.getToughness(),
-                rarity = cardScryFallLinker.getRarity(),
-                ruleText = cardScryFallLinker.getOracleText(),
-                colors = cardScryFallLinker.getColors(),
-                cost = cardScryFallLinker.getManaCost()
+                imageUrl = cardScryFallLinker.image,
+                types = cardScryFallLinker.types,
+                subtypes = cardScryFallLinker.subtypes,
+                power = cardScryFallLinker.power,
+                toughness = cardScryFallLinker.toughness,
+                rarity = cardScryFallLinker.rarity,
+                ruleText = cardScryFallLinker.oracleText,
+                colors = cardScryFallLinker.colors,
+                cost = cardScryFallLinker.manaCost
             )
             val cardJson = cardsObjectMapper.writeValueAsString(updatedCard)
             Files.writeString(
@@ -62,9 +62,9 @@ class LinkerTest {
             println("Downloaded " + (i + 1) + " of " + cardsToLink.size + " -> " + card.name)
 
             if (!card.types!!.contains(Type.BASIC)) {
-                for (scryFallSet in cardScryFallLinker.getSets()) {
+                for (scryFallSet in cardScryFallLinker.sets) {
                     if (sets.containsKey(scryFallSet)) {
-                        sets.get(scryFallSet)!!.getCards().add(card.name)
+                        sets.get(scryFallSet)!!.cards!!.add(card.name)
                         val setJson = setsObjectMapper.writeValueAsString(sets.get(scryFallSet))
                         Files.writeString(
                             Paths.get(CardsConfiguration.getResourcesPath() + "/sets/" + scryFallSet + ".json"),

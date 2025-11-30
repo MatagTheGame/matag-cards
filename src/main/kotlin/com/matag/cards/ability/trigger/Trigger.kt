@@ -1,45 +1,33 @@
-package com.matag.cards.ability.trigger;
+package com.matag.cards.ability.trigger
 
-import java.util.List;
+import com.matag.cards.ability.selector.MagicInstanceSelector
+import com.matag.cards.properties.Cost
 
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
-import com.matag.cards.ability.selector.MagicInstanceSelector;
-import com.matag.cards.properties.Cost;
+data class Trigger(
+    var type: TriggerType? = null,
+    var subtype: TriggerSubtype? = null,
+    var cost: MutableList<Cost?>? = null,
+    var magicInstanceSelector: MagicInstanceSelector? = null
+) {
+    companion object {
+        fun castTrigger(): Trigger {
+            return Trigger(TriggerType.CAST, null, null, null)
+        }
 
-import lombok.Builder;
-import lombok.Value;
+        fun manaAbilityTrigger(): Trigger {
+            return Trigger(TriggerType.MANA_ABILITY, null, null, null)
+        }
 
-@Value
-@JsonDeserialize(builder = Trigger.TriggerBuilder.class)
-@Builder
-public class Trigger {
-    TriggerType type;
-    TriggerSubtype subtype;
-    List<Cost> cost;
-    MagicInstanceSelector magicInstanceSelector;
+        fun triggeredAbility(triggerSubtype: TriggerSubtype, magicInstanceSelector: MagicInstanceSelector): Trigger {
+            return Trigger(TriggerType.TRIGGERED_ABILITY, triggerSubtype, null, magicInstanceSelector)
+        }
 
-    @JsonPOJOBuilder(withPrefix = "")
-    public static class TriggerBuilder {
-    }
+        fun activatedAbility(cost: MutableList<Cost?>): Trigger {
+            return Trigger(TriggerType.ACTIVATED_ABILITY, null, cost, null)
+        }
 
-    public static Trigger castTrigger() {
-        return new Trigger(TriggerType.CAST, null, null, null);
-    }
-
-    public static Trigger manaAbilityTrigger() {
-        return new Trigger(TriggerType.MANA_ABILITY, null, null, null);
-    }
-
-    public static Trigger triggeredAbility(TriggerSubtype triggerSubtype, MagicInstanceSelector magicInstanceSelector) {
-        return new Trigger(TriggerType.TRIGGERED_ABILITY, triggerSubtype, null, magicInstanceSelector);
-    }
-
-    public static Trigger activatedAbility(List<Cost> cost) {
-        return new Trigger(TriggerType.ACTIVATED_ABILITY, null, cost, null);
-    }
-
-    public static Trigger staticAbility() {
-        return new Trigger(TriggerType.STATIC, null, null, null);
+        fun staticAbility(): Trigger {
+            return Trigger(TriggerType.STATIC, null, null, null)
+        }
     }
 }

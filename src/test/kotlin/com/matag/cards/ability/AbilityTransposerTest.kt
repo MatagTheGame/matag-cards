@@ -7,43 +7,42 @@ import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.properties.Type
 import com.matag.player.PlayerType
 import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
 
 class AbilityTransposerTest {
     @Test
     fun notTransposableAbility() {
         // Given
-        val lifelink = Ability.builder().abilityType(AbilityType.LIFELINK).build()
+        val lifelink = Ability(abilityType = AbilityType.LIFELINK)
 
         // When
         val transposed = AbilityTransposer.transpose(lifelink)
 
         // Then
-        Assertions.assertThat<Ability?>(transposed).isEqualTo(lifelink)
+        assertThat(transposed).isEqualTo(lifelink)
     }
 
     @Test
     fun transposeProwess() {
         // Given
-        val prowess = Ability.builder().abilityType(AbilityType.PROWESS).build()
+        val prowess = Ability(abilityType = AbilityType.PROWESS)
 
         // When
         val transposed = AbilityTransposer.transpose(prowess)
 
         // Then
-        Assertions.assertThat<AbilityType?>(transposed.getAbilityType()).isEqualTo(AbilityType.SELECTED_PERMANENTS_GET)
-        Assertions.assertThat<SelectorType?>(transposed.getMagicInstanceSelector().getSelectorType())
-            .isEqualTo(SelectorType.PERMANENT)
-        Assertions.assertThat(transposed.getMagicInstanceSelector().isItself()).isTrue()
-        Assertions.assertThat<String?>(transposed.getParameters()).containsExactly("+1/+1")
-        Assertions.assertThat<TriggerType?>(transposed.getTrigger().getType()).isEqualTo(TriggerType.TRIGGERED_ABILITY)
-        Assertions.assertThat<TriggerSubtype?>(transposed.getTrigger().getSubtype()).isEqualTo(TriggerSubtype.WHEN_CAST)
-        Assertions.assertThat<SelectorType?>(transposed.getTrigger().getMagicInstanceSelector().getSelectorType())
+        assertThat<AbilityType?>(transposed.abilityType).isEqualTo(AbilityType.SELECTED_PERMANENTS_GET)
+        assertThat(transposed.magicInstanceSelector!!.itself).isTrue()
+        assertThat<String?>(transposed.parameters).containsExactly("+1/+1")
+        assertThat<TriggerType?>(transposed.trigger!!.type).isEqualTo(TriggerType.TRIGGERED_ABILITY)
+        assertThat(transposed.trigger!!.subtype!!).isEqualTo(TriggerSubtype.WHEN_CAST)
+        assertThat<SelectorType?>(transposed.trigger!!.magicInstanceSelector!!.selectorType)
             .isEqualTo(SelectorType.SPELL)
-        Assertions.assertThat<Type?>(transposed.getTrigger().getMagicInstanceSelector().getNotOfType()).containsExactly(
+        assertThat<Type?>(transposed.trigger!!.magicInstanceSelector!!.notOfType).containsExactly(
             Type.CREATURE
         )
-        Assertions.assertThat<PlayerType?>(transposed.getTrigger().getMagicInstanceSelector().getControllerType())
+        assertThat<PlayerType?>(transposed.trigger!!.magicInstanceSelector!!.controllerType)
             .isEqualTo(PlayerType.PLAYER)
     }
 }

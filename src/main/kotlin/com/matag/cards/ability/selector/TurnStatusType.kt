@@ -1,6 +1,6 @@
-package com.matag.cards.ability.selector;
+package com.matag.cards.ability.selector
 
-public enum TurnStatusType {
+enum class TurnStatusType {
     YOUR_TURN,
     OPPONENT_TURN
 }

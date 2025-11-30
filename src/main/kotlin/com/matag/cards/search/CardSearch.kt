@@ -1,95 +1,78 @@
-package com.matag.cards.search;
+package com.matag.cards.search
 
-import static java.util.stream.Collectors.toList;
+import com.matag.cards.Card
+import com.matag.cards.CardUtils
+import com.matag.cards.CardUtils.isColorless
+import com.matag.cards.CardUtils.isMulticolor
+import com.matag.cards.properties.Color
+import com.matag.cards.properties.Subtype
+import com.matag.cards.properties.Type
+import java.util.stream.Collectors
+import java.util.stream.Stream
 
-import java.util.List;
-import java.util.Set;
-import java.util.stream.Stream;
-
-import com.matag.cards.Card;
-import com.matag.cards.CardUtils;
-import com.matag.cards.properties.Color;
-import com.matag.cards.properties.Subtype;
-import com.matag.cards.properties.Type;
-
-public class CardSearch {
-
-    private final List<Card> cards;
-
-    public CardSearch(List<Card> cards) {
-        this.cards = cards;
+class CardSearch(val cards: MutableList<Card?>) {
+    fun ofType(type: Type?): CardSearch {
+        val cards = this.cards.stream()
+            .filter { card: Card? -> CardUtils.isOfType(card!!, type) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch ofType(Type type) {
-        var cards = this.cards.stream()
-                .filter(card -> CardUtils.isOfType(card, type))
-                .collect(toList());
-        return new CardSearch(cards);
+    fun notOfType(type: Type?): CardSearch {
+        val cards = this.cards.stream()
+            .filter { card: Card? -> CardUtils.isNotOfType(card!!, type) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch notOfType(Type type) {
-        var cards = this.cards.stream()
-                .filter(card -> CardUtils.isNotOfType(card, type))
-                .collect(toList());
-        return new CardSearch(cards);
+    fun ofSubtype(subtype: Subtype?): CardSearch {
+        val cards = this.cards.stream()
+            .filter { card: Card? -> CardUtils.isOfSubtype(card!!, subtype) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch ofSubtype(Subtype subtype) {
-        var cards = this.cards.stream()
-                .filter(card -> CardUtils.isOfSubtype(card, subtype))
-                .collect(toList());
-        return new CardSearch(cards);
+    fun notOfSubtype(subtype: Subtype?): CardSearch {
+        val cards = this.cards.stream()
+            .filter { card: Card? -> CardUtils.isNotOfSubtype(card!!, subtype) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch notOfSubtype(Subtype subtype) {
-        var cards = this.cards.stream()
-                .filter(card -> CardUtils.isNotOfSubtype(card, subtype))
-                .collect(toList());
-        return new CardSearch(cards);
+    fun ofColor(color: Color?): CardSearch {
+        val cards = this.cards.stream()
+            .filter { card: Card? -> CardUtils.isOfColor(card!!, color) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch ofColor(Color color) {
-        var cards = this.cards.stream()
-                .filter(card -> CardUtils.isOfColor(card, color))
-                .collect(toList());
-        return new CardSearch(cards);
+    fun ofOnlyAnyOfTheColors(colors: MutableSet<Color?>): CardSearch {
+        val cards = this.cards.stream()
+            .filter { card: Card? -> CardUtils.isOfOnlyAnyOfTheColors(card!!, colors) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch ofOnlyAnyOfTheColors(Set<Color> colors) {
-        var cards = this.cards.stream()
-                .filter(card -> CardUtils.isOfOnlyAnyOfTheColors(card, colors))
-                .collect(toList());
-        return new CardSearch(cards);
+    fun colorless(): CardSearch {
+        val cards = this.cards.stream()
+            .filter { obj: Card? -> isColorless(obj!!) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch colorless() {
-        var cards = this.cards.stream()
-                .filter(CardUtils::isColorless)
-                .collect(toList());
-        return new CardSearch(cards);
+    fun multicolor(): CardSearch {
+        val cards = this.cards.stream()
+            .filter { obj: Card? -> isMulticolor(obj!!) }
+            .collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch multicolor() {
-        var cards = this.cards.stream()
-                .filter(CardUtils::isMulticolor)
-                .collect(toList());
-        return new CardSearch(cards);
+    fun concat(moreCards: MutableList<Card?>): CardSearch {
+        val cards = Stream.concat<Card?>(this.cards.stream(), moreCards.stream()).collect(Collectors.toList())
+        return CardSearch(cards)
     }
 
-    public CardSearch concat(List<Card> moreCards) {
-        var cards = Stream.concat(this.cards.stream(), moreCards.stream()).collect(toList());
-        return new CardSearch(cards);
-    }
+    fun isEmpty() = cards.isEmpty()
 
-    public boolean isEmpty() {
-        return cards.isEmpty();
-    }
-
-    public boolean isNotEmpty() {
-        return !cards.isEmpty();
-    }
-
-    public List<Card> getCards() {
-        return cards;
-    }
+    fun isNotEmpty() = !cards.isEmpty()
 }

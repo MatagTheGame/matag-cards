@@ -19,39 +19,39 @@ class CardUtilsTest {
 
     @Test
     fun isColorless() {
-        Assertions.assertThat(isColorless(cards!!.get("Bishop's Soldier"))).isFalse()
-        Assertions.assertThat(isColorless(cards.get("Jousting Dummy"))).isTrue()
+        Assertions.assertThat(isColorless(cards!!.get("Bishop's Soldier")!!)).isFalse()
+        Assertions.assertThat(isColorless(cards.get("Jousting Dummy")!!)).isTrue()
     }
 
     @Test
     fun isOnlyAnyOfTheColors() {
         Assertions.assertThat(
             isOfOnlyAnyOfTheColors(
-                cards!!.get("Inspiring Captain"),
+                cards!!.get("Inspiring Captain")!!,
                 Set.of<Color?>(Color.WHITE, Color.RED)
             )
         ).isTrue()
         Assertions.assertThat(
             isOfOnlyAnyOfTheColors(
-                cards.get("Fiery Finish"),
+                cards.get("Fiery Finish")!!,
                 Set.of<Color?>(Color.WHITE, Color.RED)
             )
         ).isTrue()
         Assertions.assertThat(
             isOfOnlyAnyOfTheColors(
-                cards.get("Inspiring Veteran"),
+                cards.get("Inspiring Veteran")!!,
                 Set.of<Color?>(Color.WHITE, Color.RED)
             )
         ).isTrue()
         Assertions.assertThat(
             isOfOnlyAnyOfTheColors(
-                cards.get("Centaur Peacemaker"),
+                cards.get("Centaur Peacemaker")!!,
                 Set.of<Color?>(Color.WHITE, Color.RED)
             )
         ).isFalse()
         Assertions.assertThat(
             isOfOnlyAnyOfTheColors(
-                cards.get("Jousting Dummy"),
+                cards.get("Jousting Dummy")!!,
                 Set.of<Color?>(Color.WHITE, Color.RED)
             )
         ).isFalse()

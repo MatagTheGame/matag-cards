@@ -1,5 +1,5 @@
-package com.matag.cards.properties;
+package com.matag.cards.properties
 
-public enum Color {
+enum class Color {
     WHITE, BLUE, BLACK, RED, GREEN
 }

@@ -1,5 +1,5 @@
-package com.matag.cards.properties;
+package com.matag.cards.properties
 
-public enum Cost {
+enum class Cost {
     ANY, COLORLESS, WHITE, BLUE, BLACK, RED, GREEN, TAP
 }

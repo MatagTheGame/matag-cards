@@ -1,6 +1,6 @@
-package com.matag.cards.ability.trigger;
+package com.matag.cards.ability.trigger
 
-public enum TriggerType {
+enum class TriggerType {
     CAST,
     ACTIVATED_ABILITY,
     MANA_ABILITY,

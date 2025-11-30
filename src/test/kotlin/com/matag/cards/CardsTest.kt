@@ -27,17 +27,17 @@ class CardsTest {
 
     @Test
     fun shouldLoadAllCards() {
-        Assertions.assertThat<Card?>(cards!!.getAll()).isNotEmpty()
+        Assertions.assertThat<Card?>(cards!!.all).isNotEmpty()
 
-        for (card in cards.getAll()) {
-            validateCard(card)
+        for (card in cards.all) {
+            validateCard(card!!)
         }
     }
 
     @Test
     fun shouldLoadACardWithoutAbilities() {
         val card = cards!!.get("Feral Maaka")
-        Assertions.assertThat(card.name).isEqualTo("Feral Maaka")
+        Assertions.assertThat(card!!.name).isEqualTo("Feral Maaka")
         Assertions.assertThat<Color>(card.colors).containsExactly(Color.RED)
         Assertions.assertThat<Cost>(card.cost).containsExactly(Cost.RED, Cost.ANY)
         Assertions.assertThat<Type>(card.types).containsExactly(Type.CREATURE)
@@ -51,7 +51,7 @@ class CardsTest {
     @Test
     fun shouldLoadACardWithAbilities() {
         val card = cards!!.get("Act of Treason")
-        Assertions.assertThat(card.name).isEqualTo("Act of Treason")
+        Assertions.assertThat(card!!.name).isEqualTo("Act of Treason")
         Assertions.assertThat<Color>(card.colors).containsExactly(Color.RED)
         Assertions.assertThat<Cost>(card.cost).containsExactly(Cost.RED, Cost.ANY, Cost.ANY)
         Assertions.assertThat<Type>(card.types).containsExactly(Type.SORCERY)
@@ -63,23 +63,12 @@ class CardsTest {
         Assertions.assertThat(card.toughness).isNull()
         Assertions.assertThat<Ability>(card.abilities).hasSize(1)
         Assertions.assertThat<Ability>(card.abilities!!.get(0)).isEqualTo(
-            Ability.builder()
-                .abilityType(AbilityType.THAT_TARGETS_GET)
-                .targets(
-                    mutableListOf<Target?>(
-                        Target.builder()
-                            .magicInstanceSelector(
-                                MagicInstanceSelector.builder()
-                                    .selectorType(SelectorType.PERMANENT)
-                                    .ofType(mutableListOf<Type?>(Type.CREATURE))
-                                    .build()
-                            )
-                            .build()
-                    )
-                )
-                .parameters(mutableListOf<String?>(":CONTROLLED", ":UNTAPPED", "HASTE"))
-                .trigger(Trigger.castTrigger())
-                .build()
+            Ability(
+                abilityType = AbilityType.THAT_TARGETS_GET,
+                targets = mutableListOf<Target?>(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = mutableListOf<Type?>(Type.CREATURE)))),
+                parameters = mutableListOf<String?>(":CONTROLLED", ":UNTAPPED", "HASTE"),
+                trigger = Trigger.castTrigger()
+            )
         )
     }
 
@@ -95,21 +84,21 @@ class CardsTest {
 
         if (card.abilities != null) {
             card.abilities.stream()
-                .filter { ability: Ability? -> ability!!.getAbilityType() == AbilityType.THAT_TARGETS_GET }
+                .filter { ability: Ability? -> ability!!.abilityType == AbilityType.THAT_TARGETS_GET }
                 .forEach { ability: Ability? ->
-                    if (ability!!.getTargets().isEmpty()) {
+                    if (ability!!.targets!!.isEmpty()) {
                         throw RuntimeException("Card '" + name + "' is missing targets")
                     }
-                    validateParameters(name, ability.getParameters())
+                    validateParameters(name, ability.parameters!!)
                 }
 
             card.abilities.stream()
-                .filter { ability: Ability? -> ability!!.getAbilityType() == AbilityType.SELECTED_PERMANENTS_GET }
+                .filter { ability: Ability? -> ability!!.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
                 .forEach { ability: Ability? ->
-                    if (ability!!.getMagicInstanceSelector() == null) {
+                    if (ability!!.magicInstanceSelector == null) {
                         throw RuntimeException("Card '" + name + "' is missing magicInstanceSelector")
                     }
-                    validateParameters(name, ability.getParameters())
+                    validateParameters(name, ability.parameters!!)
                 }
         }
     }
@@ -120,7 +109,7 @@ class CardsTest {
         }
 
         try {
-            parameters.forEach(Consumer { parameter: String? -> abilityService!!.parameterAsString(parameter) })
+            parameters.forEach(Consumer { parameter: String? -> abilityService!!.parameterAsString(parameter!!) })
         } catch (e: Exception) {
             throw RuntimeException("Card '" + name + "' has invalid parameters: " + parameters, e)
         }

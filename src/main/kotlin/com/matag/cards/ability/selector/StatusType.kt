@@ -1,6 +1,6 @@
-package com.matag.cards.ability.selector;
+package com.matag.cards.ability.selector
 
-public enum StatusType {
+enum class StatusType {
     TAPPED,
     ATTACKING,
     ATTACKED,

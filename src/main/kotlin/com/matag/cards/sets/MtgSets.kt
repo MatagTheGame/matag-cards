@@ -1,36 +1,26 @@
-package com.matag.cards.sets;
+package com.matag.cards.sets
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-import org.springframework.core.io.Resource;
-import org.springframework.stereotype.Component;
-
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.matag.cards.ResourceLoader;
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.matag.cards.ResourceLoader
+import org.springframework.stereotype.Component
 
 @Component
-public class MtgSets {
-    private final Map<String, MtgSet> SETS = new LinkedHashMap<>();
+class MtgSets(objectMapper: ObjectMapper, resourceLoader: ResourceLoader) {
+    val sets: MutableMap<String?, MtgSet?> = LinkedHashMap<String?, MtgSet?>()
 
-    public MtgSets(ObjectMapper objectMapper, ResourceLoader resourceLoader) {
-        Resource[] setResources = resourceLoader.getSetsFileNames();
-        for (Resource setResource : setResources) {
+    init {
+        val setResources = resourceLoader.getSetsFileNames()
+        for (setResource in setResources) {
             try {
-                MtgSet mtgSet = objectMapper.readValue(setResource.getInputStream(), MtgSet.class);
-                SETS.put(mtgSet.getCode(), mtgSet);
-
-            } catch (Exception e) {
-                throw new RuntimeException("Failed to load set: " + setResource.getDescription(), e);
+                val mtgSet = objectMapper.readValue<MtgSet>(setResource.getInputStream(), MtgSet::class.java)
+                sets.put(mtgSet.code, mtgSet)
+            } catch (e: Exception) {
+                throw RuntimeException("Failed to load set: " + setResource.getDescription(), e)
             }
         }
     }
 
-    public Map<String, MtgSet> getSets() {
-        return SETS;
-    }
-
-    public MtgSet getSet(String code) {
-        return SETS.get(code);
+    fun getSet(code: String?): MtgSet? {
+        return sets.get(code)
     }
 }

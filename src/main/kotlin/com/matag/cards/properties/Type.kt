@@ -1,6 +1,6 @@
-package com.matag.cards.properties;
+package com.matag.cards.properties
 
-public enum Type {
+enum class Type {
     ARTIFACT,
     CREATURE,
     ENCHANTMENT,

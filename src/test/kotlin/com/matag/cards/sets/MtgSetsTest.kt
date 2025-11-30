@@ -27,7 +27,7 @@ class MtgSetsTest {
 
     @Test
     fun shouldLoadASet() {
-        val m20 = mtgSets!!.getSet("M20")
+        val m20 = mtgSets!!.getSet("M20")!!
         Assertions.assertThat(m20.code).isEqualTo("M20")
         Assertions.assertThat(m20.name).isEqualTo("Core Set 2020")
         Assertions.assertThat(m20.cards).contains("Bladebrand")
@@ -36,9 +36,9 @@ class MtgSetsTest {
     @Test
     fun countCards() {
         LOGGER.info("Num of Cards: " + cards!!.all.size)
-        LOGGER.info("Cards by Colors: " + cards.all.groupingBy { it.colors }.eachCount())
-        LOGGER.info("Cards by Types: " + cards.all.groupingBy { it.types }.eachCount())
-        LOGGER.info("Cards by Rarity: " + cards.all.groupingBy { it.rarity }.eachCount())
+        LOGGER.info("Cards by Colors: " + cards.all.groupingBy { it!!.colors }.eachCount())
+        LOGGER.info("Cards by Types: " + cards.all.groupingBy { it!!.types }.eachCount())
+        LOGGER.info("Cards by Rarity: " + cards.all.groupingBy { it!!.rarity }.eachCount())
         LOGGER.info("Cards by Set: " + countCardsBySet(mtgSets!!.sets))
     }
 
@@ -46,7 +46,7 @@ class MtgSetsTest {
         val countCardsBySet = HashMap<String?, Int?>()
 
         for (setName in sets.keys) {
-            countCardsBySet[setName] = sets[setName]!!.cards.size
+            countCardsBySet[setName] = sets[setName]!!.cards!!.size
         }
 
         return countCardsBySet

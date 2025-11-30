@@ -1,6 +1,6 @@
-package com.matag.cards.properties;
+package com.matag.cards.properties
 
-public enum Subtype {
+enum class Subtype {
     AETHERBORN,
     ADVISOR,
     ALLY,

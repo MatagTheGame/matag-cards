@@ -1,6 +1,6 @@
-package com.matag.player;
+package com.matag.player
 
-public enum PlayerType {
+enum class PlayerType {
     PLAYER,
     OPPONENT
 }

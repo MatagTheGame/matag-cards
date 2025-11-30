@@ -1,186 +1,188 @@
-package com.matag.downloader;
+package com.matag.downloader
 
-import static java.lang.Integer.parseInt;
-import static java.nio.charset.StandardCharsets.UTF_8;
+import com.fasterxml.jackson.databind.JsonNode
+import com.fasterxml.jackson.databind.ObjectMapper
+import com.matag.cards.Card
+import com.matag.cards.properties.Color
+import com.matag.cards.properties.Cost
+import com.matag.cards.properties.Rarity
+import com.matag.cards.properties.Subtype
+import com.matag.cards.properties.Type
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.net.URL
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
+import java.util.*
+import java.util.Map
+import java.util.function.Supplier
+import java.util.stream.Collectors
+import java.util.stream.Stream
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.URL;
-import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeSet;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+class CardScryFallLinker constructor(card: Card) {
+    val image: String
+    val colors: TreeSet<Color>?
+    val manaCost: MutableList<Cost>?
+    val types: TreeSet<Type>?
+    val subtypes: TreeSet<Subtype>?
+    val rarity: Rarity
+    val oracleText: String
+    val power: Int
+    val toughness: Int
+    val sets: MutableList<String>
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.matag.cards.Card;
-import com.matag.cards.properties.Color;
-import com.matag.cards.properties.Cost;
-import com.matag.cards.properties.Rarity;
-import com.matag.cards.properties.Subtype;
-import com.matag.cards.properties.Type;
+    init {
+        try {
+            val file = readHttpResource(
+                "https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode(
+                    "!\"" + card.name + "\"",
+                    StandardCharsets.UTF_8
+                ) + "&unique=prints"
+            )
+            val jsonNode = ObjectMapper().readTree(file)
+            checkSearchWorked(jsonNode)
 
-import lombok.Getter;
-import lombok.SneakyThrows;
+            sets = convertSets(jsonNode)
 
-@Getter
-public class CardScryFallLinker {
-    private static final String SPECIAL_DASH = "—"; // it's not an ascii dash
-    private static final Map<String, Color> COLORS = Map.of(
+            val cardJsonNode = findBestCardRepresentation(jsonNode)
+            image = convertImageUrl(cardJsonNode)
+            colors = convertColors(cardJsonNode.path("colors"))
+            manaCost = convertCost(cardJsonNode.path("mana_cost").asText())
+            val scryFallTypesSplit: Array<String> =
+                cardJsonNode.path("type_line").asText().split((" " + SPECIAL_DASH + " ").toRegex())
+                    .dropLastWhile { it.isEmpty() }.toTypedArray()
+            types = convertType(scryFallTypesSplit)
+            subtypes = convertSubtype(scryFallTypesSplit)
+            rarity = Rarity.valueOf(cardJsonNode.path("rarity").asText().uppercase(Locale.getDefault()))
+            oracleText = convertOracleText(cardJsonNode.path("oracle_text").asText())
+            power = intOrZero(cardJsonNode, "power")
+            toughness = intOrZero(cardJsonNode, "toughness")
+        } catch (e: Exception) {
+            throw Exception("Error loading card: " + card.name, e)
+        }
+    }
+
+    private fun convertImageUrl(cardJsonNode: JsonNode): String {
+        val fullUrl = cardJsonNode.path("image_uris").path("large").asText()
+        return fullUrl.substring(0, fullUrl.indexOf("?"))
+    }
+
+    private fun findBestCardRepresentation(jsonNode: JsonNode): JsonNode {
+        for (i in 0..<jsonNode.path("data").size()) {
+            if (jsonNode.path("data").get(i).path("promo").asText().equals("false", ignoreCase = true)) {
+                return jsonNode.path("data").get(i)
+            }
+        }
+        return jsonNode.path("data").get(0)
+    }
+
+    private fun readHttpResource(url: String): String {
+        return BufferedReader(InputStreamReader(URL(url).openStream()))
+            .lines().collect(Collectors.joining("\n"))
+    }
+
+    @Throws(Exception::class)
+    private fun checkSearchWorked(jsonNode: JsonNode) {
+        if (intOrZero(jsonNode, "total_cards") == 0) {
+            throw Exception("Card not found")
+        }
+    }
+
+    private fun convertSets(jsonNode: JsonNode): MutableList<String> {
+        val sets = ArrayList<String>()
+
+        for (i in 0..<jsonNode.path("data").size()) {
+            sets.add(jsonNode.path("data").get(i).path("set").asText().uppercase(Locale.getDefault()))
+        }
+
+        return sets
+    }
+
+    private fun convertColors(jsonColors: JsonNode): TreeSet<Color> {
+        val colors = TreeSet<Color>()
+        for (i in 0..<jsonColors.size()) {
+            val color = jsonColors.get(i).asText()
+            if (!COLORS.containsKey(color)) {
+                throw RuntimeException("Color " + color + " not recognised")
+            }
+            colors.add(COLORS.get(color)!!)
+        }
+        return colors
+    }
+
+    private fun convertCost(manaCost: String): MutableList<Cost> {
+        var manaCost = manaCost
+        val cost = ArrayList<Cost>()
+
+        for (costEntry in COSTS.entries) {
+            while (manaCost.contains("{" + costEntry.key + "}")) {
+                manaCost = manaCost.replaceFirst(("\\{" + costEntry.key + "}").toRegex(), "")
+                cost.add(costEntry.value)
+            }
+        }
+
+        manaCost = manaCost.replaceFirst("\\{".toRegex(), "").replaceFirst("}".toRegex(), "")
+        if (!manaCost.isBlank()) {
+            for (i in 0..<manaCost.toInt()) {
+                cost.add(Cost.ANY)
+            }
+        }
+
+        return cost
+    }
+
+    private fun convertType(scryFallTypesSplit: Array<String>): TreeSet<Type> {
+        return Stream.of<String>(*scryFallTypesSplit[0]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
+            .toTypedArray())
+            .map<String?> { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
+            .map<Type> { Type.valueOf(it) }
+            .collect(Collectors.toCollection(Supplier { TreeSet() }))
+    }
+
+    private fun convertSubtype(scryFallTypesSplit: Array<String>): TreeSet<Subtype>? {
+        if (scryFallTypesSplit.size < 2) {
+            return null
+        }
+
+        return Stream.of<String>(*scryFallTypesSplit[1]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
+            .toTypedArray())
+            .map<String?> { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
+            .map<Subtype> { Subtype.valueOf(it) }
+            .collect(Collectors.toCollection(Supplier { TreeSet() }))
+    }
+
+    private fun convertOracleText(oracleText: String): String {
+        var oracleText = oracleText
+        oracleText = oracleText.replace("\n".toRegex(), ". ")
+        oracleText = oracleText.replace("\\([^(]+\\)".toRegex(), "")
+        oracleText = oracleText.replace(" [ ]+".toRegex(), " ")
+        oracleText = oracleText.replace(" [.]+".toRegex(), ".")
+        oracleText = oracleText.replace("\\.[.]+".toRegex(), ".")
+        return oracleText.trim { it <= ' ' }
+    }
+
+    private fun intOrZero(jsonNode: JsonNode, field: String?): Int {
+        return if (jsonNode.has(field)) jsonNode.path(field).asText().toInt() else 0
+    }
+
+    companion object {
+        private const val SPECIAL_DASH = "—" // it's not an ascii dash
+        private val COLORS: MutableMap<String, Color> = Map.of<String, Color>(
             "W", Color.WHITE,
             "U", Color.BLUE,
             "B", Color.BLACK,
             "R", Color.RED,
             "G", Color.GREEN
-    );
-    private static final LinkedHashMap<String, Cost> COSTS = new LinkedHashMap<>();
+        )
+        private val COSTS = LinkedHashMap<String, Cost>()
 
-    static {
-        COSTS.put("C", Cost.COLORLESS);
-        COSTS.put("W", Cost.WHITE);
-        COSTS.put("U", Cost.BLUE);
-        COSTS.put("B", Cost.BLACK);
-        COSTS.put("R", Cost.RED);
-        COSTS.put("G", Cost.GREEN);
-    }
-
-    private final String image;
-    private final TreeSet<Color> colors;
-    private final List<Cost> manaCost;
-    private final TreeSet<Type> types;
-    private final TreeSet<Subtype> subtypes;
-    private final Rarity rarity;
-    private final String oracleText;
-    private final Integer power;
-    private final Integer toughness;
-    private final List<String> sets;
-
-    @SneakyThrows
-    public CardScryFallLinker(Card card) {
-        try {
-            var file = readHttpResource("https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode("!\"" + card.getName() + "\"", UTF_8) + "&unique=prints");
-            var jsonNode = new ObjectMapper().readTree(file);
-            checkSearchWorked(jsonNode);
-
-            sets = convertSets(jsonNode);
-
-            var cardJsonNode = findBestCardRepresentation(jsonNode);
-            image = convertImageUrl(cardJsonNode);
-            colors = convertColors(cardJsonNode.path("colors"));
-            manaCost = convertCost(cardJsonNode.path("mana_cost").asText());
-            var scryFallTypesSplit = cardJsonNode.path("type_line").asText().split(" " + SPECIAL_DASH + " ");
-            types = convertType(scryFallTypesSplit);
-            subtypes = convertSubtype(scryFallTypesSplit);
-            rarity = Rarity.valueOf(cardJsonNode.path("rarity").asText().toUpperCase());
-            oracleText = convertOracleText(cardJsonNode.path("oracle_text").asText());
-            power = intOrZero(cardJsonNode, "power");
-            toughness = intOrZero(cardJsonNode, "toughness");
-
-        } catch (Exception e) {
-            throw new Exception("Error loading card: " + card.getName(), e);
+        init {
+            COSTS.put("C", Cost.COLORLESS)
+            COSTS.put("W", Cost.WHITE)
+            COSTS.put("U", Cost.BLUE)
+            COSTS.put("B", Cost.BLACK)
+            COSTS.put("R", Cost.RED)
+            COSTS.put("G", Cost.GREEN)
         }
-    }
-
-    private String convertImageUrl(JsonNode cardJsonNode) {
-        var fullUrl = cardJsonNode.path("image_uris").path("large").asText();
-        return fullUrl.substring(0, fullUrl.indexOf("?"));
-    }
-
-    private JsonNode findBestCardRepresentation(JsonNode jsonNode) {
-        for (int i = 0; i < jsonNode.path("data").size(); i++) {
-            if (jsonNode.path("data").get(i).path("promo").asText().equalsIgnoreCase("false")) {
-                return jsonNode.path("data").get(i);
-            }
-        }
-        return jsonNode.path("data").get(0);
-    }
-
-    @SneakyThrows
-    private String readHttpResource(String url) {
-        return new BufferedReader(new InputStreamReader(new URL(url).openStream()))
-                .lines().collect(Collectors.joining("\n"));
-    }
-
-    private void checkSearchWorked(JsonNode jsonNode) throws Exception {
-        if (intOrZero(jsonNode, "total_cards") == 0) {
-            throw new Exception("Card not found");
-        }
-    }
-
-    private List<String> convertSets(JsonNode jsonNode) {
-        var sets = new ArrayList<String>();
-
-        for (int i = 0; i < jsonNode.path("data").size(); i++) {
-            sets.add(jsonNode.path("data").get(i).path("set").asText().toUpperCase());
-        }
-
-        return sets;
-    }
-
-    private TreeSet<Color> convertColors(JsonNode jsonColors) {
-        var colors = new TreeSet<Color>();
-        for (int i = 0; i < jsonColors.size(); i++) {
-            var color = jsonColors.get(i).asText();
-            if (!COLORS.containsKey(color)) {
-                throw new RuntimeException("Color " + color + " not recognised");
-            }
-            colors.add(COLORS.get(color));
-        }
-        return colors;
-    }
-
-    private List<Cost> convertCost(String manaCost) {
-        var cost = new ArrayList<Cost>();
-
-        for (Map.Entry<String, Cost> costEntry : COSTS.entrySet()) {
-            while (manaCost.contains("{" + costEntry.getKey() + "}")) {
-                manaCost = manaCost.replaceFirst("\\{" + costEntry.getKey() + "}", "");
-                cost.add(costEntry.getValue());
-            }
-        }
-
-        manaCost = manaCost.replaceFirst("\\{", "").replaceFirst("}", "");
-        if (!manaCost.isBlank()) {
-            for (int i = 0; i < parseInt(manaCost); i++) {
-                cost.add(Cost.ANY);
-            }
-        }
-
-        return cost;
-    }
-
-    private TreeSet<Type> convertType(String[] scryFallTypesSplit) {
-        return Stream.of(scryFallTypesSplit[0].split(" "))
-                .map(String::toUpperCase)
-                .map(Type::valueOf)
-                .collect(Collectors.toCollection(TreeSet::new));
-    }
-
-    private TreeSet<Subtype> convertSubtype(String[] scryFallTypesSplit) {
-        if (scryFallTypesSplit.length < 2) {
-            return null;
-        }
-
-        return Stream.of(scryFallTypesSplit[1].split(" "))
-                .map(String::toUpperCase)
-                .map(Subtype::valueOf)
-                .collect(Collectors.toCollection(TreeSet::new));
-    }
-
-    private String convertOracleText(String oracleText) {
-        oracleText = oracleText.replaceAll("\n", ". ");
-        oracleText = oracleText.replaceAll("\\([^(]+\\)", "");
-        oracleText = oracleText.replaceAll(" [ ]+", " ");
-        oracleText = oracleText.replaceAll(" [.]+", ".");
-        oracleText = oracleText.replaceAll("\\.[.]+", ".");
-        return oracleText.trim();
-    }
-
-    private int intOrZero(JsonNode jsonNode, String field) {
-        return jsonNode.has(field) ? parseInt(jsonNode.path(field).asText()) : 0;
     }
 }

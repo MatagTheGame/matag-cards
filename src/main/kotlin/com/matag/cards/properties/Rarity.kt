@@ -1,5 +1,5 @@
-package com.matag.cards.properties;
+package com.matag.cards.properties
 
-public enum Rarity {
+enum class Rarity {
     COMMON, UNCOMMON, RARE, MYTHIC
 }

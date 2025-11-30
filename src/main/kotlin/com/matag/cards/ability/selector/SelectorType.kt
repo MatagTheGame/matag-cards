@@ -1,6 +1,6 @@
-package com.matag.cards.ability.selector;
+package com.matag.cards.ability.selector
 
-public enum SelectorType {
+enum class SelectorType {
     ANY,
     CARD,
     PLAYER,

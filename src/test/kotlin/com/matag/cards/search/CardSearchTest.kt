@@ -36,7 +36,7 @@ class CardSearchTest {
         Assertions.assertThat<Card?>(
             CardSearch(List.of<Card?>(cards!!.get("Plains")))
                 .concat(List.of<Card?>(cards.get("Mountain")))
-                .getCards()
+                .cards
         )
             .hasSize(2)
     }
@@ -47,7 +47,7 @@ class CardSearchTest {
         val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Bedevil")))
 
         // When
-        val result = cardSearch.ofType(Type.LAND).getCards()
+        val result = cardSearch.ofType(Type.LAND).cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Plains"))
@@ -59,7 +59,7 @@ class CardSearchTest {
         val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Bedevil")))
 
         // When
-        val result = cardSearch.notOfType(Type.LAND).getCards()
+        val result = cardSearch.notOfType(Type.LAND).cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Bedevil"))
@@ -71,7 +71,7 @@ class CardSearchTest {
         val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Dusk Legion Zealot")))
 
         // When
-        val result = cardSearch.ofSubtype(Subtype.SOLDIER).getCards()
+        val result = cardSearch.ofSubtype(Subtype.SOLDIER).cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Dusk Legion Zealot"))
@@ -83,7 +83,7 @@ class CardSearchTest {
         val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Dusk Legion Zealot")))
 
         // When
-        val result = cardSearch.notOfSubtype(Subtype.SOLDIER).getCards()
+        val result = cardSearch.notOfSubtype(Subtype.SOLDIER).cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Plains"))
@@ -101,7 +101,7 @@ class CardSearchTest {
         )
 
         // When
-        val result = cardSearch.ofColor(Color.WHITE).getCards()
+        val result = cardSearch.ofColor(Color.WHITE).cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"))
@@ -120,7 +120,7 @@ class CardSearchTest {
         )
 
         // When
-        val result = cardSearch.ofOnlyAnyOfTheColors(Set.of<Color?>(Color.WHITE, Color.BLUE)).getCards()
+        val result = cardSearch.ofOnlyAnyOfTheColors(Set.of<Color?>(Color.WHITE, Color.BLUE)).cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"))
@@ -138,7 +138,7 @@ class CardSearchTest {
         )
 
         // When
-        val result = cardSearch.colorless().getCards()
+        val result = cardSearch.colorless().cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Jousting Dummy"))
@@ -156,7 +156,7 @@ class CardSearchTest {
         )
 
         // When
-        val result = cardSearch.multicolor().getCards()
+        val result = cardSearch.multicolor().cards
 
         // Then
         Assertions.assertThat<Card?>(result).contains(cards.get("Empyrean Eagle"))

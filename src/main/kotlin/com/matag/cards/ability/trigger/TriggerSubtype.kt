@@ -1,6 +1,6 @@
-package com.matag.cards.ability.trigger;
+package com.matag.cards.ability.trigger
 
-public enum TriggerSubtype {
+enum class TriggerSubtype {
     WHEN_ATTACK,
     WHEN_BLOCK,
     WHEN_CAST,
