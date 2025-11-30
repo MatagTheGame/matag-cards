@@ -7,15 +7,15 @@ import com.matag.cards.properties.Color
 import com.matag.cards.properties.Subtype
 import com.matag.cards.properties.Type
 import org.assertj.core.api.Assertions
-import org.junit.Test
-import org.junit.runner.RunWith
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Import
-import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.test.context.junit.jupiter.SpringExtension
 import java.util.List
 import java.util.Set
 
-@RunWith(SpringRunner::class)
+@ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
 class CardSearchTest {
     @Autowired

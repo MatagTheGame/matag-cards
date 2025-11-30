@@ -8,17 +8,17 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.matag.cards.properties.Type
 import com.matag.cards.sets.MtgSets
 import com.matag.downloader.CardScryFallLinker
-import org.junit.Ignore
-import org.junit.Test
+import org.junit.jupiter.api.Disabled
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.ExtendWith
 import org.junit.platform.commons.util.StringUtils
-import org.junit.runner.RunWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Import
-import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.test.context.junit.jupiter.SpringExtension
 import java.nio.file.Files
 import java.nio.file.Paths
 
-@RunWith(SpringRunner::class)
+@ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
 class LinkerTest {
     @Autowired
@@ -27,7 +27,7 @@ class LinkerTest {
     @Autowired
     private val mtgSets: MtgSets? = null
 
-    @Ignore
+    @Disabled
     @Test
     @Throws(Exception::class)
     fun scryFallLinker() {

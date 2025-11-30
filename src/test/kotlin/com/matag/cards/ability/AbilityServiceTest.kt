@@ -3,7 +3,7 @@ package com.matag.cards.ability
 import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.properties.PowerToughness
 import org.assertj.core.api.Assertions
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class AbilityServiceTest {
     private val abilityService = AbilityService()

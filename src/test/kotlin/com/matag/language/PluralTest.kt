@@ -2,7 +2,7 @@ package com.matag.language
 
 import com.matag.language.Plural.plural
 import org.assertj.core.api.Assertions
-import org.junit.Test
+import org.junit.jupiter.api.Test
 
 class PluralTest {
     @Test

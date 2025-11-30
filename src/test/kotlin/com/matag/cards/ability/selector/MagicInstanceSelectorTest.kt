@@ -3,10 +3,8 @@ package com.matag.cards.ability.selector
 import com.matag.cards.properties.Subtype
 import com.matag.cards.properties.Type
 import com.matag.player.PlayerType
-import org.assertj.core.api.Assertions
 import org.assertj.core.api.Assertions.assertThat
-import org.junit.Test
-import java.util.List
+import org.junit.jupiter.api.Test
 
 class MagicInstanceSelectorTest {
     @Test

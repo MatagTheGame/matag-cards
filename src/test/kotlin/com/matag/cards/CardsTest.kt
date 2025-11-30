@@ -9,14 +9,14 @@ import com.matag.cards.ability.trigger.Trigger
 import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.properties.*
 import org.assertj.core.api.Assertions
-import org.junit.Test
-import org.junit.runner.RunWith
+import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.context.annotation.Import
-import org.springframework.test.context.junit4.SpringRunner
+import org.springframework.test.context.junit.jupiter.SpringExtension
 import java.util.function.Consumer
 
-@RunWith(SpringRunner::class)
+@ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
 class CardsTest {
     @Autowired
@@ -65,7 +65,7 @@ class CardsTest {
         Assertions.assertThat<Ability>(card.abilities!!.get(0)).isEqualTo(
             Ability(
                 abilityType = AbilityType.THAT_TARGETS_GET,
-                targets = mutableListOf<Target?>(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = mutableListOf<Type?>(Type.CREATURE)))),
+                targets = mutableListOf<Target?>(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf<Type>(Type.CREATURE)))),
                 parameters = mutableListOf<String?>(":CONTROLLED", ":UNTAPPED", "HASTE"),
                 trigger = Trigger.castTrigger()
             )
