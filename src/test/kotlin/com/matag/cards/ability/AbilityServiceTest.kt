@@ -1,261 +1,270 @@
-package com.matag.cards.ability;
+package com.matag.cards.ability
 
-import static com.matag.cards.ability.type.AbilityType.MENACE;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.ability.type.AbilityType
+import com.matag.cards.properties.PowerToughness
+import org.assertj.core.api.Assertions
+import org.junit.Test
 
-import java.util.List;
-
-import org.junit.Test;
-
-import com.matag.cards.properties.PowerToughness;
-
-public class AbilityServiceTest {
-    private final AbilityService abilityService = new AbilityService();
+class AbilityServiceTest {
+    private val abilityService = AbilityService()
 
     @Test
-    public void testPowerAndToughnessFromParameter() {
+    fun testPowerAndToughnessFromParameter() {
         // Given
-        var parameter = "+2/+2";
+        val parameter = "+2/+2"
 
         // When
-        var PowerToughness = abilityService.powerToughnessFromParameter(parameter);
+        val PowerToughness = abilityService.powerToughnessFromParameter(parameter)
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(2, 2));
+        Assertions.assertThat<PowerToughness?>(PowerToughness).isEqualTo(PowerToughness(2, 2))
     }
 
     @Test
-    public void testPowerAndToughnessFromParameterAbsent() {
+    fun testPowerAndToughnessFromParameterAbsent() {
         // Given
-        var parameter = "TRAMPLE";
+        val parameter = "TRAMPLE"
 
         // When
-        var PowerToughness = abilityService.powerToughnessFromParameter(parameter);
+        val PowerToughness = abilityService.powerToughnessFromParameter(parameter)
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(0, 0));
+        Assertions.assertThat<PowerToughness?>(PowerToughness).isEqualTo(PowerToughness(0, 0))
     }
 
     @Test
-    public void testPowerAndToughnessFromParameters() {
+    fun testPowerAndToughnessFromParameters() {
         // Given
-        var parameters = List.of("TRAMPLE", "+2/+2", "HASTE");
+        val parameters = mutableListOf<String?>("TRAMPLE", "+2/+2", "HASTE")
 
         // When
-        var PowerToughness = abilityService.powerToughnessFromParameters(parameters);
+        val PowerToughness = abilityService.powerToughnessFromParameters(parameters)
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(2, 2));
+        Assertions.assertThat<PowerToughness?>(PowerToughness).isEqualTo(PowerToughness(2, 2))
     }
 
     @Test
-    public void testPowerAndToughnessFromParametersAbsent() {
+    fun testPowerAndToughnessFromParametersAbsent() {
         // Given
-        var parameter = "TRAMPLE";
+        val parameter = "TRAMPLE"
 
         // When
-        var PowerToughness = abilityService.powerToughnessFromParameter(parameter);
+        val PowerToughness = abilityService.powerToughnessFromParameter(parameter)
 
         // Then
-        assertThat(PowerToughness).isEqualTo(new PowerToughness(0, 0));
+        Assertions.assertThat<PowerToughness?>(PowerToughness).isEqualTo(PowerToughness(0, 0))
     }
 
     @Test
-    public void testDamageFromParameter() {
+    fun testDamageFromParameter() {
         // Given
-        var parameter = "DAMAGE:4";
+        val parameter = "DAMAGE:4"
 
         // When
-        var damage = abilityService.damageFromParameter(parameter);
+        val damage = abilityService.damageFromParameter(parameter)
 
         // Then
-        assertThat(damage).isEqualTo(4);
+        Assertions.assertThat(damage).isEqualTo(4)
     }
 
     @Test
-    public void testDamageFromParameterAbsent() {
+    fun testDamageFromParameterAbsent() {
         // When
-        var damage = abilityService.damageFromParameter("TRAMPLE");
+        val damage = abilityService.damageFromParameter("TRAMPLE")
 
         // Then
-        assertThat(damage).isEqualTo(0);
+        Assertions.assertThat(damage).isEqualTo(0)
     }
 
     @Test
-    public void testControllerDamageFromParameter() {
+    fun testControllerDamageFromParameter() {
         // Given
-        var parameter = "CONTROLLER_DAMAGE:5";
+        val parameter = "CONTROLLER_DAMAGE:5"
 
         // When
-        var damage = abilityService.controllerDamageFromParameter(parameter);
+        val damage = abilityService.controllerDamageFromParameter(parameter)
 
         // Then
-        assertThat(damage).isEqualTo(5);
+        Assertions.assertThat(damage).isEqualTo(5)
     }
 
     @Test
-    public void testTappedFromParameter() {
+    fun testTappedFromParameter() {
         // Given
-        var parameter = ":TAPPED";
+        val parameter = ":TAPPED"
 
         // When
-        var tapped = abilityService.tappedFromParameter(parameter);
+        val tapped = abilityService.tappedFromParameter(parameter)
 
         // Then
-        assertThat(tapped).isTrue();
+        Assertions.assertThat(tapped).isTrue()
     }
 
     @Test
-    public void testUntappedFromParameter() {
+    fun testUntappedFromParameter() {
         // Given
-        var parameter = ":UNTAPPED";
+        val parameter = ":UNTAPPED"
 
         // When
-        var untapped = abilityService.untappedFromParameter(parameter);
+        val untapped = abilityService.untappedFromParameter(parameter)
 
         // Then
-        assertThat(untapped).isTrue();
+        Assertions.assertThat(untapped).isTrue()
     }
 
     @Test
-    public void testDoesNotUntapNextTurnFromParameter() {
+    fun testDoesNotUntapNextTurnFromParameter() {
         // Given
-        var parameter = ":DOES_NOT_UNTAP_NEXT_TURN";
+        val parameter = ":DOES_NOT_UNTAP_NEXT_TURN"
 
         // When
-        var doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter(parameter);
+        val doesNotUntapNextTurn = abilityService.doesNotUntapNextTurnFromParameter(parameter)
 
         // Then
-        assertThat(doesNotUntapNextTurn).isTrue();
+        Assertions.assertThat(doesNotUntapNextTurn).isTrue()
     }
 
     @Test
-    public void testDestroyedFromParameter() {
+    fun testDestroyedFromParameter() {
         // Given
-        var parameter = ":DESTROYED";
+        val parameter = ":DESTROYED"
 
         // When
-        var destroyed = abilityService.destroyedFromParameter(parameter);
+        val destroyed = abilityService.destroyedFromParameter(parameter)
 
         // Then
-        assertThat(destroyed).isTrue();
+        Assertions.assertThat(destroyed).isTrue()
     }
 
     @Test
-    public void testReturnedToOwnerHandFromParameter() {
+    fun testReturnedToOwnerHandFromParameter() {
         // Given
-        var parameter = ":RETURN_TO_OWNER_HAND";
+        val parameter = ":RETURN_TO_OWNER_HAND"
 
         // When
-        var returnToOwnerHand = abilityService.returnToOwnerHandFromParameter(parameter);
+        val returnToOwnerHand = abilityService.returnToOwnerHandFromParameter(parameter)
 
         // Then
-        assertThat(returnToOwnerHand).isTrue();
+        Assertions.assertThat(returnToOwnerHand).isTrue()
     }
 
     @Test
-    public void testControlledFromParameter() {
+    fun testControlledFromParameter() {
         // Given
-        var parameter = ":CONTROLLED";
+        val parameter = ":CONTROLLED"
 
         // When
-        var controlled = abilityService.controlledFromParameter(parameter);
+        val controlled = abilityService.controlledFromParameter(parameter)
 
         // Then
-        assertThat(controlled).isTrue();
+        Assertions.assertThat(controlled).isTrue()
     }
 
     @Test
-    public void testPlus1CountersFromParameter() {
+    fun testPlus1CountersFromParameter() {
         // Given
-        var parameter = "PLUS_1_COUNTERS:2";
+        val parameter = "PLUS_1_COUNTERS:2"
 
         // When
-        var counters = abilityService.plus1CountersFromParameter(parameter);
+        val counters = abilityService.plus1CountersFromParameter(parameter)
 
         // Then
-        assertThat(counters).isEqualTo(2);
+        Assertions.assertThat(counters).isEqualTo(2)
     }
 
     @Test
-    public void testMinus1CountersFromParameter() {
+    fun testMinus1CountersFromParameter() {
         // Given
-        var parameter = "MINUS_1_COUNTERS:3";
+        val parameter = "MINUS_1_COUNTERS:3"
 
         // When
-        var counters = abilityService.minus1CountersFromParameter(parameter);
+        val counters = abilityService.minus1CountersFromParameter(parameter)
 
         // Then
-        assertThat(counters).isEqualTo(3);
+        Assertions.assertThat(counters).isEqualTo(3)
     }
 
     @Test
-    public void testKeywordCounterFromParameter() {
+    fun testKeywordCounterFromParameter() {
         // Given
-        var parameter = "KEYWORD_COUNTER:MENACE";
+        val parameter = "KEYWORD_COUNTER:MENACE"
 
         // When
-        var keywordAbility = abilityService.keywordCounterFromParameter(parameter);
+        val keywordAbility = abilityService.keywordCounterFromParameter(parameter)
 
         // Then
-        assertThat(keywordAbility).isEqualTo(MENACE);
+        Assertions.assertThat<AbilityType?>(keywordAbility).isEqualTo(AbilityType.MENACE)
     }
 
 
     @Test
-    public void testDrawFromParameter() {
+    fun testDrawFromParameter() {
         // Given
-        var parameter = "DRAW:2";
+        val parameter = "DRAW:2"
 
         // When
-        var draw = abilityService.drawFromParameter(parameter);
+        val draw = abilityService.drawFromParameter(parameter)
 
         // Then
-        assertThat(draw).isEqualTo(2);
+        Assertions.assertThat(draw).isEqualTo(2)
     }
 
     @Test
-    public void testDrawFromParameterAbsent() {
+    fun testDrawFromParameterAbsent() {
         // When
-        var draw = abilityService.drawFromParameter("TRAMPLE");
+        val draw = abilityService.drawFromParameter("TRAMPLE")
 
         // Then
-        assertThat(draw).isEqualTo(0);
+        Assertions.assertThat(draw).isEqualTo(0)
     }
 
     @Test
-    public void testLifeFromParameter() {
+    fun testLifeFromParameter() {
         // Given
-        var parameter = "LIFE:3";
+        val parameter = "LIFE:3"
 
         // When
-        var life = abilityService.lifeFromParameter(parameter);
+        val life = abilityService.lifeFromParameter(parameter)
 
         // Then
-        assertThat(life).isEqualTo(3);
+        Assertions.assertThat(life).isEqualTo(3)
     }
 
     @Test
-    public void testPermanentParametersAsString() {
+    fun testPermanentParametersAsString() {
         // Given
-        var parameters = List.of("+2/+2", "TRAMPLE", "DAMAGE:2", "HASTE", "CONTROLLER_DAMAGE:3", ":TAPPED", ":DOES_NOT_UNTAP_NEXT_TURN", ":DESTROYED", ":RETURN_TO_OWNER_HAND", "PLUS_1_COUNTERS:2", "KEYWORD_COUNTER:MENACE");
+        val parameters = mutableListOf<String?>(
+            "+2/+2",
+            "TRAMPLE",
+            "DAMAGE:2",
+            "HASTE",
+            "CONTROLLER_DAMAGE:3",
+            ":TAPPED",
+            ":DOES_NOT_UNTAP_NEXT_TURN",
+            ":DESTROYED",
+            ":RETURN_TO_OWNER_HAND",
+            "PLUS_1_COUNTERS:2",
+            "KEYWORD_COUNTER:MENACE"
+        )
 
         // When
-        var parametersAsString = abilityService.parametersAsString(parameters);
+        val parametersAsString = abilityService.parametersAsString(parameters)
 
         // Then
-        assertThat(parametersAsString).isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter");
+        Assertions.assertThat(parametersAsString)
+            .isEqualTo("+2/+2, trample, 2 damage, haste, to its controller 3 damage, tapped, doesn't untap next turn, destroyed, returned to its owner's hand, 2 +1/+1 counters and a menace counter")
     }
 
     @Test
-    public void testPlayerParametersAsString() {
+    fun testPlayerParametersAsString() {
         // Given
-        var parameters = List.of("LIFE:2", "LIFE:-3", "DRAW:1", "DRAW:2");
+        val parameters = mutableListOf<String?>("LIFE:2", "LIFE:-3", "DRAW:1", "DRAW:2")
 
         // When
-        var parametersAsString = abilityService.parametersAsString(parameters);
+        val parametersAsString = abilityService.parametersAsString(parameters)
 
         // Then
-        assertThat(parametersAsString).isEqualTo("gain 2 life, lose 3 life, draw 1 card and draw 2 cards");
+        Assertions.assertThat(parametersAsString).isEqualTo("gain 2 life, lose 3 life, draw 1 card and draw 2 cards")
     }
 }

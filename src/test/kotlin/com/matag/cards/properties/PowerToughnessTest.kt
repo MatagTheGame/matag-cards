@@ -1,43 +1,42 @@
-package com.matag.cards.properties;
+package com.matag.cards.properties
 
-import static org.assertj.core.api.Assertions.assertThat;
+import org.assertj.core.api.Assertions
+import org.junit.Test
 
-import org.junit.Test;
-
-public class PowerToughnessTest {
+class PowerToughnessTest {
     @Test
-    public void powerToughnessPositiveTest() {
+    fun powerToughnessPositiveTest() {
         // Given
-        var powerToughnessString = "+1/+1";
+        val powerToughnessString = "+1/+1"
 
         // When
-        var powerToughness = PowerToughness.powerToughness(powerToughnessString);
+        val powerToughness = PowerToughness.powerToughness(powerToughnessString)
 
         // Then
-        assertThat(powerToughness).isEqualTo(new PowerToughness(1, 1));
+        Assertions.assertThat<PowerToughness?>(powerToughness).isEqualTo(PowerToughness(1, 1))
     }
 
     @Test
-    public void powerToughnessNegativeTest() {
+    fun powerToughnessNegativeTest() {
         // Given
-        var powerToughnessString = "-1/-1";
+        val powerToughnessString = "-1/-1"
 
         // When
-        var powerToughness = PowerToughness.powerToughness(powerToughnessString);
+        val powerToughness = PowerToughness.powerToughness(powerToughnessString)
 
         // Then
-        assertThat(powerToughness).isEqualTo(new PowerToughness(-1, -1));
+        Assertions.assertThat<PowerToughness?>(powerToughness).isEqualTo(PowerToughness(-1, -1))
     }
 
     @Test
-    public void powerToughnessMixedTest() {
+    fun powerToughnessMixedTest() {
         // Given
-        var powerToughnessString = "+2/-3";
+        val powerToughnessString = "+2/-3"
 
         // When
-        var powerToughness = PowerToughness.powerToughness(powerToughnessString);
+        val powerToughness = PowerToughness.powerToughness(powerToughnessString)
 
         // Then
-        assertThat(powerToughness).isEqualTo(new PowerToughness(2, -3));
+        Assertions.assertThat<PowerToughness?>(powerToughness).isEqualTo(PowerToughness(2, -3))
     }
 }

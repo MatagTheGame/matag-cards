@@ -1,157 +1,164 @@
-package com.matag.cards.search;
+package com.matag.cards.search
 
-import static java.util.Collections.emptyList;
-import static org.assertj.core.api.Assertions.assertThat;
+import com.matag.cards.Card
+import com.matag.cards.Cards
+import com.matag.cards.CardsConfiguration
+import com.matag.cards.properties.Color
+import com.matag.cards.properties.Subtype
+import com.matag.cards.properties.Type
+import org.assertj.core.api.Assertions
+import org.junit.Test
+import org.junit.runner.RunWith
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.context.annotation.Import
+import org.springframework.test.context.junit4.SpringRunner
+import java.util.List
+import java.util.Set
 
-import java.util.List;
-import java.util.Set;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Import;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import com.matag.cards.Cards;
-import com.matag.cards.CardsConfiguration;
-import com.matag.cards.properties.Color;
-import com.matag.cards.properties.Subtype;
-import com.matag.cards.properties.Type;
-
-@RunWith(SpringRunner.class)
-@Import(CardsConfiguration.class)
-public class CardSearchTest {
+@RunWith(SpringRunner::class)
+@Import(CardsConfiguration::class)
+class CardSearchTest {
     @Autowired
-    private Cards cards;
+    private val cards: Cards? = null
 
     @Test
-    public void empty() {
-        assertThat(new CardSearch(emptyList()).isEmpty()).isTrue();
+    fun empty() {
+        Assertions.assertThat(CardSearch(mutableListOf<Card?>()).isEmpty()).isTrue()
     }
 
     @Test
-    public void notEmpty() {
-        assertThat(new CardSearch(List.of(cards.get("Plains"))).isNotEmpty()).isTrue();
+    fun notEmpty() {
+        Assertions.assertThat(CardSearch(List.of<Card?>(cards!!.get("Plains"))).isNotEmpty()).isTrue()
     }
 
     @Test
-    public void concat() {
-        assertThat(new CardSearch(List.of(cards.get("Plains")))
-                .concat(List.of(cards.get("Mountain")))
-                .getCards())
-                .hasSize(2);
+    fun concat() {
+        Assertions.assertThat<Card?>(
+            CardSearch(List.of<Card?>(cards!!.get("Plains")))
+                .concat(List.of<Card?>(cards.get("Mountain")))
+                .getCards()
+        )
+            .hasSize(2)
     }
 
     @Test
-    public void ofType() {
+    fun ofType() {
         // Given
-        var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Bedevil")));
+        val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Bedevil")))
 
         // When
-        var result = cardSearch.ofType(Type.LAND).getCards();
+        val result = cardSearch.ofType(Type.LAND).getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Plains"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Plains"))
     }
 
     @Test
-    public void notOfType() {
+    fun notOfType() {
         // Given
-        var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Bedevil")));
+        val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Bedevil")))
 
         // When
-        var result = cardSearch.notOfType(Type.LAND).getCards();
+        val result = cardSearch.notOfType(Type.LAND).getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Bedevil"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Bedevil"))
     }
 
     @Test
-    public void ofSubtype() {
+    fun ofSubtype() {
         // Given
-        var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
+        val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Dusk Legion Zealot")))
 
         // When
-        var result = cardSearch.ofSubtype(Subtype.SOLDIER).getCards();
+        val result = cardSearch.ofSubtype(Subtype.SOLDIER).getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Dusk Legion Zealot"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Dusk Legion Zealot"))
     }
 
     @Test
-    public void notOfSubtype() {
+    fun notOfSubtype() {
         // Given
-        var cardSearch = new CardSearch(List.of(cards.get("Plains"), cards.get("Dusk Legion Zealot")));
+        val cardSearch = CardSearch(List.of<Card?>(cards!!.get("Plains"), cards.get("Dusk Legion Zealot")))
 
         // When
-        var result = cardSearch.notOfSubtype(Subtype.SOLDIER).getCards();
+        val result = cardSearch.notOfSubtype(Subtype.SOLDIER).getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Plains"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Plains"))
     }
 
     @Test
-    public void ofColor() {
+    fun ofColor() {
         // Given
-        var cardSearch = new CardSearch(List.of(
-                cards.get("Empyrean Eagle"), // white blue
-                cards.get("Angel of the Dawn"), // white
+        val cardSearch = CardSearch(
+            List.of<Card?>(
+                cards!!.get("Empyrean Eagle"),  // white blue
+                cards.get("Angel of the Dawn"),  // white
                 cards.get("Dark Nourishment") // black
-        ));
+            )
+        )
 
         // When
-        var result = cardSearch.ofColor(Color.WHITE).getCards();
+        val result = cardSearch.ofColor(Color.WHITE).getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"))
     }
 
     @Test
-    public void ofOnlyAnyOfTheColors() {
+    fun ofOnlyAnyOfTheColors() {
         // Given
-        var cardSearch = new CardSearch(List.of(
-                cards.get("Empyrean Eagle"), // white blue
-                cards.get("Angel of the Dawn"), // white
-                cards.get("Swiftblade Vindicator"), // white red
+        val cardSearch = CardSearch(
+            List.of<Card?>(
+                cards!!.get("Empyrean Eagle"),  // white blue
+                cards.get("Angel of the Dawn"),  // white
+                cards.get("Swiftblade Vindicator"),  // white red
                 cards.get("Dark Nourishment") // black
-        ));
+            )
+        )
 
         // When
-        var result = cardSearch.ofOnlyAnyOfTheColors(Set.of(Color.WHITE, Color.BLUE)).getCards();
+        val result = cardSearch.ofOnlyAnyOfTheColors(Set.of<Color?>(Color.WHITE, Color.BLUE)).getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Empyrean Eagle"), cards.get("Angel of the Dawn"))
     }
 
     @Test
-    public void colorless() {
+    fun colorless() {
         // Given
-        var cardSearch = new CardSearch(List.of(
-                cards.get("Empyrean Eagle"), // white blue
-                cards.get("Angel of the Dawn"), // white
+        val cardSearch = CardSearch(
+            List.of<Card?>(
+                cards!!.get("Empyrean Eagle"),  // white blue
+                cards.get("Angel of the Dawn"),  // white
                 cards.get("Jousting Dummy") // colorless
-        ));
+            )
+        )
 
         // When
-        var result = cardSearch.colorless().getCards();
+        val result = cardSearch.colorless().getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Jousting Dummy"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Jousting Dummy"))
     }
 
     @Test
-    public void multicolor() {
+    fun multicolor() {
         // Given
-        var cardSearch = new CardSearch(List.of(
-                cards.get("Empyrean Eagle"), // white blue
-                cards.get("Angel of the Dawn"), // white
+        val cardSearch = CardSearch(
+            List.of<Card?>(
+                cards!!.get("Empyrean Eagle"),  // white blue
+                cards.get("Angel of the Dawn"),  // white
                 cards.get("Jousting Dummy") // colorless
-        ));
+            )
+        )
 
         // When
-        var result = cardSearch.multicolor().getCards();
+        val result = cardSearch.multicolor().getCards()
 
         // Then
-        assertThat(result).contains(cards.get("Empyrean Eagle"));
+        Assertions.assertThat<Card?>(result).contains(cards.get("Empyrean Eagle"))
     }
 }
