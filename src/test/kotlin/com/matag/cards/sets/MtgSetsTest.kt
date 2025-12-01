@@ -35,10 +35,10 @@ class MtgSetsTest {
 
     @Test
     fun countCards() {
-        LOGGER.info("Num of Cards: " + cards!!.all.size)
-        LOGGER.info("Cards by Colors: " + cards.all.groupingBy { it!!.colors }.eachCount())
-        LOGGER.info("Cards by Types: " + cards.all.groupingBy { it!!.types }.eachCount())
-        LOGGER.info("Cards by Rarity: " + cards.all.groupingBy { it!!.rarity }.eachCount())
+        LOGGER.info("Num of Cards: " + cards!!.all().size)
+        LOGGER.info("Cards by Colors: " + cards.all().groupingBy { it!!.colors }.eachCount())
+        LOGGER.info("Cards by Types: " + cards.all().groupingBy { it!!.types }.eachCount())
+        LOGGER.info("Cards by Rarity: " + cards.all().groupingBy { it!!.rarity }.eachCount())
         LOGGER.info("Cards by Set: " + countCardsBySet(mtgSets!!.sets))
     }
 

@@ -36,7 +36,7 @@ class LinkerTest {
 
         val sets = mtgSets!!.sets
 
-        val cardsToLink = cards!!.all.stream()
+        val cardsToLink = cards!!.all().stream()
             .filter { card: Card? -> StringUtils.isBlank(card!!.imageUrl) }
             .toList()
 

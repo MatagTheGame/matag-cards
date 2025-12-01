@@ -4,53 +4,39 @@ import com.matag.cards.properties.Color
 import com.matag.cards.properties.Subtype
 import com.matag.cards.properties.Type
 
-object CardUtils {
-    @JvmStatic
-    fun isOfType(card: Card, type: Type?): Boolean {
-        return card.types!!.contains(type!!)
+fun Card.isOfType(type: Type) =
+    this.types?.contains(type) ?: false
+
+fun Card.isNotOfType(type: Type) =
+    !this.isOfType(type)
+
+fun Card.isOfSubtype(subtype: Subtype) =
+    this.subtypes?.contains(subtype) ?: false
+
+fun Card.isNotOfSubtype(subtype: Subtype) =
+    !this.isOfSubtype(subtype)
+
+fun Card.isColorless(): Boolean {
+    return this.colors().isEmpty()
+}
+
+fun Card.isMulticolor(): Boolean {
+    return this.colors().size > 1
+}
+
+fun Card.isOfColor(color: Color?): Boolean {
+    return this.colors().contains(color)
+}
+
+fun Card.isOfOnlyAnyOfTheColors(colors: Set<Color>): Boolean {
+    if (this.colors().isEmpty()) {
+        return false
     }
 
-    @JvmStatic
-    fun isNotOfType(card: Card, type: Type?): Boolean {
-        return !isOfType(card, type)
-    }
-
-    @JvmStatic
-    fun isOfSubtype(card: Card, subtype: Subtype?): Boolean {
-        return card.subtypes!!.contains(subtype!!)
-    }
-
-    @JvmStatic
-    fun isNotOfSubtype(card: Card, subtype: Subtype?): Boolean {
-        return !isOfSubtype(card, subtype)
-    }
-
-    @JvmStatic
-    fun isColorless(card: Card): Boolean {
-        return card.colors().isEmpty()
-    }
-
-    @JvmStatic
-    fun isMulticolor(card: Card): Boolean {
-        return card.colors().size > 1
-    }
-
-    @JvmStatic
-    fun isOfColor(card: Card, color: Color?): Boolean {
-        return card.colors().contains(color)
-    }
-
-    @JvmStatic
-    fun isOfOnlyAnyOfTheColors(card: Card, colors: MutableSet<Color?>): Boolean {
-        if (card.colors().isEmpty()) {
+    for (color in this.colors()) {
+        if (!colors.contains(color)) {
             return false
         }
-
-        for (color in card.colors()) {
-            if (!colors.contains(color)) {
-                return false
-            }
-        }
-        return true
     }
+    return true
 }

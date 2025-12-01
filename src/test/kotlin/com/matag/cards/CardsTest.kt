@@ -26,9 +26,9 @@ class CardsTest {
 
     @Test
     fun shouldLoadAllCards() {
-        Assertions.assertThat<Card?>(cards!!.all).isNotEmpty()
+        Assertions.assertThat(cards!!.all()).isNotEmpty()
 
-        for (card in cards.all) {
+        for (card in cards.all()) {
             validateCard(card!!)
         }
     }

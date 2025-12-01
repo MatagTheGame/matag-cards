@@ -5,7 +5,7 @@ import com.matag.cards.properties.*
 import java.util.*
 
 data class Card(
-    val name: String?,
+    val name: String,
     val imageUrl: String?,
     val colors: TreeSet<Color>?,
     val cost: List<Cost>?,

@@ -1,31 +1,25 @@
 package com.matag.cards
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import org.springframework.core.io.Resource
 import org.springframework.stereotype.Component
-import java.util.*
-import java.util.function.Supplier
 
 @Component
-class Cards(objectMapper: ObjectMapper, resourceLoader: ResourceLoader) {
-    val cardsMap: MutableMap<String?, Card?> = LinkedHashMap<String?, Card?>()
+class Cards(val objectMapper: ObjectMapper, resourceLoader: ResourceLoader) {
+    val cardsMap: Map<String, Card> = resourceLoader.getCardsFileNames()
+        .map { parseCard(it) }
+        .associateBy { it.name }
 
-    init {
-        val cardResources = resourceLoader.getCardsFileNames()
-        for (cardResource in cardResources) {
-            try {
-                val card = objectMapper.readValue<Card>(cardResource!!.getInputStream(), Card::class.java)
-                cardsMap.put(card.name, card)
-            } catch (e: Exception) {
-                throw RuntimeException("Failed to load card: " + cardResource!!.getDescription(), e)
-            }
+    fun all(): Collection<Card> =
+        cardsMap.values
+
+    fun get(name: String) =
+        cardsMap[name] ?: throw Exception("Card $name not found!")
+
+    private fun parseCard(resource: Resource): Card =
+        try {
+            objectMapper.readValue(resource.inputStream, Card::class.java)
+        } catch (e: Exception) {
+            throw Exception("Failed to load card: " + resource.description, e)
         }
-    }
-
-    val all: MutableList<Card?>
-        get() = ArrayList<Card?>(cardsMap.values)
-
-    fun get(name: String?): Card? {
-        return Optional.ofNullable<Card?>(cardsMap.get(name))
-            .orElseThrow<RuntimeException?>(Supplier { RuntimeException("Card " + name + " not found!") })
-    }
 }
