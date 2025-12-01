@@ -2,25 +2,22 @@ package com.matag.cards.sets
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.matag.cards.ResourceLoader
+import org.springframework.core.io.Resource
 import org.springframework.stereotype.Component
 
 @Component
-class MtgSets(objectMapper: ObjectMapper, resourceLoader: ResourceLoader) {
-    val sets: MutableMap<String?, MtgSet?> = LinkedHashMap<String?, MtgSet?>()
+class MtgSets(val objectMapper: ObjectMapper, resourceLoader: ResourceLoader) {
+    val sets: Map<String, MtgSet> = resourceLoader.getSetsFileNames()
+        .map { parseSet(it) }
+        .associateBy { it.code }
 
-    init {
-        val setResources = resourceLoader.getSetsFileNames()
-        for (setResource in setResources) {
-            try {
-                val mtgSet = objectMapper.readValue<MtgSet>(setResource.getInputStream(), MtgSet::class.java)
-                sets.put(mtgSet.code, mtgSet)
-            } catch (e: Exception) {
-                throw RuntimeException("Failed to load set: " + setResource.getDescription(), e)
-            }
+    fun get(code: String) =
+        sets[code] ?: throw Exception("Set $code not found!")
+
+    private fun parseSet(resource: Resource): MtgSet =
+        try {
+            objectMapper.readValue(resource.inputStream, MtgSet::class.java)
+        } catch (e: Exception) {
+            throw Exception("Failed to load set: " + resource.description, e)
         }
-    }
-
-    fun getSet(code: String?): MtgSet? {
-        return sets.get(code)
-    }
 }

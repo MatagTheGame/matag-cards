@@ -8,7 +8,7 @@ import com.matag.cards.ability.target.Target
 import com.matag.cards.ability.trigger.Trigger
 import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.properties.*
-import org.assertj.core.api.Assertions
+import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.beans.factory.annotation.Autowired
@@ -17,51 +17,70 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
 
 @ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
-class CardsTest {
-    @Autowired
-    private val cards: Cards? = null
-
-    @Autowired
-    private val abilityService: AbilityService? = null
-
+class CardsTest(
+    @param:Autowired val cards: Cards,
+    @param:Autowired val abilityService: AbilityService
+) {
     @Test
     fun shouldLoadAllCards() {
-        Assertions.assertThat(cards!!.all()).isNotEmpty()
+        assertThat(cards.all()).isNotEmpty()
+        
+        cards.all().forEach {
+            requireNotNull(it.imageUrl) { "Card '${it.name}' does not have an imageUrl. Run cardImageLinker" }
+            if (it.types!!.isEmpty()) {
+                throw Exception("Card '${it.name}' does not have a type. Remove the image and run cardImageLinker")
+            }
+            if (it.abilities != null) {
+                it.abilities.stream()
+                    .filter { ability: Ability? -> ability!!.abilityType == AbilityType.THAT_TARGETS_GET }
+                    .forEach { ability: Ability? ->
+                        if (ability!!.targets!!.isEmpty()) {
+                            throw Exception("Card '" + it.name + "' is missing targets")
+                        }
+                        validateParameters(it.name, ability.parameters!!)
+                    }
 
-        for (card in cards.all()) {
-            validateCard(card!!)
+                it.abilities.stream()
+                    .filter { ability: Ability? -> ability!!.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
+                    .forEach { ability: Ability? ->
+                        if (ability!!.magicInstanceSelector == null) {
+                            throw Exception("Card '" + it.name + "' is missing magicInstanceSelector")
+                        }
+                        validateParameters(it.name, ability.parameters!!)
+                    }
+            }
         }
     }
 
     @Test
     fun shouldLoadACardWithoutAbilities() {
-        val card = cards!!.get("Feral Maaka")
-        Assertions.assertThat(card!!.name).isEqualTo("Feral Maaka")
-        Assertions.assertThat<Color>(card.colors).containsExactly(Color.RED)
-        Assertions.assertThat<Cost>(card.cost).containsExactly(Cost.RED, Cost.ANY)
-        Assertions.assertThat<Type>(card.types).containsExactly(Type.CREATURE)
-        Assertions.assertThat<Subtype>(card.subtypes).containsExactlyInAnyOrder(Subtype.CAT)
-        Assertions.assertThat<Rarity?>(card.rarity).isEqualTo(Rarity.COMMON)
-        Assertions.assertThat(card.ruleText).isNullOrEmpty()
-        Assertions.assertThat(card.power).isEqualTo(2)
-        Assertions.assertThat(card.toughness).isEqualTo(2)
+        val card = cards.get("Feral Maaka")
+        assertThat(card.name).isEqualTo("Feral Maaka")
+        assertThat(card.colors).containsExactly(Color.RED)
+        assertThat(card.cost).containsExactly(Cost.RED, Cost.ANY)
+        assertThat(card.types).containsExactly(Type.CREATURE)
+        assertThat(card.subtypes).containsExactlyInAnyOrder(Subtype.CAT)
+        assertThat(card.rarity).isEqualTo(Rarity.COMMON)
+        assertThat(card.ruleText).isNullOrEmpty()
+        assertThat(card.power).isEqualTo(2)
+        assertThat(card.toughness).isEqualTo(2)
     }
 
     @Test
     fun shouldLoadACardWithAbilities() {
-        val card = cards!!.get("Act of Treason")
-        Assertions.assertThat(card!!.name).isEqualTo("Act of Treason")
-        Assertions.assertThat<Color>(card.colors).containsExactly(Color.RED)
-        Assertions.assertThat<Cost>(card.cost).containsExactly(Cost.RED, Cost.ANY, Cost.ANY)
-        Assertions.assertThat<Type>(card.types).containsExactly(Type.SORCERY)
-        Assertions.assertThat<Subtype>(card.subtypes).isNullOrEmpty()
-        Assertions.assertThat<Rarity?>(card.rarity).isEqualTo(Rarity.COMMON)
-        Assertions.assertThat(card.ruleText)
+        val card = cards.get("Act of Treason")
+        assertThat(card.name).isEqualTo("Act of Treason")
+        assertThat(card.colors).containsExactly(Color.RED)
+        assertThat(card.cost).containsExactly(Cost.RED, Cost.ANY, Cost.ANY)
+        assertThat(card.types).containsExactly(Type.SORCERY)
+        assertThat(card.subtypes).isNullOrEmpty()
+        assertThat(card.rarity).isEqualTo(Rarity.COMMON)
+        assertThat(card.ruleText)
             .isEqualTo("Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.")
-        Assertions.assertThat(card.power).isNull()
-        Assertions.assertThat(card.toughness).isNull()
-        Assertions.assertThat<Ability>(card.abilities).hasSize(1)
-        Assertions.assertThat<Ability>(card.abilities!!.get(0)).isEqualTo(
+        assertThat(card.power).isNull()
+        assertThat(card.toughness).isNull()
+        assertThat(card.abilities).hasSize(1)
+        assertThat(card.abilities!!.get(0)).isEqualTo(
             Ability(
                 abilityType = AbilityType.THAT_TARGETS_GET,
                 targets = listOf(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf<Type>(Type.CREATURE)))),
@@ -71,46 +90,15 @@ class CardsTest {
         )
     }
 
-    private fun validateCard(card: Card) {
-        val name = card.name
-        if (card.imageUrl == null) {
-            throw RuntimeException("Card '" + name + "' does not have an imageUrl. Run cardImageLinker")
-        }
-
-        if (card.types!!.isEmpty()) {
-            throw RuntimeException("Card '" + name + "' does not have a type. Remove the image and run cardImageLinker")
-        }
-
-        if (card.abilities != null) {
-            card.abilities.stream()
-                .filter { ability: Ability? -> ability!!.abilityType == AbilityType.THAT_TARGETS_GET }
-                .forEach { ability: Ability? ->
-                    if (ability!!.targets!!.isEmpty()) {
-                        throw RuntimeException("Card '" + name + "' is missing targets")
-                    }
-                    validateParameters(name, ability.parameters!!)
-                }
-
-            card.abilities.stream()
-                .filter { ability: Ability? -> ability!!.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
-                .forEach { ability: Ability? ->
-                    if (ability!!.magicInstanceSelector == null) {
-                        throw RuntimeException("Card '" + name + "' is missing magicInstanceSelector")
-                    }
-                    validateParameters(name, ability.parameters!!)
-                }
-        }
-    }
-
     private fun validateParameters(name: String?, parameters: List<String>) {
         if (parameters.isEmpty()) {
-            throw RuntimeException("Card '" + name + "' is missing parameters")
+            throw Exception("Card '" + name + "' is missing parameters")
         }
 
         try {
             abilityService?.parametersAsString(parameters)
         } catch (e: Exception) {
-            throw RuntimeException("Card '" + name + "' has invalid parameters: " + parameters, e)
+            throw Exception("Card '" + name + "' has invalid parameters: " + parameters, e)
         }
     }
 }

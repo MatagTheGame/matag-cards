@@ -36,12 +36,11 @@ class LinkerTest {
 
         val sets = mtgSets!!.sets
 
-        val cardsToLink = cards!!.all().stream()
-            .filter { card: Card? -> StringUtils.isBlank(card!!.imageUrl) }
-            .toList()
+        val cardsToLink = cards!!.all()
+            .filter { StringUtils.isBlank(it.imageUrl) }
 
         for (i in cardsToLink.indices) {
-            val card: Card = cardsToLink.get(i)!!
+            val card: Card = cardsToLink[i]
             val cardScryFallLinker = CardScryFallLinker(card)
             val updatedCard = card.copy(
                 imageUrl = cardScryFallLinker.image,
