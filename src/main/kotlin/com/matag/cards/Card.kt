@@ -15,7 +15,7 @@ data class Card(
     val ruleText: String?,
     val power: Int?,
     val toughness: Int?,
-    val abilities: MutableList<Ability>?
+    val abilities: List<Ability>?
 ) {
     fun colors(): Set<Color> {
         return colors.orEmpty()

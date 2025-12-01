@@ -27,28 +27,25 @@ class CardsTest(
         
         cards.all().forEach {
             requireNotNull(it.imageUrl) { "Card '${it.name}' does not have an imageUrl. Run cardImageLinker" }
-            if (it.types!!.isEmpty()) {
-                throw Exception("Card '${it.name}' does not have a type. Remove the image and run cardImageLinker")
-            }
-            if (it.abilities != null) {
-                it.abilities.stream()
-                    .filter { ability: Ability? -> ability!!.abilityType == AbilityType.THAT_TARGETS_GET }
-                    .forEach { ability: Ability? ->
-                        if (ability!!.targets!!.isEmpty()) {
-                            throw Exception("Card '" + it.name + "' is missing targets")
-                        }
-                        validateParameters(it.name, ability.parameters!!)
-                    }
+            require(it.types?.isNotEmpty() == true) { "Card '${it.name}' does not have a type. Remove the image and run cardImageLinker" }
 
-                it.abilities.stream()
-                    .filter { ability: Ability? -> ability!!.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
-                    .forEach { ability: Ability? ->
-                        if (ability!!.magicInstanceSelector == null) {
-                            throw Exception("Card '" + it.name + "' is missing magicInstanceSelector")
-                        }
-                        validateParameters(it.name, ability.parameters!!)
+            it.abilities
+                ?.filter { it.abilityType == AbilityType.THAT_TARGETS_GET }
+                ?.forEach { ability ->
+                    if (ability.targets!!.isEmpty()) {
+                        throw Exception("Card '" + it.name + "' is missing targets")
                     }
-            }
+                    validateParameters(it.name, ability.parameters!!)
+                }
+
+            it.abilities
+                ?.filter { it.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
+                ?.forEach { ability ->
+                    if (ability.magicInstanceSelector == null) {
+                        throw Exception("Card '" + it.name + "' is missing magicInstanceSelector")
+                    }
+                    validateParameters(it.name, ability.parameters!!)
+                }
         }
     }
 
@@ -83,7 +80,7 @@ class CardsTest(
         assertThat(card.abilities!!.get(0)).isEqualTo(
             Ability(
                 abilityType = AbilityType.THAT_TARGETS_GET,
-                targets = listOf(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf<Type>(Type.CREATURE)))),
+                targets = listOf(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf(Type.CREATURE)))),
                 parameters = listOf(":CONTROLLED", ":UNTAPPED", "HASTE"),
                 trigger = Trigger.castTrigger()
             )
@@ -92,13 +89,13 @@ class CardsTest(
 
     private fun validateParameters(name: String?, parameters: List<String>) {
         if (parameters.isEmpty()) {
-            throw Exception("Card '" + name + "' is missing parameters")
+            throw Exception("Card '$name' is missing parameters")
         }
 
         try {
-            abilityService?.parametersAsString(parameters)
+            abilityService.parametersAsString(parameters)
         } catch (e: Exception) {
-            throw Exception("Card '" + name + "' has invalid parameters: " + parameters, e)
+            throw Exception("Card '$name' has invalid parameters: $parameters", e)
         }
     }
 }
