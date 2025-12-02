@@ -1,9 +1,8 @@
 package com.matag.cards.ability.type
 
-import java.util.*
-import java.util.function.Function
-
-enum class AbilityType(text: String) {
+enum class AbilityType(
+    val text: String
+) {
     // Keyword
     DEATHTOUCH("Deathtouch."),
     DEFENDER("Defender."),
@@ -155,21 +154,5 @@ enum class AbilityType(text: String) {
     SELECTED_PERMANENTS_GET("%s %s"),
     SHUFFLE_GRAVEYARD_INTO_LIBRARY_FOR_TARGET_PLAYER("Shuffle graveyard into library."),
     TAP_ADD_MANA("Tap add %s mana."),
-    THAT_TARGETS_GET("That targets get %s.");
-
-    @JvmField
-    val text: String
-
-    init {
-        Objects.requireNonNull<String?>(text)
-        this.text = text
-    }
-
-    companion object {
-        fun abilityType(text: String?): AbilityType? {
-            return Optional.ofNullable<String?>(text)
-                .map<AbilityType?>(Function { name: String? -> AbilityType.valueOf(name!!) })
-                .orElse(null)
-        }
-    }
+    THAT_TARGETS_GET("That targets get %s.")
 }

@@ -21,7 +21,7 @@ private val YOUR_NON_CREATURES_SPELL = MagicInstanceSelector(
 )
 
 /**
- * If an complex ability can be transposed in a simpler ability already implemented then go for it.
+ * If a complex ability can be transposed in a simpler ability already implemented then go for it.
  */
 fun Ability.transpose(): Ability {
     if (this.abilityType == AbilityType.PROWESS) {

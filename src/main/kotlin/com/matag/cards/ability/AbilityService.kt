@@ -54,7 +54,7 @@ class AbilityService {
         getParameterIntValue(parameter, MINUS_1_COUNTERS)
 
     fun keywordCounterFromParameter(parameter: String) =
-        AbilityType.abilityType(getParameterValue(parameter, KEYWORD_COUNTER))
+        getParameterValue(parameter, KEYWORD_COUNTER)?.let { AbilityType.valueOf(it) }
 
     fun drawFromParameter(parameter: String) =
         getParameterIntValue(parameter, DRAW)
