@@ -32,19 +32,15 @@ class CardsTest(
             it.abilities
                 ?.filter { it.abilityType == AbilityType.THAT_TARGETS_GET }
                 ?.forEach { ability ->
-                    if (ability.targets!!.isEmpty()) {
-                        throw Exception("Card '" + it.name + "' is missing targets")
-                    }
-                    validateParameters(it.name, ability.parameters!!)
+                    require(ability.targets?.isNotEmpty() == true) { "Card '${it.name}' is missing targets" }
+                    validateParameters(it.name, ability.parameters)
                 }
 
             it.abilities
                 ?.filter { it.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
                 ?.forEach { ability ->
-                    if (ability.magicInstanceSelector == null) {
-                        throw Exception("Card '" + it.name + "' is missing magicInstanceSelector")
-                    }
-                    validateParameters(it.name, ability.parameters!!)
+                    requireNotNull(ability.magicInstanceSelector) { "Card '${it.name}' is missing magicInstanceSelector" }
+                    validateParameters(it.name, ability.parameters)
                 }
         }
     }
@@ -52,45 +48,43 @@ class CardsTest(
     @Test
     fun shouldLoadACardWithoutAbilities() {
         val card = cards.get("Feral Maaka")
-        assertThat(card.name).isEqualTo("Feral Maaka")
-        assertThat(card.colors).containsExactly(Color.RED)
-        assertThat(card.cost).containsExactly(Cost.RED, Cost.ANY)
-        assertThat(card.types).containsExactly(Type.CREATURE)
-        assertThat(card.subtypes).containsExactlyInAnyOrder(Subtype.CAT)
-        assertThat(card.rarity).isEqualTo(Rarity.COMMON)
-        assertThat(card.ruleText).isNullOrEmpty()
-        assertThat(card.power).isEqualTo(2)
-        assertThat(card.toughness).isEqualTo(2)
+
+        assertThat(card).isEqualTo(Card(
+            name = "Feral Maaka",
+            colors = sortedSetOf(Color.RED),
+            cost = listOf(Cost.RED, Cost.ANY),
+            types = sortedSetOf(Type.CREATURE),
+            subtypes = sortedSetOf(Subtype.CAT),
+            rarity = Rarity.COMMON,
+            power = 2,
+            toughness = 2
+        ))
     }
 
     @Test
     fun shouldLoadACardWithAbilities() {
         val card = cards.get("Act of Treason")
-        assertThat(card.name).isEqualTo("Act of Treason")
-        assertThat(card.colors).containsExactly(Color.RED)
-        assertThat(card.cost).containsExactly(Cost.RED, Cost.ANY, Cost.ANY)
-        assertThat(card.types).containsExactly(Type.SORCERY)
-        assertThat(card.subtypes).isNullOrEmpty()
-        assertThat(card.rarity).isEqualTo(Rarity.COMMON)
-        assertThat(card.ruleText)
-            .isEqualTo("Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.")
-        assertThat(card.power).isNull()
-        assertThat(card.toughness).isNull()
-        assertThat(card.abilities).hasSize(1)
-        assertThat(card.abilities!!.get(0)).isEqualTo(
-            Ability(
-                abilityType = AbilityType.THAT_TARGETS_GET,
-                targets = listOf(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf(Type.CREATURE)))),
-                parameters = listOf(":CONTROLLED", ":UNTAPPED", "HASTE"),
-                trigger = Trigger.castTrigger()
+
+        assertThat(card).isEqualTo(Card(
+            name = "Act of Treason",
+            colors = sortedSetOf(Color.RED),
+            cost = listOf(Cost.RED, Cost.ANY, Cost.ANY),
+            types = sortedSetOf(Type.SORCERY),
+            rarity = Rarity.COMMON,
+            ruleText = "Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn.",
+            abilities = listOf(
+                Ability(
+                    abilityType = AbilityType.THAT_TARGETS_GET,
+                    targets = listOf(Target(magicInstanceSelector = MagicInstanceSelector(selectorType = SelectorType.PERMANENT, ofType = listOf(Type.CREATURE)))),
+                    parameters = listOf(":CONTROLLED", ":UNTAPPED", "HASTE"),
+                    trigger = Trigger.castTrigger()
+                )
             )
-        )
+        ))
     }
 
-    private fun validateParameters(name: String?, parameters: List<String>) {
-        if (parameters.isEmpty()) {
-            throw Exception("Card '$name' is missing parameters")
-        }
+    private fun validateParameters(name: String, parameters: List<String>?) {
+        require(parameters?.isNotEmpty() == true) { "Card '$name' is missing parameters" }
 
         try {
             abilityService.parametersAsString(parameters)
