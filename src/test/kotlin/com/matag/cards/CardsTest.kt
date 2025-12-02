@@ -51,6 +51,7 @@ class CardsTest(
 
         assertThat(card).isEqualTo(Card(
             name = "Feral Maaka",
+            imageUrl = "https://cards.scryfall.io/large/front/3/c/3c969aa0-b0e5-42cd-abba-0a3c7266142c.jpg",
             colors = sortedSetOf(Color.RED),
             cost = listOf(Cost.RED, Cost.ANY),
             types = sortedSetOf(Type.CREATURE),
@@ -67,6 +68,7 @@ class CardsTest(
 
         assertThat(card).isEqualTo(Card(
             name = "Act of Treason",
+            imageUrl = "https://cards.scryfall.io/large/front/7/8/78fec7e6-5ed9-46dc-93b4-7a054d763403.jpg",
             colors = sortedSetOf(Color.RED),
             cost = listOf(Cost.RED, Cost.ANY, Cost.ANY),
             types = sortedSetOf(Type.SORCERY),
