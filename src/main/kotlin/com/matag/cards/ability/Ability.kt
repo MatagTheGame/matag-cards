@@ -6,12 +6,12 @@ import com.matag.cards.ability.trigger.Trigger
 import com.matag.cards.ability.type.AbilityType
 
 data class Ability(
-    var abilityType: AbilityType? = null,
-    var targets: List<Target>? = null,
-    var magicInstanceSelector: MagicInstanceSelector? = null,
-    var parameters: List<String>? = null,
-    var trigger: Trigger? = null,
-    var ability: Ability? = null,
-    var sorcerySpeed: Boolean? = null,
-    var optional: Boolean? = null
+    val abilityType: AbilityType,
+    val targets: List<Target>? = null,
+    val magicInstanceSelector: MagicInstanceSelector? = null,
+    val parameters: List<String>? = null,
+    val trigger: Trigger? = null,
+    val ability: Ability? = null,
+    val sorcerySpeed: Boolean = false,
+    val optional: Boolean = false
 )
