@@ -3,14 +3,8 @@ package com.matag.downloader
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.matag.cards.Card
-import com.matag.cards.properties.Color
-import com.matag.cards.properties.Cost
-import com.matag.cards.properties.Rarity
-import com.matag.cards.properties.Subtype
-import com.matag.cards.properties.Type
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.net.URL
+import com.matag.cards.properties.*
+import java.net.URI
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
 import java.util.*
@@ -49,7 +43,7 @@ class CardScryFallLinker constructor(card: Card) {
             colors = convertColors(cardJsonNode.path("colors"))
             manaCost = convertCost(cardJsonNode.path("mana_cost").asText())
             val scryFallTypesSplit: Array<String> =
-                cardJsonNode.path("type_line").asText().split((" " + SPECIAL_DASH + " ").toRegex())
+                cardJsonNode.path("type_line").asText().split((" $SPECIAL_DASH ").toRegex())
                     .dropLastWhile { it.isEmpty() }.toTypedArray()
             types = convertType(scryFallTypesSplit)
             subtypes = convertSubtype(scryFallTypesSplit)
@@ -64,7 +58,7 @@ class CardScryFallLinker constructor(card: Card) {
 
     private fun convertImageUrl(cardJsonNode: JsonNode): String {
         val fullUrl = cardJsonNode.path("image_uris").path("large").asText()
-        return fullUrl.substring(0, fullUrl.indexOf("?"))
+        return fullUrl.substringBefore("?")
     }
 
     private fun findBestCardRepresentation(jsonNode: JsonNode): JsonNode {
@@ -77,8 +71,7 @@ class CardScryFallLinker constructor(card: Card) {
     }
 
     private fun readHttpResource(url: String): String {
-        return BufferedReader(InputStreamReader(URL(url).openStream()))
-            .lines().collect(Collectors.joining("\n"))
+        return URI(url).toURL().readBytes().toString()
     }
 
     @Throws(Exception::class)
@@ -132,10 +125,10 @@ class CardScryFallLinker constructor(card: Card) {
     }
 
     private fun convertType(scryFallTypesSplit: Array<String>): TreeSet<Type> {
-        return Stream.of<String>(*scryFallTypesSplit[0]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
+        return Stream.of(*scryFallTypesSplit[0]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
             .toTypedArray())
-            .map<String?> { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
-            .map<Type> { Type.valueOf(it) }
+            .map { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
+            .map { Type.valueOf(it) }
             .collect(Collectors.toCollection(Supplier { TreeSet() }))
     }
 
@@ -144,10 +137,10 @@ class CardScryFallLinker constructor(card: Card) {
             return null
         }
 
-        return Stream.of<String>(*scryFallTypesSplit[1]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
+        return Stream.of(*scryFallTypesSplit[1]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
             .toTypedArray())
-            .map<String?> { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
-            .map<Subtype> { Subtype.valueOf(it) }
+            .map { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
+            .map { Subtype.valueOf(it) }
             .collect(Collectors.toCollection(Supplier { TreeSet() }))
     }
 
@@ -177,12 +170,12 @@ class CardScryFallLinker constructor(card: Card) {
         private val COSTS = LinkedHashMap<String, Cost>()
 
         init {
-            COSTS.put("C", Cost.COLORLESS)
-            COSTS.put("W", Cost.WHITE)
-            COSTS.put("U", Cost.BLUE)
-            COSTS.put("B", Cost.BLACK)
-            COSTS.put("R", Cost.RED)
-            COSTS.put("G", Cost.GREEN)
+            COSTS["C"] = Cost.COLORLESS
+            COSTS["W"] = Cost.WHITE
+            COSTS["U"] = Cost.BLUE
+            COSTS["B"] = Cost.BLACK
+            COSTS["R"] = Cost.RED
+            COSTS["G"] = Cost.GREEN
         }
     }
 }
