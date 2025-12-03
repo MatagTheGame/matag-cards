@@ -12,7 +12,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension
 
 @ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
-class CardUtilsTest(
+class CardTest(
     @param:Autowired val cards: Cards
 ) {
 
