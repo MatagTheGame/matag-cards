@@ -110,7 +110,7 @@ class AbilityService {
     }
 
     private fun abilityParameterAsString(abilityType: AbilityType) =
-        abilityType.text.substring(0, abilityType.text.length - 1).lowercase(Locale.getDefault())
+        abilityType.text.dropLast(1).lowercase(Locale.getDefault())
 
     private fun getParameterValue(parameter: String, parameterType: String) =
         if (parameter.startsWith(parameterType)) {
