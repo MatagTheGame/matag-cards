@@ -1,11 +1,11 @@
 package com.matag.cards.ability.selector
 
-class PowerToughnessConstraint {
+data class PowerToughnessConstraint(
+    val powerOrToughness: PowerOrToughness,
+    val powerToughnessConstraintType: PowerToughnessConstraintType,
+    val value: Int = 0
+) {
     enum class PowerOrToughness {
         POWER, TOUGHNESS
     }
-
-    var powerOrToughness: PowerOrToughness? = null
-    var powerToughnessConstraintType: PowerToughnessConstraintType? = null
-    var value: Int = 0
 }

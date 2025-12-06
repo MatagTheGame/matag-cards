@@ -14,4 +14,6 @@ data class Ability(
     val ability: Ability? = null,
     val sorcerySpeed: Boolean = false,
     val optional: Boolean = false
-)
+) {
+    constructor(abilityType: AbilityType) : this(abilityType = abilityType, targets = null)
+}
