@@ -28,8 +28,8 @@ The best thing is to perform a text search on this folder for a similar card.
 Few steps to follow:
  1. Create a new JsonFile with the exact name of the card.
  2. Fill just the name.
- 3. Run `LinkerTest.scryFallLinker()`. This will all basic card details (not the abilities).
- 4. Populate the abilities accordingly (this is the hardest part). 
+ 3. Run `LinkerTest.scryFallLinker()`. This will add all basic card details (not the abilities).
+ 4. Populate the abilities accordingly (this is the hard part). 
 
 
 After a card is coded is a very good idea to test it by importing the `cards` artifact into `game` starting the app in test mode:
