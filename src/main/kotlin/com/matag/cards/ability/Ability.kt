@@ -1,12 +1,15 @@
 package com.matag.cards.ability
 
 import com.fasterxml.jackson.annotation.JsonProperty
+import com.matag.cards.Card
 import com.matag.cards.ability.selector.MagicInstanceSelector
 import com.matag.cards.ability.selector.SelectorType
 import com.matag.cards.ability.target.Target
 import com.matag.cards.ability.trigger.Trigger
 import com.matag.cards.ability.type.AbilityType
 import com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET
+import kotlin.collections.map
+import kotlin.collections.orEmpty
 
 data class Ability(
     val abilityType: AbilityType,
@@ -36,4 +39,12 @@ data class Ability(
                 return String.format(abilityType.text, parametersString)
             }
         }
+
+    companion object {
+        @JvmStatic
+        fun abilities(card: Card): List<Ability> =
+            card.abilities.orEmpty()
+                .map { it.transpose() }
+
+    }
 }
