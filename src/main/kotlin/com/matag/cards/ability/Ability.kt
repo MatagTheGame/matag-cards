@@ -21,6 +21,20 @@ data class Ability(
     val sorcerySpeed: Boolean = false,
     val optional: Boolean = false
 ) {
+    // This is only needed because I'm using java in matag-the-game module
+    constructor(abilityType: AbilityType) : this(abilityType = abilityType, targets = null)
+
+    constructor(ability: Ability) : this(
+        ability.abilityType,
+        ability.targets,
+        ability.magicInstanceSelector,
+        ability.parameters,
+        ability.trigger,
+        ability.ability,
+        ability.sorcerySpeed,
+        ability.optional
+    )
+
     @get:JsonProperty
     val abilityTypeText: String
         get() {
