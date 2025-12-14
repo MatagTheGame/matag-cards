@@ -1,9 +1,12 @@
 package com.matag.cards.ability
 
+import com.fasterxml.jackson.annotation.JsonProperty
 import com.matag.cards.ability.selector.MagicInstanceSelector
+import com.matag.cards.ability.selector.SelectorType
 import com.matag.cards.ability.target.Target
 import com.matag.cards.ability.trigger.Trigger
 import com.matag.cards.ability.type.AbilityType
+import com.matag.cards.ability.type.AbilityType.SELECTED_PERMANENTS_GET
 
 data class Ability(
     val abilityType: AbilityType,
@@ -15,5 +18,22 @@ data class Ability(
     val sorcerySpeed: Boolean = false,
     val optional: Boolean = false
 ) {
-    constructor(abilityType: AbilityType) : this(abilityType = abilityType, targets = null)
+    @get:JsonProperty
+    val abilityTypeText: String
+        get() {
+            val parametersString = parameters?.let {
+                AbilityService().parametersAsString(it)
+            }
+
+            if (abilityType == SELECTED_PERMANENTS_GET) {
+                requireNotNull(magicInstanceSelector) { "$SELECTED_PERMANENTS_GET requires a magicInstanceSelector" }
+                return if (magicInstanceSelector.selectorType == SelectorType.PLAYER) {
+                    String.format(abilityType.text, magicInstanceSelector.text(), parametersString) + "."
+                } else {
+                    String.format(abilityType.text, magicInstanceSelector.text(), parametersString) + " until end of turn."
+                }
+            } else {
+                return String.format(abilityType.text, parametersString)
+            }
+        }
 }
