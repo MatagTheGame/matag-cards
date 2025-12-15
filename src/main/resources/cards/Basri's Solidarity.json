@@ -1,27 +1,27 @@
 {
-  "name": "Ridgescale Tusker",
-  "abilities": [
-    {
-      "abilityType": "SELECTED_PERMANENTS_GET",
-      "magicInstanceSelector": {
-        "selectorType": "PERMANENT",
-        "ofType": [
-          "CREATURE"
-        ],
-        "controllerType": "PLAYER",
-        "others": true
-      },
-      "parameters": [
-        "PLUS_1_COUNTERS:1"
-      ],
-      "trigger": {
-        "type": "TRIGGERED_ABILITY",
-        "subtype": "WHEN_ENTER_THE_BATTLEFIELD",
-        "magicInstanceSelector": {
-          "selectorType": "PERMANENT",
-          "itself": true
-        }
+  "name" : "Basri's Solidarity",
+  "imageUrl" : "https://cards.scryfall.io/large/front/b/4/b4bbc770-1e9e-431b-8f8b-4c35c4c7fd83.jpg",
+  "colors" : [ "WHITE" ],
+  "cost" : [ "WHITE", "ANY" ],
+  "types" : [ "SORCERY" ],
+  "rarity" : "UNCOMMON",
+  "ruleText" : "Put a +1/+1 counter on each creature you control.",
+  "abilities" : [ {
+    "abilityType" : "SELECTED_PERMANENTS_GET",
+    "magicInstanceSelector" : {
+      "selectorType" : "PERMANENT",
+      "ofType" : [ "CREATURE" ],
+      "controllerType" : "PLAYER",
+      "others" : true
+    },
+    "parameters" : [ "PLUS_1_COUNTERS:1" ],
+    "trigger" : {
+      "type" : "TRIGGERED_ABILITY",
+      "subtype" : "WHEN_ENTER_THE_BATTLEFIELD",
+      "magicInstanceSelector" : {
+        "selectorType" : "PERMANENT",
+        "itself" : true
       }
     }
-  ]
+  } ]
 }

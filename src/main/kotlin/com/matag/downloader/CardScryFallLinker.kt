@@ -29,7 +29,7 @@ class CardScryFallLinker constructor(card: Card) {
         try {
             val file = readHttpResource(
                 "https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode(
-                    "!\"" + card.name + "\"",
+                    card.name,
                     StandardCharsets.UTF_8
                 ) + "&unique=prints"
             )
@@ -71,7 +71,7 @@ class CardScryFallLinker constructor(card: Card) {
     }
 
     private fun readHttpResource(url: String): String {
-        return URI(url).toURL().readBytes().toString()
+        return String(URI(url).toURL().readBytes())
     }
 
     @Throws(Exception::class)
