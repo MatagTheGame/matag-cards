@@ -1,6 +1,8 @@
 package com.matag.cards.ability
 
 import com.matag.cards.ability.type.AbilityType
+import com.matag.cards.properties.Color
+import com.matag.cards.properties.Cost
 import com.matag.cards.properties.PowerToughness
 import com.matag.language.replaceLast
 import org.springframework.stereotype.Component
@@ -104,6 +106,8 @@ class AbilityService {
             return "draw " + draw + " card" + (if (draw > 1) "s" else "")
         } else if (parameter.startsWith("SCRY:")) {
             return "scry ${scryFromParameter(parameter)}"
+        } else if (parameter == Cost.COLORLESS.toString() || Color.entries.map { it.name }.contains(parameter)) {
+            return parameter.lowercase()
         } else {
             return abilityParameterAsString(AbilityType.valueOf(parameter))
         }

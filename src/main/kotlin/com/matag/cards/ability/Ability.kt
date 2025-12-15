@@ -59,6 +59,5 @@ data class Ability(
         fun abilities(card: Card): List<Ability> =
             card.abilities.orEmpty()
                 .map { it.transpose() }
-
     }
 }

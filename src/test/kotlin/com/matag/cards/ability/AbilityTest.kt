@@ -15,6 +15,18 @@ class AbilityTest(
     @param:Autowired val cards: Cards,
 ) {
     @Test
+    fun landAbilityText() {
+        // Given
+        val ability = cards.get("Island").abilities?.first()
+
+        // When
+        val text = ability?.abilityTypeText
+
+        // Then
+        assertThat(text).isEqualTo("Tap add blue mana.")
+    }
+
+    @Test
     fun simpleAbilityText() {
         // Given
         val ability = cards.get("Aven Sentry").abilities?.first()
