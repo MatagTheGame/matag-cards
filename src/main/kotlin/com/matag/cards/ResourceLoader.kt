@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component
 
 @Component
 class ResourceLoader {
-    fun getCardsFileNames() = PathMatchingResourcePatternResolver(this.javaClass.getClassLoader())
+    fun getCardsFileNames() = PathMatchingResourcePatternResolver(this.javaClass.classLoader)
             .getResources("/cards/*")
 
-    fun getSetsFileNames() = PathMatchingResourcePatternResolver(this.javaClass.getClassLoader())
+    fun getSetsFileNames() = PathMatchingResourcePatternResolver(this.javaClass.classLoader)
             .getResources("/sets/*")
 }

@@ -20,12 +20,10 @@ import java.nio.file.Paths
 
 @ExtendWith(SpringExtension::class)
 @Import(CardsConfiguration::class)
-class LinkerTest {
-    @Autowired
-    private val cards: Cards? = null
-
-    @Autowired
-    private val mtgSets: MtgSets? = null
+class LinkerTest(
+    @field:Autowired val cards: Cards,
+    @field:Autowired val mtgSets: MtgSets
+) {
 
     @Disabled
     @Test
@@ -34,9 +32,9 @@ class LinkerTest {
         val cardsObjectMapper = createCardsObjectMapper()
         val setsObjectMapper = createSetsObjectMapper()
 
-        val sets = mtgSets!!.sets
+        val sets = mtgSets.sets
 
-        val cardsToLink = cards!!.all()
+        val cardsToLink = cards.all()
             .filter { StringUtils.isBlank(it.imageUrl) }
 
         for (i in cardsToLink.indices) {
@@ -63,8 +61,8 @@ class LinkerTest {
             if (!card.types!!.contains(Type.BASIC)) {
                 for (scryFallSet in cardScryFallLinker.sets) {
                     if (sets.containsKey(scryFallSet)) {
-                        sets.get(scryFallSet)!!.cards!!.add(card.name)
-                        val setJson = setsObjectMapper.writeValueAsString(sets.get(scryFallSet))
+                        sets[scryFallSet]!!.cards.add(card.name)
+                        val setJson = setsObjectMapper.writeValueAsString(sets[scryFallSet])
                         Files.writeString(
                             Paths.get(CardsConfiguration.getResourcesPath() + "/sets/" + scryFallSet + ".json"),
                             setJson
