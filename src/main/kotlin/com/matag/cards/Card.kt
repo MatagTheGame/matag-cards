@@ -6,16 +6,16 @@ import java.util.*
 
 data class Card(
     val name: String,
-    val imageUrl: String? = null,
-    val colors: TreeSet<Color>? = null,
-    val cost: List<Cost>? = null,
-    val types: TreeSet<Type>? = null,
-    val subtypes: TreeSet<Subtype>? = null,
-    val rarity: Rarity? = null,
-    val ruleText: String? = null,
+    val imageUrl: String,
+    val colors: TreeSet<Color> = TreeSet(),
+    val cost: List<Cost> = listOf(),
+    val types: TreeSet<Type>,
+    val subtypes: TreeSet<Subtype> = TreeSet(),
+    val rarity: Rarity,
+    val ruleText: String = "",
     val power: Int? = null,
     val toughness: Int? = null,
-    val abilities: List<Ability>? = null
+    val abilities: List<Ability> = listOf()
 ) {
     fun colors() =
         colors.orEmpty()
