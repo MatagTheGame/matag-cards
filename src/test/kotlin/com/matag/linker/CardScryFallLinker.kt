@@ -1,8 +1,7 @@
-package com.matag.downloader
+package com.matag.linker
 
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.matag.cards.Card
 import com.matag.cards.properties.*
 import java.net.URI
 import java.net.URLEncoder
@@ -13,25 +12,23 @@ import java.util.function.Supplier
 import java.util.stream.Collectors
 import java.util.stream.Stream
 
-class CardScryFallLinker constructor(card: Card) {
+class CardScryFallLinker constructor(card: LinkerCard) {
     val image: String
     val colors: TreeSet<Color>?
-    val manaCost: MutableList<Cost>?
+    val manaCost: List<Cost>?
     val types: TreeSet<Type>?
     val subtypes: TreeSet<Subtype>?
     val rarity: Rarity
     val oracleText: String
-    val power: Int
-    val toughness: Int
-    val sets: MutableList<String>
+    val power: Int?
+    val toughness: Int?
+    val sets: List<String>
 
     init {
         try {
+            val cardName = URLEncoder.encode(card.name, StandardCharsets.UTF_8)
             val file = readHttpResource(
-                "https://api.scryfall.com/cards/search?order=released&q=" + URLEncoder.encode(
-                    card.name,
-                    StandardCharsets.UTF_8
-                ) + "&unique=prints"
+                "https://api.scryfall.com/cards/search?order=released&q=${cardName}&unique=prints"
             )
             val jsonNode = ObjectMapper().readTree(file)
             checkSearchWorked(jsonNode)
@@ -49,8 +46,8 @@ class CardScryFallLinker constructor(card: Card) {
             subtypes = convertSubtype(scryFallTypesSplit)
             rarity = Rarity.valueOf(cardJsonNode.path("rarity").asText().uppercase(Locale.getDefault()))
             oracleText = convertOracleText(cardJsonNode.path("oracle_text").asText())
-            power = intOrZero(cardJsonNode, "power")
-            toughness = intOrZero(cardJsonNode, "toughness")
+            power = intField(cardJsonNode, "power")
+            toughness = intField(cardJsonNode, "toughness")
         } catch (e: Exception) {
             throw Exception("Error loading card: " + card.name, e)
         }
@@ -74,9 +71,8 @@ class CardScryFallLinker constructor(card: Card) {
         return String(URI(url).toURL().readBytes())
     }
 
-    @Throws(Exception::class)
     private fun checkSearchWorked(jsonNode: JsonNode) {
-        if (intOrZero(jsonNode, "total_cards") == 0) {
+        if (intField(jsonNode, "total_cards") == 0) {
             throw Exception("Card not found")
         }
     }
@@ -154,9 +150,8 @@ class CardScryFallLinker constructor(card: Card) {
         return oracleText.trim { it <= ' ' }
     }
 
-    private fun intOrZero(jsonNode: JsonNode, field: String?): Int {
-        return if (jsonNode.has(field)) jsonNode.path(field).asText().toInt() else 0
-    }
+    private fun intField(jsonNode: JsonNode, field: String) =
+        jsonNode.get(field)?.asText()?.toInt()
 
     companion object {
         private const val SPECIAL_DASH = "—" // it's not an ascii dash
