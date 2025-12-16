@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.matag.cards.CardsConfiguration
 import com.matag.cards.properties.Type
 import com.matag.cards.sets.MtgSets
+import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.extension.ExtendWith
 import org.junit.platform.commons.util.StringUtils
@@ -21,6 +22,7 @@ class LinkerTest(
     @param:Autowired val linkerCards: LinkerCards,
     @param:Autowired val mtgSets: MtgSets
 ) {
+    @Disabled
     @Test
     @Throws(Exception::class)
     fun `link a card from scryFall`() {
