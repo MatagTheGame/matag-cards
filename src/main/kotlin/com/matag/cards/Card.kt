@@ -17,39 +17,33 @@ data class Card(
     val toughness: Int? = null,
     val abilities: List<Ability> = listOf()
 ) {
-    fun colors() =
-        colors.orEmpty()
-
     fun isOfType(type: Type) =
-        this.types?.contains(type) ?: false
+        this.types.contains(type)
 
     fun isNotOfType(type: Type) =
-        !this.isOfType(type)
+        !isOfType(type)
 
     fun isOfSubtype(subtype: Subtype) =
-        this.subtypes?.contains(subtype) ?: false
+        subtypes.contains(subtype)
 
     fun isNotOfSubtype(subtype: Subtype) =
-        !this.isOfSubtype(subtype)
+        !isOfSubtype(subtype)
 
-    fun isColorless(): Boolean {
-        return this.colors().isEmpty()
-    }
+    fun isColorless() =
+        colors.isEmpty()
 
-    fun isMulticolor(): Boolean {
-        return this.colors().size > 1
-    }
+    fun isMulticolor() =
+        colors.size > 1
 
-    fun isOfColor(color: Color?): Boolean {
-        return this.colors().contains(color)
-    }
+    fun isOfColor(color: Color) =
+        colors.contains(color)
 
     fun isOfOnlyAnyOfTheColors(colors: Set<Color>): Boolean {
-        if (this.colors().isEmpty()) {
+        if (colors.isEmpty()) {
             return false
         }
 
-        for (color in this.colors()) {
+        for (color in colors) {
             if (!colors.contains(color)) {
                 return false
             }
