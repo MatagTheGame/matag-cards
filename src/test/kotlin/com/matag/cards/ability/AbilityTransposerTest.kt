@@ -32,7 +32,7 @@ class AbilityTransposerTest {
         assertThat(transposed).isEqualTo(
             Ability(
                 abilityType = AbilityType.SELECTED_PERMANENTS_GET,
-                targets = null,
+                targets = listOf(),
                 magicInstanceSelector = MagicInstanceSelector(
                     selectorType = SelectorType.PERMANENT,
                     itself = true

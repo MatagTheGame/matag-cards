@@ -27,7 +27,7 @@ fun Ability.transpose(): Ability {
     if (this.abilityType == AbilityType.PROWESS) {
         return Ability(
             abilityType = AbilityType.SELECTED_PERMANENTS_GET,
-            targets = null,
+            targets = listOf(),
             magicInstanceSelector = THIS_PERMANENT,
             parameters = listOf("+1/+1"),
             trigger = Trigger(

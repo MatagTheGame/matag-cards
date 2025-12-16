@@ -13,16 +13,16 @@ import kotlin.collections.orEmpty
 
 data class Ability(
     val abilityType: AbilityType,
-    val targets: List<Target>? = null,
+    val targets: List<Target> = listOf(),
     val magicInstanceSelector: MagicInstanceSelector? = null,
-    val parameters: List<String>? = null,
+    val parameters: List<String> = listOf(),
     val trigger: Trigger? = null,
     val ability: Ability? = null,
     val sorcerySpeed: Boolean = false,
     val optional: Boolean = false
 ) {
     // This is only needed because I'm using java in matag-the-game module
-    constructor(abilityType: AbilityType) : this(abilityType = abilityType, targets = null)
+    constructor(abilityType: AbilityType) : this(abilityType = abilityType, targets = listOf())
 
     constructor(ability: Ability) : this(
         ability.abilityType,
