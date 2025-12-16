@@ -39,11 +39,11 @@ data class Card(
         colors.contains(color)
 
     fun isOfOnlyAnyOfTheColors(colors: Set<Color>): Boolean {
-        if (colors.isEmpty()) {
+        if (this.colors.isEmpty()) {
             return false
         }
 
-        for (color in colors) {
+        for (color in this.colors) {
             if (!colors.contains(color)) {
                 return false
             }

@@ -18,7 +18,7 @@ class CardSearch(val cards: List<Card>) {
     fun notOfSubtype(subtype: Subtype) =
         CardSearch(cards.filter { it.isNotOfSubtype(subtype) })
 
-    fun ofColor(color: Color?) =
+    fun ofColor(color: Color) =
         CardSearch(cards.filter { it.isOfColor(color) })
 
     fun ofOnlyAnyOfTheColors(colors: Set<Color>) =
