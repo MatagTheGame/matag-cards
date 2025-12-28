@@ -17,6 +17,10 @@ data class Card(
     val toughness: Int? = null,
     val abilities: List<Ability> = listOf()
 ) {
+
+    // This is temporarily used by java
+    constructor() : this(name = "", imageUrl = "", types = TreeSet(), rarity = Rarity.COMMON)
+
     fun isOfType(type: Type) =
         this.types.contains(type)
 

@@ -23,7 +23,7 @@ jobs:
     - name: Create settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: echo "<settings><servers><server><id>github-matag-cards</id><username>MatagTheGame</username><password>${GITHUB_TOKEN}</password></server><server><id>github-matag-admin-entities</id><username>MatagTheGame</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
+      run: echo "<settings><servers><server><id>github-matag-cards</id><username>MatagTheGame</username><password>${GITHUB_TOKEN}</password></server></servers></settings>" > ~/.m2/settings.xml
     - name: Test
       run: mvn install
     - name: Publish
