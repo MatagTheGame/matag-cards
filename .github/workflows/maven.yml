@@ -27,4 +27,4 @@ jobs:
     - name: Test
       run: mvn install
     - name: Publish
-      run: mvn -DskipTest deploy
+      run: mvn -DskipTests deploy
