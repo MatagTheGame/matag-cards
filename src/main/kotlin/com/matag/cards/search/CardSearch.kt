@@ -5,7 +5,7 @@ import com.matag.cards.properties.Color
 import com.matag.cards.properties.Subtype
 import com.matag.cards.properties.Type
 
-class CardSearch(val cards: List<Card>) {
+class CardSearch(val cards: Collection<Card>) {
     fun ofType(type: Type) =
         CardSearch(cards.filter { it.isOfType(type) })
 
