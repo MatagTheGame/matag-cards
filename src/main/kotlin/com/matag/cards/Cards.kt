@@ -14,7 +14,7 @@ class Cards(val objectMapper: ObjectMapper, resourceLoader: ResourceLoader) {
         cardsMap.values
 
     fun get(name: String) =
-        cardsMap[name] ?: throw Exception("Card $name not found!")
+        cardsMap[name] ?: throw Exception("Card '$name' not found!")
 
     private fun parseCard(resource: Resource): Card =
         try {

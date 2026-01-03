@@ -32,6 +32,13 @@ class MtgSetsTest(
     }
 
     @Test
+    fun shouldKnowAllCardsOfAllSets() {
+        mtgSets.sets
+            .flatMap { it.value.cards }
+            .forEach { assertThat(cards.get(it)).isNotNull }
+    }
+
+    @Test
     fun countCards() {
         LOGGER.info("Num of Cards: {}", cards.all().size)
         LOGGER.info("Cards by Colors {}", cards.all().groupingBy { it.colors }.eachCount())
