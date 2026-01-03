@@ -1,5 +1,6 @@
 package com.matag.cards
 
+import com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import org.springframework.context.annotation.Bean
@@ -12,7 +13,7 @@ import java.io.File
 open class CardsConfiguration {
     @Bean
     open fun cardsObjectMapper(): ObjectMapper {
-        return jacksonObjectMapper()
+        return jacksonObjectMapper().configure(FAIL_ON_UNKNOWN_PROPERTIES, false)
     }
 
     companion object {

@@ -32,6 +32,8 @@ Few steps to follow:
  4. Populate the abilities accordingly (this is the hard part). 
 
 
-After a card is coded is a very good idea to test it by importing the `cards` artifact into `game` starting the app in test mode:
+After a card is coded is a very good idea to test it by importing the `cards` artifact into `game` starting the [Matag The Game](https://github.com/MatagTheGame/matag-the-game) app in test mode:
  - adding the `-Dspring.profiles.active=test` profile in the maven command or intellij startup command
  - modifying the `ProdInitTestService` class by setting the board as you would like to start your test.
+
+(although I've been using [Application Tests](https://github.com/MatagTheGame/matag-the-game/tree/master/src/test/java/application) to test it and not lose my head).
