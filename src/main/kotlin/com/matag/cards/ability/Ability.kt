@@ -55,7 +55,6 @@ data class Ability(
         }
 
     companion object {
-        @JvmStatic
         fun abilities(card: Card): List<Ability> =
             card.abilities.map { it.transpose() }
     }
