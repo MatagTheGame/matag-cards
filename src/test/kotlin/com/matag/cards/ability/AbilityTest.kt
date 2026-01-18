@@ -17,10 +17,10 @@ class AbilityTest(
     @Test
     fun landAbilityText() {
         // Given
-        val ability = cards.get("Island").abilities?.first()
+        val ability = cards.get("Island").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Tap add blue mana.")
@@ -29,10 +29,10 @@ class AbilityTest(
     @Test
     fun simpleAbilityText() {
         // Given
-        val ability = cards.get("Aven Sentry").abilities?.first()
+        val ability = cards.get("Aven Sentry").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Flying.")
@@ -41,10 +41,10 @@ class AbilityTest(
     @Test
     fun enchantedCreatureGetOneAbilityText() {
         // Given
-        val ability = cards.get("Knight's Pledge").abilities?.first()
+        val ability = cards.get("Knight's Pledge").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Enchanted creature gets +2/+2.")
@@ -53,10 +53,10 @@ class AbilityTest(
     @Test
     fun enchantedCreatureGetMultipleAbilitiesText() {
         // Given
-        val ability = cards.get("Arcane Flight").abilities?.first()
+        val ability = cards.get("Arcane Flight").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Enchanted creature gets +1/+1 and flying.")
@@ -65,10 +65,10 @@ class AbilityTest(
     @Test
     fun selectedPermanentsGetMultipleAbilitiesText() {
         // Given
-        val ability = cards.get("Make a Stand").abilities?.first()
+        val ability = cards.get("Make a Stand").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Creatures you control get +1/+0 and indestructible until end of turn.")
@@ -77,10 +77,10 @@ class AbilityTest(
     @Test
     fun itGetsAbilitiesText() {
         // Given
-        val ability = cards.get("Brazen Wolves").abilities?.first()
+        val ability = cards.get("Brazen Wolves").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Gets +2/+0 until end of turn.")
@@ -89,10 +89,10 @@ class AbilityTest(
     @Test
     fun gainXLifeText() {
         // Given
-        val ability = cards.get("Highland Game").abilities?.first()
+        val ability = cards.get("Highland Game").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("You gain 2 life.")
@@ -101,10 +101,10 @@ class AbilityTest(
     @Test
     fun drawXCardsAndLoseXLifeText() {
         // Given
-        val ability = cards.get("Tithebearer Giant").abilities?.first()
+        val ability = cards.get("Tithebearer Giant").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("You draw 1 card and lose 1 life.")
@@ -113,10 +113,10 @@ class AbilityTest(
     @Test
     fun eachPlayerGainsXLifeText() {
         // Given
-        val ability = cards.get("Centaur Peacemaker").abilities?.first()
+        val ability = cards.get("Centaur Peacemaker").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Each player gain 4 life.")
@@ -125,10 +125,10 @@ class AbilityTest(
     @Test
     fun eachOpponentLosesXLifeText() {
         // Given
-        val ability = cards.get("Infectious Horror").abilities?.first()
+        val ability = cards.get("Infectious Horror").abilities.first()
 
         // When
-        val text = ability?.abilityTypeText
+        val text = ability.abilityTypeText
 
         // Then
         assertThat(text).isEqualTo("Each opponent lose 2 life.")

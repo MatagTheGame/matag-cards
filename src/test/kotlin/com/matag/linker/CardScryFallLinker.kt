@@ -7,7 +7,6 @@ import java.net.URI
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
 import java.util.*
-import java.util.Map
 import java.util.function.Supplier
 import java.util.stream.Collectors
 import java.util.stream.Stream
@@ -111,17 +110,15 @@ class CardScryFallLinker constructor(card: LinkerCard) {
         }
 
         manaCost = manaCost.replaceFirst("\\{".toRegex(), "").replaceFirst("}".toRegex(), "")
-        if (!manaCost.isBlank()) {
-            for (i in 0..<manaCost.toInt()) {
-                cost.add(Cost.ANY)
-            }
+        manaCost.toIntOrNull()?.let { count ->
+            repeat(count) { cost.add(Cost.ANY) }
         }
 
         return cost
     }
 
     private fun convertType(scryFallTypesSplit: Array<String>): TreeSet<Type> {
-        return Stream.of(*scryFallTypesSplit[0]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
+        return Stream.of(*scryFallTypesSplit[0].split(" ".toRegex()).dropLastWhile { it.isEmpty() }
             .toTypedArray())
             .map { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
             .map { Type.valueOf(it) }
@@ -133,7 +130,7 @@ class CardScryFallLinker constructor(card: LinkerCard) {
             return null
         }
 
-        return Stream.of(*scryFallTypesSplit[1]!!.split(" ".toRegex()).dropLastWhile { it.isEmpty() }
+        return Stream.of(*scryFallTypesSplit[1].split(" ".toRegex()).dropLastWhile { it.isEmpty() }
             .toTypedArray())
             .map { obj: String? -> obj!!.uppercase(Locale.getDefault()) }
             .map { Subtype.valueOf(it) }
@@ -155,12 +152,12 @@ class CardScryFallLinker constructor(card: LinkerCard) {
 
     companion object {
         private const val SPECIAL_DASH = "—" // it's not an ascii dash
-        private val COLORS: MutableMap<String, Color> = Map.of<String, Color>(
-            "W", Color.WHITE,
-            "U", Color.BLUE,
-            "B", Color.BLACK,
-            "R", Color.RED,
-            "G", Color.GREEN
+        private val COLORS = mapOf(
+            "W" to Color.WHITE,
+            "U" to Color.BLUE,
+            "B" to Color.BLACK,
+            "R" to Color.RED,
+            "G" to Color.GREEN
         )
         private val COSTS = LinkedHashMap<String, Cost>()
 

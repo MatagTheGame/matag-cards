@@ -38,7 +38,7 @@ data class Ability(
     @get:JsonProperty
     val abilityTypeText: String
         get() {
-            val parametersString = parameters?.let {
+            val parametersString = parameters.let {
                 AbilityService().parametersAsString(it)
             }
 
@@ -57,7 +57,6 @@ data class Ability(
     companion object {
         @JvmStatic
         fun abilities(card: Card): List<Ability> =
-            card.abilities.orEmpty()
-                .map { it.transpose() }
+            card.abilities.map { it.transpose() }
     }
 }

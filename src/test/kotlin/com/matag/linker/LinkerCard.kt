@@ -14,5 +14,5 @@ data class LinkerCard(
     val ruleText: String? = null,
     val power: Int? = null,
     val toughness: Int? = null,
-    val abilities: List<Object>? = null
+    val abilities: List<Any>? = null
 )

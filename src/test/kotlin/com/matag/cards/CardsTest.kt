@@ -27,18 +27,18 @@ class CardsTest(
         
         cards.all().forEach {
             requireNotNull(it.imageUrl) { "Card '${it.name}' does not have an imageUrl. Run cardImageLinker" }
-            require(it.types?.isNotEmpty() == true) { "Card '${it.name}' does not have a type. Remove the image and run cardImageLinker" }
+            require(it.types.isNotEmpty() == true) { "Card '${it.name}' does not have a type. Remove the image and run cardImageLinker" }
 
             it.abilities
-                ?.filter { it.abilityType == AbilityType.THAT_TARGETS_GET }
-                ?.forEach { ability ->
-                    require(ability.targets?.isNotEmpty() == true) { "Card '${it.name}' is missing targets" }
+                .filter { it.abilityType == AbilityType.THAT_TARGETS_GET }
+                .forEach { ability ->
+                    require(ability.targets.isNotEmpty()) { "Card '${it.name}' is missing targets" }
                     validateParameters(it.name, ability.parameters)
                 }
 
             it.abilities
-                ?.filter { it.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
-                ?.forEach { ability ->
+                .filter { it.abilityType == AbilityType.SELECTED_PERMANENTS_GET }
+                .forEach { ability ->
                     requireNotNull(ability.magicInstanceSelector) { "Card '${it.name}' is missing magicInstanceSelector" }
                     validateParameters(it.name, ability.parameters)
                 }

@@ -17,7 +17,7 @@
         <maven.surefire.plugin.version>3.5.4</maven.surefire.plugin.version>
         <spring.boot.version>4.0.0</spring.boot.version>
         <jackson.version>2.20.1</jackson.version>
-        <kotlin.version>2.2.0</kotlin.version>
+        <kotlin.version>2.3.0</kotlin.version>
         <junit.version>6.0.1</junit.version>
     </properties>
 
@@ -94,7 +94,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <jvmTarget>1.8</jvmTarget>
+                    <jvmTarget>${maven.compiler.target}</jvmTarget>
                 </configuration>
             </plugin>
         </plugins>
