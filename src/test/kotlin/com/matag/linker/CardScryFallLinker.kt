@@ -76,7 +76,7 @@ class CardScryFallLinker constructor(card: LinkerCard) {
         }
     }
 
-    private fun convertSets(jsonNode: JsonNode): MutableList<String> {
+    private fun convertSets(jsonNode: JsonNode): List<String> {
         val sets = ArrayList<String>()
 
         for (i in 0..<jsonNode.path("data").size()) {
@@ -91,14 +91,14 @@ class CardScryFallLinker constructor(card: LinkerCard) {
         for (i in 0..<jsonColors.size()) {
             val color = jsonColors.get(i).asText()
             if (!COLORS.containsKey(color)) {
-                throw RuntimeException("Color " + color + " not recognised")
+                throw RuntimeException("Color $color not recognised")
             }
             colors.add(COLORS.get(color)!!)
         }
         return colors
     }
 
-    private fun convertCost(manaCost: String): MutableList<Cost> {
+    private fun convertCost(manaCost: String): List<Cost> {
         var manaCost = manaCost
         val cost = ArrayList<Cost>()
 

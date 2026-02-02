@@ -6,7 +6,7 @@ import com.matag.cards.properties.Cost
 data class Trigger(
     var type: TriggerType? = null,
     var subtype: TriggerSubtype? = null,
-    var cost: MutableList<Cost?>? = null,
+    var cost: List<Cost>? = null,
     var magicInstanceSelector: MagicInstanceSelector? = null
 ) {
     companion object {
@@ -22,7 +22,7 @@ data class Trigger(
             return Trigger(TriggerType.TRIGGERED_ABILITY, triggerSubtype, null, magicInstanceSelector)
         }
 
-        fun activatedAbility(cost: MutableList<Cost?>): Trigger {
+        fun activatedAbility(cost: List<Cost>): Trigger {
             return Trigger(TriggerType.ACTIVATED_ABILITY, null, cost, null)
         }
 
